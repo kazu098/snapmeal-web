@@ -104,70 +104,52 @@ const faqs = [
 
   <main>
     <!-- Hero -->
-    <section class="bg-surface pt-20 pb-24 px-4 text-center">
-      <div class="max-w-3xl mx-auto">
-        <div class="inline-block bg-green-100 text-primary text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wide">
-          共働き家庭のための AI 献立アシスタント
-        </div>
-        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
-          冷蔵庫を撮るだけ。<br />
-          <span class="text-primary">30秒</span>で今夜の<br class="sm:hidden" />夕食が決まる。
-        </h1>
-        <p class="text-lg sm:text-xl text-gray-600 mb-10 leading-relaxed">
-          平日18時の「今夜どうしよう」から解放される。<br class="hidden sm:block" />
-          AIが食材を認識して、今夜の献立を自動で提案します。
-        </p>
-        <div class="flex flex-col sm:flex-row gap-3 justify-center">
-          <a
-            href={APP_URL}
-            class="bg-primary text-white font-bold text-lg px-8 py-4 rounded-2xl hover:bg-primary-dark transition shadow-xl shadow-green-200 inline-block"
-          >
-            無料で試してみる
-          </a>
-          <a
-            href="#how"
-            class="bg-white text-gray-700 font-semibold text-lg px-8 py-4 rounded-2xl border-2 border-gray-200 hover:border-primary transition inline-block"
-          >
-            使い方を見る
-          </a>
-        </div>
-        <p class="text-sm text-muted mt-4">クレジットカード不要 · ゲストで3回無料</p>
-
-        <!-- App mockup -->
-        <div class="mt-16 relative mx-auto max-w-xs">
-          <div class="bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden">
-            <div class="bg-primary-dark px-4 py-3 flex items-center justify-between">
-              <span class="text-white font-extrabold text-lg">Snapmeal</span>
-              <div class="flex gap-1.5">
-                <div class="w-3 h-3 rounded-full bg-white/30"></div>
-                <div class="w-3 h-3 rounded-full bg-white/30"></div>
-              </div>
-            </div>
-            <div class="p-4 space-y-3">
-              <div class="bg-surface rounded-2xl p-4 text-left">
-                <p class="text-xs font-bold text-primary mb-2">✓ 認識した食材</p>
-                <div class="flex flex-wrap gap-1.5">
-                  {['鶏もも肉', '玉ねぎ', '卵', 'にんじん', 'トマト', '豆腐'].map(i => (
-                    <span class="text-xs bg-white border border-green-200 text-green-800 px-2.5 py-1 rounded-full">{i}</span>
-                  ))}
-                </div>
-              </div>
-              <div class="bg-white rounded-2xl border-2 border-primary p-4 text-left">
-                <div class="flex items-center justify-between mb-1">
-                  <span class="font-bold text-gray-900 text-sm">鶏肉と野菜の煮込み</span>
-                  <span class="text-xs bg-green-100 text-primary px-2 py-0.5 rounded-full font-semibold">おすすめ</span>
-                </div>
-                <p class="text-xs text-gray-500 mb-3">⏱ 25分　★ ふつう　🍳 今ある食材で作れる</p>
-                <div class="bg-primary text-white text-sm font-bold py-2.5 rounded-xl text-center">
-                  この献立で作る
-                </div>
-              </div>
-              <div class="bg-gray-50 rounded-2xl border border-gray-100 p-3 text-left opacity-60">
-                <span class="text-xs font-semibold text-gray-500">他の案を生成中...</span>
-              </div>
-            </div>
+    <section class="bg-surface pt-16 pb-20 px-4">
+      <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+        <!-- Text -->
+        <div class="flex-1 text-center lg:text-left">
+          <div class="inline-block bg-green-100 text-primary text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wide">
+            共働き家庭のための AI 献立アシスタント
           </div>
-          <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-24 h-4 bg-black/10 blur-xl rounded-full"></div>
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+            冷蔵庫を撮るだけ。<br />
+            <span class="text-primary">30秒</span>で今夜の<br class="sm:hidden" />夕食が決まる。
+          </h1>
+          <p class="text-lg sm:text-xl text-gray-600 mb-10 leading-relaxed">
+            平日18時の「今夜どうしよう」から解放される。<br class="hidden sm:block" />
+            AIが食材を認識して、今夜の献立を自動で提案します。
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+            <a
+              href={APP_URL}
+              class="bg-primary text-white font-bold text-lg px-8 py-4 rounded-2xl hover:bg-primary-dark transition shadow-xl shadow-green-200 inline-block"
+            >
+              無料で試してみる
+            </a>
+            <a
+              href="#how"
+              class="bg-white text-gray-700 font-semibold text-lg px-8 py-4 rounded-2xl border-2 border-gray-200 hover:border-primary transition inline-block"
+            >
+              使い方を見る
+            </a>
+          </div>
+          <p class="text-sm text-muted mt-4">クレジットカード不要 · ゲストで3回無料</p>
+        </div>
+
+        <!-- App screenshot / 動画がある場合はここを <video autoplay muted loop playsinline> に差し替える -->
+        <div class="flex-shrink-0 relative">
+          <div class="relative">
+            <div class="absolute inset-0 bg-gradient-to-b from-primary/15 to-green-200/10 rounded-[44px] blur-3xl scale-110"></div>
+            <img
+              src="/screenshots/01-home.png"
+              alt="Snapmeal アプリ画面 - 冷蔵庫を撮影して献立を選ぶ"
+              class="relative w-64 sm:w-72 lg:w-80 rounded-[36px] shadow-2xl border border-gray-100"
+              width="330"
+              height="714"
+              loading="eager"
+            />
+          </div>
+          <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-40 h-5 bg-black/10 blur-xl rounded-full"></div>
         </div>
       </div>
     </section>
@@ -208,22 +190,36 @@ const faqs = [
 
     <!-- How it works -->
     <section id="how" class="py-20 px-4 bg-surface">
-      <div class="max-w-4xl mx-auto">
+      <div class="max-w-5xl mx-auto">
         <div class="text-center mb-14">
           <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">たった3ステップ</h2>
           <p class="text-gray-500">難しい操作は一切なし。スマホで冷蔵庫を撮るだけ。</p>
         </div>
-        <div class="grid sm:grid-cols-3 gap-6">
-          {steps.map((step, i) => (
-            <div class="bg-white rounded-3xl p-6 shadow-sm border border-gray-100 text-center relative">
-              <div class="absolute -top-3 -left-3 w-8 h-8 bg-primary text-white text-sm font-extrabold rounded-full flex items-center justify-center shadow-md">
-                {i + 1}
+        <div class="grid sm:grid-cols-3 gap-8">
+          {steps.map((step, i) => {
+            const screenshots = ['/screenshots/01-home.png', '/screenshots/02-upload.png', '/screenshots/03-meal.png'];
+            const alts = ['ホーム画面 - 写真を撮って献立スタイルを選択', '冷蔵庫の写真をアップロード中', '献立提案画面 - さばと白菜のオイスターソース炒め'];
+            return (
+              <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden relative">
+                <div class="absolute top-4 left-4 w-8 h-8 bg-primary text-white text-sm font-extrabold rounded-full flex items-center justify-center shadow-md z-10">
+                  {i + 1}
+                </div>
+                <div class="bg-surface px-6 pt-10 pb-4 flex justify-center">
+                  <img
+                    src={screenshots[i]}
+                    alt={alts[i]}
+                    class="w-40 rounded-2xl shadow-lg border border-gray-100"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="p-6 pt-4 text-center">
+                  <div class="text-4xl mb-3">{step.icon}</div>
+                  <h3 class="font-bold text-gray-900 text-lg mb-2">{step.title}</h3>
+                  <p class="text-gray-500 text-sm leading-relaxed">{step.desc}</p>
+                </div>
               </div>
-              <div class="text-5xl mb-4">{step.icon}</div>
-              <h3 class="font-bold text-gray-900 text-lg mb-2">{step.title}</h3>
-              <p class="text-gray-500 text-sm leading-relaxed">{step.desc}</p>
-            </div>
-          ))}
+            );
+          })}
         </div>
         <div class="text-center mt-10">
           <a href={APP_URL} class="inline-block bg-accent text-white font-bold text-base px-8 py-4 rounded-2xl hover:opacity-90 transition shadow-lg shadow-orange-200">
@@ -248,6 +244,45 @@ const faqs = [
               <p class="text-gray-500 text-sm leading-relaxed">{f.desc}</p>
             </div>
           ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Recipe screenshot highlight -->
+    <section class="py-20 px-4 bg-surface overflow-hidden">
+      <div class="max-w-5xl mx-auto">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+          <div class="flex-1 text-center lg:text-left order-2 lg:order-1">
+            <div class="inline-block bg-green-100 text-primary text-xs font-bold px-4 py-1.5 rounded-full mb-4 tracking-wide">
+              ホットクック対応
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-4 leading-tight">
+              AIが材料・手順・<br />ホットクック設定まで<br />まとめて生成。
+            </h2>
+            <p class="text-gray-600 leading-relaxed mb-6">
+              「この献立で作る」を押すだけで、材料の分量から調理手順、ホットクックの操作ガイドまで自動生成。レシピを調べる手間がゼロになります。
+            </p>
+            <ul class="space-y-2 text-sm text-gray-700 mb-8">
+              {['今ある食材だけで作れるレシピを提案', 'ホットクックのメニュー番号まで案内', '調理ポイント・コツもAIが解説'].map(t => (
+                <li class="flex items-center gap-2">
+                  <span class="text-primary font-bold text-base">✓</span>
+                  {t}
+                </li>
+              ))}
+            </ul>
+            <a href={APP_URL} class="inline-block bg-primary text-white font-bold px-7 py-3.5 rounded-2xl hover:bg-primary-dark transition shadow-lg shadow-green-200">
+              無料で試してみる
+            </a>
+          </div>
+          <div class="flex-shrink-0 order-1 lg:order-2 relative">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary/15 to-green-200/20 rounded-[40px] blur-3xl scale-110"></div>
+            <img
+              src="/screenshots/04-recipe.png"
+              alt="レシピ詳細画面 - 材料・手順・ホットクックガイド"
+              class="relative w-56 sm:w-64 rounded-[32px] shadow-2xl border border-gray-100"
+              loading="lazy"
+            />
+          </div>
         </div>
       </div>
     </section>
