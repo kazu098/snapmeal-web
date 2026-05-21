@@ -3,24 +3,47 @@ interface Props {
   title?: string;
   description?: string;
   ogImage?: string;
+  lang?: 'ja' | 'en';
+  alternateUrl?: string;
 }
 
 const {
-  title = 'Snapmeal — 冷蔵庫を撮るだけ。30秒で今夜の夕食が決まる',
-  description = '共働き家庭の平日18時を救うAI献立アシスタント。冷蔵庫を撮影するだけで、AIが食材を認識して今夜の献立を提案します。',
+  lang = 'ja',
   ogImage = '/og.png',
 } = Astro.props;
 
+const defaults = {
+  ja: {
+    title: 'Snapmeal — 冷蔵庫を撮るだけ。30秒で今夜の夕食が決まる',
+    description: '共働き家庭の平日18時を救うAI献立アシスタント。冷蔵庫を撮影するだけで、AIが食材を認識して今夜の献立を提案します。',
+    ogLocale: 'ja_JP',
+  },
+  en: {
+    title: "Snapmeal — Just snap your fridge. Tonight's dinner in 30 seconds.",
+    description: "The AI meal planner for busy families. Snap your fridge, let AI recognize the ingredients, and get tonight's dinner suggestion instantly.",
+    ogLocale: 'en_US',
+  },
+};
+
+const { title, description, ogLocale } = {
+  ...defaults[lang],
+  ...(Astro.props.title ? { title: Astro.props.title } : {}),
+  ...(Astro.props.description ? { description: Astro.props.description } : {}),
+};
+
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const alternateUrl = Astro.props.alternateUrl;
 ---
 
 <!doctype html>
-<html lang="ja">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonicalURL} />
+    {lang === 'ja' && alternateUrl && <link rel="alternate" hreflang="en" href={alternateUrl} />}
+    {lang === 'en' && alternateUrl && <link rel="alternate" hreflang="ja" href={alternateUrl} />}
 
     <title>{title}</title>
     <meta name="description" content={description} />
@@ -31,7 +54,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={new URL(ogImage, Astro.site)} />
-    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:locale" content={ogLocale} />
     <meta property="og:site_name" content="Snapmeal" />
 
     <!-- Twitter -->
