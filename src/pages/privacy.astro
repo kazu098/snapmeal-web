@@ -1,0 +1,81 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="プライバシーポリシー — Snapmeal"
+  description="Snapmealのプライバシーポリシーです。"
+>
+  <header class="bg-white border-b border-gray-100">
+    <div class="max-w-3xl mx-auto px-4 h-16 flex items-center">
+      <a href="/" class="text-xl font-extrabold text-primary">Snapmeal</a>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 py-16">
+    <h1 class="text-3xl font-extrabold text-gray-900 mb-8">プライバシーポリシー</h1>
+
+    <div class="prose prose-gray max-w-none space-y-8 text-gray-700 text-sm leading-relaxed">
+
+      <section>
+        <h2 class="text-lg font-bold text-gray-900 mb-3">1. 収集する情報</h2>
+        <p>当サービスは以下の情報を収集します。</p>
+        <ul class="list-disc pl-5 mt-2 space-y-1">
+          <li>メールアドレス（アカウント登録時）</li>
+          <li>家庭設定情報（人数・調理器具・NG食材等）</li>
+          <li>献立提案の利用履歴</li>
+          <li>アプリの利用状況（分析ツールを通じて）</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-bold text-gray-900 mb-3">2. 冷蔵庫写真の取り扱い</h2>
+        <p>
+          アップロードされた冷蔵庫の写真は、食材認識処理のためにGoogle Gemini APIへ送信されます。
+          <strong>写真はサーバーに保存しません。</strong>処理完了後、写真データは破棄されます。
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-bold text-gray-900 mb-3">3. 情報の利用目的</h2>
+        <ul class="list-disc pl-5 mt-2 space-y-1">
+          <li>献立提案サービスの提供・改善</li>
+          <li>マンネリ回避のための履歴管理</li>
+          <li>サービスの利用状況分析</li>
+          <li>お問い合わせへの対応</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-bold text-gray-900 mb-3">4. 第三者提供</h2>
+        <p>法令に基づく場合を除き、収集した個人情報を第三者に提供しません。ただし以下のサービスを利用しています。</p>
+        <ul class="list-disc pl-5 mt-2 space-y-1">
+          <li>Supabase（認証・データベース）</li>
+          <li>Google Gemini API（食材認識AI）</li>
+          <li>Stripe（決済処理）</li>
+          <li>Vercel（ホスティング）</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-bold text-gray-900 mb-3">5. データの削除</h2>
+        <p>アカウントの削除をご希望の場合は、アプリ内の設定またはお問い合わせフォームよりご連絡ください。退会後、関連データを削除します。</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-bold text-gray-900 mb-3">6. お問い合わせ</h2>
+        <p>プライバシーに関するお問い合わせは <a href="mailto:hello@snapmeal.jp" class="text-primary underline">hello@snapmeal.jp</a> までご連絡ください。</p>
+      </section>
+
+      <p class="text-gray-400 text-xs">最終更新: 2026年5月</p>
+    </div>
+  </main>
+
+  <footer class="bg-gray-900 text-gray-400 py-8 px-4 text-center text-sm">
+    <a href="/" class="text-white font-bold">Snapmeal</a>
+    <span class="mx-2">·</span>
+    <a href="/terms" class="hover:text-white transition">利用規約</a>
+    <span class="mx-2">·</span>
+    <p class="mt-2 text-xs text-gray-600">© 2026 Snapmeal. All rights reserved.</p>
+  </footer>
+</Layout>
