@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import BlogCta from '../../components/BlogCta.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
 import RelatedArticles from '../../components/RelatedArticles.astro';
+import ArticleTags from '../../components/ArticleTags.astro';
 ---
 
 <Layout
@@ -168,6 +169,9 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
           <p>
             Snapmealは冷蔵庫の写真を撮るだけで、今ある食材から作れる献立を提案します。白菜があれば白菜とツナの無水煮、鶏むね肉があれば塩スープ——冷蔵庫を見て迷う時間を減らせます。
           </p>
+
+          <ArticleTags currentHref="/blog/hotcook-tired-day-recipes/" />
+
 
           <RelatedArticles currentHref="/blog/hotcook-tired-day-recipes/" />
 

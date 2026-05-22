@@ -40,6 +40,7 @@ const fridgePairs = [
   ['玉ねぎ', '無水煮、トマト煮、照り煮'],
 ];
 import RelatedArticles from '../../components/RelatedArticles.astro';
+import ArticleTags from '../../components/ArticleTags.astro';
 ---
 
 <Layout
@@ -245,6 +246,9 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
           <p>
             Snapmealでは、冷蔵庫の写真を撮るだけでAIが食材を認識し、ホットクックで作りやすい献立を提案します。鶏もも肉にキャベツを合わせるのか、大根を合わせるのか、フライパンやレンジの方がよいのかまで、今ある食材から考えられます。
           </p>
+
+          <ArticleTags currentHref="/blog/hotcook-chicken-thigh-recipes/" />
+
 
           <RelatedArticles currentHref="/blog/hotcook-chicken-thigh-recipes/" />
 

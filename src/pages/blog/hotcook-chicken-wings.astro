@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import BlogCta from '../../components/BlogCta.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
 import RelatedArticles from '../../components/RelatedArticles.astro';
+import ArticleTags from '../../components/ArticleTags.astro';
 ---
 
 <Layout
@@ -265,6 +266,9 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
           <p>
             冷蔵庫の写真を撮るだけで、今日の食材の組み合わせからホットクックで作れる献立を提案します。
           </p>
+
+          <ArticleTags currentHref="/blog/hotcook-chicken-wings/" />
+
 
           <RelatedArticles currentHref="/blog/hotcook-chicken-wings/" />
           <BlogCta title="冷蔵庫を撮って、今夜の献立を決める" />

@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import BlogCta from '../../components/BlogCta.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
 import RelatedArticles from '../../components/RelatedArticles.astro';
+import ArticleTags from '../../components/ArticleTags.astro';
 ---
 
 <Layout
@@ -173,6 +174,9 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
           <p>
             Snapmealは冷蔵庫の写真を撮るだけで、今日ある食材からホットクックで作れる献立を提案します。じゃがいもに何が合うかを毎回考えなくてよくなります。
           </p>
+
+          <ArticleTags currentHref="/blog/hotcook-potato-recipes/" />
+
 
           <RelatedArticles currentHref="/blog/hotcook-potato-recipes/" />
 

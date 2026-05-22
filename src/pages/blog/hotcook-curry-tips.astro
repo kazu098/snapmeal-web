@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import BlogCta from '../../components/BlogCta.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
 import RelatedArticles from '../../components/RelatedArticles.astro';
+import ArticleTags from '../../components/ArticleTags.astro';
 ---
 
 <Layout
@@ -184,6 +185,9 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
           <p>
             Snapmealは冷蔵庫の写真を撮るだけで、今日の食材からホットクックで作れる献立を提案します。今日のカレーの材料を見て、最適なバリエーションを選んでくれます。
           </p>
+
+          <ArticleTags currentHref="/blog/hotcook-curry-tips/" />
+
 
           <RelatedArticles currentHref="/blog/hotcook-curry-tips/" />
 

@@ -41,6 +41,7 @@ const patterns = [
   },
 ];
 import RelatedArticles from '../../components/RelatedArticles.astro';
+import ArticleTags from '../../components/ArticleTags.astro';
 ---
 
 <Layout
@@ -182,6 +183,9 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
           <p>
             Snapmealは冷蔵庫の写真を撮ると、今ある食材の組み合わせからホットクックで作れる献立を提案します。玉ねぎの「今日の使い道」を決める判断を、代わりにやってくれます。
           </p>
+
+          <ArticleTags currentHref="/blog/hotcook-onion-recipes/" />
+
 
           <RelatedArticles currentHref="/blog/hotcook-onion-recipes/" />
 

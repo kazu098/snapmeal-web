@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import BlogCta from '../../components/BlogCta.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
 import RelatedArticles from '../../components/RelatedArticles.astro';
+import ArticleTags from '../../components/ArticleTags.astro';
 ---
 
 <Layout
@@ -170,6 +171,9 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
           <p>
             Snapmealは冷蔵庫の写真を撮るだけで、今日ある食材から作れる献立を提案します。冷蔵庫の食材と乾物ストックを組み合わせた料理を考えるのに活用してください。
           </p>
+
+          <ArticleTags currentHref="/blog/hotcook-dried-ingredients/" />
+
 
           <RelatedArticles currentHref="/blog/hotcook-dried-ingredients/" />
 

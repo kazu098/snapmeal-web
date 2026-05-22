@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import BlogCta from '../../components/BlogCta.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
 import RelatedArticles from '../../components/RelatedArticles.astro';
+import ArticleTags from '../../components/ArticleTags.astro';
 ---
 
 <Layout
@@ -179,6 +180,9 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
           <p>
             Snapmealは冷蔵庫の写真を撮るだけで、今日の食材の組み合わせからホットクックで作れる献立を提案します。
           </p>
+
+          <ArticleTags currentHref="/blog/hotcook-greens-recipes/" />
+
 
           <RelatedArticles currentHref="/blog/hotcook-greens-recipes/" />
 

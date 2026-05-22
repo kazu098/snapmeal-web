@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import BlogCta from '../../components/BlogCta.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
 import RelatedArticles from '../../components/RelatedArticles.astro';
+import ArticleTags from '../../components/ArticleTags.astro';
 ---
 
 <Layout
@@ -145,6 +146,9 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
           <p>
             Snapmealは冷蔵庫の写真を撮るだけで、今日の食材の組み合わせに合った献立を提案します。大根を使い切るための選択肢を、冷蔵庫の中身から考えてくれます。
           </p>
+
+          <ArticleTags currentHref="/blog/hotcook-daikon-recipes/" />
+
 
           <RelatedArticles currentHref="/blog/hotcook-daikon-recipes/" />
 

@@ -12,6 +12,7 @@ const flavorChart = [
   { style: '🇮🇳 カレー風', base: '水400ml', main: 'カレー粉大さじ1.5・トマト缶1/2・塩', finish: 'クミン・コリアンダー' },
 ];
 import RelatedArticles from '../../components/RelatedArticles.astro';
+import ArticleTags from '../../components/ArticleTags.astro';
 ---
 
 <Layout
@@ -242,6 +243,9 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
           <p>
             Snapmealは冷蔵庫の写真を撮るだけで、今日の食材と調味料の組み合わせからホットクックで作れる献立を提案します。マンネリせずに毎日違う味を楽しむための出発点として使ってみてください。
           </p>
+
+          <ArticleTags currentHref="/blog/hotcook-new-flavors/" />
+
 
           <RelatedArticles currentHref="/blog/hotcook-new-flavors/" />
 

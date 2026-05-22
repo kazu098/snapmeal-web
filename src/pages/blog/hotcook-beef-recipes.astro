@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import BlogCta from '../../components/BlogCta.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
 import RelatedArticles from '../../components/RelatedArticles.astro';
+import ArticleTags from '../../components/ArticleTags.astro';
 ---
 
 <Layout
@@ -139,6 +140,9 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
           <p>
             Snapmealは冷蔵庫の写真を撮ると、今ある食材の組み合わせからホットクックで作れる献立を提案します。牛肉と何があるかを見て、今日の料理を選んでくれます。
           </p>
+
+          <ArticleTags currentHref="/blog/hotcook-beef-recipes/" />
+
 
           <RelatedArticles currentHref="/blog/hotcook-beef-recipes/" />
 
