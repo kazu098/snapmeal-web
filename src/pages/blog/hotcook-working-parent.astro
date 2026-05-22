@@ -1,0 +1,226 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogCta from '../../components/BlogCta.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+---
+
+<Layout
+  lang="ja"
+  title="18時に帰宅して18時30分に夕飯を出す——ホットクック予約機能の使い方"
+  description="共働き家庭でホットクックを最大限活かすのは「予約機能」の使い方です。朝にセットして夜に出来上がっている。その仕組みと、予約調理に向いているメニューをまとめました。"
+  ogImage="/blog/hotcook-working-parent-thumbnail-1600x900.png"
+  alternateUrl="https://snap-meal.com/en/blog/hotcook-working-parent/"
+>
+  <BlogHeader />
+
+  <main>
+    <article>
+      <section class="bg-surface px-4 pt-14 pb-10 sm:pt-20">
+        <div class="max-w-3xl mx-auto">
+          <a href="/blog/" class="inline-flex items-center text-sm font-bold text-primary mb-8 hover:underline underline-offset-4">
+            ← ブログ一覧へ
+          </a>
+          <div class="flex flex-wrap items-center gap-3 text-xs font-bold text-gray-400 mb-5">
+            <span class="text-primary bg-green-50 px-3 py-1 rounded-full">ホットクック</span>
+            <time datetime="2026-05-22">2026年5月22日</time>
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-[1.25] mb-6">
+            18時に帰宅して18時30分に夕飯を出す——ホットクック予約機能の使い方
+          </h1>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            ある平日の朝8時。出かける前に5分だけ台所に立って、ホットクックに食材と調味料を入れてタイマーをセットする。夜18時に帰宅すると、夕飯ができあがっている——これが予約機能を使ったホットクックの使い方です。
+          </p>
+        </div>
+      </section>
+
+      <section class="px-4 py-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+          <img
+            src="/blog/hotcook-working-parent-thumbnail-1600x900.png"
+            alt="共働き家庭でのホットクック活用イメージ"
+            class="w-full rounded-3xl border border-gray-100 shadow-sm"
+          />
+        </div>
+      </section>
+
+      <section class="px-4 py-10 bg-white">
+        <div class="blog-content max-w-3xl mx-auto">
+
+          <nav class="toc" aria-label="目次">
+            <p class="toc-title">目次</p>
+            <ol>
+              <li><a href="#timer">予約機能の仕組みと設定方法</a></li>
+              <li><a href="#safe">予約調理に向いている食材・向かない食材</a></li>
+              <li><a href="#menu1">定番予約メニュー①：豚汁</a></li>
+              <li><a href="#menu2">定番予約メニュー②：鶏と野菜の無水調理</a></li>
+              <li><a href="#menu3">定番予約メニュー③：大豆と野菜の洋風スープ</a></li>
+              <li><a href="#morning">朝のセット時間を5分にするコツ</a></li>
+              <li><a href="#snapmeal">今日の食材で予約メニューを決める</a></li>
+            </ol>
+          </nav>
+
+          <h2 id="timer">予約機能の仕組みと設定方法</h2>
+          <p>
+            ホットクックの予約機能は「〇時間後に出来上がるように逆算して加熱を開始する」設定です。朝7時にセットして「10時間後」と設定すれば17時に完成します。
+          </p>
+          <p>
+            操作は機種によって若干異なりますが、基本的には①メニューを選ぶ→②予約をタップ→③完成希望時刻または待機時間を設定→④スタート、の流れです。
+          </p>
+          <p>
+            注意点が一つあります。予約調理は「食材を長時間常温で置いておく」ことになります。食中毒リスクを避けるため、<strong>肉・魚を生のまま長時間予約するのは推奨されません</strong>。安全に使うための食材選びが重要です。
+          </p>
+
+          <h2 id="safe">予約調理に向いている食材・向かない食材</h2>
+
+          <div class="safety-grid">
+            <div class="safety-card ok">
+              <p class="safety-label ok-label">◎ 予約向き</p>
+              <ul>
+                <li>根菜類（大根・にんじん・じゃがいも・ごぼう）</li>
+                <li>乾物（切り干し大根・ひじき）</li>
+                <li>豆類（乾燥大豆・レンズ豆）</li>
+                <li>きのこ類</li>
+                <li>こんにゃく・厚揚げ</li>
+              </ul>
+            </div>
+            <div class="safety-card ng">
+              <p class="safety-label ng-label">✕ 予約不向き</p>
+              <ul>
+                <li>生肉・生魚（長時間の常温放置はリスクあり）</li>
+                <li>生の葉物野菜（食感が損なわれる）</li>
+                <li>乳製品（クリーム系は変質の恐れ）</li>
+                <li>卵（黄身の状態が管理しにくい）</li>
+              </ul>
+            </div>
+          </div>
+
+          <p>
+            肉を使いたい場合は「加熱済み状態」で入れる方法もあります。前夜に下茹でした鶏肉や、冷凍から直接入れる方法（機種によっては対応）もあります。
+          </p>
+
+          <h2 id="menu1">定番予約メニュー①：豚汁</h2>
+          <p>
+            豚汁は予約調理の最適解です。根菜ときのこと豚肉——のうち、予約調理では根菜とこんにゃくだけ先に入れておき、豚肉は帰宅後に追加する方法が安全です。
+          </p>
+          <p>
+            大根・にんじん・ごぼう・こんにゃくをカットしてホットクックへ。だし・酒・みりんをセット。夜帰宅後に豚肉を加えて追加加熱5分。みそを溶かせば完成です。
+          </p>
+          <p>
+            根菜がやわらかく煮えた状態から再加熱するので、仕上げの時間が短くて済みます。
+          </p>
+
+          <h2 id="menu2">定番予約メニュー②：鶏と野菜の無水調理</h2>
+          <p>
+            冷凍鶏むね肉を使う方法です。凍ったまま入れることで、予約中の食材傷みを最小限にします（機種によっては冷凍食材対応の自動メニューあり）。
+          </p>
+          <p>
+            冷凍鶏むね肉1枚・大根・にんじん・玉ねぎを入れ、しょうゆ・みりん・酒・しょうがで味付け。予約設定で完成時刻を指定します。帰宅後はそのままテーブルへ。
+          </p>
+
+          <h2 id="menu3">定番予約メニュー③：大豆と野菜の洋風スープ</h2>
+          <p>
+            乾燥大豆を使う場合、通常は前夜から浸水が必要ですが、ホットクックの予約調理では浸水なしで柔らかくなるメニューがあります。
+          </p>
+          <p>
+            大豆（乾燥）・玉ねぎ・にんじん・セロリ（あれば）・トマト缶・コンソメ・水。朝にセットして夜に完成するボリュームのあるスープです。
+          </p>
+
+          <figure class="wide-figure">
+            <img src="/blog/hotcook-working-parent-thumbnail-1600x900.png" alt="朝にセットして夜に完成するホットクックのイメージ" loading="lazy" />
+            <figcaption>朝のセット時間は5分。帰宅後は器に盛るだけ——これがホットクックの予約調理の魅力です。</figcaption>
+          </figure>
+
+          <h2 id="morning">朝のセット時間を5分にするコツ</h2>
+          <p>
+            前夜に食材を切っておくことが最大のコツです。洗い物をまとめてやるついでに、明日使う野菜を切って保存容器に入れておく。翌朝はそれをホットクックに入れて調味料を加えるだけで、本当に5分以内に完了します。
+          </p>
+          <p>
+            慣れてきたら「月曜の朝は豚汁用カット野菜」「水曜は大豆スープ」と曜日ごとに固定すると、考えるコストがなくなります。
+          </p>
+
+          <h2 id="snapmeal">今日の食材で予約メニューを決める</h2>
+          <p>
+            今日の冷蔵庫に何があるか、予約調理に使える食材は何か——毎朝確認する時間はなかなか取れません。
+          </p>
+          <p>
+            Snapmealは冷蔵庫の写真を撮ると、今日の食材からホットクックで作れる献立を提案します。予約調理のアイデアとして活用できます。
+          </p>
+
+          <BlogCta title="冷蔵庫を撮って、今夜の献立を決める" />
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <style>
+    .blog-content {
+      color: rgb(55 65 81);
+      font-size: 1.0625rem;
+      line-height: 1.9;
+    }
+    .blog-content p { margin: 0 0 1.35rem; }
+    .blog-content h2 {
+      color: rgb(17 24 39);
+      font-size: clamp(1.65rem, 3vw, 2.15rem);
+      line-height: 1.25;
+      font-weight: 800;
+      margin: 3rem 0 1rem;
+      scroll-margin-top: 5rem;
+    }
+    .blog-content strong { color: rgb(17 24 39); font-weight: 800; }
+    .toc {
+      border: 1px solid rgb(209 250 229);
+      border-radius: 1.5rem;
+      background: rgb(240 253 244);
+      padding: 1.25rem;
+      margin: 2rem 0;
+    }
+    .toc-title {
+      color: rgb(5 150 105);
+      font-size: 0.8rem;
+      font-weight: 800;
+      margin: 0 0 0.5rem;
+    }
+    .toc ol { margin: 0; padding-left: 1.25rem; }
+    .toc li { margin: 0.35rem 0; }
+    .toc a { color: rgb(55 65 81); font-weight: 700; text-decoration: none; }
+    .toc a:hover { color: rgb(5 150 105); text-decoration: underline; }
+    .wide-figure { margin: 2.4rem 0; }
+    .wide-figure img {
+      width: 100%;
+      border-radius: 1.5rem;
+      border: 1px solid rgb(229 231 235);
+      box-shadow: 0 18px 45px rgb(15 23 42 / 0.1);
+    }
+    .wide-figure figcaption {
+      color: rgb(107 114 128);
+      font-size: 0.875rem;
+      margin-top: 0.75rem;
+      text-align: center;
+    }
+    .safety-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.5rem 0 2rem;
+    }
+    .safety-card {
+      border-radius: 1.25rem;
+      padding: 1.1rem;
+    }
+    .safety-card.ok { background: rgb(240 253 244); border: 1px solid rgb(209 250 229); }
+    .safety-card.ng { background: rgb(255 241 242); border: 1px solid rgb(254 205 211); }
+    .safety-label {
+      font-size: 0.8rem;
+      font-weight: 800;
+      margin: 0 0 0.5rem !important;
+    }
+    .ok-label { color: rgb(5 150 105); }
+    .ng-label { color: rgb(185 28 28); }
+    .safety-card ul { margin: 0 !important; padding-left: 1.1rem; }
+    .safety-card li { font-size: 0.875rem; margin: 0.3rem 0; }
+    @media (max-width: 480px) {
+      .safety-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</Layout>

@@ -1,0 +1,264 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogCta from '../../components/BlogCta.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+
+const styleTable = [
+  {
+    style: '和風',
+    seasoning: 'しょうゆ・酒・みりん・しょうが',
+    veg: '大根・白菜・きのこ・にんじん',
+    note: '鮭と大根の煮物、みそ仕立てのスープ煮など。しょうがが脂っこさを抑えてくれます。',
+  },
+  {
+    style: '洋風',
+    seasoning: '生クリーム（or豆乳）・コンソメ・塩',
+    veg: '玉ねぎ・じゃがいも・ブロッコリー',
+    note: '鮭のクリーム煮。ホットクックでじゃがいもと一緒に煮ると、自然なとろみが出ます。',
+  },
+  {
+    style: '中華風',
+    seasoning: '鶏ガラスープ・しょうゆ・ごま油・しょうが',
+    veg: '白菜・ねぎ・豆腐',
+    note: '鮭と白菜の中華スープ。あっさりしているので疲れた日にも食べやすいです。',
+  },
+  {
+    style: 'みそ煮',
+    seasoning: 'みそ・酒・砂糖・しょうが',
+    veg: 'ごぼう・大根・にんじん',
+    note: 'みそと鮭の組み合わせは外れなし。根菜と一緒に煮ると満足感のある一品になります。',
+  },
+];
+---
+
+<Layout
+  lang="ja"
+  title="鮭の切り身がある日のホットクック献立——和・洋・中華・みそ、全部いける"
+  description="鮭はホットクックで意外と使いやすい食材です。和風・洋風・中華風・みそ煮と味の方向が変えやすく、煮崩れもしにくい。切り身が余ったときの献立パターンをまとめました。"
+  ogImage="/blog/hotcook-salmon-thumbnail-1600x900.png"
+  alternateUrl="https://snap-meal.com/en/blog/hotcook-salmon-recipes/"
+>
+  <BlogHeader />
+
+  <main>
+    <article>
+      <section class="bg-surface px-4 pt-14 pb-10 sm:pt-20">
+        <div class="max-w-3xl mx-auto">
+          <a href="/blog/" class="inline-flex items-center text-sm font-bold text-primary mb-8 hover:underline underline-offset-4">
+            ← ブログ一覧へ
+          </a>
+          <div class="flex flex-wrap items-center gap-3 text-xs font-bold text-gray-400 mb-5">
+            <span class="text-primary bg-green-50 px-3 py-1 rounded-full">ホットクック</span>
+            <time datetime="2026-05-22">2026年5月22日</time>
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-[1.25] mb-6">
+            鮭の切り身がある日のホットクック献立——和・洋・中華・みそ、全部いける
+          </h1>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            スーパーで鮭が特売だった日、とりあえず買ってはみたけど何を作ろうか迷う——そういう経験、ありませんか。鮭はじつはホットクックと相性がよくて、しかも和風・洋風・中華風・みそ煮と味の方向を変えやすい。冷蔵庫にある野菜次第で、いろんな方向に持っていけます。
+          </p>
+        </div>
+      </section>
+
+      <section class="px-4 py-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+          <img
+            src="/blog/hotcook-salmon-thumbnail-1600x900.png"
+            alt="ホットクックと鮭の切り身、冷蔵庫の野菜を並べたブログサムネイル"
+            class="w-full rounded-3xl border border-gray-100 shadow-sm"
+          />
+        </div>
+      </section>
+
+      <section class="px-4 py-10 bg-white">
+        <div class="blog-content max-w-3xl mx-auto">
+
+          <nav class="toc" aria-label="目次">
+            <p class="toc-title">目次</p>
+            <ol>
+              <li><a href="#why">鮭がホットクックで使いやすい理由</a></li>
+              <li><a href="#styles">味の方向別：4パターンの使い方</a></li>
+              <li><a href="#tips">失敗しにくくする3つのコツ</a></li>
+              <li><a href="#faq">よくある疑問</a></li>
+              <li><a href="#snapmeal">何を作るか迷ったら</a></li>
+            </ol>
+          </nav>
+
+          <h2 id="why">鮭がホットクックで使いやすい理由</h2>
+          <p>
+            鶏肉や豚肉と比べると、魚をホットクックで使うのに少し抵抗を感じる人もいるかもしれません。でも鮭は、じつは扱いやすい食材です。
+          </p>
+          <p>
+            理由は3つあります。まず、ある程度加熱しても崩れにくい。身がしっかりしているので、煮物やスープ煮にしても形が残ります。次に、脂がのっているので、油を足さなくてもコクが出やすい。そして、みそ・しょうゆ・クリーム・鶏ガラと、どの味付けにもなじみやすい。
+          </p>
+          <p>
+            冷蔵庫に鮭の切り身がある日は「今日の夕飯をホットクックに任せるチャンス」として考えてみてください。
+          </p>
+
+          <h2 id="styles">味の方向別：4パターンの使い方</h2>
+          <p>
+            鮭を使うときは、まず「今日は和風にするか、洋風にするか」を決めるところから始めると献立が決まりやすくなります。冷蔵庫にある野菜に合わせて選んでみてください。
+          </p>
+
+          <div class="style-table" role="table" aria-label="鮭の味の方向別まとめ">
+            <div class="style-row style-head" role="row">
+              <div role="columnheader">スタイル</div>
+              <div role="columnheader">調味料の軸</div>
+              <div role="columnheader">合う野菜</div>
+              <div role="columnheader">ひとこと</div>
+            </div>
+            {styleTable.map(({ style, seasoning, veg, note }) => (
+              <div class="style-row" role="row">
+                <div role="cell" class="style-name">{style}</div>
+                <div role="cell">{seasoning}</div>
+                <div role="cell">{veg}</div>
+                <div role="cell">{note}</div>
+              </div>
+            ))}
+          </div>
+
+          <p>
+            この中で一番試しやすいのは、みそ煮か和風煮だと思います。調味料がシンプルで、大根やきのこは鮭と一緒に冷蔵庫にあることが多い。洋風のクリーム煮は少し材料が増えますが、子どもがいる家庭では特に喜ばれやすいです。
+          </p>
+
+          <div class="highlight-box">
+            <p class="highlight-label">どれにするか迷ったら</p>
+            <p>大根・きのこがある → <strong>みそ煮か和風</strong>。玉ねぎ・じゃがいもがある → <strong>洋風クリーム煮</strong>。白菜・ねぎがある → <strong>中華スープ</strong>。この判断だけでほぼ決まります。</p>
+          </div>
+
+          <h2 id="tips">失敗しにくくする3つのコツ</h2>
+
+          <h3>① 皮目を下にしない方が崩れにくい</h3>
+          <p>
+            鮭の切り身をホットクックに入れるとき、皮目を下にすると身が鍋底にくっつきやすくなります。皮目を上にして入れるか、野菜の上に乗せる形にすると崩れにくくなります。
+          </p>
+
+          <h3>② 加熱しすぎない</h3>
+          <p>
+            鮭は火が通りやすい食材です。煮物でも長時間の加熱をすると身がパサつくことがあります。ホットクックの自動メニューで「煮魚」や「魚の煮付け」に近いものを選ぶか、手動で短めの時間設定にすると仕上がりがよくなります。
+          </p>
+
+          <h3>③ 生臭さが気になるときはしょうがを入れる</h3>
+          <p>
+            鮭自体はそれほど生臭くないですが、気になる場合はしょうがを1〜2切れ入れると和らぎます。みそ煮・和風・中華風のどれにもしょうがは合うので、とりあえず入れておいて損はないです。
+          </p>
+
+          <figure class="wide-figure">
+            <img src="/blog/hotcook-salmon-thumbnail-1600x900.png" alt="ホットクックと鮭の切り身、野菜を並べた献立イメージ" loading="lazy" />
+            <figcaption>鮭は「何風にするか」を先に決めると、冷蔵庫の野菜との組み合わせが自然に決まってきます。</figcaption>
+          </figure>
+
+          <h2 id="faq">よくある疑問</h2>
+
+          <h3>冷凍の鮭でも使える？</h3>
+          <p>
+            使えます。ただし、解凍時に出た水分が余分な水っぽさにつながることがあるので、キッチンペーパーで軽く拭いてから使うと仕上がりがきれいになります。解凍せずにそのまま入れる場合は加熱時間を少し延ばしてください。
+          </p>
+
+          <h3>鮭フレークや塩鮭でも同じように作れる？</h3>
+          <p>
+            塩鮭を使う場合は、調味料の塩分を控えめにしてください。特にみそ煮や和風煮は塩分が重なりやすいです。鮭フレークは加熱済みなので、スープや雑炊に仕上げで加える使い方が向いています。ホットクックで最初から煮るのは生鮭か甘塩鮭が扱いやすいです。
+          </p>
+
+          <h3>鮭以外の魚でも同じ方法で作れる？</h3>
+          <p>
+            タラや鱈（まだら）も同様の方法で使えます。タラは鮭より崩れやすいので、あまり混ぜず、野菜の上に乗せてそっと煮るのがポイントです。サバやアジはみそ煮に特に向いています。
+          </p>
+
+          <h2 id="snapmeal">何を作るか迷ったら</h2>
+          <p>
+            「鮭がある、でも今日は和風か洋風か、冷蔵庫の何と合わせるか」——結局この判断を毎日している。それだけで5分、10分と時間が過ぎていきます。
+          </p>
+          <p>
+            Snapmealは冷蔵庫の写真を撮るだけで、今ある食材からホットクックで作れる献立を提案します。鮭と大根があればみそ煮、玉ねぎとじゃがいもがあればクリーム煮——今日の冷蔵庫の状態から考えてくれます。
+          </p>
+
+          <BlogCta title="冷蔵庫を撮って、今夜の献立を決める" />
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <style>
+    .blog-content {
+      color: rgb(55 65 81);
+      font-size: 1.0625rem;
+      line-height: 1.9;
+    }
+    .blog-content p { margin: 0 0 1.35rem; }
+    .blog-content h2 {
+      color: rgb(17 24 39);
+      font-size: clamp(1.65rem, 3vw, 2.15rem);
+      line-height: 1.25;
+      font-weight: 800;
+      margin: 3rem 0 1rem;
+      scroll-margin-top: 5rem;
+    }
+    .blog-content h3 {
+      color: rgb(17 24 39);
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin: 2rem 0 0.75rem;
+    }
+    .blog-content strong { color: rgb(17 24 39); font-weight: 800; }
+    .toc, .highlight-box {
+      border: 1px solid rgb(209 250 229);
+      border-radius: 1.5rem;
+      background: rgb(240 253 244);
+      padding: 1.25rem;
+      margin: 2rem 0;
+    }
+    .toc-title, .highlight-label {
+      color: rgb(5 150 105);
+      font-size: 0.8rem;
+      font-weight: 800;
+      margin: 0 0 0.5rem;
+    }
+    .highlight-box { background: rgb(255 251 235); border-color: rgb(253 230 138); }
+    .highlight-label { color: rgb(180 83 9); }
+    .toc ol { margin: 0; padding-left: 1.25rem; }
+    .toc li { margin: 0.35rem 0; }
+    .toc a { color: rgb(55 65 81); font-weight: 700; text-decoration: none; }
+    .toc a:hover { color: rgb(5 150 105); text-decoration: underline; }
+    .wide-figure { margin: 2.4rem 0; }
+    .wide-figure img {
+      width: 100%;
+      border-radius: 1.5rem;
+      border: 1px solid rgb(229 231 235);
+      box-shadow: 0 18px 45px rgb(15 23 42 / 0.1);
+    }
+    .wide-figure figcaption {
+      color: rgb(107 114 128);
+      font-size: 0.875rem;
+      margin-top: 0.75rem;
+      text-align: center;
+    }
+    .style-table {
+      border: 1px solid rgb(229 231 235);
+      border-radius: 1.25rem;
+      overflow: hidden;
+      margin: 1.5rem 0 2rem;
+    }
+    .style-row {
+      display: grid;
+      grid-template-columns: 4rem 1fr 1fr 1.5fr;
+      border-top: 1px solid rgb(229 231 235);
+    }
+    .style-row:first-child { border-top: 0; }
+    .style-row > div {
+      padding: 0.85rem 1rem;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    .style-head {
+      background: rgb(249 250 251);
+      color: rgb(17 24 39);
+      font-weight: 800;
+    }
+    .style-name { font-weight: 800; color: rgb(17 24 39); }
+    @media (max-width: 640px) {
+      .style-row { grid-template-columns: 1fr; }
+      .style-row > div:first-child { padding-bottom: 0; font-weight: 800; }
+    }
+  </style>
+</Layout>
