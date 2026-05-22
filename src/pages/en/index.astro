@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 
 const APP_URL = 'https://app.snap-meal.com';
+const FEEDBACK_URL = 'https://forms.gle/4bAHagjPBGp2fQDg6';
 
 const steps = [
   {
@@ -38,11 +39,6 @@ const features = [
     desc: 'Own a Smart Cooker (Hotcook)? Just toggle the setting and get recipes tailored for hands-free cooking.',
   },
   {
-    icon: '🛒',
-    title: 'Shopping List',
-    desc: 'Missing ingredients are listed automatically. Copy with one tap and share via any messaging app.',
-  },
-  {
     icon: '⚡',
     title: 'Tired Mode',
     desc: 'Select "Tired" and Snapmeal prioritizes recipes under 15 minutes with fewer ingredients.',
@@ -51,6 +47,11 @@ const features = [
     icon: '📖',
     title: 'Step-by-Step Recipes',
     desc: 'AI generates full recipes with ingredients, steps, and tips. Just tap "Cook this meal" to see it all.',
+  },
+  {
+    icon: '📝',
+    title: 'Family Reaction Notes',
+    desc: 'Log "loved it" or "not again" — Snapmeal learns your family\'s preferences and improves future suggestions.',
   },
 ];
 
@@ -64,12 +65,8 @@ const faqs = [
     a: 'No. Photos are used only during the meal suggestion process and are never stored on our servers. Privacy is our top priority.',
   },
   {
-    q: 'How much can I use for free?',
-    a: 'After logging in, you get 10 free suggestions per month with full features. Guests can try 3 times without signing up.',
-  },
-  {
-    q: 'Can I cancel the Pro plan anytime?',
-    a: 'Yes, you can cancel at any time from the in-app settings. You keep access until the end of your current billing period.',
+    q: 'Is it really free during beta?',
+    a: 'Yes — all features are completely free during the beta period. We will notify you before any paid plan goes live.',
   },
   {
     q: 'Is a Smart Cooker required?',
@@ -79,10 +76,19 @@ const faqs = [
     q: 'Can I exclude allergens?',
     a: 'Yes. Register your NG ingredients in settings and they will automatically be passed to the AI during meal suggestions. Note: this is not medical advice — always use your own judgment.',
   },
+  {
+    q: 'Do I need to download an app?',
+    a: 'No download needed. Snapmeal runs in your browser. On mobile, tap "Add to Home Screen" in Safari or Chrome for an app-like experience.',
+  },
 ];
 ---
 
 <Layout lang="en" alternateUrl="https://snap-meal.com/">
+  <!-- Beta banner -->
+  <div class="bg-accent text-white text-center text-sm font-semibold py-2.5 px-4">
+    🎉 Beta is now live · All features are free · <a href={FEEDBACK_URL} target="_blank" rel="noopener" class="underline underline-offset-2 hover:opacity-80 transition">Send feedback</a>
+  </div>
+
   <!-- Navigation -->
   <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-gray-100">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
@@ -90,7 +96,7 @@ const faqs = [
       <nav class="hidden sm:flex items-center gap-6 text-sm font-medium text-gray-600">
         <a href="#how" class="hover:text-primary transition">How it works</a>
         <a href="#features" class="hover:text-primary transition">Features</a>
-        <a href="#pricing" class="hover:text-primary transition">Pricing</a>
+        <a href="#beta" class="hover:text-primary transition">Beta</a>
         <a href="#faq" class="hover:text-primary transition">FAQ</a>
       </nav>
       <div class="flex items-center gap-3">
@@ -99,7 +105,7 @@ const faqs = [
           href={APP_URL}
           class="bg-primary text-white text-sm font-bold px-5 py-2.5 rounded-full hover:bg-primary-dark transition shadow-md shadow-green-200"
         >
-          Try for free
+          Try beta free
         </a>
       </div>
     </div>
@@ -111,8 +117,9 @@ const faqs = [
       <div class="max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
         <!-- Text -->
         <div class="flex-1 text-center lg:text-left">
-          <div class="inline-block bg-green-100 text-primary text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wide">
-            AI Meal Planner for Everyone
+          <div class="inline-flex items-center gap-2 bg-accent/10 text-accent text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wide">
+            <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+            Beta now live · All features free
           </div>
           <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
             Just snap your fridge.<br />
@@ -127,12 +134,13 @@ const faqs = [
               href={APP_URL}
               class="bg-primary text-white font-bold text-lg px-8 py-4 rounded-2xl hover:bg-primary-dark transition shadow-xl shadow-green-200 inline-block"
             >
-              Try for free
+              Try beta free
             </a>
           </div>
+          <p class="text-xs text-gray-400 mt-4">No download · Works in your browser right now</p>
         </div>
 
-        <!-- App screenshot / Replace with <video autoplay muted loop playsinline> when a demo video is ready -->
+        <!-- App screenshot -->
         <div class="flex-shrink-0 relative">
           <div class="relative">
             <div class="absolute inset-0 bg-gradient-to-b from-primary/15 to-green-200/10 rounded-[44px] blur-3xl scale-110"></div>
@@ -219,7 +227,70 @@ const faqs = [
         </div>
         <div class="text-center mt-10">
           <a href={APP_URL} class="inline-block bg-accent text-white font-bold text-base px-8 py-4 rounded-2xl hover:opacity-90 transition shadow-lg shadow-orange-200">
-            Try it now →
+            Try it now (free) →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add to Home Screen -->
+    <section class="py-16 px-4 bg-white border-t border-gray-100">
+      <div class="max-w-3xl mx-auto text-center">
+        <div class="inline-block bg-green-100 text-primary text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wide">
+          No download needed
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">
+          Add to your home screen for an app-like experience
+        </h2>
+        <p class="text-gray-500 mb-12">No App Store or Google Play required. Start right from your browser.</p>
+
+        <div class="grid sm:grid-cols-2 gap-6 text-left">
+          <!-- iOS -->
+          <div class="bg-surface rounded-3xl p-6 border border-gray-100">
+            <div class="flex items-center gap-3 mb-5">
+              <span class="text-2xl"></span>
+              <h3 class="font-bold text-gray-900 text-lg">iPhone (Safari)</h3>
+            </div>
+            <ol class="space-y-3">
+              {[
+                { step: '1', text: 'Open app.snap-meal.com in Safari' },
+                { step: '2', text: 'Tap the Share button (□↑) at the bottom' },
+                { step: '3', text: 'Select "Add to Home Screen"' },
+                { step: '4', text: 'Tap "Add" — done!' },
+              ].map(({ step, text }) => (
+                <li class="flex items-start gap-3">
+                  <span class="w-6 h-6 bg-primary text-white text-xs font-extrabold rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">{step}</span>
+                  <span class="text-sm text-gray-600">{text}</span>
+                </li>
+              ))}
+            </ol>
+          </div>
+
+          <!-- Android -->
+          <div class="bg-surface rounded-3xl p-6 border border-gray-100">
+            <div class="flex items-center gap-3 mb-5">
+              <span class="text-2xl">🤖</span>
+              <h3 class="font-bold text-gray-900 text-lg">Android (Chrome)</h3>
+            </div>
+            <ol class="space-y-3">
+              {[
+                { step: '1', text: 'Open app.snap-meal.com in Chrome' },
+                { step: '2', text: 'Tap the ⋮ menu in the top right' },
+                { step: '3', text: 'Select "Add to Home screen"' },
+                { step: '4', text: 'Tap "Add" — done!' },
+              ].map(({ step, text }) => (
+                <li class="flex items-start gap-3">
+                  <span class="w-6 h-6 bg-primary text-white text-xs font-extrabold rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">{step}</span>
+                  <span class="text-sm text-gray-600">{text}</span>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </div>
+
+        <div class="mt-8">
+          <a href={APP_URL} class="inline-block bg-primary text-white font-bold px-8 py-4 rounded-2xl hover:bg-primary-dark transition shadow-lg shadow-green-200">
+            Open in browser first →
           </a>
         </div>
       </div>
@@ -271,7 +342,7 @@ const faqs = [
               ))}
             </ul>
             <a href={APP_URL} class="inline-block bg-primary text-white font-bold px-7 py-3.5 rounded-2xl hover:bg-primary-dark transition shadow-lg shadow-green-200">
-              Try for free
+              Try beta free
             </a>
           </div>
           <div class="flex-shrink-0 order-1 lg:order-2 relative">
@@ -287,86 +358,64 @@ const faqs = [
       </div>
     </section>
 
-    <!-- Pricing -->
-    <section id="pricing" class="py-20 px-4 bg-white">
-      <div class="max-w-3xl mx-auto">
-        <div class="text-center mb-14">
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Simple pricing</h2>
-          <p class="text-gray-500">Start free. Upgrade when you're ready.</p>
+    <!-- Beta / Pricing -->
+    <section id="beta" class="py-20 px-4 bg-surface">
+      <div class="max-w-2xl mx-auto text-center">
+        <div class="inline-block bg-accent/10 text-accent text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wide">
+          Beta
         </div>
-        <div class="grid sm:grid-cols-2 gap-6">
-          <!-- Free -->
-          <div class="bg-white rounded-3xl p-8 border-2 border-gray-200 shadow-sm">
-            <p class="font-bold text-gray-500 text-sm mb-1">Free</p>
-            <div class="flex items-end gap-1 mb-6">
-              <span class="text-4xl font-extrabold text-gray-900">$0</span>
-              <span class="text-gray-400 mb-1">/ mo</span>
-            </div>
-            <ul class="space-y-3 text-sm text-gray-600 mb-8">
-              {[
-                '10 meal suggestions per month',
-                'AI ingredient detection',
-                'Full recipe view',
-                'Shopping list',
-                'Household settings (people, appliances)',
-              ].map(item => (
-                <li class="flex items-center gap-2">
-                  <span class="text-primary font-bold">✓</span>
-                  {item}
-                </li>
-              ))}
-            </ul>
-            <a href={APP_URL} class="block text-center border-2 border-primary text-primary font-bold py-3 rounded-xl hover:bg-surface transition">
-              Get started free
-            </a>
-          </div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-4">
+          All features, free during beta
+        </h2>
+        <p class="text-gray-500 mb-10 leading-relaxed">
+          Join the beta and try everything at no cost.<br />
+          We'll give you advance notice before any paid plan launches.
+        </p>
 
-          <!-- Pro -->
-          <div class="bg-primary rounded-3xl p-8 shadow-2xl shadow-green-300 relative overflow-hidden">
-            <div class="absolute top-4 right-4 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full">
-              Recommended
-            </div>
-            <p class="font-bold text-green-200 text-sm mb-1">Pro</p>
-            <div class="flex items-end gap-1 mb-6">
-              <span class="text-4xl font-extrabold text-white">$6.49</span>
-              <span class="text-green-200 mb-1">/ mo</span>
-            </div>
-            <ul class="space-y-3 text-sm text-green-100 mb-8">
-              {[
-                '90 suggestions per month — use it every day',
-                'Everything in Free',
-                'Save favorite meals',
-                'Family reaction notes',
-                'History (last 20 sessions)',
-              ].map(item => (
-                <li class="flex items-start gap-2">
-                  <span class="text-white font-bold mt-0.5 flex-shrink-0">✓</span>
-                  {item}
-                </li>
-              ))}
-            </ul>
-            <a href={APP_URL} class="block text-center bg-white text-primary font-bold py-3 rounded-xl hover:bg-surface transition">
-              Start Pro
-            </a>
+        <div class="bg-white rounded-3xl p-8 border-2 border-primary shadow-lg shadow-green-100 mb-8">
+          <div class="flex items-center justify-center gap-2 mb-4">
+            <span class="text-4xl font-extrabold text-gray-900">$0</span>
+            <span class="text-gray-400">/ during beta</span>
           </div>
+          <ul class="space-y-3 text-sm text-gray-600 mb-8 text-left max-w-xs mx-auto">
+            {[
+              'Unlimited meal suggestions',
+              'AI ingredient detection & full recipes',
+              'Smart Cooker operation guide',
+              'Tired Mode',
+              'Favorites, history & family notes',
+              'Household settings (people, appliances, allergies)',
+            ].map(item => (
+              <li class="flex items-center gap-2">
+                <span class="text-primary font-bold">✓</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+          <a href={APP_URL} class="block text-center bg-primary text-white font-bold py-4 rounded-xl hover:bg-primary-dark transition shadow-md shadow-green-200 text-lg">
+            Join the beta (free)
+          </a>
+          <p class="text-xs text-gray-400 mt-3">No credit card · No download</p>
         </div>
 
-        <div class="mt-8 bg-white rounded-2xl p-6 border border-gray-100 text-sm text-gray-600">
-          <p class="font-semibold text-gray-800 mb-2">💡 Think of it this way</p>
-          <p>Working parents spend roughly <strong>100 minutes a month</strong> deciding what to cook (5 min × 20 weekdays). At a $15/hr wage, that's <strong>$25 of mental energy</strong>. Snapmeal Pro reclaims it for $6.49 — less than a streaming subscription.</p>
-        </div>
+        <p class="text-sm text-gray-500">
+          Tried it? We'd love your feedback.<br />
+          <a href={FEEDBACK_URL} target="_blank" rel="noopener" class="text-primary font-semibold hover:underline">
+            Open feedback form →
+          </a>
+        </p>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section id="faq" class="py-20 px-4 bg-surface">
+    <section id="faq" class="py-20 px-4 bg-white">
       <div class="max-w-2xl mx-auto">
         <div class="text-center mb-14">
           <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">Frequently asked questions</h2>
         </div>
         <div class="space-y-4">
           {faqs.map(({ q, a }) => (
-            <details class="group bg-white rounded-2xl border border-gray-100 overflow-hidden">
+            <details class="group bg-surface rounded-2xl border border-gray-100 overflow-hidden">
               <summary class="flex items-center justify-between px-6 py-4 cursor-pointer font-semibold text-gray-800 list-none">
                 <span>{q}</span>
                 <span class="text-gray-400 group-open:rotate-45 transition-transform text-xl">+</span>
@@ -381,19 +430,23 @@ const faqs = [
     <!-- Final CTA -->
     <section class="py-24 px-4 bg-primary-dark text-center">
       <div class="max-w-xl mx-auto">
+        <div class="inline-block bg-white/20 text-white text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-wide">
+          Beta · Free
+        </div>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">
           Stop stressing over dinner.<br />Start cooking.
         </h2>
         <p class="text-green-200 mb-10 text-lg">
           Snap your fridge. Dinner in 30 seconds.<br />
-          Try it free — no credit card needed.
+          All features free during beta.
         </p>
         <a
           href={APP_URL}
           class="inline-block bg-white text-primary font-extrabold text-lg px-10 py-5 rounded-2xl hover:bg-surface transition shadow-2xl"
         >
-          Try for free →
+          Try beta free →
         </a>
+        <p class="text-green-300 text-sm mt-4">No download · Works in your browser right now</p>
       </div>
     </section>
   </main>
@@ -405,9 +458,11 @@ const faqs = [
         <div>
           <p class="text-white font-extrabold text-xl mb-2">Snapmeal</p>
           <p class="text-sm">AI meal planner for everyone.<br />Snap your fridge. Dinner in 30 seconds.</p>
+          <p class="text-xs text-accent font-semibold mt-2">Beta now live</p>
         </div>
         <nav class="flex flex-col gap-2 text-sm">
           <a href={APP_URL} class="hover:text-white transition">Open the app</a>
+          <a href={FEEDBACK_URL} target="_blank" rel="noopener" class="hover:text-white transition">Send feedback</a>
           <a href="/privacy" class="hover:text-white transition">Privacy Policy</a>
           <a href="/terms" class="hover:text-white transition">Terms of Service</a>
           <a href="#faq" class="hover:text-white transition">FAQ</a>
