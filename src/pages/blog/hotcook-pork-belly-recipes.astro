@@ -1,0 +1,419 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogCta from '../../components/BlogCta.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+
+const layeredPairs = [
+  { veg: '白菜', note: '最もポピュラーな組み合わせ。白菜の水分だけで十分なので水は不要。甘みが出て豚バラの脂と自然になじむ。' },
+  { veg: 'キャベツ', note: '白菜より少し早く崩れるので、厚めに切ると食感が残りやすい。塩昆布を一緒に入れると味付けがシンプルになる。' },
+  { veg: '大根', note: '薄切りにして重ねると脂が染み込みやすい。しっかり煮込みたいときは大根を厚めに切ってもよい。' },
+];
+
+const weekdayIdeas = [
+  {
+    title: '豚バラと白菜の重ね煮',
+    time: '材料を切って入れるだけ',
+    point: '豚バラ・白菜を交互に重ねてホットクックへ。調味料は塩・ごま油・鶏ガラスープのみ。水分は一切不要で、仕上がりは白菜の甘みと豚バラの脂が混ざって旨みのある一皿に。',
+  },
+  {
+    title: '豚バラ大根',
+    time: '大根を下ゆでする余裕があればより美味',
+    point: 'しょうゆ・酒・みりん・砂糖。大根は水分が出にくいので、だし（水でも可）を少し足す。豚バラの脂が大根に染み込んで、ごはんが進む典型的な和食系ホットクック献立。',
+  },
+  {
+    title: '豚バラとキャベツの無水塩昆布煮',
+    time: '5分で仕込める',
+    point: 'キャベツは手でちぎって入れると早い。塩昆布のうまみで調味料が塩昆布だけでも成立する。脂が気になるときはごま油を少なめにするか、最後に一部の脂を取り除くと軽くなる。',
+  },
+  {
+    title: '豚汁風',
+    time: '根菜が余っているときに',
+    point: 'ごぼう・にんじん・大根・こんにゃく・豚バラ・味噌。根菜を切るのが少し手間だが、ホットクックに入れてしまえばあとは待つだけ。汁物兼おかずになるので副菜を考えなくてすむ。',
+  },
+];
+---
+
+<Layout
+  lang="ja"
+  title="ホットクックで豚バラ肉を使うコツ——脂を味方にする献立の考え方"
+  description="豚バラ肉はホットクックとの相性がいい食材ですが、脂の扱いを間違えると重くなりがちです。重ね煮・煮物・豚汁風など、平日に使いやすい献立パターンと失敗しにくいポイントをまとめました。"
+  ogImage="/blog/hotcook-pork-belly-thumbnail-1600x900.png"
+  alternateUrl="https://snap-meal.com/en/blog/hotcook-pork-belly-recipes/"
+>
+  <BlogHeader />
+
+  <main>
+    <article>
+      <section class="bg-surface px-4 pt-14 pb-10 sm:pt-20">
+        <div class="max-w-3xl mx-auto">
+          <a href="/blog/" class="inline-flex items-center text-sm font-bold text-primary mb-8 hover:underline underline-offset-4">
+            ← ブログ一覧へ
+          </a>
+          <div class="flex flex-wrap items-center gap-3 text-xs font-bold text-gray-400 mb-5">
+            <span class="text-primary bg-green-50 px-3 py-1 rounded-full">ホットクック</span>
+            <time datetime="2026-05-22">2026年5月22日</time>
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-[1.25] mb-6">
+            ホットクックで豚バラ肉を使うコツ——脂を味方にする献立の考え方
+          </h1>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            豚バラ肉は、ホットクックでうまく使えるととても便利な食材です。ただ、脂が多い分、水を足しすぎると重くなりやすい。鶏もも肉とは少し違う「扱い方のコツ」があります。この記事では、豚バラ肉を平日の夕飯に使いやすくするための考え方を整理しました。
+          </p>
+        </div>
+      </section>
+
+      <section class="px-4 py-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+          <img
+            src="/blog/hotcook-pork-belly-thumbnail-1600x900.png"
+            alt="ホットクックと豚バラ肉、冷蔵庫の残り野菜を並べたブログサムネイル"
+            class="w-full rounded-3xl border border-gray-100 shadow-sm"
+          />
+        </div>
+      </section>
+
+      <section class="px-4 py-10 bg-white">
+        <div class="blog-content max-w-3xl mx-auto">
+
+          <nav class="toc" aria-label="目次">
+            <p class="toc-title">目次</p>
+            <ol>
+              <li><a href="#fat">豚バラ肉の「脂」をどう扱うか</a></li>
+              <li><a href="#kasaneni">まず試してほしい：重ね煮という調理法</a></li>
+              <li><a href="#ideas">平日に使いやすい献立パターン4つ</a></li>
+              <li><a href="#no-water">「水を入れすぎない」が最重要ルール</a></li>
+              <li><a href="#seasoning">味付けは「引き算」で考える</a></li>
+              <li><a href="#when-not">ホットクックより鍋・フライパンが向く場面</a></li>
+              <li><a href="#snapmeal">冷蔵庫にあるものから考えたいとき</a></li>
+            </ol>
+          </nav>
+
+          <h2 id="fat">豚バラ肉の「脂」をどう扱うか</h2>
+          <p>
+            豚バラ肉と鶏もも肉の一番の違いは、脂の量です。豚バラ肉は加熱すると脂が溶け出し、一緒に入れた野菜や煮汁に広がります。これがうまくいくと旨みになりますが、水を足しすぎると脂が浮いた重い仕上がりになります。
+          </p>
+          <p>
+            ホットクックでうまく使うコツは、脂を「調味料のひとつ」として考えることです。水分が多い野菜（白菜・キャベツ・玉ねぎ）と組み合わせると、野菜から出た水分と豚バラの脂がなじんで、追加の油なしでコクが出ます。逆に、大根やじゃがいもなど水分が少ない野菜のときだけ、少量の水やだしを足す。この使い分けを意識するだけでかなり変わります。
+          </p>
+
+          <h2 id="kasaneni">まず試してほしい：重ね煮という調理法</h2>
+          <p>
+            豚バラ肉とホットクックの組み合わせで、個人的に一番おすすめしたいのが「重ね煮」です。白菜やキャベツを豚バラと交互に重ねてそのままホットクックに入れる。水は一切入れない。それだけで成立します。
+          </p>
+          <p>
+            仕上がりは白菜の甘みと豚バラの脂がなじんだ、素材の旨みが出た煮物になります。調味料も塩・鶏ガラスープ・ごま油など最小限で十分。慣れると「冷蔵庫に白菜と豚バラがある＝迷わず重ね煮」という判断になります。
+          </p>
+
+          <div class="layered-table" role="table" aria-label="重ね煮に向く野菜">
+            <div class="layered-row layered-head" role="row">
+              <div role="columnheader">野菜</div>
+              <div role="columnheader">ポイント</div>
+            </div>
+            {layeredPairs.map(({ veg, note }) => (
+              <div class="layered-row" role="row">
+                <div role="cell">{veg}</div>
+                <div role="cell">{note}</div>
+              </div>
+            ))}
+          </div>
+
+          <h2 id="ideas">平日に使いやすい献立パターン4つ</h2>
+          <p>
+            重ね煮以外にも、豚バラ肉で作りやすいホットクック献立があります。「今日はどれにするか」を選ぶ参考として見てください。
+          </p>
+
+          <div class="idea-list">
+            {weekdayIdeas.map((idea) => (
+              <section class="idea-card">
+                <h3>{idea.title}</h3>
+                <p class="idea-meta">{idea.time}</p>
+                <p>{idea.point}</p>
+              </section>
+            ))}
+          </div>
+
+          <div class="highlight-box">
+            <p class="highlight-label">選び方のヒント</p>
+            <p>
+              冷蔵庫に白菜やキャベツがあれば重ね煮か無水煮。大根があれば豚バラ大根。根菜が複数あれば豚汁風。この3パターンを覚えておくと、豚バラ肉がある日は迷わなくなります。
+            </p>
+          </div>
+
+          <h2 id="no-water">「水を入れすぎない」が最重要ルール</h2>
+          <p>
+            豚バラ肉をホットクックで使うときの失敗の多くは、水を入れすぎることです。
+          </p>
+          <p>
+            豚バラ肉自体から脂と水分が出る上に、野菜からも水分が出ます。白菜ならほぼ野菜の水分だけで成立します。キャベツも同様です。「水を入れないと焦げるんじゃないか」という不安から少し足してしまうと、仕上がりが水っぽくなったり、脂が浮きすぎたりします。
+          </p>
+          <p>
+            初めて作るときは、まず水なしで試してみてください。ホットクックの蓋を閉めれば水分は逃げないので、白菜やキャベツと合わせる場合は焦げることはほぼありません。
+          </p>
+
+          <div class="note-grid">
+            <div>
+              <p class="note-title">水なしで作れる組み合わせ</p>
+              <p>豚バラ＋白菜、豚バラ＋キャベツ、豚バラ＋玉ねぎ。野菜の水分だけで十分です。</p>
+            </div>
+            <div>
+              <p class="note-title">少量の水・だしが必要な組み合わせ</p>
+              <p>豚バラ＋大根、豚バラ＋根菜の煮物、豚汁風。水分が出にくい食材のときだけ足します。</p>
+            </div>
+          </div>
+
+          <h2 id="seasoning">味付けは「引き算」で考える</h2>
+          <p>
+            豚バラ肉はそれ自体に脂のコクがあるため、調味料をたくさん使わなくても味がまとまりやすいです。むしろ、あれこれ足しすぎると何の料理かわからない仕上がりになることがあります。
+          </p>
+          <p>
+            たとえば白菜との重ね煮なら、塩・鶏ガラスープ・ごま油の3つで十分。豚バラ大根なら、しょうゆ・酒・みりんの基本の和風だれ。豚汁風なら味噌だけ。シンプルな味付けの方が豚バラの旨みが引き立ちます。
+          </p>
+          <p>
+            脂っこさを抑えたい日は、しょうがを一切れ入れるか、ポン酢で食べられる仕上がりにするといいです。にんにくを入れると中華風に寄り、ハーブ（ローズマリーなど）を使うと洋風になります。どちらも豚バラの脂と相性がよく、方向を変えやすい食材です。
+          </p>
+
+          <h2 id="when-not">ホットクックより鍋・フライパンが向く場面</h2>
+          <p>
+            豚バラ肉をすべてホットクックで調理しようとすると、向かない場面が出てきます。
+          </p>
+          <p>
+            脂をカリッと焼きたいとき、短時間で炒め物にしたいとき、野菜の食感を強く残したいとき——こういう日はフライパンや鍋の方が速くて美味しくなります。豚バラ肉を薄切りにして強火で炒めるだけの野菜炒めは、ホットクックで再現しにくいです。
+          </p>
+          <p>
+            ホットクックが豚バラ肉で最も力を発揮するのは、「放置したい」「煮込み系にしたい」「火加減を気にしたくない」という日です。材料を入れてボタンを押したら離れられる、という場面で選ぶのがいちばん合っています。
+          </p>
+
+          <figure class="wide-figure">
+            <img src="/blog/hotcook-pork-belly-thumbnail-1600x900.png" alt="ホットクックと豚バラ肉、野菜を並べた献立イメージ" loading="lazy" />
+            <figcaption>豚バラ肉は脂が多い分、野菜との組み合わせと水分量の調整がポイントになります。</figcaption>
+          </figure>
+
+          <h2>よくある疑問</h2>
+
+          <h3>豚バラ肉は薄切りと塊、どっちがいい？</h3>
+          <p>
+            平日の夕飯なら薄切りが断然楽です。切らずに使えますし、火の通りが早い。塊肉（バラブロック）は角煮風にしたいときや、週末に時間があるときに向いています。ホットクックで角煮を作る場合は、加熱後に一度冷やしてから温め直すと脂が固まって取り除きやすく、食べたときに重くなりません。
+          </p>
+
+          <h3>豚こま切れでも同じように使える？</h3>
+          <p>
+            豚こまは豚バラより脂が少なめなので、水分が出やすい野菜と組み合わせるときは少し物足りなく感じることがあります。ごま油やバターを足すとコクが補えます。仕上がりの方向性は似ていますが、豚バラの方が「ほったらかして煮込んだ」感が出やすいです。
+          </p>
+
+          <h3>仕上がりが水っぽくなってしまったら？</h3>
+          <p>
+            ホットクックで調理後にフタを開けて、そのまま「炒める」モードや「煮詰める」で少し水分を飛ばすと味が凝縮されます。もしくは、次回は調味料の量を少し減らして野菜の水分だけで仕上げてみてください。特に白菜は予想以上に水が出るので、最初は少なめの味付けから始めるのがおすすめです。
+          </p>
+
+          <h2 id="snapmeal">冷蔵庫にあるものから考えたいとき</h2>
+          <p>
+            豚バラ肉がある、でも今日は白菜か大根か、ホットクックか鍋か——こうした小さな判断を毎日繰り返すのは、思っている以上に疲れます。
+          </p>
+          <p>
+            Snapmealでは、冷蔵庫の写真を撮るだけでAIが食材を自動認識し、今夜作れる献立を提案します。豚バラ肉と白菜があれば重ね煮、大根があれば豚バラ大根、根菜が複数あれば豚汁風——今ある食材から、ホットクックに向く献立かどうかも含めて提案します。
+          </p>
+
+          <BlogCta title="冷蔵庫を撮って、今夜の献立を決める" />
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <style>
+    .blog-content {
+      color: rgb(55 65 81);
+      font-size: 1.0625rem;
+      line-height: 1.9;
+    }
+
+    .blog-content p {
+      margin: 0 0 1.35rem;
+    }
+
+    .blog-content h2 {
+      color: rgb(17 24 39);
+      font-size: clamp(1.65rem, 3vw, 2.15rem);
+      line-height: 1.25;
+      font-weight: 800;
+      margin: 3rem 0 1rem;
+      letter-spacing: 0;
+      scroll-margin-top: 5rem;
+    }
+
+    .blog-content h3 {
+      color: rgb(17 24 39);
+      font-size: 1.2rem;
+      line-height: 1.4;
+      font-weight: 800;
+      margin: 2rem 0 0.75rem;
+      letter-spacing: 0;
+    }
+
+    .blog-content strong {
+      color: rgb(17 24 39);
+      font-weight: 800;
+    }
+
+    .toc,
+    .highlight-box {
+      border: 1px solid rgb(209 250 229);
+      border-radius: 1.5rem;
+      background: rgb(240 253 244);
+      padding: 1.25rem;
+      margin: 2rem 0;
+    }
+
+    .toc-title,
+    .highlight-label {
+      color: rgb(5 150 105);
+      font-size: 0.8rem;
+      font-weight: 800;
+      margin: 0 0 0.5rem;
+    }
+
+    .highlight-box {
+      background: rgb(255 251 235);
+      border-color: rgb(253 230 138);
+    }
+
+    .highlight-label {
+      color: rgb(180 83 9);
+    }
+
+    .note-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .note-grid > div {
+      background: rgb(249 250 251);
+      border: 1px solid rgb(229 231 235);
+      border-radius: 1.25rem;
+      padding: 1.1rem;
+    }
+
+    .note-grid p {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    .note-title {
+      color: rgb(17 24 39);
+      font-weight: 800;
+      margin-bottom: 0.35rem !important;
+    }
+
+    .wide-figure {
+      margin: 2.4rem 0;
+    }
+
+    .wide-figure img {
+      width: 100%;
+      border-radius: 1.5rem;
+      border: 1px solid rgb(229 231 235);
+      box-shadow: 0 18px 45px rgb(15 23 42 / 0.1);
+    }
+
+    .wide-figure figcaption {
+      color: rgb(107 114 128);
+      font-size: 0.875rem;
+      line-height: 1.6;
+      margin-top: 0.75rem;
+      text-align: center;
+    }
+
+    .toc ol {
+      margin: 0;
+      padding-left: 1.25rem;
+    }
+
+    .toc li {
+      margin: 0.35rem 0;
+      padding-left: 0.15rem;
+    }
+
+    .toc a {
+      color: rgb(55 65 81);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .toc a:hover {
+      color: rgb(5 150 105);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .idea-list {
+      display: grid;
+      gap: 1rem;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .idea-card {
+      border: 1px solid rgb(229 231 235);
+      border-radius: 1.25rem;
+      padding: 1.25rem;
+      background: rgb(255 255 255);
+    }
+
+    .idea-card h3 {
+      margin-top: 0;
+      margin-bottom: 0.25rem;
+    }
+
+    .idea-meta {
+      color: rgb(5 150 105);
+      font-size: 0.875rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem !important;
+    }
+
+    .layered-table {
+      border: 1px solid rgb(229 231 235);
+      border-radius: 1.25rem;
+      overflow: hidden;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .layered-row {
+      display: grid;
+      grid-template-columns: 5rem 1fr;
+      border-top: 1px solid rgb(229 231 235);
+    }
+
+    .layered-row:first-child {
+      border-top: 0;
+    }
+
+    .layered-row > div {
+      padding: 0.9rem 1rem;
+      font-size: 0.95rem;
+      line-height: 1.65;
+    }
+
+    .layered-head {
+      background: rgb(249 250 251);
+      color: rgb(17 24 39);
+      font-weight: 800;
+    }
+
+    @media (max-width: 640px) {
+      .layered-row {
+        grid-template-columns: 1fr;
+      }
+
+      .layered-row > div:first-child {
+        padding-bottom: 0;
+        font-weight: 800;
+      }
+
+      .note-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</Layout>
