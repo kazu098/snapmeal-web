@@ -1,0 +1,242 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogCta from '../../components/BlogCta.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+
+const mushroomData = [
+  { name: 'しめじ', flavor: '上品な旨み・ほのかな苦み', texture: '歯ごたえが残る', hotcook: '◎', best: 'スープ・炊き込みご飯・煮物', note: '最も汎用性が高い。どんな料理にも合い、崩れにくい。' },
+  { name: 'えのき', flavor: '淡白・繊細な旨み', texture: '柔らかい・繊維感あり', hotcook: '◎', best: '汁物・スープ・鍋', note: '短時間で仕上がる。長時間加熱するとドロッとするので注意。' },
+  { name: 'まいたけ', flavor: '濃厚な旨み・香り強い', texture: 'ほろほろと崩れる', hotcook: '◎', best: '炊き込みご飯・スープ・肉との組み合わせ', note: '旨みが特に強く、スープのだしになる。ご飯に入れると風味豊か。' },
+  { name: 'しいたけ', flavor: 'グアニル酸の濃い旨み', texture: '肉厚・食べごたえあり', hotcook: '○', best: '煮物・炊き込み・スープ', note: '軸は筋が強いが旨みが出るので入れて損はない。石づきは除く。' },
+  { name: 'えりんぎ', flavor: '淡白・ほのかなうまみ', texture: '弾力あり・崩れにくい', hotcook: '○', best: '煮物・バター醤油・洋風スープ', note: 'くせがなく子どもにも食べやすい。縦に切ると食感が楽しめる。' },
+];
+---
+
+<Layout
+  lang="ja"
+  title="ホットクックできのこを使い倒す——しめじ・えのき・まいたけ、種類別の特徴と4つの使い方"
+  description="きのこはホットクックで旨みが最大限に引き出される食材です。種類別の特徴と向いている料理、炊き込みご飯・スープ・肉との煮込みなど4つの使い方を徹底解説します。"
+  ogImage="/blog/hotcook-mushroom-thumbnail-1600x900.png"
+  alternateUrl="https://snap-meal.com/en/blog/hotcook-mushroom-recipes/"
+>
+  <BlogHeader />
+
+  <main>
+    <article>
+      <section class="bg-surface px-4 pt-14 pb-10 sm:pt-20">
+        <div class="max-w-3xl mx-auto">
+          <a href="/blog/" class="inline-flex items-center text-sm font-bold text-primary mb-8 hover:underline underline-offset-4">
+            ← ブログ一覧へ
+          </a>
+          <div class="flex flex-wrap items-center gap-3 text-xs font-bold text-gray-400 mb-5">
+            <span class="text-primary bg-green-50 px-3 py-1 rounded-full">ホットクック</span>
+            <time datetime="2026-05-22">2026年5月22日</time>
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-[1.25] mb-6">
+            ホットクックできのこを使い倒す——しめじ・えのき・まいたけ、種類別の特徴と4つの使い方
+          </h1>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            きのこはスーパーで一年中買えて、安くて、保存が効いて、しかもホットクックと特に相性がいい食材です。なぜ相性がいいかというと、きのこの旨み成分（グアニル酸・グルタミン酸）は加熱によって引き出されるからです。密閉された環境でじっくり加熱するホットクックは、きのこの旨みを逃さずに料理全体に溶け込ませることができます。今回は種類別の特徴から、具体的な4つの使い方まで詳しくまとめます。
+          </p>
+        </div>
+      </section>
+
+      <section class="px-4 py-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+          <img src="/blog/hotcook-mushroom-thumbnail-1600x900.png" alt="ホットクックときのこ料理のイメージ" class="w-full rounded-3xl border border-gray-100 shadow-sm" />
+        </div>
+      </section>
+
+      <section class="px-4 py-10 bg-white">
+        <div class="blog-content max-w-3xl mx-auto">
+
+          <nav class="toc" aria-label="目次">
+            <p class="toc-title">目次</p>
+            <ol>
+              <li><a href="#why">きのこの旨みがホットクックで際立つ理由</a></li>
+              <li><a href="#types">種類別比較：5つのきのこと向いている料理</a></li>
+              <li><a href="#recipe1">使い方①：きのこの炊き込みご飯</a></li>
+              <li><a href="#recipe2">使い方②：鶏ときのこのしょうゆ蒸し煮</a></li>
+              <li><a href="#recipe3">使い方③：きのこたっぷりの和風スープ</a></li>
+              <li><a href="#recipe4">使い方④：まいたけと豚バラの無水炒め風</a></li>
+              <li><a href="#storage">きのこの保存方法：冷凍で旨みが増す</a></li>
+              <li><a href="#faq">よくある疑問</a></li>
+              <li><a href="#snapmeal">今日の食材から献立を決める</a></li>
+            </ol>
+          </nav>
+
+          <h2 id="why">きのこの旨みがホットクックで際立つ理由</h2>
+          <p>
+            きのこの旨みは2種類の成分から来ています。一つはグルタミン酸（生のきのこにある）、もう一つはグアニル酸（加熱・乾燥によって生成される）です。グアニル酸はグルタミン酸の約10倍の旨みを持つとも言われており、乾ししいたけや長時間加熱したきのこに特に多く含まれます。
+          </p>
+          <p>
+            ホットクックの密閉調理は、きのこが放出した水分と旨みを逃さずに循環させます。通常の鍋で炒める場合、旨みが蒸発で逃げることがありますが、ホットクックでは煮汁に旨みが集中します。だから、きのこを入れた料理は「出汁を取らなくてもおいしい」という状態になりやすいのです。
+          </p>
+          <p>
+            また、きのこは水分が多いため、ホットクックの無水調理や少量水分調理とも相性がよいです。きのこ自体から水分が出るので、余分な水を加えなくてもスープやスチームが成立します。
+          </p>
+
+          <h2 id="types">種類別比較：5つのきのこと向いている料理</h2>
+          <p>
+            スーパーでよく見かける5種類のきのこの特徴と、ホットクックでの向き不向きをまとめました。複数のきのこを組み合わせると旨みが相乗効果で増すので、2種類以上入れるのがおすすめです。
+          </p>
+
+          <div class="mushroom-table" role="table" aria-label="きのこ種類別比較">
+            <div class="mush-head" role="row">
+              <div role="columnheader">種類</div>
+              <div role="columnheader">風味</div>
+              <div role="columnheader">食感</div>
+              <div role="columnheader">適性</div>
+              <div role="columnheader">向いている料理</div>
+            </div>
+            {mushroomData.map((m) => (
+              <div class="mush-row" role="row">
+                <div role="cell" class="mush-name">{m.name}</div>
+                <div role="cell">{m.flavor}</div>
+                <div role="cell">{m.texture}</div>
+                <div role="cell" class={`mush-rating ${m.hotcook === '◎' ? 'rating-best' : 'rating-good'}`}>{m.hotcook}</div>
+                <div role="cell">{m.best}</div>
+              </div>
+            ))}
+          </div>
+
+          <p>
+            迷ったら<strong>しめじ＋まいたけ</strong>の組み合わせが最もバランスよく仕上がります。しめじは食感を、まいたけは旨みと香りを担ってくれます。えのきはスープに入れると旨みが溶け出して出汁の補強になります。
+          </p>
+
+          <h2 id="recipe1">使い方①：きのこの炊き込みご飯</h2>
+          <p>
+            きのこの炊き込みご飯はホットクックの自動メニューに対応しており、最もきのこの旨みが活きる料理の一つです。米ときのこを一緒に炊くことで、きのこの香りとグアニル酸がご飯全体に行き渡ります。
+          </p>
+          <p>
+            材料（2〜3人分）は米2合・しめじ1パック・まいたけ1パック・油揚げ1枚（細切り）。調味料はだし250ml・しょうゆ大さじ2・みりん大さじ2・酒大さじ1。油揚げは油抜きしてから使うと味がよく染みます。
+          </p>
+          <p>
+            きのこは小さく割いて米の上に乗せます。調味料とだしを加えてから「炊き込みご飯」メニューでスタート。20〜25分で完成します。仕上げに三つ葉や刻みねぎを散らすと香りが良くなります。
+          </p>
+          <p>
+            ポイントは「だしをケチらない」こと。きのこから旨みは出ますが、だしが少ないとご飯が淡白になります。だし不要と思いがちですが、組み合わせると旨みが掛け算で増えます。昆布だしとの相性が特によいです。
+          </p>
+
+          <h2 id="recipe2">使い方②：鶏ときのこのしょうゆ蒸し煮</h2>
+          <p>
+            鶏もも肉ときのこの組み合わせは、ホットクックで作ると特においしい組み合わせです。鶏の脂ときのこの旨みが合わさって、少ない調味料でも深い味になります。
+          </p>
+          <p>
+            材料は鶏もも肉1枚（一口大）・しめじ1パック・えりんぎ1本（縦割り）・にんにく1片・しょうゆ大さじ2・みりん大さじ1.5・酒大さじ2・ごま油小さじ1。水は加えません。
+          </p>
+          <p>
+            鶏肉を下に、きのこを上に乗せてホットクックへ。手動の煮物モード・まぜなし・25分で仕上げます。仕上がりは鶏肉がやわらかく、きのこにしっかり味がしみた状態になります。器に盛って刻みねぎを乗せて完成です。
+          </p>
+          <p>
+            このレシピはご飯に乗せて丼にしてもおいしいです。煮汁もそのままご飯にかけると無駄なく使えます。翌日はうどんのつゆとして使う方法もあります。
+          </p>
+
+          <h2 id="recipe3">使い方③：きのこたっぷりの和風スープ</h2>
+          <p>
+            きのこが余っているときに一番おすすめの使い方がスープです。複数種類のきのこを一気に消費でき、出汁をとらなくても旨みたっぷりのスープが完成します。
+          </p>
+          <p>
+            材料はきのこ類合計200〜300g（しめじ・えのき・まいたけなど手持ちのもの）・豆腐（絹）1/2丁・長ねぎ1本・水500ml・しょうゆ大さじ2・みりん大さじ1・塩ひとつまみ。だしを使う場合はだしパック1個を水と一緒に入れて取り出すだけでOKです。
+          </p>
+          <p>
+            きのこはなるべく大きめにほぐして入れます。細かくしすぎるとスープが濁りやすいです。豆腐は最後の10分で加える方が崩れにくいですが、最初から入れてもスープに旨みが溶け出して悪くはありません。スープメニューで25〜30分。
+          </p>
+          <p>
+            仕上げに溶き卵を回し入れてかきたまにすると食べごたえが増します。みそを溶かして味噌汁風にするのも良いです。このスープは翌日も旨みが増しているので、まとめて作って2日間飲むのがおすすめです。
+          </p>
+
+          <h2 id="recipe4">使い方④：まいたけと豚バラの無水炒め風</h2>
+          <p>
+            ホットクックで「炒め」を再現することはできませんが、まいたけと豚バラの組み合わせは無水調理でも炒め物に近い仕上がりになります。まいたけの水分と豚バラの脂が合わさることで、フライパンで炒めたような旨みが出るのです。
+          </p>
+          <p>
+            材料は豚バラ薄切り150g・まいたけ2パック・ねぎ1/2本・しょうゆ大さじ2・みりん大さじ1・ごま油小さじ1。豚バラは食べやすい長さに切り、まいたけは手でほぐします。
+          </p>
+          <p>
+            すべてをホットクックに入れて手動・まぜあり・15分。まいたけの香りが立ち、豚バラとの旨みが絡んで食欲を刺激する仕上がりになります。七味唐辛子を少量振るとさらにおいしくなります。
+          </p>
+
+          <figure class="wide-figure">
+            <img src="/blog/hotcook-mushroom-thumbnail-1600x900.png" alt="ホットクックで旨みが凝縮されたきのこ料理" loading="lazy" />
+            <figcaption>複数種類のきのこを組み合わせると旨みが相乗効果で増します。出汁いらずで深い味わいになります。</figcaption>
+          </figure>
+
+          <h2 id="storage">きのこの保存方法：冷凍で旨みが増す</h2>
+          <p>
+            きのこは冷凍することで旨みが増すことが知られています。冷凍によって細胞壁が壊れ、グアニル酸が生成されやすくなるためです。買ってすぐに使わない場合は冷凍保存がおすすめです。
+          </p>
+          <p>
+            冷凍方法はシンプルです。石づきを取り除き、小さくほぐしてからジッパー付き袋に入れるだけ。そのまま冷凍庫へ。解凍不要でホットクックに直接投入できます。2〜3週間は保存可能です。
+          </p>
+          <p>
+            冷蔵庫でのきのこの保存はキッチンペーパーで包んで袋に入れると1週間ほど持ちます。水分が溜まると傷みやすいので、袋の口は少し開けておくのがポイントです。
+          </p>
+
+          <h2 id="faq">よくある疑問</h2>
+
+          <h3>きのこが黒くなってしまった。食べられますか？</h3>
+          <p>
+            きのこは加熱すると酸化反応で色が変わることがあります。黒くなっても腐っているわけではなく、味に大きな影響はありません。ただし、ぬめり・酸味・異臭がある場合は傷んでいる可能性があるので廃棄してください。
+          </p>
+
+          <h3>きのこの種類を混ぜると何か問題がありますか？</h3>
+          <p>
+            問題ありません。むしろ積極的に混ぜることをおすすめします。しめじの食感・まいたけの香り・えのきの旨みが合わさって、複雑で豊かな風味になります。3種類以上を組み合わせると、料理の格が上がります。
+          </p>
+
+          <h3>まいたけを入れると肉が柔らかくなるのは本当ですか？</h3>
+          <p>
+            本当です。まいたけにはタンパク質分解酵素（プロテアーゼ）が含まれており、肉を柔らかくする効果があります。ただし加熱すると酵素が不活性化するため、長時間漬け込む場合は生の状態で使う必要があります。ホットクックで一緒に煮込む場合は、もともと硬い部位の肉を使ったときに効果を感じやすいです。
+          </p>
+
+          <h3>乾しいたけはホットクックで使えますか？</h3>
+          <p>
+            使えますが、事前に水で戻してから使う方が良い仕上がりになります。戻し汁はグアニル酸が豊富なので捨てずにスープや煮汁として使いましょう。戻す時間がない場合は、ホットクックに直接入れて水を多めにして煮込む方法もあります。その場合は加熱時間を長めに設定してください。
+          </p>
+
+          <h2 id="snapmeal">今日の食材から献立を決める</h2>
+          <p>
+            きのこが冷蔵庫に余っているとき、他に何があるかによって最適な料理が変わります。鶏肉があれば蒸し煮、ご飯を炊くなら炊き込みご飯、野菜が少ない日はスープへの一択——それを毎日考えるのはじわじわと時間を取ります。
+          </p>
+          <p>
+            Snapmealは冷蔵庫の写真を撮るだけで、今日の食材の組み合わせからホットクックで作れる献立を提案します。きのこと何があるかを見て、今日の料理を決める手間を減らします。
+          </p>
+
+          <BlogCta title="冷蔵庫を撮って、今夜の献立を決める" />
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <style>
+    .blog-content { color: rgb(55 65 81); font-size: 1.0625rem; line-height: 1.9; }
+    .blog-content p { margin: 0 0 1.35rem; }
+    .blog-content h2 { color: rgb(17 24 39); font-size: clamp(1.65rem, 3vw, 2.15rem); line-height: 1.25; font-weight: 800; margin: 3rem 0 1rem; scroll-margin-top: 5rem; }
+    .blog-content h3 { color: rgb(17 24 39); font-size: 1.2rem; font-weight: 800; margin: 2rem 0 0.75rem; }
+    .blog-content strong { color: rgb(17 24 39); font-weight: 800; }
+    .toc { border: 1px solid rgb(209 250 229); border-radius: 1.5rem; background: rgb(240 253 244); padding: 1.25rem; margin: 2rem 0; }
+    .toc-title { color: rgb(5 150 105); font-size: 0.8rem; font-weight: 800; margin: 0 0 0.5rem; }
+    .toc ol { margin: 0; padding-left: 1.25rem; }
+    .toc li { margin: 0.35rem 0; }
+    .toc a { color: rgb(55 65 81); font-weight: 700; text-decoration: none; }
+    .toc a:hover { color: rgb(5 150 105); text-decoration: underline; }
+    .wide-figure { margin: 2.4rem 0; }
+    .wide-figure img { width: 100%; border-radius: 1.5rem; border: 1px solid rgb(229 231 235); box-shadow: 0 18px 45px rgb(15 23 42 / 0.1); }
+    .wide-figure figcaption { color: rgb(107 114 128); font-size: 0.875rem; margin-top: 0.75rem; text-align: center; }
+    .mushroom-table { border: 1px solid rgb(229 231 235); border-radius: 1.25rem; overflow: hidden; margin: 1.5rem 0 2rem; font-size: 0.875rem; }
+    .mush-head, .mush-row { display: grid; grid-template-columns: 4.5rem 1fr 1fr 2.5rem 1.5fr; border-top: 1px solid rgb(229 231 235); }
+    .mush-head:first-child { border-top: 0; }
+    .mush-head > div, .mush-row > div { padding: 0.7rem 0.85rem; line-height: 1.55; }
+    .mush-head { background: rgb(249 250 251); font-weight: 800; color: rgb(17 24 39); }
+    .mush-name { font-weight: 800; color: rgb(17 24 39); }
+    .mush-rating { font-weight: 800; text-align: center; }
+    .rating-best { color: rgb(5 150 105); }
+    .rating-good { color: rgb(180 83 9); }
+    @media (max-width: 640px) {
+      .mush-head, .mush-row { grid-template-columns: 1fr; }
+      .mush-head > div:not(:first-child) { display: none; }
+      .mush-row > div:first-child { font-weight: 800; padding-bottom: 0.2rem; }
+    }
+  </style>
+</Layout>
