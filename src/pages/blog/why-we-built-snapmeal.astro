@@ -1,0 +1,200 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const APP_URL = 'https://app.snap-meal.com';
+---
+
+<Layout
+  lang="ja"
+  title="冷蔵庫を撮るだけで献立が決まる。Snapmealを作った理由"
+  description="Snapmealは、冷蔵庫の写真からAIが食材を認識し、今夜作れる献立を提案するWebアプリです。ホットクック対応、疲れた日モード、食材・調味料の代替案など、開発の背景とこだわりを紹介します。"
+  ogImage="/og-ja.png"
+  alternateUrl="https://snap-meal.com/en/"
+>
+  <header class="border-b border-gray-100 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="/" class="text-xl font-extrabold text-primary tracking-tight">Snapmeal</a>
+      <nav class="flex items-center gap-4 text-sm font-semibold text-gray-600">
+        <a href="/blog/" class="hover:text-primary transition">ブログ</a>
+        <a href={APP_URL} target="_blank" rel="noopener noreferrer" data-ga-event="cta_click" class="bg-primary text-white px-4 py-2 rounded-full hover:bg-primary-dark transition">
+          ベータ版を試す
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <section class="bg-surface px-4 pt-14 pb-10 sm:pt-20">
+        <div class="max-w-3xl mx-auto">
+          <a href="/blog/" class="inline-flex items-center text-sm font-bold text-primary mb-8 hover:underline underline-offset-4">
+            ← ブログ一覧へ
+          </a>
+          <div class="flex flex-wrap items-center gap-3 text-xs font-bold text-gray-400 mb-5">
+            <span class="text-primary bg-green-50 px-3 py-1 rounded-full">開発ストーリー</span>
+            <time datetime="2026-05-22">2026年5月22日</time>
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+            冷蔵庫を撮るだけで今夜の献立が決まる。Snapmealを作った理由
+          </h1>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            毎日の夕方、「今夜、何を作ろう」と悩む時間があります。冷蔵庫には食材があるのに、そこから先が決まらない。その小さなストレスから、Snapmealは生まれました。
+          </p>
+        </div>
+      </section>
+
+      <section class="px-4 py-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+          <img
+            src="/og-ja.png"
+            alt="Snapmeal — 冷蔵庫を撮るだけ。30秒で今夜の献立が決まる"
+            class="w-full rounded-3xl border border-gray-100 shadow-sm"
+          />
+        </div>
+      </section>
+
+      <section class="px-4 py-10 bg-white">
+        <div class="blog-content max-w-3xl mx-auto">
+          <p>
+            仕事を終えて帰宅し、冷蔵庫を開けます。にんじん、豆腐、昨日の残りの鶏肉、半端に残ったキャベツ。食材は確かにある。でも、それを見ても献立がすぐに思い浮かばない。
+          </p>
+          <p>
+            この「食材はあるのに、料理が決まらない」という悩みから、Snapmealは生まれました。
+          </p>
+
+          <h2>ホットクックを買っても、献立決めは楽にならなかった</h2>
+          <p>
+            数年前、料理を少しでも楽にしたくてホットクックを購入しました。自動で調理してくれる便利な家電です。ただ、実際に使ってみると、思ったほど簡単には使いこなせませんでした。
+          </p>
+          <p>
+            レシピ本に載っている食材が、今の冷蔵庫にあるとは限りません。「豚バラ肉」と書いてあっても、家にあるのは鶏もも肉だけ。「みりん」と書いてあっても、切らしていることがあります。
+          </p>
+          <p>
+            ホットクックは調理を助けてくれますが、「今ある食材で何を作るか」までは決めてくれません。結局、一番面倒な“献立を考える時間”は残ったままでした。
+          </p>
+
+          <h2>最初はChatGPTのカスタムGPTから始まった</h2>
+          <p>
+            そこで、自分用にChatGPTのカスタムGPTを作りました。冷蔵庫にある食材を伝えると、ホットクックで作れそうな料理を提案してくれるものです。
+          </p>
+          <p>
+            みりんがなければ代替案を出してくれる。手持ちの食材から、作れそうな料理を考えてくれる。これが想像以上に便利でした。
+          </p>
+          <p>
+            ただ、毎日使っているうちに、だんだん不満も見えてきました。お気に入りの献立を保存できない。家族が好きだった料理を次回に活かせない。写真認識が間違ったときに修正しづらい。ホットクック以外の調理器具には対応しづらい。
+          </p>
+          <p>
+            「これはちゃんとしたアプリにした方が使いやすい」と思い、Snapmealの開発を始めました。
+          </p>
+
+          <h2>Snapmealでできること</h2>
+          <p>
+            Snapmealは、冷蔵庫の写真からAIが食材を認識し、今夜作れる献立を提案するWebアプリです。単にレシピを検索するのではなく、「今ある食材から、今日作れるものを決める」ことを目的にしています。
+          </p>
+          <ul>
+            <li>冷蔵庫の写真から食材を認識</li>
+            <li>認識結果を画面上で編集</li>
+            <li>今ある食材から献立を提案</li>
+            <li>ホットクック、フライパン、電子レンジなどに対応</li>
+            <li>疲れた日向けの簡単な献立も提案</li>
+            <li>調味料や食材が足りない場合の代替案も提示</li>
+          </ul>
+
+          <h2>開発で特にこだわったこと</h2>
+          <h3>食材認識をあとから直せること</h3>
+          <p>
+            冷蔵庫の写真認識は便利ですが、AIが必ず正しく認識するとは限りません。そのためSnapmealでは、認識された食材をあとから削除したり、足りない食材を追加したりできるようにしました。
+          </p>
+          <p>
+            チャットで「それは大根ではなくにんじんです」と打ち直すのではなく、画面上で直感的に修正できます。
+          </p>
+
+          <h3>ホットクックの操作まで案内すること</h3>
+          <p>
+            ホットクック対応では、単に「ホットクックで作れます」と表示するだけでは不十分だと考えました。実際に使うには、どのカテゴリを選ぶのか、どの自動メニューが近いのか、手動モードなら何分くらい加熱するのかが必要です。
+          </p>
+          <p>
+            Snapmealでは、できるだけ実際の調理に移れる形で案内することを意識しています。
+          </p>
+
+          <h3>疲れた日にも使えること</h3>
+          <p>
+            毎日料理に前向きでいられるわけではありません。仕事で疲れた日、包丁を持つ気力がない日、買い物に行けない日もあります。
+          </p>
+          <p>
+            そういう日には、短時間で作れるもの、工程が少ないもの、電子レンジや自動調理鍋で済むものを提案できるようにしています。
+          </p>
+
+          <h2>Snapmealはベータ版として公開中です</h2>
+          <p>
+            Snapmealは現在、ベータ版として公開しています。ダウンロードは不要で、ブラウザからそのまま使えます。ベータ期間中は、全機能を無料でお試しいただけます。
+          </p>
+          <p>
+            冷蔵庫の中を見て「今夜どうしよう」と悩む時間を、少しでも減らしたい。ホットクックや電子レンジを、もっと日常の料理に活かせるようにしたい。そんな思いで作っています。
+          </p>
+        </div>
+      </section>
+
+      <section class="px-4 pb-20 bg-white">
+        <div class="max-w-3xl mx-auto bg-surface rounded-3xl p-6 sm:p-8 text-center border border-gray-100">
+          <p class="text-sm font-bold text-primary mb-3">ベータ版公開中</p>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-4">
+            冷蔵庫を撮って、今夜の献立を決めてみませんか？
+          </h2>
+          <p class="text-gray-600 leading-relaxed mb-6">
+            Snapmealはブラウザからすぐに使えます。ベータ期間中は全機能無料です。
+          </p>
+          <a
+            href={APP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-ga-event="cta_click"
+            class="inline-block bg-primary text-white font-bold px-8 py-4 rounded-2xl hover:bg-primary-dark transition shadow-lg shadow-green-200"
+          >
+            Snapmealを試してみる
+          </a>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <style>
+    .blog-content {
+      color: rgb(55 65 81);
+      font-size: 1.0625rem;
+      line-height: 1.9;
+    }
+
+    .blog-content p {
+      margin: 0 0 1.35rem;
+    }
+
+    .blog-content h2 {
+      color: rgb(17 24 39);
+      font-size: clamp(1.65rem, 3vw, 2.15rem);
+      line-height: 1.25;
+      font-weight: 800;
+      margin: 3rem 0 1rem;
+      letter-spacing: 0;
+    }
+
+    .blog-content h3 {
+      color: rgb(17 24 39);
+      font-size: 1.25rem;
+      line-height: 1.4;
+      font-weight: 800;
+      margin: 2rem 0 0.75rem;
+      letter-spacing: 0;
+    }
+
+    .blog-content ul {
+      margin: 1.5rem 0 2rem;
+      padding-left: 1.35rem;
+    }
+
+    .blog-content li {
+      margin: 0.45rem 0;
+      padding-left: 0.25rem;
+    }
+  </style>
+</Layout>
