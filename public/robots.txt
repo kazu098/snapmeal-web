@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://snap-meal.com/sitemap-index.xml
