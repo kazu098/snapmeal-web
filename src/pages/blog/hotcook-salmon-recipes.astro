@@ -29,6 +29,7 @@ const styleTable = [
     note: 'みそと鮭の組み合わせは外れなし。根菜と一緒に煮ると満足感のある一品になります。',
   },
 ];
+import RelatedArticles from '../../components/RelatedArticles.astro';
 ---
 
 <Layout
@@ -172,6 +173,9 @@ const styleTable = [
           <p>
             Snapmealは冷蔵庫の写真を撮るだけで、今ある食材からホットクックで作れる献立を提案します。鮭と大根があればみそ煮、玉ねぎとじゃがいもがあればクリーム煮——今日の冷蔵庫の状態から考えてくれます。
           </p>
+
+          <RelatedArticles currentHref="/blog/hotcook-salmon-recipes/" />
+
 
           <BlogCta title="冷蔵庫を撮って、今夜の献立を決める" />
         </div>

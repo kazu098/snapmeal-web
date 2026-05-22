@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import BlogCta from '../../components/BlogCta.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
+import RelatedArticles from '../../components/RelatedArticles.astro';
 ---
 
 <Layout
@@ -169,6 +170,9 @@ import BlogHeader from '../../components/BlogHeader.astro';
           <p>
             Snapmealは冷蔵庫の写真を撮るだけで、今日ある食材の組み合わせからホットクックで作れる献立を提案します。豆腐と何があるか、厚揚げと何が合うか——その判断を代わりに考えます。
           </p>
+
+          <RelatedArticles currentHref="/blog/hotcook-tofu-aburaage-recipes/" />
+
 
           <BlogCta title="冷蔵庫の食材から、今日の献立を決める" />
         </div>

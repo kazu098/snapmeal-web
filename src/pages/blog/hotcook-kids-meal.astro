@@ -8,6 +8,7 @@ const avoidList = [
   { item: '食感が独特なもの', example: 'こんにゃく、きのこ類（一部）', tip: '小さく切るか、一度試してから量を調整する' },
   { item: '辛みのある食材', example: '唐辛子、わさび、しょうが（大量）', tip: 'しょうがは少量なら問題ないが、大人用との分量調整を' },
 ];
+import RelatedArticles from '../../components/RelatedArticles.astro';
 ---
 
 <Layout
@@ -163,6 +164,9 @@ const avoidList = [
           <p>
             Snapmealは冷蔵庫を撮ると、今ある食材からホットクックで作れる献立を提案します。子ども向けの味付け候補を出してもらうことで、「今日は何にしようか」という毎日の判断が楽になります。
           </p>
+
+          <RelatedArticles currentHref="/blog/hotcook-kids-meal/" />
+
 
           <BlogCta title="冷蔵庫を撮って、今夜の献立を決める" />
         </div>

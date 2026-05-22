@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import BlogCta from '../../components/BlogCta.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
+import RelatedArticles from '../../components/RelatedArticles.astro';
 ---
 
 <Layout
@@ -185,6 +186,9 @@ import BlogHeader from '../../components/BlogHeader.astro';
           <p>
             Snapmealは冷蔵庫の写真を撮るだけで、今日の食材の組み合わせからホットクックで作れる献立を提案します。根菜が余っているときの使い道を、冷蔵庫の他の食材から考えてくれます。
           </p>
+
+          <RelatedArticles currentHref="/blog/hotcook-root-vegetables/" />
+
 
           <BlogCta title="冷蔵庫を撮って、今夜の献立を決める" />
         </div>
