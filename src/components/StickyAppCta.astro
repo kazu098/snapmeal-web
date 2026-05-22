@@ -1,0 +1,167 @@
+---
+const appUrl = 'https://app.snap-meal.com';
+---
+
+<div id="sticky-cta" class="sticky-cta" role="region" aria-label="アプリのご案内">
+  <div class="sticky-cta-inner">
+    <div class="sticky-cta-text">
+      <p class="sticky-cta-label">ベータ版公開中・無料</p>
+      <p class="sticky-cta-desc">今夜の献立、冷蔵庫を撮るだけで決まります</p>
+    </div>
+    <a
+      href={appUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="sticky-cta-btn"
+      data-ga-event="sticky_cta_click"
+    >
+      試してみる
+    </a>
+    <button
+      id="sticky-cta-close"
+      class="sticky-cta-close"
+      aria-label="閉じる"
+      type="button"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18"/>
+        <line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<script>
+  const STORAGE_KEY = 'snapmeal_sticky_cta_dismissed';
+  const SCROLL_THRESHOLD = 300;
+
+  const bar = document.getElementById('sticky-cta');
+  const closeBtn = document.getElementById('sticky-cta-close');
+
+  if (bar && !localStorage.getItem(STORAGE_KEY)) {
+    let shown = false;
+
+    const show = () => {
+      if (!shown) {
+        shown = true;
+        bar.classList.add('sticky-cta--visible');
+      }
+    };
+
+    const handleScroll = () => {
+      if (window.scrollY > SCROLL_THRESHOLD) show();
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+
+    closeBtn?.addEventListener('click', () => {
+      bar.classList.remove('sticky-cta--visible');
+      localStorage.setItem(STORAGE_KEY, '1');
+    });
+  }
+</script>
+
+<style>
+  .sticky-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    transform: translateY(100%);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform;
+  }
+
+  .sticky-cta--visible {
+    transform: translateY(0);
+  }
+
+  .sticky-cta-inner {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: white;
+    border-top: 1px solid rgb(209 250 229);
+    box-shadow: 0 -4px 24px rgb(0 0 0 / 0.08);
+    padding: 0.75rem 1rem;
+    max-width: 100%;
+  }
+
+  .sticky-cta-text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .sticky-cta-label {
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: rgb(5 150 105);
+    margin: 0 0 0.1rem;
+  }
+
+  .sticky-cta-desc {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: rgb(17 24 39);
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .sticky-cta-btn {
+    flex-shrink: 0;
+    background: rgb(16 185 129);
+    color: white;
+    font-weight: 800;
+    font-size: 0.875rem;
+    text-decoration: none;
+    padding: 0.55rem 1.1rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgb(16 185 129 / 0.3);
+    transition: background 0.15s;
+    white-space: nowrap;
+  }
+
+  .sticky-cta-btn:hover {
+    background: rgb(5 150 105);
+  }
+
+  .sticky-cta-close {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    background: transparent;
+    color: rgb(156 163 175);
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: color 0.15s, background 0.15s;
+    padding: 0;
+  }
+
+  .sticky-cta-close:hover {
+    color: rgb(75 85 99);
+    background: rgb(243 244 246);
+  }
+
+  @media (min-width: 640px) {
+    .sticky-cta-inner {
+      padding: 0.875rem 1.5rem;
+      gap: 1rem;
+    }
+
+    .sticky-cta-desc {
+      font-size: 0.9rem;
+    }
+
+    .sticky-cta-btn {
+      padding: 0.65rem 1.4rem;
+    }
+  }
+</style>
