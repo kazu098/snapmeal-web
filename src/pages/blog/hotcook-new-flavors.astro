@@ -1,0 +1,288 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogCta from '../../components/BlogCta.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+
+const flavorChart = [
+  { style: '🇯🇵 和風', base: 'だし600ml', main: '醤油大さじ2・みりん大さじ1・塩少々', finish: '三つ葉・ゆず' },
+  { style: '🇨🇳 中華風', base: '鶏がらスープ500ml', main: 'オイスターソース大さじ2・醤油大さじ1・砂糖小さじ1', finish: 'ごま油・生姜' },
+  { style: '🇰🇷 韓国風', base: '水400ml', main: 'コチュジャン大さじ2・醤油大さじ1・にんにく', finish: 'ごま油・白ごま' },
+  { style: '🇫🇷 洋風', base: 'コンソメ2個＋水600ml', main: '塩・白ワイン大さじ2・月桂樹', finish: 'バター・パセリ' },
+  { style: '🌏 東南アジア風', base: 'ココナッツミルク200ml＋水200ml', main: 'ナンプラー大さじ1.5・砂糖小さじ1・レモン汁', finish: 'パクチー・青唐辛子' },
+  { style: '🇮🇳 カレー風', base: '水400ml', main: 'カレー粉大さじ1.5・トマト缶1/2・塩', finish: 'クミン・コリアンダー' },
+];
+---
+
+<Layout
+  lang="ja"
+  title="ホットクックのマンネリを脱する——いつもの食材で「別の国」の味を出す方法"
+  description="同じ鶏肉とじゃがいもでも調味料を変えれば和・中・韓・洋・東南アジア・インド風に変わる。6カ国分の調味料変換チャートと常備すべき13種類の調味料を解説します。"
+  ogImage="/blog/hotcook-new-flavors-thumbnail-1600x900.png"
+  alternateUrl="https://snap-meal.com/en/blog/hotcook-new-flavors/"
+>
+  <BlogHeader />
+
+  <main>
+    <article>
+      <section class="bg-surface px-4 pt-14 pb-10 sm:pt-20">
+        <div class="max-w-3xl mx-auto">
+          <a href="/blog/" class="inline-flex items-center text-sm font-bold text-primary mb-8 hover:underline underline-offset-4">
+            ← ブログ一覧へ
+          </a>
+          <div class="flex flex-wrap items-center gap-3 text-xs font-bold text-gray-400 mb-5">
+            <span class="text-primary bg-green-50 px-3 py-1 rounded-full">ホットクック</span>
+            <time datetime="2025-06-22">2025年6月22日</time>
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-[1.25] mb-6">
+            ホットクックのマンネリを脱する——いつもの食材で「別の国」の味を出す方法
+          </h1>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            鶏肉と野菜の煮物、また今日も同じ味。そう感じたことがあるなら、問題は食材より調味料にある。調味料の組み合わせを変えるだけで、同じにんじんと鶏肉が中華になり、韓国料理になり、東南アジアの煮込みになる。ホットクックは「煮込む」という単一の動作が得意な調理器のため、この発想を活かすのに向いている。
+          </p>
+        </div>
+      </section>
+
+      <section class="px-4 py-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+          <img src="/blog/hotcook-new-flavors-thumbnail-1600x900.png" alt="各国スパイスとホットクックでバリエーション豊かな料理" class="w-full rounded-3xl border border-gray-100 shadow-sm" />
+        </div>
+      </section>
+
+      <section class="px-4 py-10 bg-white">
+        <div class="blog-content max-w-3xl mx-auto">
+
+          <nav class="toc" aria-label="目次">
+            <p class="toc-title">目次</p>
+            <ol>
+              <li><a href="#concept">調味料が料理を決める3つのレイヤー</a></li>
+              <li><a href="#chart">国別・調味料変換チャート（6スタイル）</a></li>
+              <li><a href="#recipes">鶏肉×じゃがいもの「6カ国版」変換レシピ</a></li>
+              <li><a href="#pantry">常備すべき13種類の調味料</a></li>
+              <li><a href="#compatibility">ホットクックと相性が良い「異国風」スタイル</a></li>
+              <li><a href="#schedule">「同じ週に3カ国」実践スケジュール例</a></li>
+              <li><a href="#faq">よくある質問</a></li>
+              <li><a href="#snapmeal">今日の食材から献立を決める</a></li>
+            </ol>
+          </nav>
+
+          <h2 id="concept">調味料が料理を決める——食材は「器」に過ぎない</h2>
+          <p>
+            日本の家庭料理でよく使う食材——鶏もも肉、じゃがいも、にんじん、玉ねぎ——は、世界中で調理されている。フランスでは煮込み（ポトフ）になり、インドではカレーになり、韓国ではタッカルビになる。食材は同じで、調味料が「国籍」を与えている。
+          </p>
+          <p>
+            ホットクックで意識するのは3つのレイヤーだ。<strong>ベース</strong>（だし・ブイヨン・ナンプラーなど料理の土台）、<strong>メイン調味料</strong>（醤油・みそ・コチュジャン・オイスターソースなど主役の味）、<strong>香り・仕上げ</strong>（ごま油・バター・スパイス・ハーブで個性を付加）。この3層を「国別の組み合わせ」で置き換えることが、マンネリ打破の鍵になる。
+          </p>
+
+          <h2 id="chart">国別・調味料変換チャート（6スタイル）</h2>
+          <p>
+            同じ「鶏肉＋根菜200g＋水300ml」をベースに、調味料を変えると以下のように変わる。加熱時間はいずれもまぜなし（または韓国・インド風はまぜあり）加熱25〜30分で共通だ。
+          </p>
+
+          <div class="flavor-table" role="table" aria-label="国別調味料変換チャート">
+            <div class="flavor-head" role="row">
+              <div role="columnheader">スタイル</div>
+              <div role="columnheader">ベース</div>
+              <div role="columnheader">メイン調味料</div>
+              <div role="columnheader">仕上げ</div>
+            </div>
+            {flavorChart.map((row) => (
+              <div class="flavor-row" role="row">
+                <div role="cell" class="flavor-style">{row.style}</div>
+                <div role="cell">{row.base}</div>
+                <div role="cell">{row.main}</div>
+                <div role="cell">{row.finish}</div>
+              </div>
+            ))}
+          </div>
+
+          <h2 id="recipes">変換レシピ：鶏肉×じゃがいもの「6カ国版」</h2>
+          <p>
+            鶏もも肉200g・じゃがいも2個・玉ねぎ1/2個という同一食材セットを使い、6つのスタイルで作り分ける例を示す。調理工程はどれも「切って入れて加熱するだけ」で、調味料だけが変わる。
+          </p>
+
+          <h3>🇯🇵 肉じゃが（和風）</h3>
+          <p>
+            だし300ml・醤油大さじ3・みりん大さじ2・砂糖大さじ1。まぜなし加熱20〜25分。しらたき（あれば）を加えると本格的になる。仕上げにさやいんげんを5分前に追加。
+          </p>
+
+          <h3>🇨🇳 鶏肉とじゃがいもの中華煮込み</h3>
+          <p>
+            鶏がらスープ400ml・オイスターソース大さじ2・醤油大さじ1・生姜スライス3枚。まぜなし加熱25分。仕上げにごま油を回しかけ、白髪ねぎをのせる。八角を1個加えると本場風になる。
+          </p>
+
+          <h3>🇰🇷 タッカルビ風煮込み（韓国風）</h3>
+          <p>
+            水300ml・コチュジャン大さじ2・醤油大さじ1・にんにくすりおろし1片・砂糖小さじ1。まぜあり加熱25分（焦げつき防止）。キャベツを加えるとよりタッカルビらしくなる。最後に白ごまをたっぷりかける。
+          </p>
+
+          <h3>🇫🇷 ポトフ風煮込み（洋風）</h3>
+          <p>
+            水700ml・コンソメ2個・塩小さじ1・白ワイン大さじ2・ローリエ1枚。まぜなし加熱35分。じゃがいもは大きめ切り（3〜4等分）にすることで煮崩れを防ぐ。仕上げにバター小さじ1を加えると風味が増す。
+          </p>
+
+          <h3>🌏 ナンプラーとじゃがいものタイ風煮（東南アジア風）</h3>
+          <p>
+            ナンプラー大さじ1.5・オイスターソース大さじ1・砂糖小さじ1・水200ml・ライム汁1/4個分。まぜなし加熱20分。バジル（できればホーリーバジル）を最後3分で追加。目玉焼きをのせるとガパオライス風になる。
+          </p>
+
+          <h3>🇮🇳 チキンカレー（インド風）</h3>
+          <p>
+            トマト缶1/2・水200ml・カレー粉大さじ1.5・塩小さじ1・にんにく・生姜各1片。まぜあり加熱30分。ヨーグルト大さじ2を事前に鶏肉に絡めておくと肉が柔らかくなる。クミンシードをごま油で先に炒めると本格的な香りが出る。
+          </p>
+
+          <h2 id="pantry">常備すべき13種類の調味料</h2>
+          <p>
+            6カ国の味を出せるようにするには特別な食材を大量に買う必要はない。以下の13種類を揃えておけば、ほとんどのバリエーションをカバーできる。全部揃えて5,000〜7,000円程度で、それぞれが数ヶ月以上持つ。
+          </p>
+
+          <div class="pantry-grid">
+            <div class="pantry-col">
+              <p class="pantry-label">和の基本（3種）</p>
+              <ul>
+                <li><strong>醤油</strong>——全料理の基盤。濃口1本で十分</li>
+                <li><strong>みりん</strong>——甘みと照りを出す</li>
+                <li><strong>だし（顆粒）</strong>——鰹・昆布どちらでも可</li>
+              </ul>
+            </div>
+            <div class="pantry-col">
+              <p class="pantry-label">中韓のアクセント（3種）</p>
+              <ul>
+                <li><strong>オイスターソース</strong>——中華・東南アジア両用</li>
+                <li><strong>コチュジャン</strong>——韓国料理の辛みと旨み</li>
+                <li><strong>ごま油</strong>——仕上げ香りに万能</li>
+              </ul>
+            </div>
+            <div class="pantry-col">
+              <p class="pantry-label">洋・エスニックの拡張（4種）</p>
+              <ul>
+                <li><strong>コンソメ（固形）</strong>——洋風の土台</li>
+                <li><strong>カレー粉</strong>——インド・東南アジア向け</li>
+                <li><strong>ナンプラー</strong>——タイ・ベトナム料理の深みを出す</li>
+                <li><strong>ローリエ（月桂樹）</strong>——煮込みに清涼感</li>
+              </ul>
+            </div>
+            <div class="pantry-col">
+              <p class="pantry-label">香り付けの仕上げ（3種）</p>
+              <ul>
+                <li><strong>にんにく（チューブ可）</strong>——中華・韓国・洋風全対応</li>
+                <li><strong>生姜（チューブ可）</strong>——和・中・東南アジア向け</li>
+                <li><strong>バター</strong>——洋風の仕上げに深みを出す</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 id="compatibility">ホットクックで特に相性が良い「異国風」スタイル</h2>
+          <p>
+            全てのスタイルがホットクックで同じように作れるわけではない。炒め系が得意でない分、<strong>煮込みベースの料理が特に向く</strong>。
+          </p>
+          <p>
+            <strong>◎ 特に向く：タイ風グリーンカレー風。</strong>ココナッツミルク＋カレーペースト＋ナンプラーの組み合わせは、弱火長時間の煮込みで香りが食材に染みこむ。ホットクックの「沸騰を抑えた加熱」と相性が良い。
+          </p>
+          <p>
+            <strong>◎ 特に向く：韓国風スープ（カムジャタン）。</strong>じゃがいもと豚骨（スペアリブ）をコチュジャン＋にんにくで煮込む料理。骨付き肉の長時間煮込みはホットクックが得意とする領域で、スープが透明に仕上がる。
+          </p>
+          <p>
+            <strong>○ 工夫で対応：インド風マサラ。</strong>スパイスを炒める「テンパリング」工程がホットクックでは弱いが、炒めモードを先に使うか、フライパンでスパイスを炒めてから鍋に移すことで対応できる。
+          </p>
+          <p>
+            <strong>△ 注意：中華系炒め。</strong>チャーハンや高火力が必要な炒め物はホットクックが苦手。代わりに「中華風煮込み」として再解釈すると良い。麻婆豆腐を水分多めで作るなどの工夫が有効。
+          </p>
+
+          <h2 id="schedule">「同じ週に3カ国」実践スケジュール例</h2>
+          <p>
+            同じ食材セットを使い、週に3回、異なる国の料理を楽しむ例を示す。買い出しを一回に抑えながら毎日違う味が楽しめる。
+          </p>
+
+          <div class="sched-table">
+            <div class="sched-row">
+              <div class="sched-day">月曜</div>
+              <div class="sched-body">
+                <strong>🇯🇵 和風肉じゃが</strong>
+                <p>鶏肉・じゃがいも・にんじん・玉ねぎ＋和風出汁・醤油・みりん</p>
+              </div>
+            </div>
+            <div class="sched-row">
+              <div class="sched-day">水曜</div>
+              <div class="sched-body">
+                <strong>🇰🇷 コチュジャン煮込み</strong>
+                <p>同じ食材セット＋コチュジャン・にんにく・ごま油に変換</p>
+              </div>
+            </div>
+            <div class="sched-row">
+              <div class="sched-day">金曜</div>
+              <div class="sched-body">
+                <strong>🌏 ナンプラーとれんこんのタイ風煮</strong>
+                <p>残り野菜＋ナンプラー・ライム・砂糖に変換。パクチーのせで完成</p>
+              </div>
+            </div>
+          </div>
+
+          <h2 id="faq">よくある質問</h2>
+
+          <h3>Q. スパイスは生か乾燥どちらを使うべきですか？</h3>
+          <p>
+            ホットクックでは<strong>乾燥スパイス（パウダー）が使いやすい</strong>です。生の香草（パクチー・バジル・三つ葉）は香りが飛びやすいため、加熱後の仕上げに加えます。クミンやコリアンダーは乾燥ホールを最初から入れると香りが煮込み中に出ていきます。
+          </p>
+
+          <h3>Q. ナンプラーの匂いが強すぎる場合は？</h3>
+          <p>
+            ナンプラーは加熱するとアンモニア系の臭みが飛び、旨みだけが残ります。最初から入れて加熱することで問題ありません。量は少なめ（大さじ1程度）から始め、仕上げに味見してから追加する方が失敗しにくいです。レモン汁やライムと組み合わせると臭みが和らぎます。
+          </p>
+
+          <h3>Q. コチュジャンは辛くしすぎない量の目安は？</h3>
+          <p>
+            2人前で大さじ1〜1.5が目安です。辛みを抑えたい場合はコチュジャンを大さじ1に減らし、代わりに<strong>醤油大さじ1.5＋砂糖小さじ2</strong>で補うと、旨みを保ちつつ辛さが控えめになります。
+          </p>
+
+          <h2 id="snapmeal">今日の食材から献立を決める</h2>
+          <p>
+            冷蔵庫を開けて「今日はどの国の料理にしよう」と考えながらも、手持ちの食材と調味料の組み合わせを毎回ゼロから探すのは意外と手間がかかります。
+          </p>
+          <p>
+            Snapmealは冷蔵庫の写真を撮るだけで、今日の食材と調味料の組み合わせからホットクックで作れる献立を提案します。マンネリせずに毎日違う味を楽しむための出発点として使ってみてください。
+          </p>
+
+          <BlogCta title="冷蔵庫を撮って、今夜の献立を決める" />
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <style>
+    .blog-content { color: rgb(55 65 81); font-size: 1.0625rem; line-height: 1.9; }
+    .blog-content p { margin: 0 0 1.35rem; }
+    .blog-content h2 { color: rgb(17 24 39); font-size: clamp(1.65rem, 3vw, 2.15rem); line-height: 1.25; font-weight: 800; margin: 3rem 0 1rem; scroll-margin-top: 5rem; }
+    .blog-content h3 { color: rgb(17 24 39); font-size: 1.2rem; font-weight: 800; margin: 2rem 0 0.75rem; }
+    .blog-content strong { color: rgb(17 24 39); font-weight: 800; }
+    .toc { border: 1px solid rgb(209 250 229); border-radius: 1.5rem; background: rgb(240 253 244); padding: 1.25rem; margin: 2rem 0; }
+    .toc-title { color: rgb(5 150 105); font-size: 0.8rem; font-weight: 800; margin: 0 0 0.5rem; }
+    .toc ol { margin: 0; padding-left: 1.25rem; }
+    .toc li { margin: 0.35rem 0; }
+    .toc a { color: rgb(55 65 81); font-weight: 700; text-decoration: none; }
+    .toc a:hover { color: rgb(5 150 105); text-decoration: underline; }
+    /* Flavor chart */
+    .flavor-table { border: 1px solid rgb(229 231 235); border-radius: 1.25rem; overflow: hidden; margin: 1.5rem 0 2rem; font-size: 0.875rem; }
+    .flavor-head, .flavor-row { display: grid; grid-template-columns: 9rem 1fr 2fr 1fr; border-top: 1px solid rgb(229 231 235); }
+    .flavor-head:first-child { border-top: 0; }
+    .flavor-head > div, .flavor-row > div { padding: 0.65rem 0.85rem; line-height: 1.55; }
+    .flavor-head { background: rgb(249 250 251); font-weight: 800; color: rgb(17 24 39); }
+    .flavor-style { font-weight: 800; color: rgb(17 24 39); }
+    @media (max-width: 640px) {
+      .flavor-head, .flavor-row { grid-template-columns: 1fr; }
+      .flavor-head > div:not(:first-child) { display: none; }
+    }
+    /* Pantry grid */
+    .pantry-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin: 1.25rem 0 1.75rem; }
+    @media (max-width: 600px) { .pantry-grid { grid-template-columns: 1fr; } }
+    .pantry-col { background: rgb(249 250 251); border-radius: 1rem; padding: 1rem 1.1rem; }
+    .pantry-label { font-size: 0.8rem; font-weight: 800; color: rgb(5 150 105); margin: 0 0 0.6rem; }
+    .pantry-col ul { margin: 0; padding-left: 1.25rem; font-size: 0.88rem; line-height: 1.75; }
+    /* Schedule table */
+    .sched-table { display: flex; flex-direction: column; gap: 0; border: 1px solid rgb(229 231 235); border-radius: 1rem; overflow: hidden; margin: 1.25rem 0 1.75rem; }
+    .sched-row { display: grid; grid-template-columns: 4.5rem 1fr; border-top: 1px solid rgb(229 231 235); }
+    .sched-row:first-child { border-top: 0; }
+    .sched-day { background: rgb(5 150 105); color: #fff; font-weight: 800; font-size: 0.88rem; padding: 0.75rem 0.85rem; display: flex; align-items: center; justify-content: center; }
+    .sched-body { padding: 0.75rem 1rem; font-size: 0.9rem; }
+    .sched-body p { margin: 0.25rem 0 0; font-size: 0.82rem; color: rgb(107 114 128); }
+  </style>
+</Layout>
