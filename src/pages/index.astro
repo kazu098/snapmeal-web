@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 
 const APP_URL = 'https://app.snap-meal.com';
-const FEEDBACK_URL = 'https://forms.gle/XXXXXXXXXXXXXXXX'; // TODO: Google Form URL に差し替える
+const FEEDBACK_URL = 'https://forms.gle/Uc8CofTQzeM3steC7';
 
 const steps = [
   {
@@ -129,20 +129,12 @@ const faqs = [
             平日18時の「今夜どうしよう」から解放される。<br class="hidden sm:block" />
             AIが食材を認識して、今夜の献立を自動で提案します。
           </p>
-          <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-3">
+          <div class="flex justify-center lg:justify-start">
             <a
               href={APP_URL}
               class="bg-primary text-white font-bold text-lg px-8 py-4 rounded-2xl hover:bg-primary-dark transition shadow-xl shadow-green-200 inline-block text-center"
             >
               ベータ版を試す（無料）
-            </a>
-            <a
-              href={FEEDBACK_URL}
-              target="_blank"
-              rel="noopener"
-              class="border-2 border-gray-200 text-gray-600 font-semibold text-base px-6 py-4 rounded-2xl hover:border-gray-300 transition inline-block text-center"
-            >
-              フィードバックを送る
             </a>
           </div>
           <p class="text-xs text-gray-400 mt-4">ダウンロード不要 · ブラウザで今すぐ使える</p>
