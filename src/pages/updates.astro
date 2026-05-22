@@ -1,0 +1,188 @@
+---
+import Layout from '../layouts/Layout.astro';
+import BlogHeader from '../components/BlogHeader.astro';
+
+const APP_URL = 'https://app.snap-meal.com';
+
+type UpdateEntry = {
+  version: string;
+  date: string;
+  title: string;
+  description: string;
+  items: { emoji: string; text: string }[];
+  tag?: 'app' | 'web' | 'both';
+};
+
+const updates: UpdateEntry[] = [
+  {
+    version: 'v0.5',
+    date: '2026年5月',
+    title: '献立の使いやすさ改善・お気に入り機能',
+    description: '献立を決めた後の「次のアクション」をわかりやすくしました。毎日使うほど提案が好みに近づいていきます。',
+    tag: 'app',
+    items: [
+      { emoji: '📋', text: '不足食材をワンタップでコピー — 買い物リストとしてそのまま使えます' },
+      { emoji: '❤️', text: 'お気に入り保存 — 気に入った献立を一覧で見返せるように' },
+      { emoji: '👎', text: '興味なし機能 — 次回以降の提案から除外。好みを蓄積できます' },
+      { emoji: '🧠', text: 'AIがお気に入りを学習 — 保存した献立のジャンルを次回の提案に反映' },
+      { emoji: '✅', text: '「作った！」ボタンを改善 — シンプルなトグル1つに整理' },
+    ],
+  },
+  {
+    version: 'v0.4',
+    date: '2026年5月',
+    title: 'ブログ強化・パンくず・読了時間',
+    description: 'ホットクックレシピブログに新機能を追加。SEO品質も改善しました。',
+    tag: 'web',
+    items: [
+      { emoji: '🗂️', text: 'パンくずナビゲーション追加（JSON-LD構造化データ付き）' },
+      { emoji: '⏱️', text: '読了時間の目安を全記事に表示' },
+      { emoji: '🏷️', text: 'タグ別記事一覧ページを新設（22タグ）' },
+      { emoji: '🔗', text: '関連記事・記事内部リンクを追加' },
+      { emoji: '📄', text: 'ブログ記事を30本以上に拡充' },
+    ],
+  },
+  {
+    version: 'v0.3',
+    date: '2026年5月',
+    title: 'OGP改善・固定CTAバー',
+    description: 'SNSシェア時の見た目を改善。ブログ記事を読みながらアプリへの誘導をわかりやすくしました。',
+    tag: 'web',
+    items: [
+      { emoji: '📌', text: '記事スクロール中に「試してみる」バーを固定表示（×で非表示）' },
+      { emoji: '🖼️', text: 'OGPタグを精緻化 — og:type、画像サイズ、article:published_time を正確に' },
+      { emoji: '🐦', text: 'Twitter Card に twitter:site・alt テキストを追加' },
+    ],
+  },
+  {
+    version: 'v0.2',
+    date: '2026年5月',
+    title: 'ホットクックレシピ強化・代用メモ',
+    description: 'ホットクックユーザー向けに、レシピ画面をより使いやすく改善しました。',
+    tag: 'app',
+    items: [
+      { emoji: '🥘', text: 'メニュー選択セクション — 自動メニュー番号と手動設定を案内' },
+      { emoji: '🔄', text: '代用メモ — 調味料が足りないときの代替案を表示' },
+      { emoji: '💡', text: '仕上げのコツ — 盛り付け・味の調整ポイントを追加' },
+    ],
+  },
+  {
+    version: 'v0.1',
+    date: '2026年4月',
+    title: 'ベータ版ローンチ',
+    description: '「冷蔵庫を撮るだけで献立が決まる」AIアプリのベータ版を公開しました。',
+    tag: 'both',
+    items: [
+      { emoji: '📸', text: '冷蔵庫写真からAIが食材を自動認識' },
+      { emoji: '🍽️', text: '3候補から献立を選択、レシピをその場で生成' },
+      { emoji: '⚡', text: '疲れた日モード — 15分以内の料理だけを提案' },
+      { emoji: '🥘', text: 'ホットクック対応 — 自動メニュー案内つきレシピ' },
+      { emoji: '📅', text: '献立履歴 — 過去の提案を記録してマンネリ防止' },
+      { emoji: '🌐', text: '日本語・英語対応' },
+    ],
+  },
+];
+
+const tagLabel: Record<string, string> = {
+  app: 'アプリ',
+  web: 'ウェブサイト',
+  both: 'アプリ・ウェブ',
+};
+const tagColor: Record<string, string> = {
+  app: 'bg-green-100 text-green-700',
+  web: 'bg-blue-100 text-blue-700',
+  both: 'bg-purple-100 text-purple-700',
+};
+---
+
+<Layout
+  lang="ja"
+  title="アップデート履歴 — Snapmeal"
+  description="Snapmealの最新アップデート・機能追加・改善内容の一覧です。"
+>
+  <BlogHeader current="blog" />
+
+  <main>
+    <section class="bg-surface px-4 py-14 sm:py-20">
+      <div class="max-w-2xl mx-auto text-center">
+        <p class="text-sm font-bold text-primary mb-3">What's New</p>
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
+          アップデート履歴
+        </h1>
+        <p class="text-gray-500 text-base leading-relaxed">
+          Snapmealの最新機能・改善内容をまとめています。<br />
+          ベータ版は毎週アップデート中です。
+        </p>
+        <a
+          href={APP_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-ga-event="cta_click"
+          class="inline-block mt-6 bg-primary text-white font-bold px-6 py-3 rounded-full hover:bg-primary-dark transition shadow-md"
+        >
+          最新版を試す（無料）
+        </a>
+      </div>
+    </section>
+
+    <section class="px-4 py-12 bg-white">
+      <div class="max-w-2xl mx-auto">
+        <div class="relative">
+          <!-- タイムライン縦線 -->
+          <div class="absolute left-[5.5rem] top-0 bottom-0 w-px bg-gray-100 hidden sm:block"></div>
+
+          <div class="space-y-12">
+            {updates.map((update) => (
+              <div class="sm:grid sm:grid-cols-[7rem_1fr] sm:gap-8 group">
+                <!-- 左側: バージョン・日付 -->
+                <div class="flex sm:flex-col sm:items-end gap-3 sm:gap-1 mb-4 sm:mb-0 sm:pt-0.5">
+                  <span class="text-lg font-extrabold text-primary">{update.version}</span>
+                  <span class="text-xs text-gray-400 font-semibold sm:text-right">{update.date}</span>
+                </div>
+
+                <!-- 右側: コンテンツ -->
+                <div class="relative">
+                  <!-- タイムラインのドット -->
+                  <div class="absolute -left-[2.1rem] top-1.5 w-3 h-3 rounded-full bg-primary border-2 border-white shadow-sm hidden sm:block"></div>
+
+                  <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 hover:shadow-md transition">
+                    <div class="flex flex-wrap items-center gap-2 mb-2">
+                      <h2 class="text-lg font-extrabold text-gray-900">{update.title}</h2>
+                      {update.tag && (
+                        <span class={`text-xs font-bold px-2 py-0.5 rounded-full ${tagColor[update.tag]}`}>
+                          {tagLabel[update.tag]}
+                        </span>
+                      )}
+                    </div>
+                    <p class="text-sm text-gray-500 mb-4 leading-relaxed">{update.description}</p>
+                    <ul class="space-y-2">
+                      {update.items.map((item) => (
+                        <li class="flex items-start gap-2 text-sm text-gray-700">
+                          <span class="text-base leading-snug flex-shrink-0">{item.emoji}</span>
+                          <span class="leading-relaxed">{item.text}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="mt-16 text-center">
+          <p class="text-sm text-gray-400 mb-4">ご意見・ご要望はフィードバックフォームへ</p>
+          <a
+            href={APP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-ga-event="cta_click"
+            class="inline-block bg-primary text-white font-bold px-8 py-3.5 rounded-full hover:bg-primary-dark transition shadow-lg shadow-green-100"
+          >
+            Snapmealを試す（ベータ・無料）
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
