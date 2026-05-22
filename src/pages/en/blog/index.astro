@@ -1,27 +1,9 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import BlogHeader from '../../../components/BlogHeader.astro';
+import { enArticles } from '../../../data/enArticles';
 
-const articles = [
-  {
-    title: 'Just Snap Your Fridge. Dinner Decided in 30 Seconds. The Story Behind Snapmeal',
-    description:
-      'Why Snapmeal started: from struggling to use a Hotcook well, to building an AI meal-planning web app for real weeknight cooking.',
-    href: '/en/blog/why-we-built-snapmeal/',
-    date: 'May 22, 2026',
-    category: 'Product Story',
-    image: '/og-en.png',
-  },
-  {
-    title: 'What to Cook with Chicken Thigh in a Hotcook? Meal Ideas from What’s in Your Fridge',
-    description:
-      'A practical guide for Hotcook and smart cooker users: chicken thigh meal ideas, vegetable pairings, seasoning directions, and common mistakes to avoid.',
-    href: '/en/blog/hotcook-chicken-thigh-recipes/',
-    date: 'May 22, 2026',
-    category: 'Smart Cooker',
-    image: '/blog/hotcook-chicken-thigh-thumbnail-1600x900.png',
-  },
-];
+const articles = enArticles;
 ---
 
 <Layout

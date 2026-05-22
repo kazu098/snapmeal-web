@@ -1,0 +1,255 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import BlogCta from '../../../components/BlogCta.astro';
+import BlogHeader from '../../../components/BlogHeader.astro';
+import { dynamicEnglishArticles, type EnArticle } from '../../../data/enArticles';
+
+export function getStaticPaths() {
+  return dynamicEnglishArticles.map((article) => ({
+    params: { slug: article.slug },
+    props: { article },
+  }));
+}
+
+interface Props {
+  article: EnArticle;
+}
+
+const { article } = Astro.props;
+const pageUrl = `https://snap-meal.com${article.href}`;
+const jaUrl = `https://snap-meal.com${article.jaHref}`;
+---
+
+<Layout
+  lang="en"
+  title={article.title}
+  description={article.description}
+  ogImage={article.image}
+  alternateUrl={jaUrl}
+>
+  <BlogHeader lang="en" />
+
+  <main>
+    <article>
+      <section class="bg-surface px-4 pt-14 pb-10 sm:pt-20">
+        <div class="max-w-3xl mx-auto">
+          <a href="/en/blog/" class="inline-flex items-center text-sm font-bold text-primary mb-8 hover:underline underline-offset-4">
+            ← Back to blog
+          </a>
+          <div class="flex flex-wrap items-center gap-3 text-xs font-bold text-gray-400 mb-5">
+            <span class="text-primary bg-green-50 px-3 py-1 rounded-full">{article.category}</span>
+            <time>{article.date}</time>
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-[1.25] mb-6">
+            {article.title}
+          </h1>
+          <p class="text-lg text-gray-600 leading-relaxed">{article.description}</p>
+        </div>
+      </section>
+
+      <section class="px-4 py-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+          <img
+            src={article.image}
+            alt=""
+            class="w-full rounded-3xl border border-gray-100 shadow-sm"
+          />
+        </div>
+      </section>
+
+      <section class="px-4 py-10 bg-white">
+        <div class="blog-content max-w-3xl mx-auto">
+          <div class="answer-box">
+            <p class="answer-label">Quick answer</p>
+            <p>{article.intro}</p>
+          </div>
+
+          <nav class="toc" aria-label="Table of contents">
+            <p class="toc-title">Table of contents</p>
+            <ol>
+              <li><a href="#why">Why this works in a smart cooker</a></li>
+              <li><a href="#decide">How to decide what to cook</a></li>
+              <li><a href="#patterns">Practical cooking patterns</a></li>
+              <li><a href="#mistakes">Common mistakes to avoid</a></li>
+              <li><a href="#snapmeal">Decide from your actual fridge</a></li>
+            </ol>
+          </nav>
+
+          <h2 id="why">Why this works in a smart cooker</h2>
+          <p>{article.angle}</p>
+          <p>
+            A Hotcook-style smart cooker is most useful when it removes the need to stand at the stove and watch the pot.
+            That does not mean every ingredient should be treated the same way. The best results come from matching the
+            ingredient, cut size, liquid level, and seasoning direction before pressing start.
+          </p>
+
+          <h2 id="decide">How to decide what to cook</h2>
+          <p>{article.decision}</p>
+          <p>
+            On a weeknight, it helps to decide the shape of the meal first. If you want something light, choose soup.
+            If you want rice to feel complete, choose a thicker simmered dish. If you want leftovers, choose seasoning
+            that will still taste good the next day.
+          </p>
+
+          <div class="highlight-box">
+            <p class="highlight-label">Useful rule</p>
+            <p>
+              Start from the ingredient that needs to be used soonest, then choose the cooking mode around it. This
+              prevents the common pattern of buying one more ingredient for a recipe while older food goes unused.
+            </p>
+          </div>
+
+          <h2 id="patterns">Practical cooking patterns</h2>
+          <p>
+            These patterns are designed for real kitchens: flexible, forgiving, and easy to adapt when one ingredient is
+            missing.
+          </p>
+          <ul>
+            {article.patterns.map((pattern) => <li>{pattern}</li>)}
+          </ul>
+
+          <figure class="wide-figure">
+            <img src={article.image} alt="" loading="lazy" />
+            <figcaption>
+              A smart cooker becomes more useful when the meal starts from the ingredients already in front of you.
+            </figcaption>
+          </figure>
+
+          <h2 id="mistakes">Common mistakes to avoid</h2>
+          <p>
+            Automatic cooking feels simple, but small choices still matter. Pay attention to liquid, timing, and texture,
+            especially when combining vegetables and protein with different cooking speeds.
+          </p>
+          <ul>
+            {article.mistakes.map((mistake) => <li>{mistake}</li>)}
+          </ul>
+
+          <h2 id="snapmeal">Decide from your actual fridge</h2>
+          <p>{article.snapmeal}</p>
+          <p>
+            This is the reason Snapmeal starts with a fridge photo rather than a blank recipe search. The question is not
+            “What recipes exist?” but “What should I cook tonight with these ingredients, this energy level, and this
+            cooking tool?”
+          </p>
+
+          <div class="article-links">
+            <a href={article.jaHref}>Read the Japanese version</a>
+            <a href={pageUrl}>Share this English article</a>
+          </div>
+
+          <BlogCta lang="en" title="Snap your fridge and decide dinner faster" />
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <style>
+    .blog-content {
+      color: rgb(55 65 81);
+      font-size: 1.0625rem;
+      line-height: 1.9;
+    }
+
+    .blog-content p {
+      margin: 0 0 1.35rem;
+    }
+
+    .blog-content h2 {
+      color: rgb(17 24 39);
+      font-size: clamp(1.65rem, 3vw, 2.15rem);
+      line-height: 1.25;
+      font-weight: 800;
+      margin: 3rem 0 1rem;
+      letter-spacing: 0;
+      scroll-margin-top: 5rem;
+    }
+
+    .blog-content ul {
+      margin: 0 0 1.5rem;
+      padding-left: 1.25rem;
+    }
+
+    .blog-content li {
+      margin: 0.55rem 0;
+      padding-left: 0.2rem;
+    }
+
+    .answer-box,
+    .toc,
+    .highlight-box,
+    .article-links {
+      border: 1px solid rgb(209 250 229);
+      border-radius: 1.5rem;
+      background: rgb(240 253 244);
+      padding: 1.25rem;
+      margin: 2rem 0;
+    }
+
+    .answer-label,
+    .toc-title,
+    .highlight-label {
+      color: rgb(5 150 105);
+      font-size: 0.8rem;
+      font-weight: 800;
+      margin: 0 0 0.5rem;
+    }
+
+    .highlight-box {
+      background: rgb(255 251 235);
+      border-color: rgb(253 230 138);
+    }
+
+    .highlight-label {
+      color: rgb(180 83 9);
+    }
+
+    .toc ol {
+      margin: 0;
+      padding-left: 1.25rem;
+    }
+
+    .toc li {
+      margin: 0.35rem 0;
+    }
+
+    .toc a,
+    .article-links a {
+      color: rgb(55 65 81);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .toc a:hover,
+    .article-links a:hover {
+      color: rgb(5 150 105);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .wide-figure {
+      margin: 2.4rem 0;
+    }
+
+    .wide-figure img {
+      width: 100%;
+      border-radius: 1.5rem;
+      border: 1px solid rgb(229 231 235);
+      box-shadow: 0 18px 45px rgb(15 23 42 / 0.1);
+    }
+
+    .wide-figure figcaption {
+      color: rgb(107 114 128);
+      font-size: 0.875rem;
+      line-height: 1.6;
+      margin-top: 0.75rem;
+      text-align: center;
+    }
+
+    .article-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: space-between;
+    }
+  </style>
+</Layout>
