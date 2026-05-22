@@ -1,0 +1,280 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogCta from '../../components/BlogCta.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+import RelatedArticles from '../../components/RelatedArticles.astro';
+---
+
+<Layout
+  lang="ja"
+  title="ホットクックで茶碗蒸し・プリンを作る——蒸し調理が得意な理由と「す」が立たないコツ"
+  description="ホットクックの蒸し調理は温度が安定しているため、茶碗蒸しやプリンに「す」が立ちにくいのが最大の利点。失敗原因と解決策、基本レシピから応用まで解説します。"
+  ogImage="/blog/hotcook-steamed-pudding-thumbnail-1600x900.png"
+  alternateUrl="https://snap-meal.com/en/blog/hotcook-steamed-pudding/"
+>
+  <BlogHeader />
+
+  <main>
+    <article>
+      <section class="bg-surface px-4 pt-14 pb-10 sm:pt-20">
+        <div class="max-w-3xl mx-auto">
+          <a href="/blog/" class="inline-flex items-center text-sm font-bold text-primary mb-8 hover:underline underline-offset-4">
+            ← ブログ一覧へ
+          </a>
+          <div class="flex flex-wrap items-center gap-3 text-xs font-bold text-gray-400 mb-5">
+            <span class="text-primary bg-green-50 px-3 py-1 rounded-full">ホットクック</span>
+            <time datetime="2025-07-05">2025年7月5日</time>
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-[1.25] mb-6">
+            ホットクックで茶碗蒸し・プリンを作る——蒸し調理が得意な理由と「す」が立たないコツ
+          </h1>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            茶碗蒸しやプリンの「す（気泡）」が立ってしまう原因は、蒸し器の温度が高すぎることにある。卵液に含まれるたんぱく質は85℃を超えると急激に収縮して気泡を閉じ込めてしまう。ホットクックは密閉環境で温度を均一にコントロールするため、この問題を解決しやすい。今回は茶碗蒸しとプリンの2レシピとともに、蒸し調理の仕組みを解説する。
+          </p>
+        </div>
+      </section>
+
+      <section class="px-4 py-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+          <img src="/blog/hotcook-steamed-pudding-thumbnail-1600x900.png" alt="ホットクックで作った茶碗蒸しとプリン" class="w-full rounded-3xl border border-gray-100 shadow-sm" />
+        </div>
+      </section>
+
+      <section class="px-4 py-10 bg-white">
+        <div class="blog-content max-w-3xl mx-auto">
+
+          <nav class="toc" aria-label="目次">
+            <p class="toc-title">目次</p>
+            <ol>
+              <li><a href="#why">ホットクックが蒸し物に向いている理由</a></li>
+              <li><a href="#science">「す」が立つ原因と85℃の法則</a></li>
+              <li><a href="#recipe1">茶碗蒸しの基本レシピ</a></li>
+              <li><a href="#recipe2">プリン（カラメルソース付き）レシピ</a></li>
+              <li><a href="#recipe3">応用：豆腐プリン・抹茶プリン</a></li>
+              <li><a href="#tips">失敗しないための5つのポイント</a></li>
+              <li><a href="#container">使える容器と使えない容器</a></li>
+              <li><a href="#faq">よくある質問</a></li>
+              <li><a href="#snapmeal">今日の食材から献立を決める</a></li>
+            </ol>
+          </nav>
+
+          <h2 id="why">ホットクックが蒸し物に向いている理由</h2>
+          <p>
+            一般的な蒸し器は「沸騰した蒸気」で食材を加熱するため、温度が100℃近くに達する。この高温は野菜や魚の蒸し物では問題ないが、卵液を使った料理では高すぎる。
+          </p>
+          <p>
+            ホットクックの蒸しモードは、<strong>内部の温度を80〜90℃程度に保ちながら加熱</strong>する。密閉されているため蒸気が逃げず、庫内の温度分布が安定している。この特性が、繊細な卵料理に適した調理環境を作り出す。
+          </p>
+          <p>
+            また、ホットクックは加熱中に蓋を開けないのも利点だ。蒸し器では途中で蓋を開けると温度が下がり、再加熱のムラが生じる。ホットクックなら加熱中の温度変化が最小限に抑えられる。
+          </p>
+
+          <h2 id="science">「す」が立つ原因と85℃の法則</h2>
+          <p>
+            卵液は70〜75℃で固まり始め、85℃を超えると急速に凝固する。この急激な凝固の際に、卵液内の空気や水蒸気が逃げ場を失って気泡になる——これが「す」の正体だ。
+          </p>
+
+          <div class="temp-box">
+            <div class="temp-item">
+              <div class="temp-deg">70〜75℃</div>
+              <div class="temp-desc">卵液が固まり始める。ゆっくり加熱するとなめらかな仕上がりになる。</div>
+            </div>
+            <div class="temp-item">
+              <div class="temp-deg">80〜85℃</div>
+              <div class="temp-desc">理想的な蒸し温度。この温度を保てば「す」が立ちにくい。ホットクックのターゲット温度。</div>
+            </div>
+            <div class="temp-item temp-danger">
+              <div class="temp-deg">90℃以上</div>
+              <div class="temp-desc">急激な凝固が起き、気泡が閉じ込められて「す」が立つ。蒸し器の高温がこの原因。</div>
+            </div>
+          </div>
+
+          <p>
+            「す」を防ぐ根本的な解決策は<strong>85℃を超えない温度で加熱し続けること</strong>だ。ホットクックはこれを自動でコントロールしてくれる。ただし卵液の作り方にも注意が必要で、泡立てすぎると加熱前から気泡が入り込む。
+          </p>
+
+          <h2 id="recipe1">茶碗蒸しの基本レシピ</h2>
+          <p>
+            シンプルな具材で作る基本の茶碗蒸し。だしのうまみが卵液に溶け込み、口に入れるとふるりと崩れるなめらかな食感になる。
+          </p>
+          <div class="recipe-box">
+            <h3 class="recipe-name">基本の茶碗蒸し</h3>
+            <div class="recipe-cols">
+              <div>
+                <h4>材料（2人前・茶碗2個）</h4>
+                <ul>
+                  <li>卵：2個</li>
+                  <li>だし：300ml（だしパック使用可）</li>
+                  <li>薄口醤油：小さじ1.5</li>
+                  <li>みりん：小さじ1</li>
+                  <li>塩：ひとつまみ</li>
+                  <li>鶏もも肉：50g（小さく切る）</li>
+                  <li>しいたけ：1枚（薄切り）</li>
+                  <li>三つ葉：少々</li>
+                  <li>水（蒸し用）：200ml</li>
+                </ul>
+              </div>
+              <div>
+                <h4>作り方</h4>
+                <ol>
+                  <li>卵を箸で切るように混ぜる（泡立てない）</li>
+                  <li>だし・醤油・みりん・塩を加えてよく混ぜる</li>
+                  <li>細かい泡はキッチンペーパーで除く</li>
+                  <li>鶏肉・しいたけを茶碗に入れ、卵液を注ぐ</li>
+                  <li>ホットクック内鍋に水を入れ、付属蒸しトレイに茶碗を置く</li>
+                  <li>手動→蒸し→弱→25〜30分</li>
+                  <li>仕上げに三つ葉を乗せる</li>
+                </ol>
+                <p class="recipe-note">卵液を注いだ後、表面の細かい泡をバーナーで軽くあぶるか、キッチンペーパーで吸い取ると仕上がりが美しくなる。</p>
+              </div>
+            </div>
+          </div>
+
+          <h2 id="recipe2">プリン（カラメルソース付き）レシピ</h2>
+          <p>
+            卵・牛乳・砂糖だけのシンプルな材料で作る昔ながらのプリン。カラメルソースを事前に作って底に入れておくと、仕上がりに手間がかからない。
+          </p>
+          <div class="recipe-box">
+            <h3 class="recipe-name">ホットクックプリン</h3>
+            <div class="recipe-cols">
+              <div>
+                <h4>材料（プリン型2個分）</h4>
+                <p style="font-size:0.82rem;color:rgb(107 114 128);margin:0 0 0.5rem">【カラメル】</p>
+                <ul>
+                  <li>砂糖：大さじ3</li>
+                  <li>水：大さじ1</li>
+                  <li>熱湯：大さじ1</li>
+                </ul>
+                <p style="font-size:0.82rem;color:rgb(107 114 128);margin:0.75rem 0 0.5rem">【プリン液】</p>
+                <ul>
+                  <li>卵：2個</li>
+                  <li>牛乳：200ml</li>
+                  <li>砂糖：大さじ2.5</li>
+                  <li>バニラエッセンス：2〜3滴（あれば）</li>
+                  <li>水（蒸し用）：200ml</li>
+                </ul>
+              </div>
+              <div>
+                <h4>作り方</h4>
+                <ol>
+                  <li>【カラメル】砂糖と水を小鍋で中火にかけ、薄茶色になったら熱湯を加えて伸ばす。素早くプリン型に等分する</li>
+                  <li>牛乳を600Wで50秒ほど温める（人肌程度）</li>
+                  <li>卵・砂糖・バニラを泡立てずに混ぜ、温めた牛乳を少しずつ加える</li>
+                  <li>こし器でプリン液を漉す（なめらかさが増す）</li>
+                  <li>カラメルが固まったプリン型に静かに注ぐ</li>
+                  <li>ホットクック内鍋に水・蒸しトレイをセットし、プリン型を乗せる</li>
+                  <li>手動→蒸し→弱→20〜25分</li>
+                  <li>粗熱を取り、冷蔵庫で2時間以上冷やす</li>
+                </ol>
+                <p class="recipe-note">型を裏返して皿に出すときは、竹串で型の縁を一周して空気を入れると外れやすくなる。</p>
+              </div>
+            </div>
+          </div>
+
+          <h2 id="recipe3">応用：豆腐プリン・抹茶プリン</h2>
+          <p>
+            基本のプリンレシピを覚えたら、材料を一部変えることで簡単にバリエーションが広がる。
+          </p>
+          <p>
+            <strong>豆腐プリン：</strong>牛乳の半量（100ml）を絹豆腐100g（よく混ぜてから加える）に置き換える。卵液がなめらかになり、カロリーが抑えられる。豆腐の風味はほとんど感じないため子どもでも食べやすい。<br /><br />
+            <strong>抹茶プリン：</strong>基本のプリン液に抹茶パウダー小さじ2を加える。あらかじめ牛乳大さじ1で抹茶を溶いてから混ぜると、ダマにならない。砂糖を大さじ3に増やすとほろ苦さが和らぐ。<br /><br />
+            <strong>ミルクプリン（卵なし）：</strong>卵の代わりにゼラチン（4g）を使う。蒸さずに加熱溶かし→冷やす方法になるが、卵アレルギーの子ども向けに対応できる。この場合はホットクックの「まぜあり加熱・5分」で牛乳を温めてゼラチンを溶かす。
+          </p>
+
+          <h2 id="tips">失敗しないための5つのポイント</h2>
+
+          <h3>① 卵液は「泡立てず」に混ぜる</h3>
+          <p>
+            箸でゆっくり切るように混ぜ、泡を立てない。電動ミキサーや泡立て器は使わない。泡が入ると蒸したときに気泡がそのまま固まる。
+          </p>
+
+          <h3>② 卵液は必ず「漉す」</h3>
+          <p>
+            細かい気泡や卵の白身のかたまりを取り除くため、必ずこし器（茶こしでも可）で漉す。これだけでなめらかさが一段上がる。
+          </p>
+
+          <h3>③ だしは完全に冷ましてから混ぜる</h3>
+          <p>
+            熱いだしを卵に加えると卵が半熟状になって固まってしまう。だしは人肌以下（40℃以下）に冷ましてから卵液に加える。
+          </p>
+
+          <h3>④ 型には「ふんわり」アルミホイルをかぶせる</h3>
+          <p>
+            蒸し中に蒸気の水滴が茶碗蒸しやプリンの表面に落ちると、表面に穴ができる。アルミホイルをかぶせて水滴が直接落ちないようにするのが一般的な対策だ。ふんわりかぶせる（蒸気の逃げ道を残す）のがポイントで、きつく包んでしまうと蒸気が入らない。
+          </p>
+
+          <h3>⑤ 加熱後は「完全に冷める」まで待つ</h3>
+          <p>
+            プリンは熱いうちは柔らかすぎて型崩れしやすい。粗熱が取れたら冷蔵庫で2時間以上冷やしてから食べる。冷やすことで卵のたんぱく質が安定し、型から外しやすくなる。
+          </p>
+
+          <h2 id="container">使える容器と使えない容器</h2>
+          <p>
+            ホットクックの蒸しトレイに乗せられるサイズであれば、基本的にどんな耐熱容器でも使える。
+          </p>
+          <p>
+            <strong>使えるもの：</strong>耐熱ガラス容器（パイレックスなど）、陶器・磁器の茶碗、ステンレス製カップ、シリコンカップ。<br />
+            <strong>注意が必要なもの：</strong>薄い陶器は急激な温度変化でひびが入ることがある。急冷はせず室温で冷ます。<br />
+            <strong>使えないもの：</strong>プラスチック容器（耐熱性が低いもの）、金属部分がある蓋（密閉すると圧力が変わる）。
+          </p>
+          <p>
+            蒸しトレイに容器を乗せたとき、ぐらつく場合はアルミホイルを丸めてスペーサーとして使うと安定する。
+          </p>
+
+          <h2 id="faq">よくある質問</h2>
+
+          <h3>Q. 蒸し時間の「弱モード」と「強モード」の違いは？</h3>
+          <p>
+            弱モードは低温で時間をかけて蒸す設定で、卵料理・茶碗蒸し・プリンに向きます。強モードは高温短時間で、野菜・肉・魚の蒸し物に使います。卵料理には必ず<strong>弱モード</strong>を使ってください。強モードで蒸すと「す」が立つ原因になります。
+          </p>
+
+          <h3>Q. 茶碗蒸しに入れてよい具材・ダメな具材は？</h3>
+          <p>
+            問題ない具材：鶏肉・えび・しいたけ・銀杏・かまぼこ・三つ葉・ゆり根。<br />
+            注意が必要な具材：<strong>生のサツマイモ・じゃがいも</strong>（酵素が卵の凝固を妨げる）。これらは事前に加熱してから入れると問題ありません。また<strong>生のにんじん</strong>もプロテアーゼ（たんぱく質分解酵素）を含むため固まりにくくなります。必ず下茹でしてから使ってください。
+          </p>
+
+          <h3>Q. プリンがうまく固まらなかったのはなぜですか？</h3>
+          <p>
+            主な原因は①加熱時間が短すぎた、②卵と牛乳の比率が崩れた（牛乳が多すぎる）、③加熱後すぐに冷やさなかった、の3つです。加熱後に竹串を刺して液状のものが出てくる場合は5分追加加熱し、冷蔵庫で冷やす時間を十分に取ることで解決できる場合がほとんどです。
+          </p>
+
+          <h2 id="snapmeal">今日の食材から献立を決める</h2>
+          <p>
+            卵・牛乳・だしがある日にデザートや副菜として何を作るか迷ったとき、Snapmealは冷蔵庫の写真から献立候補を提案します。茶碗蒸しとメインおかずの組み合わせも、写真1枚で決まります。
+          </p>
+
+          <RelatedArticles currentHref="/blog/hotcook-steamed-pudding/" />
+          <BlogCta title="冷蔵庫を撮って、今夜の献立を決める" />
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <style>
+    .blog-content { color: rgb(55 65 81); font-size: 1.0625rem; line-height: 1.9; }
+    .blog-content p { margin: 0 0 1.35rem; }
+    .blog-content h2 { color: rgb(17 24 39); font-size: clamp(1.65rem, 3vw, 2.15rem); line-height: 1.25; font-weight: 800; margin: 3rem 0 1rem; scroll-margin-top: 5rem; }
+    .blog-content h3 { color: rgb(17 24 39); font-size: 1.2rem; font-weight: 800; margin: 2rem 0 0.75rem; }
+    .blog-content strong { color: rgb(17 24 39); font-weight: 800; }
+    .toc { border: 1px solid rgb(209 250 229); border-radius: 1.5rem; background: rgb(240 253 244); padding: 1.25rem; margin: 2rem 0; }
+    .toc-title { color: rgb(5 150 105); font-size: 0.8rem; font-weight: 800; margin: 0 0 0.5rem; }
+    .toc ol { margin: 0; padding-left: 1.25rem; }
+    .toc li { margin: 0.35rem 0; }
+    .toc a { color: rgb(55 65 81); font-weight: 700; text-decoration: none; }
+    .toc a:hover { color: rgb(5 150 105); text-decoration: underline; }
+    /* Temperature box */
+    .temp-box { display: flex; flex-direction: column; gap: 0.6rem; margin: 1.25rem 0 2rem; }
+    .temp-item { display: flex; gap: 1rem; align-items: flex-start; background: rgb(240 253 244); border-left: 4px solid rgb(5 150 105); padding: 0.75rem 1rem; border-radius: 0 0.75rem 0.75rem 0; font-size: 0.9rem; }
+    .temp-item.temp-danger { background: rgb(254 242 242); border-left-color: rgb(239 68 68); }
+    .temp-deg { font-weight: 800; color: rgb(17 24 39); white-space: nowrap; min-width: 5.5rem; }
+    /* Recipe box */
+    .recipe-box { background: rgb(249 250 251); border: 1px solid rgb(229 231 235); border-radius: 1.25rem; padding: 1.25rem 1.5rem; margin: 1rem 0 2.5rem; }
+    .recipe-name { font-size: 1.1rem; font-weight: 800; color: rgb(17 24 39); margin: 0 0 1rem; }
+    .recipe-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    @media (max-width: 600px) { .recipe-cols { grid-template-columns: 1fr; } }
+    .recipe-cols h4 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: rgb(107 114 128); font-weight: 800; margin: 0 0 0.6rem; }
+    .recipe-cols ul, .recipe-cols ol { margin: 0; padding-left: 1.25rem; font-size: 0.9rem; line-height: 1.75; }
+    .recipe-note { background: rgb(209 250 229); padding: 0.6rem 0.85rem; border-radius: 0.5rem; font-size: 0.82rem; color: rgb(6 95 70); margin-top: 0.75rem; }
+  </style>
+</Layout>
