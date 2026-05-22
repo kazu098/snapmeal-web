@@ -1,36 +1,36 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import BlogHeader from '../../components/BlogHeader.astro';
+import Layout from '../../../layouts/Layout.astro';
+import BlogHeader from '../../../components/BlogHeader.astro';
 
 const articles = [
   {
-    title: 'ホットクックで鶏もも肉を使うなら？冷蔵庫の残り食材で作れる献立アイデア',
+    title: 'Just Snap Your Fridge. Dinner Decided in 30 Seconds. The Story Behind Snapmeal',
     description:
-      'ホットクックで鶏もも肉を使うときに作りやすい献立、相性のよい野菜、失敗しにくい味付け、水分量の考え方をまとめました。',
-    href: '/blog/hotcook-chicken-thigh-recipes/',
-    date: '2026年5月22日',
-    category: 'ホットクック',
-    image: '/blog/hotcook-chicken-thigh-thumbnail-1600x900.png',
+      'Why Snapmeal started: from struggling to use a Hotcook well, to building an AI meal-planning web app for real weeknight cooking.',
+    href: '/en/blog/why-we-built-snapmeal/',
+    date: 'May 22, 2026',
+    category: 'Product Story',
+    image: '/og-en.png',
   },
   {
-    title: '冷蔵庫を撮るだけで、今夜の献立が30秒で決まる。──Snapmealをつくった話',
+    title: 'What to Cook with Chicken Thigh in a Hotcook? Meal Ideas from What’s in Your Fridge',
     description:
-      'ホットクックを買ったのに使いこなせなかった体験から、冷蔵庫写真で献立を提案するSnapmealを作るまでの話。',
-    href: '/blog/why-we-built-snapmeal/',
-    date: '2026年5月22日',
-    category: '開発ストーリー',
-    image: '/og-ja.png',
+      'A practical guide for Hotcook and smart cooker users: chicken thigh meal ideas, vegetable pairings, seasoning directions, and common mistakes to avoid.',
+    href: '/en/blog/hotcook-chicken-thigh-recipes/',
+    date: 'May 22, 2026',
+    category: 'Smart Cooker',
+    image: '/blog/hotcook-chicken-thigh-thumbnail-1600x900.png',
   },
 ];
 ---
 
 <Layout
-  lang="ja"
-  title="Snapmeal ブログ — 献立決め・冷蔵庫活用・ホットクックのヒント"
-  description="Snapmealの開発ストーリー、冷蔵庫にある食材で献立を決めるコツ、ホットクック活用法などを発信します。"
-  alternateUrl="https://snap-meal.com/en/"
+  lang="en"
+  title="Snapmeal Blog — Smart Cooker Tips, Fridge Meals, and AI Meal Planning"
+  description="Practical articles about smart cooker meals, using what is already in your fridge, and how Snapmeal helps you decide dinner faster."
+  alternateUrl="https://snap-meal.com/blog/"
 >
-  <BlogHeader current="blog" />
+  <BlogHeader lang="en" current="blog" />
 
   <main>
     <section class="bg-surface px-4 py-16 sm:py-20">
@@ -38,10 +38,10 @@ const articles = [
         <div class="max-w-3xl">
           <p class="text-sm font-bold text-primary mb-3">Snapmeal Blog</p>
           <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-[1.25] mb-5">
-            献立決めを、もっと軽くするためのブログ
+            Practical ideas for easier dinner decisions
           </h1>
           <p class="text-lg text-gray-600 leading-relaxed">
-            冷蔵庫にある食材で献立を決めるコツ、ホットクック活用、Snapmealの開発背景をお届けします。
+            Smart cooker tips, fridge-based meal planning, and product stories from Snapmeal.
           </p>
         </div>
       </div>
@@ -64,7 +64,7 @@ const articles = [
               </h2>
               <p class="text-gray-600 leading-relaxed mb-5">{article.description}</p>
               <a href={article.href} class="text-primary font-bold text-sm hover:underline underline-offset-4">
-                記事を読む →
+                Read article →
               </a>
             </div>
           </article>

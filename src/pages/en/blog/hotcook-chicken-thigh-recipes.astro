@@ -1,0 +1,442 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import BlogCta from '../../../components/BlogCta.astro';
+import BlogHeader from '../../../components/BlogHeader.astro';
+
+const mealIdeas = [
+  {
+    title: 'Chicken thigh and daikon simmered in soy sauce',
+    ingredients: 'Chicken thigh, daikon, carrot, soy sauce, sake, sugar',
+    point: 'Daikon releases moisture as it cooks, so keep the seasoning moderate. This is one of the easiest simmered-dish patterns for a smart cooker.',
+  },
+  {
+    title: 'Chicken thigh and cabbage “waterless” stew',
+    ingredients: 'Chicken thigh, cabbage, onion, consommé, salt, pepper',
+    point: 'Cabbage and onion create enough moisture to bring the dish together. It works well on tired weeknights because the cooker does most of the work.',
+  },
+  {
+    title: 'Chicken thigh, potato, and tomato stew',
+    ingredients: 'Chicken thigh, potato, onion, canned tomato, garlic',
+    point: 'Canned tomato makes the flavor easy to stabilize. It pairs with rice or bread, and leftovers can become lunch the next day.',
+  },
+  {
+    title: 'Chicken thigh and napa cabbage Chinese-style soup stew',
+    ingredients: 'Chicken thigh, napa cabbage, mushrooms, chicken stock, ginger',
+    point: 'Napa cabbage gives the dish a soup-like finish. It is light enough for evenings when you want something warm but not heavy.',
+  },
+  {
+    title: 'Chicken thigh and mushrooms with butter soy sauce',
+    ingredients: 'Chicken thigh, shimeji, enoki, onion, soy sauce, butter',
+    point: 'Mushrooms add umami and make the dish feel satisfying. Add butter near the end if you want the aroma to stand out.',
+  },
+];
+
+const fridgePairs = [
+  ['Cabbage', 'Waterless-style stew, consommé stew, miso butter stew'],
+  ['Daikon', 'Soy sauce simmer, grated daikon simmer, chicken-daikon stew'],
+  ['Napa cabbage', 'Chinese-style soup stew, cream stew, ginger stew'],
+  ['Potatoes', 'Tomato stew, curry-style stew, nikujaga-style stew'],
+  ['Mushrooms', 'Butter soy sauce stew, Japanese-style stew, cream stew'],
+  ['Onion', 'Waterless stew, tomato stew, teriyaki-style simmer'],
+];
+---
+
+<Layout
+  lang="en"
+  title="What to Cook with Chicken Thigh in a Hotcook? Meal Ideas from What’s in Your Fridge"
+  description="A practical guide for Hotcook and smart cooker users: chicken thigh meal ideas, vegetable pairings, seasoning directions, and common mistakes to avoid."
+  ogImage="/blog/hotcook-chicken-thigh-thumbnail-1600x900.png"
+  alternateUrl="https://snap-meal.com/blog/hotcook-chicken-thigh-recipes/"
+>
+  <BlogHeader lang="en" />
+
+  <main>
+    <article>
+      <section class="bg-surface px-4 pt-14 pb-10 sm:pt-20">
+        <div class="max-w-3xl mx-auto">
+          <a href="/en/blog/" class="inline-flex items-center text-sm font-bold text-primary mb-8 hover:underline underline-offset-4">
+            ← Back to blog
+          </a>
+          <div class="flex flex-wrap items-center gap-3 text-xs font-bold text-gray-400 mb-5">
+            <span class="text-primary bg-green-50 px-3 py-1 rounded-full">Smart Cooker</span>
+            <time datetime="2026-05-22">May 22, 2026</time>
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-[1.25] mb-6">
+            What to Cook with Chicken Thigh in a Hotcook? Meal Ideas from What’s in Your Fridge
+          </h1>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            Chicken thigh is one of the easiest proteins to use in a Hotcook-style smart cooker. The hard part is not the chicken itself. It is deciding what to pair it with, how much liquid to add, and which cooking direction makes sense for the vegetables already in your fridge.
+          </p>
+        </div>
+      </section>
+
+      <section class="px-4 py-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+          <img
+            src="/blog/hotcook-chicken-thigh-thumbnail-1600x900.png"
+            alt="A smart cooker with chicken thigh and leftover vegetables for a meal planning article"
+            class="w-full rounded-3xl border border-gray-100 shadow-sm"
+          />
+        </div>
+      </section>
+
+      <section class="px-4 py-10 bg-white">
+        <div class="blog-content max-w-3xl mx-auto">
+          <div class="answer-box">
+            <p class="answer-label">Quick answer</p>
+            <p>
+              If you have chicken thigh, first check whether you also have daikon, cabbage, napa cabbage, potatoes, mushrooms, or onion. Watery vegetables are good for waterless-style stews, root vegetables are good for simmered dishes, and napa cabbage or mushrooms work well for soup-like meals.
+            </p>
+          </div>
+
+          <nav class="toc" aria-label="Table of contents">
+            <p class="toc-title">Table of contents</p>
+            <ol>
+              <li><a href="#why-chicken">Why chicken thigh works well in a smart cooker</a></li>
+              <li><a href="#ideas">Five smart cooker meal ideas with chicken thigh</a></li>
+              <li><a href="#fridge">How to decide based on leftover fridge vegetables</a></li>
+              <li><a href="#seasoning">Choose the seasoning direction first</a></li>
+              <li><a href="#mistakes">How to avoid common mistakes</a></li>
+              <li><a href="#menu">What to do when you are unsure which menu to choose</a></li>
+              <li><a href="#snapmeal">When you do not want to think through all of this</a></li>
+            </ol>
+          </nav>
+
+          <h2 id="why-chicken">Why chicken thigh works well in a smart cooker</h2>
+          <p>
+            Chicken thigh is forgiving. It stays juicier than chicken breast, works with Japanese, Western, and Chinese-style seasonings, and can become a simmered dish, tomato stew, soup, or curry-style meal without much effort.
+          </p>
+          <p>
+            But if you only look at the chicken, dinner still feels vague. Smart cookers hold on to moisture, and the vegetables you add change the final texture. That is why it is easier to decide the meal by asking, “What vegetable should I pair with this chicken?”
+          </p>
+
+          <h2 id="ideas">Five smart cooker meal ideas with chicken thigh</h2>
+          <p>
+            Think of these as meal patterns rather than strict recipes. They help you decide dinner faster when you know you have chicken thigh but do not want to search through dozens of recipes.
+          </p>
+
+          <div class="idea-list">
+            {mealIdeas.map((meal) => (
+              <section class="idea-card">
+                <h3>{meal.title}</h3>
+                <p class="ingredients">Main ingredients: {meal.ingredients}</p>
+                <p>{meal.point}</p>
+              </section>
+            ))}
+          </div>
+
+          <h2 id="fridge">How to decide based on leftover fridge vegetables</h2>
+          <p>
+            With smart cooker meals, the easiest question is not “What chicken recipe should I make?” It is “What vegetable should I combine with chicken thigh today?”
+          </p>
+
+          <div class="pair-table" role="table" aria-label="Meal directions by leftover fridge vegetable">
+            <div class="pair-row pair-head" role="row">
+              <div role="columnheader">Ingredient in your fridge</div>
+              <div role="columnheader">Easy meal direction</div>
+            </div>
+            {fridgePairs.map(([ingredient, ideas]) => (
+              <div class="pair-row" role="row">
+                <div role="cell">{ingredient}</div>
+                <div role="cell">{ideas}</div>
+              </div>
+            ))}
+          </div>
+
+          <p>
+            If you have cabbage or onion, avoid adding too much extra water and lean toward a waterless-style stew. If you have napa cabbage, a soup-like direction is natural. If you have daikon or potatoes, think of a simmered main dish.
+          </p>
+
+          <h2 id="seasoning">Choose the seasoning direction first</h2>
+          <p>
+            After choosing the vegetables, decide whether the meal should feel Japanese, Western, or Chinese-style. This reduces decision fatigue more than trying to pick a perfect recipe name first.
+          </p>
+          <p>
+            For Japanese-style meals, use soy sauce, sake, sugar, and mirin. If you do not have mirin, sake plus a little sugar can move the flavor in a similar direction. Daikon, carrot, mushrooms, and onion all work well here.
+          </p>
+          <p>
+            For Western-style meals, canned tomato, consommé, salt, pepper, and garlic are easy anchors. Potatoes, onion, cabbage, and mushrooms can become a tomato stew or consommé stew that works with rice, bread, or pasta the next day.
+          </p>
+          <p>
+            For Chinese-style meals, use chicken stock, ginger, garlic, and sesame oil. Napa cabbage, mushrooms, and green onion are especially good. You can keep it soupy or thicken it slightly at the end.
+          </p>
+
+          <div class="highlight-box">
+            <p class="highlight-label">Simple decision flow</p>
+            <p>
+              <strong>1. Look at the vegetables → 2. Choose Japanese, Western, or Chinese-style seasoning → 3. Keep added liquid modest.</strong>
+              This order makes chicken thigh smart cooker meals much easier to decide.
+            </p>
+          </div>
+
+          <h2 id="mistakes">How to avoid common mistakes</h2>
+          <h3>Do not add too much water when using watery vegetables</h3>
+          <p>
+            Cabbage, napa cabbage, onion, and mushrooms release moisture as they cook. Because smart cookers trap steam well, adding extra water can make the final dish taste diluted.
+          </p>
+
+          <h3>Season lightly first, then adjust at the end</h3>
+          <p>
+            It is hard to taste and adjust midway through smart cooker cooking. Start slightly lighter with soy sauce, salt, miso, or consommé, then adjust after cooking if needed.
+          </p>
+
+          <div class="note-grid">
+            <div>
+              <p class="note-title">Ingredients that release moisture</p>
+              <p>Cabbage, napa cabbage, onion, and mushrooms. Use less added water to avoid a bland finish.</p>
+            </div>
+            <div>
+              <p class="note-title">Ingredients that absorb flavor well</p>
+              <p>Daikon, potatoes, and carrots. These are good when you want a more filling simmered main dish.</p>
+            </div>
+          </div>
+
+          <h3>Choose a nearby menu by cooking style, not exact recipe name</h3>
+          <p>
+            Your ingredients will rarely match an official recipe perfectly. Instead, match by cooking style: simmered dish, tomato stew, soup, curry, or stew. If the automatic menu does not fit, a manual simmer or soup setting may be easier to reason about.
+          </p>
+
+          <h2 id="menu">What to do when you are unsure which menu to choose</h2>
+          <p>
+            This is where many smart cooker users get stuck. You may have chicken thigh, half a cabbage, and a few mushrooms, but no official recipe that matches that exact set of ingredients.
+          </p>
+          <p>
+            In that case, decide the nature of the dish first. If you want a juicy, brothy result, think soup or stew. If you want flavor to soak into daikon or potatoes, think simmered dish. If you are using canned tomato or curry powder, think tomato stew, curry, or stew-like cooking.
+          </p>
+          <p>
+            Also remember that not every chicken thigh dinner needs to be cooked in the smart cooker. If you want crispy skin, a quick teriyaki-style finish, or vegetables with more bite, a frying pan may be better. The point is not to force every meal into the cooker. The point is to choose the tool that matches your energy and the dish you want.
+          </p>
+
+          <figure class="wide-figure">
+            <img src="/blog/hotcook-chicken-thigh-thumbnail-1600x900.png" alt="A smart cooker with chicken thigh and vegetables on a kitchen counter" loading="lazy" />
+            <figcaption>Smart cooker meal planning becomes easier when you think about the vegetables and seasoning direction together.</figcaption>
+          </figure>
+
+          <h2>Common questions</h2>
+          <h3>Can I cook chicken thigh from frozen?</h3>
+          <p>
+            Sometimes, but it can lead to uneven cooking, especially if the pieces are large or stuck together. For safer and more predictable results, thaw the chicken in the refrigerator first and always check that the center is fully cooked.
+          </p>
+
+          <h3>Can I use chicken breast instead?</h3>
+          <p>
+            Yes, but chicken breast dries out more easily than chicken thigh. It usually needs a gentler approach: more soup-like cooking, starch or oil for protection, and less overcooking. If you are new to smart cooker meals, chicken thigh is more forgiving.
+          </p>
+
+          <h3>What about side dishes?</h3>
+          <p>
+            When the smart cooker handles the main dish, keep the rest simple. Chicken and daikon simmer can pair with tofu or miso soup. Tomato chicken stew can pair with salad or bread. Chinese-style soup stew can be enough with rice and pickles.
+          </p>
+
+          <h2 id="snapmeal">When you do not want to think through all of this</h2>
+          <p>
+            As you can see, smart cooker meal planning involves several decisions at once: protein, vegetables, liquid, seasoning, cooking mode, and your energy level for the day. That can be a lot at 6 PM.
+          </p>
+          <p>
+            Snapmeal helps by reading the ingredients from your fridge photo and suggesting meals that fit what you already have. It can consider whether chicken thigh should go with cabbage, daikon, or mushrooms, and whether a smart cooker, pan, or microwave makes the most sense today.
+          </p>
+
+          <BlogCta lang="en" title="Snap your fridge and decide a smart cooker meal" />
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <style>
+    .blog-content {
+      color: rgb(55 65 81);
+      font-size: 1.0625rem;
+      line-height: 1.9;
+    }
+
+    .blog-content p {
+      margin: 0 0 1.35rem;
+    }
+
+    .blog-content h2 {
+      color: rgb(17 24 39);
+      font-size: clamp(1.65rem, 3vw, 2.15rem);
+      line-height: 1.25;
+      font-weight: 800;
+      margin: 3rem 0 1rem;
+      letter-spacing: 0;
+      scroll-margin-top: 5rem;
+    }
+
+    .blog-content h3 {
+      color: rgb(17 24 39);
+      font-size: 1.2rem;
+      line-height: 1.4;
+      font-weight: 800;
+      margin: 2rem 0 0.75rem;
+      letter-spacing: 0;
+    }
+
+    .blog-content strong {
+      color: rgb(17 24 39);
+      font-weight: 800;
+    }
+
+    .answer-box,
+    .toc,
+    .highlight-box {
+      border: 1px solid rgb(209 250 229);
+      border-radius: 1.5rem;
+      background: rgb(240 253 244);
+      padding: 1.25rem;
+      margin: 2rem 0;
+    }
+
+    .answer-label,
+    .toc-title,
+    .highlight-label {
+      color: rgb(5 150 105);
+      font-size: 0.8rem;
+      font-weight: 800;
+      margin: 0 0 0.5rem;
+    }
+
+    .highlight-box {
+      background: rgb(255 251 235);
+      border-color: rgb(253 230 138);
+    }
+
+    .highlight-label {
+      color: rgb(180 83 9);
+    }
+
+    .toc ol {
+      margin: 0;
+      padding-left: 1.25rem;
+    }
+
+    .toc li {
+      margin: 0.35rem 0;
+      padding-left: 0.15rem;
+    }
+
+    .toc a {
+      color: rgb(55 65 81);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .toc a:hover {
+      color: rgb(5 150 105);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .idea-list {
+      display: grid;
+      gap: 1rem;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .idea-card {
+      border: 1px solid rgb(229 231 235);
+      border-radius: 1.25rem;
+      padding: 1.25rem;
+      background: rgb(255 255 255);
+    }
+
+    .idea-card h3 {
+      margin-top: 0;
+    }
+
+    .ingredients {
+      color: rgb(5 150 105);
+      font-size: 0.95rem;
+      font-weight: 800;
+    }
+
+    .pair-table {
+      border: 1px solid rgb(229 231 235);
+      border-radius: 1.25rem;
+      overflow: hidden;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .pair-row {
+      display: grid;
+      grid-template-columns: minmax(7rem, 0.8fr) 1.6fr;
+      border-top: 1px solid rgb(229 231 235);
+    }
+
+    .pair-row:first-child {
+      border-top: 0;
+    }
+
+    .pair-row > div {
+      padding: 0.9rem 1rem;
+      font-size: 0.95rem;
+      line-height: 1.65;
+    }
+
+    .pair-head {
+      background: rgb(249 250 251);
+      color: rgb(17 24 39);
+      font-weight: 800;
+    }
+
+    .note-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .note-grid > div {
+      background: rgb(249 250 251);
+      border: 1px solid rgb(229 231 235);
+      border-radius: 1.25rem;
+      padding: 1.1rem;
+    }
+
+    .note-grid p {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    .note-title {
+      color: rgb(17 24 39);
+      font-weight: 800;
+      margin-bottom: 0.35rem !important;
+    }
+
+    .wide-figure {
+      margin: 2.4rem 0;
+    }
+
+    .wide-figure img {
+      width: 100%;
+      border-radius: 1.5rem;
+      border: 1px solid rgb(229 231 235);
+      box-shadow: 0 18px 45px rgb(15 23 42 / 0.1);
+    }
+
+    .wide-figure figcaption {
+      color: rgb(107 114 128);
+      font-size: 0.875rem;
+      line-height: 1.6;
+      margin-top: 0.75rem;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .pair-row {
+        grid-template-columns: 1fr;
+      }
+
+      .pair-row > div:first-child {
+        padding-bottom: 0;
+        font-weight: 800;
+      }
+
+      .note-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</Layout>

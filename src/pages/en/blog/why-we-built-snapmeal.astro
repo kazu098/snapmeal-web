@@ -1,0 +1,253 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import BlogCta from '../../../components/BlogCta.astro';
+import BlogHeader from '../../../components/BlogHeader.astro';
+---
+
+<Layout
+  lang="en"
+  title="Just Snap Your Fridge. Dinner Decided in 30 Seconds. The Story Behind Snapmeal"
+  description="Why Snapmeal started: from struggling to use a Hotcook well, to building an AI meal-planning web app for real weeknight cooking."
+  ogImage="/og-en.png"
+  alternateUrl="https://snap-meal.com/blog/why-we-built-snapmeal/"
+>
+  <BlogHeader lang="en" />
+
+  <main>
+    <article>
+      <section class="bg-surface px-4 pt-14 pb-10 sm:pt-20">
+        <div class="max-w-3xl mx-auto">
+          <a href="/en/blog/" class="inline-flex items-center text-sm font-bold text-primary mb-8 hover:underline underline-offset-4">
+            ← Back to blog
+          </a>
+          <div class="flex flex-wrap items-center gap-3 text-xs font-bold text-gray-400 mb-5">
+            <span class="text-primary bg-green-50 px-3 py-1 rounded-full">Product Story</span>
+            <time datetime="2026-05-22">May 22, 2026</time>
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-[1.25] mb-6">
+            Just Snap Your Fridge. Dinner Decided in 30 Seconds. The Story Behind Snapmeal
+          </h1>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            I bought a Hotcook hoping it would make cooking easier. It did help with cooking, but it did not solve the hardest part of weeknight dinner: deciding what to make with the ingredients already in the fridge.
+          </p>
+        </div>
+      </section>
+
+      <section class="px-4 py-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+          <img src="/og-en.png" alt="Snapmeal app introduction" class="w-full rounded-3xl border border-gray-100 shadow-sm" />
+        </div>
+      </section>
+
+      <section class="px-4 py-10 bg-white">
+        <div class="blog-content max-w-3xl mx-auto">
+          <nav class="toc" aria-label="Table of contents">
+            <p class="toc-title">Table of contents</p>
+            <ol>
+              <li><a href="#dinner-problem">The 6 PM “what should I cook?” problem</a></li>
+              <li><a href="#hotcook-problem">I bought a Hotcook, but still could not use it well</a></li>
+              <li><a href="#ai-kitchen">I made a custom GPT and started using it every day</a></li>
+              <li><a href="#development">Turning it into a real web app was harder than expected</a></li>
+              <li><a href="#focus">What I cared about while building Snapmeal</a></li>
+              <li><a href="#beta">Snapmeal is now available in beta</a></li>
+            </ol>
+          </nav>
+
+          <h2 id="dinner-problem">The 6 PM “what should I cook?” problem</h2>
+          <p>After work, I would come home and open the fridge.</p>
+          <p>
+            Carrots, tofu, leftover chicken from yesterday, half a cabbage. There was food. But the next step did not come. What should I actually cook tonight?
+          </p>
+          <p>
+            That stuck feeling at 6 PM became a daily pattern.
+          </p>
+
+          <h2 id="hotcook-problem">I bought a Hotcook, but still could not use it well</h2>
+          <p>
+            A few years ago, I bought a Hotcook because I thought it would make cooking easier. It is a smart automatic cooker, and it does make the cooking process easier.
+          </p>
+          <p>
+            But reality was different from what I expected. The recipe book might say “200g pork belly,” while I only had chicken thigh. It might ask for mirin, but I had run out and did not know whether sake, sugar, or something else could get me close enough.
+          </p>
+          <p>
+            The Hotcook could cook automatically, but it could not decide what I should cook from the ingredients I actually had. That was the part where I kept getting stuck.
+          </p>
+
+          <h2 id="ai-kitchen">I made a custom GPT and started using it every day</h2>
+          <p>
+            So I made a custom GPT for myself. The idea was simple: tell it what ingredients I had, and it would suggest Hotcook-friendly meals. I called it AI Kitchen.
+          </p>
+          <p>
+            It turned out to be more useful than I expected. If I did not have mirin, it could suggest sake and sugar as a substitute. It could look at my ingredients and suggest meals that fit the Hotcook.
+          </p>
+          <p>
+            But after using it every day, I started noticing the gaps. I could not save favorite meals. I could not keep track of what my family liked. If the image recognition was wrong, correcting it through chat felt clumsy. And because it was focused on Hotcook, it was not ideal for days when a frying pan or microwave made more sense.
+          </p>
+          <p>
+            All those small “I wish it could do this” moments accumulated. Eventually I wanted to rebuild the experience as a proper web app.
+          </p>
+
+          <figure>
+            <img src="/screenshots/en/01-home.png" alt="Snapmeal home screen" loading="lazy" />
+            <figcaption>Snapmeal starts from a simple question: what can I cook with what I already have?</figcaption>
+          </figure>
+
+          <h2 id="development">Turning it into a real web app was harder than expected</h2>
+          <h3>Ingredient recognition and editing</h3>
+          <p>
+            The core feature is simple to describe: take photos of your fridge, recognize the ingredients, and suggest meals. But the first implementation struggled when multiple images were sent together.
+          </p>
+          <p>
+            After testing, I changed the approach. Instead of sending all photos as one batch, Snapmeal processes each photo separately and then merges the results. That improved recognition significantly.
+          </p>
+          <p>
+            I also built an ingredient confirmation screen. If the AI sees something wrong, you can delete it. If something is missing, you can add it. I wanted to remove the friction of having to explain corrections in a chat box.
+          </p>
+
+          <h3>Android camera issues</h3>
+          <p>
+            iPhone support was relatively smooth. Android was harder. On some devices, the camera did not open correctly. On others, the captured photo did not return to the app. Device differences made this more time-consuming than expected.
+          </p>
+
+          <h3>Authentication</h3>
+          <p>
+            There were also issues around Google login. A user could complete OAuth, but the app would still behave as if they were a guest. The cause was in how the app handled auth events after redirect. Invisible problems like this can be the most draining.
+          </p>
+
+          <h3>Speed</h3>
+          <p>
+            The first AI model I used was accurate but sometimes slow. I tuned the model choice and settings to improve perceived speed. Balancing quality and speed is still one of the hardest parts of the product.
+          </p>
+
+          <h2 id="focus">What I cared about while building Snapmeal</h2>
+          <h3>Showing the actual Hotcook steps</h3>
+          <p>
+            For Hotcook meals, it is not enough to say “you can cook this in a Hotcook.” Users need to know which category or nearby automatic menu to choose, and what to do if they need manual mode. Snapmeal tries to make that guidance practical.
+          </p>
+
+          <figure>
+            <img src="/screenshots/en/04-recipe.png" alt="Snapmeal recipe screen" loading="lazy" />
+            <figcaption>Snapmeal includes ingredients, steps, and smart cooker guidance.</figcaption>
+          </figure>
+
+          <h3>Tired Mode</h3>
+          <p>
+            Some evenings, you do not have the energy to hold a knife. Tired Mode prioritizes meals that are quick, simple, and low-effort. I built it because I wanted it myself.
+          </p>
+
+          <h3>Substitution ideas</h3>
+          <p>
+            One of the reasons I started this project was that I did not know enough about ingredient and seasoning substitutions. Snapmeal tries to help when you are missing something like mirin, soy sauce, or a specific vegetable.
+          </p>
+
+          <h3>Avoiding repetition</h3>
+          <p>
+            If an app suggests the same kind of meal over and over, people stop using it. Snapmeal looks at recent suggestions and tries to avoid repeating the same dish, ingredient, or cuisine too often.
+          </p>
+
+          <h2 id="beta">Snapmeal is now available in beta</h2>
+          <p>
+            Snapmeal is now available as a beta. You do not need to download anything. It runs in the browser, and all features are free during the beta period.
+          </p>
+          <p>
+            It works for Hotcook users, but also for people cooking with a frying pan, microwave, oven, or whatever is realistic that day. If you try it, I would love to hear what felt useful and what should be improved.
+          </p>
+        </div>
+      </section>
+
+      <section class="px-4 pb-20 bg-white">
+        <div class="max-w-3xl mx-auto">
+          <BlogCta lang="en" />
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <style>
+    .blog-content {
+      color: rgb(55 65 81);
+      font-size: 1.0625rem;
+      line-height: 1.9;
+    }
+
+    .blog-content p {
+      margin: 0 0 1.35rem;
+    }
+
+    .blog-content h2 {
+      color: rgb(17 24 39);
+      font-size: clamp(1.65rem, 3vw, 2.15rem);
+      line-height: 1.25;
+      font-weight: 800;
+      margin: 3rem 0 1rem;
+      letter-spacing: 0;
+      scroll-margin-top: 5rem;
+    }
+
+    .blog-content h3 {
+      color: rgb(17 24 39);
+      font-size: 1.25rem;
+      line-height: 1.4;
+      font-weight: 800;
+      margin: 2rem 0 0.75rem;
+      letter-spacing: 0;
+    }
+
+    .blog-content figure {
+      margin: 2.25rem auto;
+      max-width: 20rem;
+      text-align: center;
+    }
+
+    .blog-content figure img {
+      border: 1px solid rgb(229 231 235);
+      border-radius: 1.5rem;
+      box-shadow: 0 18px 45px rgb(15 23 42 / 0.12);
+    }
+
+    .blog-content figcaption {
+      color: rgb(107 114 128);
+      font-size: 0.875rem;
+      line-height: 1.6;
+      margin-top: 0.85rem;
+    }
+
+    .toc {
+      border: 1px solid rgb(229 231 235);
+      border-radius: 1.5rem;
+      background: rgb(249 250 251);
+      padding: 1.25rem;
+      margin: 2rem 0;
+    }
+
+    .toc-title {
+      color: rgb(5 150 105);
+      font-size: 0.8rem;
+      font-weight: 800;
+      margin: 0 0 0.5rem;
+    }
+
+    .toc ol {
+      margin: 0;
+      padding-left: 1.25rem;
+    }
+
+    .toc li {
+      margin: 0.35rem 0;
+      padding-left: 0.15rem;
+    }
+
+    .toc a {
+      color: rgb(55 65 81);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .toc a:hover {
+      color: rgb(5 150 105);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+  </style>
+</Layout>

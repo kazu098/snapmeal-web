@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-
-const APP_URL = 'https://app.snap-meal.com';
+import BlogCta from '../../components/BlogCta.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
 ---
 
 <Layout
@@ -9,19 +9,9 @@ const APP_URL = 'https://app.snap-meal.com';
   title="冷蔵庫を撮るだけで、今夜の献立が30秒で決まる。──Snapmealをつくった話"
   description="ホットクックを買ったのに使いこなせなかった体験から、冷蔵庫写真で献立を提案するSnapmealを作るまでの話。"
   ogImage="/og-ja.png"
-  alternateUrl="https://snap-meal.com/en/"
+  alternateUrl="https://snap-meal.com/en/blog/why-we-built-snapmeal/"
 >
-  <header class="border-b border-gray-100 bg-white">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-      <a href="/" class="text-xl font-extrabold text-primary tracking-tight">Snapmeal</a>
-      <nav class="flex items-center gap-4 text-sm font-semibold text-gray-600">
-        <a href="/blog/" class="hover:text-primary transition">ブログ</a>
-        <a href={APP_URL} target="_blank" rel="noopener noreferrer" data-ga-event="cta_click" class="bg-primary text-white px-4 py-2 rounded-full hover:bg-primary-dark transition">
-          ベータ版を試す
-        </a>
-      </nav>
-    </div>
-  </header>
+  <BlogHeader />
 
   <main>
     <article>
@@ -34,7 +24,7 @@ const APP_URL = 'https://app.snap-meal.com';
             <span class="text-primary bg-green-50 px-3 py-1 rounded-full">開発ストーリー</span>
             <time datetime="2026-05-22">2026年5月22日</time>
           </div>
-          <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+          <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-[1.25] mb-6">
             冷蔵庫を撮るだけで、今夜の献立が30秒で決まる。──Snapmealをつくった話
           </h1>
           <p class="text-lg text-gray-600 leading-relaxed">
@@ -224,23 +214,8 @@ const APP_URL = 'https://app.snap-meal.com';
       </section>
 
       <section class="px-4 pb-20 bg-white">
-        <div class="max-w-3xl mx-auto bg-surface rounded-3xl p-6 sm:p-8 text-center border border-gray-100">
-          <p class="text-sm font-bold text-primary mb-3">ベータ版公開中</p>
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-4">
-            冷蔵庫を撮って、今夜の献立を決めてみませんか？
-          </h2>
-          <p class="text-gray-600 leading-relaxed mb-6">
-            Snapmealはブラウザからすぐに使えます。ベータ期間中は全機能無料です。
-          </p>
-          <a
-            href={APP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            data-ga-event="cta_click"
-            class="inline-block bg-primary text-white font-bold px-8 py-4 rounded-2xl hover:bg-primary-dark transition shadow-lg shadow-green-200"
-          >
-            Snapmealを試してみる
-          </a>
+        <div class="max-w-3xl mx-auto">
+          <BlogCta />
         </div>
       </section>
     </article>
@@ -361,5 +336,6 @@ const APP_URL = 'https://app.snap-meal.com';
       font-weight: 800;
       margin: 0;
     }
+
   </style>
 </Layout>

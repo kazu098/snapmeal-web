@@ -1,0 +1,44 @@
+---
+interface Props {
+  lang?: 'ja' | 'en';
+  current?: 'blog' | 'article';
+}
+
+const { lang = 'ja', current = 'article' } = Astro.props;
+
+const isEnglish = lang === 'en';
+const appUrl = 'https://app.snap-meal.com';
+const copy = isEnglish
+  ? {
+      homeHref: '/en/',
+      blogHref: '/en/blog/',
+      secondaryHref: current === 'blog' ? '/en/' : '/en/blog/',
+      secondaryLabel: current === 'blog' ? 'Home' : 'Blog',
+      cta: 'Try beta free',
+    }
+  : {
+      homeHref: '/',
+      blogHref: '/blog/',
+      secondaryHref: current === 'blog' ? '/' : '/blog/',
+      secondaryLabel: current === 'blog' ? 'トップ' : 'ブログ',
+      cta: 'ベータ版を試す',
+    };
+---
+
+<header class="border-b border-gray-100 bg-white">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+    <a href={copy.homeHref} class="text-xl font-extrabold text-primary tracking-tight">Snapmeal</a>
+    <nav class="flex items-center gap-4 text-sm font-semibold text-gray-600">
+      <a href={copy.secondaryHref} class="hover:text-primary transition">{copy.secondaryLabel}</a>
+      <a
+        href={appUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-ga-event="cta_click"
+        class="bg-primary text-white px-4 py-2 rounded-full hover:bg-primary-dark transition"
+      >
+        {copy.cta}
+      </a>
+    </nav>
+  </div>
+</header>
