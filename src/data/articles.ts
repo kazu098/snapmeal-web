@@ -18,6 +18,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-frozen-vegetables-thumbnail-1600x900.png',
     tags: ['冷凍野菜', '時短', '初心者', '野菜'],
+    readingTime: 5,
   },
   {
     title: 'ホットクックで缶詰を使い切る——さば缶・ツナ缶・トマト缶で作る救済レシピ',
@@ -27,6 +28,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-canned-food-thumbnail-1600x900.png',
     tags: ['缶詰', '魚', '節約', '食材活用'],
+    readingTime: 4,
   },
   {
     title: 'ホットクックでもやしを使うなら——安い・早い・水っぽくしない調理のコツ',
@@ -36,6 +38,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-bean-sprouts-thumbnail-1600x900.png',
     tags: ['もやし', '節約', '時短', '野菜'],
+    readingTime: 4,
   },
   {
     title: 'ホットクックでパスタは作れる？——別ゆでなしで失敗しにくい一皿ごはん',
@@ -45,6 +48,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-pasta-thumbnail-1600x900.png',
     tags: ['パスタ', '時短', '昼ごはん', 'トマト'],
+    readingTime: 4,
   },
   {
     title: 'ホットクックの手動モード入門——公式メニューにない料理を作るときの考え方',
@@ -54,6 +58,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-manual-mode-thumbnail-1600x900.png',
     tags: ['手動モード', '初心者', '調理テクニック'],
+    readingTime: 5,
   },
   {
     title: '1人暮らしのホットクック——少量調理と食材を余らせないための使い方',
