@@ -1,0 +1,451 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogCta from '../../components/BlogCta.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+
+const mealIdeas = [
+  {
+    title: '鶏もも肉と大根のしょうゆ煮',
+    ingredients: '鶏もも肉、大根、にんじん、しょうゆ、酒、砂糖',
+    point: '大根から水分が出るので、調味料は濃くしすぎない。ホットクックでは煮物系の定番として作りやすい組み合わせです。',
+  },
+  {
+    title: '鶏もも肉とキャベツの無水風煮込み',
+    ingredients: '鶏もも肉、キャベツ、玉ねぎ、コンソメ、塩、こしょう',
+    point: 'キャベツと玉ねぎの水分でまとまりやすい献立。疲れた日でも材料を切って入れるだけで形になります。',
+  },
+  {
+    title: '鶏もも肉とじゃがいものトマト煮',
+    ingredients: '鶏もも肉、じゃがいも、玉ねぎ、トマト缶、にんにく',
+    point: 'トマト缶を使うと味が決まりやすく、パンにもごはんにも合わせやすいです。翌日の昼食にも回しやすい一品。',
+  },
+  {
+    title: '鶏もも肉と白菜の中華スープ煮',
+    ingredients: '鶏もも肉、白菜、きのこ、鶏ガラスープ、しょうが',
+    point: '白菜の水分でスープ寄りに仕上がります。寒い日や、軽めの夕飯に向いています。',
+  },
+  {
+    title: '鶏もも肉ときのこのバターしょうゆ煮',
+    ingredients: '鶏もも肉、しめじ、えのき、玉ねぎ、しょうゆ、バター',
+    point: 'きのこのうまみで満足感が出やすい献立。最後にバターを足すと香りが残りやすくなります。',
+  },
+];
+
+const fridgePairs = [
+  ['キャベツ', '無水風煮込み、コンソメ煮、味噌バター煮'],
+  ['大根', 'しょうゆ煮、みぞれ煮、鶏大根'],
+  ['白菜', '中華スープ煮、クリーム煮、しょうが煮'],
+  ['じゃがいも', 'トマト煮、カレー風煮、肉じゃが風'],
+  ['きのこ', 'バターしょうゆ煮、和風煮、クリーム煮'],
+  ['玉ねぎ', '無水煮、トマト煮、照り煮'],
+];
+---
+
+<Layout
+  lang="ja"
+  title="ホットクックで鶏もも肉を使うなら？冷蔵庫の残り食材で作れる献立アイデア"
+  description="ホットクックで鶏もも肉を使うときに作りやすい献立、相性のよい野菜、失敗しにくい味付け、水分量の考え方をまとめました。"
+  ogImage="/blog/hotcook-chicken-thigh-thumbnail-1600x900.png"
+  alternateUrl="https://snap-meal.com/en/blog/hotcook-chicken-thigh-recipes/"
+>
+  <BlogHeader />
+
+  <main>
+    <article>
+      <section class="bg-surface px-4 pt-14 pb-10 sm:pt-20">
+        <div class="max-w-3xl mx-auto">
+          <a href="/blog/" class="inline-flex items-center text-sm font-bold text-primary mb-8 hover:underline underline-offset-4">
+            ← ブログ一覧へ
+          </a>
+          <div class="flex flex-wrap items-center gap-3 text-xs font-bold text-gray-400 mb-5">
+            <span class="text-primary bg-green-50 px-3 py-1 rounded-full">ホットクック</span>
+            <time datetime="2026-05-22">2026年5月22日</time>
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-[1.25] mb-6">
+            ホットクックで鶏もも肉を使うなら？冷蔵庫の残り食材で作れる献立アイデア
+          </h1>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            鶏もも肉はホットクックと相性のよい食材です。ただ、冷蔵庫にある野菜や調味料によって、作りやすい献立は変わります。この記事では、鶏もも肉を軸に、今ある食材から夕飯を決める考え方をまとめます。
+          </p>
+        </div>
+      </section>
+
+      <section class="px-4 py-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+          <img
+            src="/blog/hotcook-chicken-thigh-thumbnail-1600x900.png"
+            alt="ホットクックと鶏もも肉、冷蔵庫の残り野菜を並べたブログサムネイル"
+            class="w-full rounded-3xl border border-gray-100 shadow-sm"
+          />
+        </div>
+      </section>
+
+      <section class="px-4 py-10 bg-white">
+        <div class="blog-content max-w-3xl mx-auto">
+          <div class="answer-box">
+            <p class="answer-label">結論</p>
+            <p>
+              ホットクックで鶏もも肉を使うなら、まずは「大根・キャベツ・白菜・じゃがいも・きのこ・玉ねぎ」のどれが冷蔵庫にあるかを見るのがおすすめです。水分が出る野菜なら無水風、根菜なら煮物、白菜やきのこならスープ寄りにすると失敗しにくくなります。
+            </p>
+          </div>
+
+          <nav class="toc" aria-label="目次">
+            <p class="toc-title">目次</p>
+            <ol>
+              <li><a href="#why-chicken">鶏もも肉がホットクック向きな理由</a></li>
+              <li><a href="#ideas">鶏もも肉で作りやすいホットクック献立5選</a></li>
+              <li><a href="#fridge">冷蔵庫の残り食材別・献立の決め方</a></li>
+              <li><a href="#seasoning">味付けの方向性を先に決める</a></li>
+              <li><a href="#mistakes">失敗しにくくするポイント</a></li>
+              <li><a href="#menu">ホットクックのメニュー選びに迷ったら</a></li>
+              <li><a href="#snapmeal">毎回考えるのが面倒なときは</a></li>
+            </ol>
+          </nav>
+
+          <h2 id="why-chicken">鶏もも肉がホットクック向きな理由</h2>
+          <p>
+            鶏もも肉は、ホットクックで扱いやすい食材です。加熱してもパサつきにくく、煮物、トマト煮、スープ、カレー風など、味の方向を変えやすいからです。
+          </p>
+          <p>
+            一方で、鶏もも肉だけを見て「何を作るか」を決めようとすると迷いやすくなります。ホットクックでは一緒に入れる野菜から水分が出るため、冷蔵庫にある野菜との組み合わせで考える方が献立に落とし込みやすくなります。
+          </p>
+
+          <h2 id="ideas">鶏もも肉で作りやすいホットクック献立5選</h2>
+          <p>
+            まずは、鶏もも肉がある日に使いやすい献立候補です。厳密なレシピというより、「今ある食材から何を作るか」を決めるための型として見てください。
+          </p>
+
+          <div class="idea-list">
+            {mealIdeas.map((meal) => (
+              <section class="idea-card">
+                <h3>{meal.title}</h3>
+                <p class="ingredients">主な材料: {meal.ingredients}</p>
+                <p>{meal.point}</p>
+              </section>
+            ))}
+          </div>
+
+          <h2 id="fridge">冷蔵庫の残り食材別・献立の決め方</h2>
+          <p>
+            ホットクックの献立決めでは、「鶏もも肉で何を作るか」よりも、「鶏もも肉と何を合わせるか」を先に決めると楽になります。
+          </p>
+
+          <div class="pair-table" role="table" aria-label="冷蔵庫の食材別の献立候補">
+            <div class="pair-row pair-head" role="row">
+              <div role="columnheader">冷蔵庫にある食材</div>
+              <div role="columnheader">作りやすい方向性</div>
+            </div>
+            {fridgePairs.map(([ingredient, ideas]) => (
+              <div class="pair-row" role="row">
+                <div role="cell">{ingredient}</div>
+                <div role="cell">{ideas}</div>
+              </div>
+            ))}
+          </div>
+
+          <p>
+            例えばキャベツや玉ねぎが多い日は、水を足しすぎずに無水風に。白菜が多い日はスープ寄りに。大根やじゃがいもがある日は、煮物として考えるとまとまりやすくなります。
+          </p>
+
+          <h2 id="seasoning">味付けの方向性を先に決める</h2>
+          <p>
+            ホットクックで鶏もも肉を使うときは、材料を決めたあとに味付けで迷いがちです。そこでおすすめなのは、細かいレシピ名より先に「和風」「洋風」「中華風」のどれに寄せるかを決めることです。
+          </p>
+          <p>
+            和風なら、しょうゆ、酒、砂糖、みりんを基本にして、鶏大根や照り煮の方向にまとめやすくなります。みりんがない場合は、酒と砂糖で甘みを補うと近い雰囲気になります。大根、にんじん、きのこ、玉ねぎと相性がよく、ごはんに合わせやすいのが利点です。
+          </p>
+          <p>
+            洋風なら、トマト缶、コンソメ、塩、こしょう、にんにくを使うと味が決まりやすくなります。じゃがいも、玉ねぎ、キャベツ、きのこがある日は、トマト煮やコンソメ煮にすると夕飯らしい一皿になります。余ったら翌日パスタやスープに回しやすいのも便利です。
+          </p>
+          <p>
+            中華風なら、鶏ガラスープ、しょうが、にんにく、ごま油を軸にします。白菜、きのこ、ねぎがある日には特に向いています。スープ寄りにしても、少し片栗粉でとろみをつけても食べやすく、疲れた日にも重すぎません。
+          </p>
+          <p>
+            つまり、鶏もも肉のホットクック献立は「材料」だけで考えるより、「材料 × 味の方向」で考えると決まりやすくなります。冷蔵庫に大根があって和風にするなら鶏大根、じゃがいもがあって洋風にするならトマト煮、白菜があって中華風にするならスープ煮、というように自然に候補が絞れます。
+          </p>
+
+          <div class="highlight-box">
+            <p class="highlight-label">迷ったらこの順番</p>
+            <p>
+              <strong>1. 冷蔵庫にある野菜を見る → 2. 和風・洋風・中華風を決める → 3. 水分量を控えめにする。</strong>
+              鶏もも肉のホットクック献立は、この順番にするとかなり決めやすくなります。
+            </p>
+          </div>
+
+          <h2 id="mistakes">失敗しにくくするポイント</h2>
+          <h3>水分が出る野菜を入れる日は、水を足しすぎない</h3>
+          <p>
+            キャベツ、白菜、玉ねぎ、きのこは加熱すると水分が出ます。ホットクックでは水分が逃げにくいので、レシピを見て不安になって水を足しすぎると、味がぼやけることがあります。
+          </p>
+
+          <h3>味付けは「薄めに入れて、最後に整える」</h3>
+          <p>
+            ホットクックは途中で味見しにくいので、最初から濃くしすぎない方が安全です。しょうゆ、塩、味噌、コンソメは少し控えめに入れて、最後に調整すると失敗しにくくなります。
+          </p>
+
+          <div class="note-grid">
+            <div>
+              <p class="note-title">水分が出やすい食材</p>
+              <p>キャベツ、白菜、玉ねぎ、きのこ。水を足しすぎると味がぼやけやすいです。</p>
+            </div>
+            <div>
+              <p class="note-title">味が入りやすい食材</p>
+              <p>大根、じゃがいも、にんじん。煮物系にすると夕飯の主菜としてまとまりやすいです。</p>
+            </div>
+          </div>
+
+          <h3>自動メニューに迷ったら、料理のジャンルで近いものを選ぶ</h3>
+          <p>
+            公式レシピとまったく同じ材料がなくても、煮物なら煮物、トマト煮ならトマト煮、スープならスープに近いカテゴリを選ぶと考えやすくなります。自動メニューが合わない場合は、手動の煮物・スープ系として考えるのも一つの方法です。
+          </p>
+
+          <h2 id="menu">ホットクックのメニュー選びに迷ったら</h2>
+          <p>
+            ホットクックで迷いやすいのが、「この材料ならどの自動メニューを選べばいいのか」という点です。公式レシピと手元の材料が完全に一致していれば迷いませんが、実際の冷蔵庫には半端な野菜や余り食材が混ざっています。
+          </p>
+          <p>
+            その場合は、料理名ではなく調理の性質で考えると選びやすくなります。水分が多く、汁気のある仕上がりにしたいならスープや煮込み系。大根やじゃがいもに味を染み込ませたいなら煮物系。トマト缶やカレー粉を使うなら、カレー・シチュー系や煮込み系に近い考え方で組み立てます。
+          </p>
+          <p>
+            逆に、ホットクックに向かない日もあります。鶏もも肉をカリッと焼きたい、短時間で照り焼き風に仕上げたい、野菜の食感を強く残したい、という日はフライパンの方が向いています。ホットクックは便利ですが、毎回ホットクックに寄せる必要はありません。
+          </p>
+          <p>
+            大事なのは、「今日は放置したいのか」「短時間で焼きたいのか」「汁物としてまとめたいのか」を先に決めることです。調理器具を先に決めるのではなく、今日の体力と食べたい仕上がりから決めると、献立選びのストレスがかなり減ります。
+          </p>
+
+          <figure class="wide-figure">
+            <img src="/blog/hotcook-chicken-thigh-thumbnail-1600x900.png" alt="ホットクックと鶏もも肉、野菜を並べた献立イメージ" loading="lazy" />
+            <figcaption>ホットクックの献立は、肉だけでなく「一緒に入れる野菜」と「味の方向」までセットで考えると決めやすくなります。</figcaption>
+          </figure>
+
+          <h2>よくある悩み</h2>
+          <h3>鶏もも肉は冷凍のまま入れてもいい？</h3>
+          <p>
+            冷凍のまま調理できる場合もありますが、加熱ムラや仕上がりのばらつきが出やすくなります。特に大きい塊のままだと中心まで火が入りにくいことがあります。できれば冷蔵庫で解凍してから使う方が安心です。調理後は必ず中心まで火が通っているか確認してください。
+          </p>
+
+          <h3>鶏むね肉でも同じ考え方で使える？</h3>
+          <p>
+            基本の考え方は近いですが、鶏むね肉は鶏もも肉よりパサつきやすいです。長時間の煮込みより、スープ寄りにする、片栗粉や油分で保湿する、加熱しすぎない、という工夫が必要になります。ホットクック初心者なら、まずは鶏もも肉の方が扱いやすいです。
+          </p>
+
+          <h3>副菜や汁物はどう考えればいい？</h3>
+          <p>
+            ホットクックで主菜を作る日は、副菜はがんばりすぎない方が続きます。鶏もも肉と大根の煮物なら、冷奴やトマト、味噌汁。トマト煮なら、サラダやパン、スープ。中華スープ煮なら、ごはんと漬物だけでも十分です。主菜をホットクックに任せる日は、残りの品数を増やすより、食卓全体が重くなりすぎないことを優先すると楽です。
+          </p>
+
+          <h2 id="snapmeal">毎回考えるのが面倒なときは</h2>
+          <p>
+            ここまでのように、ホットクックの献立は「肉」「野菜」「水分量」「味付け」「メニュー選び」を同時に考える必要があります。慣れるまでは、これが意外と大変です。
+          </p>
+          <p>
+            特に平日の夕方は、冷蔵庫を見ながら一つひとつ判断する余裕がありません。鶏もも肉はある、でもキャベツを使うべきか、大根を使うべきか、ホットクックに任せるべきか、フライパンで早く焼くべきか。こうした小さな判断が積み重なると、料理そのものよりも「決めること」に疲れてしまいます。
+          </p>
+          <p>
+            Snapmealでは、冷蔵庫の写真を撮るだけでAIが食材を認識し、ホットクックで作りやすい献立を提案します。鶏もも肉にキャベツを合わせるのか、大根を合わせるのか、フライパンやレンジの方がよいのかまで、今ある食材から考えられます。
+          </p>
+
+          <BlogCta title="冷蔵庫を撮って、ホットクック向け献立を決める" />
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <style>
+    .blog-content {
+      color: rgb(55 65 81);
+      font-size: 1.0625rem;
+      line-height: 1.9;
+    }
+
+    .blog-content p {
+      margin: 0 0 1.35rem;
+    }
+
+    .blog-content h2 {
+      color: rgb(17 24 39);
+      font-size: clamp(1.65rem, 3vw, 2.15rem);
+      line-height: 1.25;
+      font-weight: 800;
+      margin: 3rem 0 1rem;
+      letter-spacing: 0;
+      scroll-margin-top: 5rem;
+    }
+
+    .blog-content h3 {
+      color: rgb(17 24 39);
+      font-size: 1.2rem;
+      line-height: 1.4;
+      font-weight: 800;
+      margin: 2rem 0 0.75rem;
+      letter-spacing: 0;
+    }
+
+    .blog-content strong {
+      color: rgb(17 24 39);
+      font-weight: 800;
+    }
+
+    .answer-box,
+    .toc,
+    .highlight-box {
+      border: 1px solid rgb(209 250 229);
+      border-radius: 1.5rem;
+      background: rgb(240 253 244);
+      padding: 1.25rem;
+      margin: 2rem 0;
+    }
+
+    .answer-label,
+    .toc-title,
+    .highlight-label {
+      color: rgb(5 150 105);
+      font-size: 0.8rem;
+      font-weight: 800;
+      margin: 0 0 0.5rem;
+    }
+
+    .highlight-box {
+      background: rgb(255 251 235);
+      border-color: rgb(253 230 138);
+    }
+
+    .highlight-label {
+      color: rgb(180 83 9);
+    }
+
+    .note-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .note-grid > div {
+      background: rgb(249 250 251);
+      border: 1px solid rgb(229 231 235);
+      border-radius: 1.25rem;
+      padding: 1.1rem;
+    }
+
+    .note-grid p {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    .note-title {
+      color: rgb(17 24 39);
+      font-weight: 800;
+      margin-bottom: 0.35rem !important;
+    }
+
+    .wide-figure {
+      margin: 2.4rem 0;
+    }
+
+    .wide-figure img {
+      width: 100%;
+      border-radius: 1.5rem;
+      border: 1px solid rgb(229 231 235);
+      box-shadow: 0 18px 45px rgb(15 23 42 / 0.1);
+    }
+
+    .wide-figure figcaption {
+      color: rgb(107 114 128);
+      font-size: 0.875rem;
+      line-height: 1.6;
+      margin-top: 0.75rem;
+      text-align: center;
+    }
+
+    .toc ol {
+      margin: 0;
+      padding-left: 1.25rem;
+    }
+
+    .toc li {
+      margin: 0.35rem 0;
+      padding-left: 0.15rem;
+    }
+
+    .toc a {
+      color: rgb(55 65 81);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .toc a:hover {
+      color: rgb(5 150 105);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .idea-list {
+      display: grid;
+      gap: 1rem;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .idea-card {
+      border: 1px solid rgb(229 231 235);
+      border-radius: 1.25rem;
+      padding: 1.25rem;
+      background: rgb(255 255 255);
+    }
+
+    .idea-card h3 {
+      margin-top: 0;
+    }
+
+    .ingredients {
+      color: rgb(5 150 105);
+      font-size: 0.95rem;
+      font-weight: 800;
+    }
+
+    .pair-table {
+      border: 1px solid rgb(229 231 235);
+      border-radius: 1.25rem;
+      overflow: hidden;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .pair-row {
+      display: grid;
+      grid-template-columns: minmax(7rem, 0.8fr) 1.6fr;
+      border-top: 1px solid rgb(229 231 235);
+    }
+
+    .pair-row:first-child {
+      border-top: 0;
+    }
+
+    .pair-row > div {
+      padding: 0.9rem 1rem;
+      font-size: 0.95rem;
+      line-height: 1.65;
+    }
+
+    .pair-head {
+      background: rgb(249 250 251);
+      color: rgb(17 24 39);
+      font-weight: 800;
+    }
+
+    @media (max-width: 640px) {
+      .pair-row {
+        grid-template-columns: 1fr;
+      }
+
+      .pair-row > div:first-child {
+        padding-bottom: 0;
+        font-weight: 800;
+      }
+
+      .note-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</Layout>

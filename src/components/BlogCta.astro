@@ -1,0 +1,116 @@
+---
+interface Props {
+  lang?: 'ja' | 'en';
+  title?: string;
+}
+
+const { lang = 'ja', title } = Astro.props;
+
+const isEnglish = lang === 'en';
+const appUrl = 'https://app.snap-meal.com';
+const copy = isEnglish
+  ? {
+      label: 'Beta is live',
+      title: title ?? 'Snap your fridge and decide dinner faster',
+      description: 'Snapmeal runs in your browser. All features are free during beta.',
+      button: 'Try Snapmeal',
+      video: '/videos/hero-en.mp4',
+      videoLabel: 'Snapmeal app demo video',
+    }
+  : {
+      label: 'ベータ版公開中',
+      title: title ?? '冷蔵庫を撮って、今夜の献立を決めてみませんか？',
+      description: 'Snapmealはブラウザからすぐに使えます。ベータ期間中は全機能無料です。',
+      button: 'Snapmealを試してみる',
+      video: '/videos/hero-ja.mp4',
+      videoLabel: 'Snapmealの操作デモ動画',
+    };
+---
+
+<aside class="blog-cta">
+  <div class="blog-cta-copy">
+    <p class="blog-cta-label">{copy.label}</p>
+    <h2>{copy.title}</h2>
+    <p>{copy.description}</p>
+    <a href={appUrl} target="_blank" rel="noopener noreferrer" data-ga-event="cta_click">
+      {copy.button}
+    </a>
+  </div>
+  <div class="blog-cta-video" aria-label={copy.videoLabel}>
+    <video autoplay muted loop playsinline>
+      <source src={copy.video} type="video/mp4" />
+    </video>
+  </div>
+</aside>
+
+<style>
+  .blog-cta {
+    border: 1px solid rgb(209 250 229);
+    border-radius: 1.5rem;
+    background: rgb(240 253 244);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 13rem;
+    gap: 1.25rem;
+    align-items: center;
+  }
+
+  .blog-cta-label {
+    color: rgb(5 150 105);
+    font-size: 0.8rem;
+    font-weight: 800;
+    margin: 0 0 0.5rem;
+  }
+
+  .blog-cta h2 {
+    color: rgb(17 24 39);
+    font-size: clamp(1.65rem, 3vw, 2.15rem);
+    line-height: 1.25;
+    font-weight: 800;
+    letter-spacing: 0;
+    margin: 0 0 1rem;
+  }
+
+  .blog-cta p {
+    color: rgb(75 85 99);
+    line-height: 1.75;
+    margin: 0 0 1.25rem;
+  }
+
+  .blog-cta a {
+    display: inline-block;
+    background: rgb(16 185 129);
+    color: white;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 0.9rem 1.4rem;
+    border-radius: 1rem;
+    box-shadow: 0 14px 28px rgb(16 185 129 / 0.18);
+  }
+
+  .blog-cta-video {
+    background: rgb(17 24 39);
+    border-radius: 2rem;
+    padding: 0.65rem;
+    box-shadow: 0 20px 42px rgb(15 23 42 / 0.22);
+  }
+
+  .blog-cta-video video {
+    display: block;
+    width: 100%;
+    border-radius: 1.45rem;
+    background: black;
+  }
+
+  @media (max-width: 640px) {
+    .blog-cta {
+      grid-template-columns: 1fr;
+    }
+
+    .blog-cta-video {
+      max-width: 13rem;
+      margin: 0 auto;
+    }
+  }
+</style>
