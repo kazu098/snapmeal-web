@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import BlogCta from '../../components/BlogCta.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
+import RelatedArticles from '../../components/RelatedArticles.astro';
 ---
 
 <Layout
@@ -134,6 +135,9 @@ import BlogHeader from '../../components/BlogHeader.astro';
           <p>
             Snapmealは冷蔵庫の写真を撮るだけで、今日の食材の組み合わせから最適な献立を提案します。ひき肉と何があるかを見て、今日の料理を決めてくれます。
           </p>
+
+          <RelatedArticles currentHref="/blog/hotcook-minced-meat-recipes/" />
+
 
           <BlogCta title="冷蔵庫を撮って、今夜の献立を決める" />
         </div>

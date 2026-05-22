@@ -10,6 +10,7 @@ const mushroomData = [
   { name: 'しいたけ', flavor: 'グアニル酸の濃い旨み', texture: '肉厚・食べごたえあり', hotcook: '○', best: '煮物・炊き込み・スープ', note: '軸は筋が強いが旨みが出るので入れて損はない。石づきは除く。' },
   { name: 'えりんぎ', flavor: '淡白・ほのかなうまみ', texture: '弾力あり・崩れにくい', hotcook: '○', best: '煮物・バター醤油・洋風スープ', note: 'くせがなく子どもにも食べやすい。縦に切ると食感が楽しめる。' },
 ];
+import RelatedArticles from '../../components/RelatedArticles.astro';
 ---
 
 <Layout
@@ -202,6 +203,9 @@ const mushroomData = [
           <p>
             Snapmealは冷蔵庫の写真を撮るだけで、今日の食材の組み合わせからホットクックで作れる献立を提案します。きのこと何があるかを見て、今日の料理を決める手間を減らします。
           </p>
+
+          <RelatedArticles currentHref="/blog/hotcook-mushroom-recipes/" />
+
 
           <BlogCta title="冷蔵庫を撮って、今夜の献立を決める" />
         </div>

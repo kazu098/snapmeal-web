@@ -31,6 +31,7 @@ const weekdayIdeas = [
     point: 'ごぼう・にんじん・大根・こんにゃく・豚バラ・味噌。根菜を切るのが少し手間だが、ホットクックに入れてしまえばあとは待つだけ。汁物兼おかずになるので副菜を考えなくてすむ。',
   },
 ];
+import RelatedArticles from '../../components/RelatedArticles.astro';
 ---
 
 <Layout
@@ -212,6 +213,9 @@ const weekdayIdeas = [
           <p>
             Snapmealでは、冷蔵庫の写真を撮るだけでAIが食材を自動認識し、今夜作れる献立を提案します。豚バラ肉と白菜があれば重ね煮、大根があれば豚バラ大根、根菜が複数あれば豚汁風——今ある食材から、ホットクックに向く献立かどうかも含めて提案します。
           </p>
+
+          <RelatedArticles currentHref="/blog/hotcook-pork-belly-recipes/" />
+
 
           <BlogCta title="冷蔵庫を撮って、今夜の献立を決める" />
         </div>

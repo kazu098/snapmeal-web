@@ -1,0 +1,123 @@
+---
+import { articles, type Article } from '../data/articles';
+
+interface Props {
+  currentHref: string;
+}
+
+const { currentHref } = Astro.props;
+
+const current = articles.find((a) => a.href === currentHref);
+if (!current) return;
+
+// タグが一致する記事を関連記事として抽出（現在の記事と開発ストーリーは除く）
+const related: Article[] = [];
+const seen = new Set<string>();
+
+for (const tag of current.tags) {
+  for (const a of articles) {
+    if (a.href === currentHref) continue;
+    if (a.category !== 'ホットクック') continue;
+    if (seen.has(a.href)) continue;
+    if (a.tags.includes(tag)) {
+      related.push(a);
+      seen.add(a.href);
+      if (related.length >= 3) break;
+    }
+  }
+  if (related.length >= 3) break;
+}
+
+// タグ一致が3件未満の場合は他のホットクック記事で補完
+if (related.length < 3) {
+  for (const a of articles) {
+    if (a.href === currentHref) continue;
+    if (a.category !== 'ホットクック') continue;
+    if (seen.has(a.href)) continue;
+    related.push(a);
+    seen.add(a.href);
+    if (related.length >= 3) break;
+  }
+}
+---
+
+{related.length > 0 && (
+  <aside class="related-articles">
+    <h2 class="related-title">関連記事</h2>
+    <div class="related-grid">
+      {related.map((a) => (
+        <a href={a.href} class="related-card">
+          <img src={a.image} alt="" loading="lazy" class="related-img" />
+          <div class="related-body">
+            <span class="related-cat">{a.category}</span>
+            <p class="related-ttl">{a.title}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+  </aside>
+)}
+
+<style>
+  .related-articles {
+    border-top: 2px solid rgb(209 250 229);
+    padding-top: 2.5rem;
+    margin-top: 3rem;
+  }
+  .related-title {
+    color: rgb(17 24 39);
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin: 0 0 1.25rem;
+  }
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  @media (max-width: 640px) {
+    .related-grid { grid-template-columns: 1fr; }
+  }
+  .related-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(229 231 235);
+    border-radius: 1rem;
+    overflow: hidden;
+    text-decoration: none;
+    transition: box-shadow 0.2s;
+  }
+  .related-card:hover { box-shadow: 0 4px 16px rgb(0 0 0 / 0.1); }
+  .related-img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+  .related-body {
+    padding: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    flex: 1;
+  }
+  .related-cat {
+    font-size: 0.72rem;
+    font-weight: 800;
+    color: rgb(5 150 105);
+    background: rgb(240 253 244);
+    padding: 0.15rem 0.5rem;
+    border-radius: 20px;
+    width: fit-content;
+  }
+  .related-ttl {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: rgb(17 24 39);
+    line-height: 1.5;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>

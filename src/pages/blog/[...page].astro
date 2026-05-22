@@ -1,0 +1,163 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+import { articles } from '../../data/articles';
+
+export async function getStaticPaths({ paginate }: { paginate: Function }) {
+  return paginate(articles, { pageSize: 10 });
+}
+
+const { page } = Astro.props;
+const currentPage: number = page.currentPage;
+const totalPages: number = page.lastPage;
+const isFirstPage = currentPage === 1;
+
+const canonicalUrl = isFirstPage
+  ? 'https://snap-meal.com/blog/'
+  : `https://snap-meal.com/blog/${currentPage}/`;
+---
+
+<Layout
+  lang="ja"
+  title={isFirstPage
+    ? 'Snapmeal ブログ — 献立決め・冷蔵庫活用・ホットクックのヒント'
+    : `Snapmeal ブログ（${currentPage}ページ目）— 献立決め・冷蔵庫活用・ホットクックのヒント`}
+  description="Snapmealの開発ストーリー、冷蔵庫にある食材で献立を決めるコツ、ホットクック活用法などを発信します。"
+  alternateUrl="https://snap-meal.com/en/"
+>
+  <BlogHeader current="blog" />
+
+  <main>
+    {isFirstPage && (
+      <section class="bg-surface px-4 py-16 sm:py-20">
+        <div class="max-w-5xl mx-auto">
+          <div class="max-w-3xl">
+            <p class="text-sm font-bold text-primary mb-3">Snapmeal Blog</p>
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-[1.25] mb-5">
+              献立決めを、もっと軽くするためのブログ
+            </h1>
+            <p class="text-lg text-gray-600 leading-relaxed">
+              冷蔵庫にある食材で献立を決めるコツ、ホットクック活用、Snapmealの開発背景をお届けします。
+            </p>
+          </div>
+        </div>
+      </section>
+    )}
+
+    {!isFirstPage && (
+      <section class="bg-surface px-4 py-10 sm:py-14">
+        <div class="max-w-5xl mx-auto">
+          <a href="/blog/" class="inline-flex items-center text-sm font-bold text-primary hover:underline underline-offset-4 mb-4">
+            ← 最初のページへ
+          </a>
+          <h1 class="text-3xl font-extrabold text-gray-900">
+            ブログ一覧 <span class="text-gray-400 font-normal text-xl">（{currentPage}ページ目）</span>
+          </h1>
+        </div>
+      </section>
+    )}
+
+    <section class="px-4 py-14 bg-white">
+      <div class="max-w-5xl mx-auto grid gap-8">
+        {page.data.map((article: typeof articles[number]) => (
+          <article class="grid md:grid-cols-[280px_1fr] gap-6 border border-gray-100 rounded-3xl p-4 sm:p-5 shadow-sm hover:shadow-md transition">
+            <a href={article.href} class="block overflow-hidden rounded-2xl bg-surface">
+              <img src={article.image} alt="" class="w-full h-full min-h-48 object-cover" loading="lazy" />
+            </a>
+            <div class="flex flex-col justify-center">
+              <div class="flex flex-wrap items-center gap-3 text-xs font-bold text-gray-400 mb-3">
+                <span class="text-primary bg-green-50 px-3 py-1 rounded-full">{article.category}</span>
+                <time>{article.date}</time>
+              </div>
+              <h2 class="text-2xl font-extrabold text-gray-900 leading-[1.35] mb-3">
+                <a href={article.href} class="hover:text-primary transition">{article.title}</a>
+              </h2>
+              <p class="text-gray-600 leading-relaxed mb-5">{article.description}</p>
+              <a href={article.href} class="text-primary font-bold text-sm hover:underline underline-offset-4">
+                記事を読む →
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+
+      {totalPages > 1 && (
+        <nav class="pagination" aria-label="ブログページ一覧">
+          {page.url.prev && (
+            <a href={page.url.prev} class="page-btn">← 前のページ</a>
+          )}
+
+          <div class="page-numbers">
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
+              <a
+                href={p === 1 ? '/blog/' : `/blog/${p}/`}
+                class={`page-num ${p === currentPage ? 'page-num--active' : ''}`}
+                aria-current={p === currentPage ? 'page' : undefined}
+              >
+                {p}
+              </a>
+            ))}
+          </div>
+
+          {page.url.next && (
+            <a href={page.url.next} class="page-btn">次のページ →</a>
+          )}
+        </nav>
+      )}
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+  }
+  .page-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.6rem 1.2rem;
+    border: 2px solid rgb(5 150 105);
+    border-radius: 9999px;
+    color: rgb(5 150 105);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+  }
+  .page-btn:hover {
+    background: rgb(5 150 105);
+    color: #fff;
+  }
+  .page-numbers {
+    display: flex;
+    gap: 0.4rem;
+  }
+  .page-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid rgb(229 231 235);
+    color: rgb(55 65 81);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+  }
+  .page-num:hover {
+    border-color: rgb(5 150 105);
+    color: rgb(5 150 105);
+  }
+  .page-num--active {
+    background: rgb(5 150 105);
+    border-color: rgb(5 150 105);
+    color: #fff;
+  }
+</style>

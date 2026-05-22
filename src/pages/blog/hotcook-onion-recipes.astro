@@ -40,6 +40,7 @@ const patterns = [
     pairs: 'トマト・パプリカ・ゆで卵',
   },
 ];
+import RelatedArticles from '../../components/RelatedArticles.astro';
 ---
 
 <Layout
@@ -181,6 +182,9 @@ const patterns = [
           <p>
             Snapmealは冷蔵庫の写真を撮ると、今ある食材の組み合わせからホットクックで作れる献立を提案します。玉ねぎの「今日の使い道」を決める判断を、代わりにやってくれます。
           </p>
+
+          <RelatedArticles currentHref="/blog/hotcook-onion-recipes/" />
+
 
           <BlogCta title="冷蔵庫を撮るだけで今夜の献立が決まる" />
         </div>

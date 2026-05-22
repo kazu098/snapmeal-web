@@ -11,6 +11,7 @@ const flavorChart = [
   { style: '🌏 東南アジア風', base: 'ココナッツミルク200ml＋水200ml', main: 'ナンプラー大さじ1.5・砂糖小さじ1・レモン汁', finish: 'パクチー・青唐辛子' },
   { style: '🇮🇳 カレー風', base: '水400ml', main: 'カレー粉大さじ1.5・トマト缶1/2・塩', finish: 'クミン・コリアンダー' },
 ];
+import RelatedArticles from '../../components/RelatedArticles.astro';
 ---
 
 <Layout
@@ -241,6 +242,9 @@ const flavorChart = [
           <p>
             Snapmealは冷蔵庫の写真を撮るだけで、今日の食材と調味料の組み合わせからホットクックで作れる献立を提案します。マンネリせずに毎日違う味を楽しむための出発点として使ってみてください。
           </p>
+
+          <RelatedArticles currentHref="/blog/hotcook-new-flavors/" />
+
 
           <BlogCta title="冷蔵庫を撮って、今夜の献立を決める" />
         </div>

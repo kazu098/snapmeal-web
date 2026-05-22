@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import BlogCta from '../../components/BlogCta.astro';
-import BlogHeader from '../../components/BlogHeader.astro';
+
+const APP_URL = 'https://app.snap-meal.com';
 
 const mealIdeas = [
   {
@@ -39,7 +39,6 @@ const fridgePairs = [
   ['きのこ', 'バターしょうゆ煮、和風煮、クリーム煮'],
   ['玉ねぎ', '無水煮、トマト煮、照り煮'],
 ];
-import RelatedArticles from '../../components/RelatedArticles.astro';
 ---
 
 <Layout
@@ -47,9 +46,19 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
   title="ホットクックで鶏もも肉を使うなら？冷蔵庫の残り食材で作れる献立アイデア"
   description="ホットクックで鶏もも肉を使うときに作りやすい献立、相性のよい野菜、失敗しにくい味付け、水分量の考え方をまとめました。"
   ogImage="/blog/hotcook-chicken-thigh-thumbnail-1600x900.png"
-  alternateUrl="https://snap-meal.com/en/blog/hotcook-chicken-thigh-recipes/"
+  alternateUrl="https://snap-meal.com/en/"
 >
-  <BlogHeader />
+  <header class="border-b border-gray-100 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="/" class="text-xl font-extrabold text-primary tracking-tight">Snapmeal</a>
+      <nav class="flex items-center gap-4 text-sm font-semibold text-gray-600">
+        <a href="/blog/" class="hover:text-primary transition">ブログ</a>
+        <a href={APP_URL} target="_blank" rel="noopener noreferrer" data-ga-event="cta_click" class="bg-primary text-white px-4 py-2 rounded-full hover:bg-primary-dark transition">
+          ベータ版を試す
+        </a>
+      </nav>
+    </div>
+  </header>
 
   <main>
     <article>
@@ -62,7 +71,7 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
             <span class="text-primary bg-green-50 px-3 py-1 rounded-full">ホットクック</span>
             <time datetime="2026-05-22">2026年5月22日</time>
           </div>
-          <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-[1.25] mb-6">
+          <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
             ホットクックで鶏もも肉を使うなら？冷蔵庫の残り食材で作れる献立アイデア
           </h1>
           <p class="text-lg text-gray-600 leading-relaxed">
@@ -246,10 +255,23 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
             Snapmealでは、冷蔵庫の写真を撮るだけでAIが食材を認識し、ホットクックで作りやすい献立を提案します。鶏もも肉にキャベツを合わせるのか、大根を合わせるのか、フライパンやレンジの方がよいのかまで、今ある食材から考えられます。
           </p>
 
-          <RelatedArticles currentHref="/blog/hotcook-chicken-thigh-recipes/" />
-
-
-          <BlogCta title="冷蔵庫を撮って、ホットクック向け献立を決める" />
+          <aside class="cta-card">
+            <div class="cta-copy">
+              <p class="cta-label">ベータ版公開中</p>
+              <h2>冷蔵庫を撮って、ホットクック向け献立を決める</h2>
+              <p>
+                Snapmealはブラウザからすぐ使えます。ベータ期間中は全機能無料です。
+              </p>
+              <a href={APP_URL} target="_blank" rel="noopener noreferrer" data-ga-event="cta_click">
+                Snapmealを試してみる
+              </a>
+            </div>
+            <div class="cta-video" aria-label="Snapmealの操作デモ動画">
+              <video autoplay muted loop playsinline>
+                <source src="/videos/hero-ja.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </aside>
         </div>
       </section>
     </article>
@@ -292,7 +314,8 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
 
     .answer-box,
     .toc,
-    .highlight-box {
+    .highlight-box,
+    .cta-card {
       border: 1px solid rgb(209 250 229);
       border-radius: 1.5rem;
       background: rgb(240 253 244);
@@ -302,7 +325,8 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
 
     .answer-label,
     .toc-title,
-    .highlight-label {
+    .highlight-label,
+    .cta-label {
       color: rgb(5 150 105);
       font-size: 0.8rem;
       font-weight: 800;
@@ -437,6 +461,43 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
       font-weight: 800;
     }
 
+    .cta-card {
+      padding: 1.5rem;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 13rem;
+      gap: 1.25rem;
+      align-items: center;
+    }
+
+    .cta-card h2 {
+      margin-top: 0;
+    }
+
+    .cta-card a {
+      display: inline-block;
+      background: rgb(16 185 129);
+      color: white;
+      font-weight: 800;
+      text-decoration: none;
+      padding: 0.9rem 1.4rem;
+      border-radius: 1rem;
+      box-shadow: 0 14px 28px rgb(16 185 129 / 0.18);
+    }
+
+    .cta-video {
+      background: rgb(17 24 39);
+      border-radius: 2rem;
+      padding: 0.65rem;
+      box-shadow: 0 20px 42px rgb(15 23 42 / 0.22);
+    }
+
+    .cta-video video {
+      display: block;
+      width: 100%;
+      border-radius: 1.45rem;
+      background: black;
+    }
+
     @media (max-width: 640px) {
       .pair-row {
         grid-template-columns: 1fr;
@@ -447,8 +508,14 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
         font-weight: 800;
       }
 
-      .note-grid {
+      .note-grid,
+      .cta-card {
         grid-template-columns: 1fr;
+      }
+
+      .cta-video {
+        max-width: 13rem;
+        margin: 0 auto;
       }
     }
   </style>

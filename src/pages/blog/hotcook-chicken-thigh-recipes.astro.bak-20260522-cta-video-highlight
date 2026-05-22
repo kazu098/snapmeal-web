@@ -1,7 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import BlogCta from '../../components/BlogCta.astro';
-import BlogHeader from '../../components/BlogHeader.astro';
+
+const APP_URL = 'https://app.snap-meal.com';
 
 const mealIdeas = [
   {
@@ -39,7 +39,6 @@ const fridgePairs = [
   ['きのこ', 'バターしょうゆ煮、和風煮、クリーム煮'],
   ['玉ねぎ', '無水煮、トマト煮、照り煮'],
 ];
-import RelatedArticles from '../../components/RelatedArticles.astro';
 ---
 
 <Layout
@@ -47,9 +46,19 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
   title="ホットクックで鶏もも肉を使うなら？冷蔵庫の残り食材で作れる献立アイデア"
   description="ホットクックで鶏もも肉を使うときに作りやすい献立、相性のよい野菜、失敗しにくい味付け、水分量の考え方をまとめました。"
   ogImage="/blog/hotcook-chicken-thigh-thumbnail-1600x900.png"
-  alternateUrl="https://snap-meal.com/en/blog/hotcook-chicken-thigh-recipes/"
+  alternateUrl="https://snap-meal.com/en/"
 >
-  <BlogHeader />
+  <header class="border-b border-gray-100 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="/" class="text-xl font-extrabold text-primary tracking-tight">Snapmeal</a>
+      <nav class="flex items-center gap-4 text-sm font-semibold text-gray-600">
+        <a href="/blog/" class="hover:text-primary transition">ブログ</a>
+        <a href={APP_URL} target="_blank" rel="noopener noreferrer" data-ga-event="cta_click" class="bg-primary text-white px-4 py-2 rounded-full hover:bg-primary-dark transition">
+          ベータ版を試す
+        </a>
+      </nav>
+    </div>
+  </header>
 
   <main>
     <article>
@@ -62,7 +71,7 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
             <span class="text-primary bg-green-50 px-3 py-1 rounded-full">ホットクック</span>
             <time datetime="2026-05-22">2026年5月22日</time>
           </div>
-          <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-[1.25] mb-6">
+          <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
             ホットクックで鶏もも肉を使うなら？冷蔵庫の残り食材で作れる献立アイデア
           </h1>
           <p class="text-lg text-gray-600 leading-relaxed">
@@ -165,14 +174,6 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
             つまり、鶏もも肉のホットクック献立は「材料」だけで考えるより、「材料 × 味の方向」で考えると決まりやすくなります。冷蔵庫に大根があって和風にするなら鶏大根、じゃがいもがあって洋風にするならトマト煮、白菜があって中華風にするならスープ煮、というように自然に候補が絞れます。
           </p>
 
-          <div class="highlight-box">
-            <p class="highlight-label">迷ったらこの順番</p>
-            <p>
-              <strong>1. 冷蔵庫にある野菜を見る → 2. 和風・洋風・中華風を決める → 3. 水分量を控えめにする。</strong>
-              鶏もも肉のホットクック献立は、この順番にするとかなり決めやすくなります。
-            </p>
-          </div>
-
           <h2 id="mistakes">失敗しにくくするポイント</h2>
           <h3>水分が出る野菜を入れる日は、水を足しすぎない</h3>
           <p>
@@ -183,17 +184,6 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
           <p>
             ホットクックは途中で味見しにくいので、最初から濃くしすぎない方が安全です。しょうゆ、塩、味噌、コンソメは少し控えめに入れて、最後に調整すると失敗しにくくなります。
           </p>
-
-          <div class="note-grid">
-            <div>
-              <p class="note-title">水分が出やすい食材</p>
-              <p>キャベツ、白菜、玉ねぎ、きのこ。水を足しすぎると味がぼやけやすいです。</p>
-            </div>
-            <div>
-              <p class="note-title">味が入りやすい食材</p>
-              <p>大根、じゃがいも、にんじん。煮物系にすると夕飯の主菜としてまとまりやすいです。</p>
-            </div>
-          </div>
 
           <h3>自動メニューに迷ったら、料理のジャンルで近いものを選ぶ</h3>
           <p>
@@ -213,11 +203,6 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
           <p>
             大事なのは、「今日は放置したいのか」「短時間で焼きたいのか」「汁物としてまとめたいのか」を先に決めることです。調理器具を先に決めるのではなく、今日の体力と食べたい仕上がりから決めると、献立選びのストレスがかなり減ります。
           </p>
-
-          <figure class="wide-figure">
-            <img src="/blog/hotcook-chicken-thigh-thumbnail-1600x900.png" alt="ホットクックと鶏もも肉、野菜を並べた献立イメージ" loading="lazy" />
-            <figcaption>ホットクックの献立は、肉だけでなく「一緒に入れる野菜」と「味の方向」までセットで考えると決めやすくなります。</figcaption>
-          </figure>
 
           <h2>よくある悩み</h2>
           <h3>鶏もも肉は冷凍のまま入れてもいい？</h3>
@@ -246,10 +231,16 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
             Snapmealでは、冷蔵庫の写真を撮るだけでAIが食材を認識し、ホットクックで作りやすい献立を提案します。鶏もも肉にキャベツを合わせるのか、大根を合わせるのか、フライパンやレンジの方がよいのかまで、今ある食材から考えられます。
           </p>
 
-          <RelatedArticles currentHref="/blog/hotcook-chicken-thigh-recipes/" />
-
-
-          <BlogCta title="冷蔵庫を撮って、ホットクック向け献立を決める" />
+          <aside class="cta-card">
+            <p class="cta-label">ベータ版公開中</p>
+            <h2>冷蔵庫を撮って、ホットクック向け献立を決める</h2>
+            <p>
+              Snapmealはブラウザからすぐ使えます。ベータ期間中は全機能無料です。
+            </p>
+            <a href={APP_URL} target="_blank" rel="noopener noreferrer" data-ga-event="cta_click">
+              Snapmealを試してみる
+            </a>
+          </aside>
         </div>
       </section>
     </article>
@@ -285,14 +276,9 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
       letter-spacing: 0;
     }
 
-    .blog-content strong {
-      color: rgb(17 24 39);
-      font-weight: 800;
-    }
-
     .answer-box,
     .toc,
-    .highlight-box {
+    .cta-card {
       border: 1px solid rgb(209 250 229);
       border-radius: 1.5rem;
       background: rgb(240 253 244);
@@ -302,65 +288,11 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
 
     .answer-label,
     .toc-title,
-    .highlight-label {
+    .cta-label {
       color: rgb(5 150 105);
       font-size: 0.8rem;
       font-weight: 800;
       margin: 0 0 0.5rem;
-    }
-
-    .highlight-box {
-      background: rgb(255 251 235);
-      border-color: rgb(253 230 138);
-    }
-
-    .highlight-label {
-      color: rgb(180 83 9);
-    }
-
-    .note-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1rem;
-      margin: 1.5rem 0 2rem;
-    }
-
-    .note-grid > div {
-      background: rgb(249 250 251);
-      border: 1px solid rgb(229 231 235);
-      border-radius: 1.25rem;
-      padding: 1.1rem;
-    }
-
-    .note-grid p {
-      font-size: 0.95rem;
-      line-height: 1.7;
-      margin-bottom: 0;
-    }
-
-    .note-title {
-      color: rgb(17 24 39);
-      font-weight: 800;
-      margin-bottom: 0.35rem !important;
-    }
-
-    .wide-figure {
-      margin: 2.4rem 0;
-    }
-
-    .wide-figure img {
-      width: 100%;
-      border-radius: 1.5rem;
-      border: 1px solid rgb(229 231 235);
-      box-shadow: 0 18px 45px rgb(15 23 42 / 0.1);
-    }
-
-    .wide-figure figcaption {
-      color: rgb(107 114 128);
-      font-size: 0.875rem;
-      line-height: 1.6;
-      margin-top: 0.75rem;
-      text-align: center;
     }
 
     .toc ol {
@@ -437,6 +369,26 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
       font-weight: 800;
     }
 
+    .cta-card {
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    .cta-card h2 {
+      margin-top: 0;
+    }
+
+    .cta-card a {
+      display: inline-block;
+      background: rgb(16 185 129);
+      color: white;
+      font-weight: 800;
+      text-decoration: none;
+      padding: 0.9rem 1.4rem;
+      border-radius: 1rem;
+      box-shadow: 0 14px 28px rgb(16 185 129 / 0.18);
+    }
+
     @media (max-width: 640px) {
       .pair-row {
         grid-template-columns: 1fr;
@@ -445,10 +397,6 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
       .pair-row > div:first-child {
         padding-bottom: 0;
         font-weight: 800;
-      }
-
-      .note-grid {
-        grid-template-columns: 1fr;
       }
     }
   </style>

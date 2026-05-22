@@ -1,0 +1,75 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const articles = [
+  {
+    title: '冷蔵庫を撮るだけで、今夜の献立が30秒で決まる。──Snapmealをつくった話',
+    description:
+      'ホットクックを買ったのに使いこなせなかった体験から、冷蔵庫写真で献立を提案するSnapmealを作るまでの話。',
+    href: '/blog/why-we-built-snapmeal/',
+    date: '2026年5月22日',
+    category: '開発ストーリー',
+    image: '/og-ja.png',
+  },
+];
+---
+
+<Layout
+  lang="ja"
+  title="Snapmeal ブログ — 献立決め・冷蔵庫活用・ホットクックのヒント"
+  description="Snapmealの開発ストーリー、冷蔵庫にある食材で献立を決めるコツ、ホットクック活用法などを発信します。"
+  alternateUrl="https://snap-meal.com/en/"
+>
+  <header class="border-b border-gray-100 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="/" class="text-xl font-extrabold text-primary tracking-tight">Snapmeal</a>
+      <nav class="flex items-center gap-4 text-sm font-semibold text-gray-600">
+        <a href="/" class="hover:text-primary transition">トップ</a>
+        <a href="https://app.snap-meal.com" target="_blank" rel="noopener noreferrer" class="bg-primary text-white px-4 py-2 rounded-full hover:bg-primary-dark transition">
+          ベータ版を試す
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="bg-surface px-4 py-16 sm:py-20">
+      <div class="max-w-5xl mx-auto">
+        <div class="max-w-3xl">
+          <p class="text-sm font-bold text-primary mb-3">Snapmeal Blog</p>
+          <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-5">
+            献立決めを、もっと軽くするためのブログ
+          </h1>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            冷蔵庫にある食材で献立を決めるコツ、ホットクック活用、Snapmealの開発背景をお届けします。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-4 py-14 bg-white">
+      <div class="max-w-5xl mx-auto grid gap-8">
+        {articles.map((article) => (
+          <article class="grid md:grid-cols-[280px_1fr] gap-6 border border-gray-100 rounded-3xl p-4 sm:p-5 shadow-sm hover:shadow-md transition">
+            <a href={article.href} class="block overflow-hidden rounded-2xl bg-surface">
+              <img src={article.image} alt="" class="w-full h-full min-h-48 object-cover" loading="lazy" />
+            </a>
+            <div class="flex flex-col justify-center">
+              <div class="flex flex-wrap items-center gap-3 text-xs font-bold text-gray-400 mb-3">
+                <span class="text-primary bg-green-50 px-3 py-1 rounded-full">{article.category}</span>
+                <time>{article.date}</time>
+              </div>
+              <h2 class="text-2xl font-extrabold text-gray-900 leading-snug mb-3">
+                <a href={article.href} class="hover:text-primary transition">{article.title}</a>
+              </h2>
+              <p class="text-gray-600 leading-relaxed mb-5">{article.description}</p>
+              <a href={article.href} class="text-primary font-bold text-sm hover:underline underline-offset-4">
+                記事を読む →
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  </main>
+</Layout>
