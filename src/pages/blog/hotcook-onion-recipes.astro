@@ -1,0 +1,277 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogCta from '../../components/BlogCta.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+
+const patterns = [
+  {
+    name: 'スープベース',
+    time: '30〜40分',
+    base: '水・コンソメ or だし',
+    result: '甘みが溶け出したオニオンスープ。他の食材のベースにもなる',
+    pairs: '肉類・きのこ・豆類',
+  },
+  {
+    name: '蒸し玉ねぎ',
+    time: '20〜25分',
+    base: '水なし（無水）',
+    result: 'とろとろに蒸せた玉ねぎそのもの。副菜・薬味として使える',
+    pairs: 'ポン酢・バター・みそ',
+  },
+  {
+    name: '肉炒め風煮込み',
+    time: '25〜30分',
+    base: 'しょうゆ・みりん・酒',
+    result: '玉ねぎが肉の旨みを吸って一体化。丼の具材にもなる',
+    pairs: '牛こま・豚こま・鶏もも',
+  },
+  {
+    name: 'カレー・シチューの土台',
+    time: '45〜50分',
+    base: 'カレールー or ホワイトソース',
+    result: '玉ねぎが溶け込んでとろみの一部になる。炒めなくていい',
+    pairs: 'じゃがいも・にんじん・肉',
+  },
+  {
+    name: '洋風マリネ仕立て',
+    time: '15〜20分',
+    base: '酢・オリーブ油・塩こしょう',
+    result: '甘酸っぱく仕上がる。冷やして食べても◎',
+    pairs: 'トマト・パプリカ・ゆで卵',
+  },
+];
+---
+
+<Layout
+  lang="ja"
+  title="玉ねぎ1袋をホットクックで使い切る——甘みを引き出す5つの調理パターン"
+  description="玉ねぎはホットクックで加熱すると甘みが増します。スープベースから蒸し玉ねぎ、カレーの土台まで、5つの調理パターンと組み合わせを解説します。"
+  ogImage="/blog/hotcook-onion-thumbnail-1600x900.png"
+  alternateUrl="https://snap-meal.com/en/blog/hotcook-onion-recipes/"
+>
+  <BlogHeader />
+
+  <main>
+    <article>
+      <section class="bg-surface px-4 pt-14 pb-10 sm:pt-20">
+        <div class="max-w-3xl mx-auto">
+          <a href="/blog/" class="inline-flex items-center text-sm font-bold text-primary mb-8 hover:underline underline-offset-4">
+            ← ブログ一覧へ
+          </a>
+          <div class="flex flex-wrap items-center gap-3 text-xs font-bold text-gray-400 mb-5">
+            <span class="text-primary bg-green-50 px-3 py-1 rounded-full">ホットクック</span>
+            <time datetime="2026-05-22">2026年5月22日</time>
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-[1.25] mb-6">
+            玉ねぎ1袋をホットクックで使い切る——甘みを引き出す5つの調理パターン
+          </h1>
+          <p class="text-lg text-gray-600 leading-relaxed">
+            玉ねぎは常備野菜の中でも「使い途が広い」食材です。ホットクックで加熱すると炒めたとき以上に甘みが出て、料理全体のベースになる。その性質をうまく使えると、献立の幅がかなり広がります。
+          </p>
+        </div>
+      </section>
+
+      <section class="px-4 py-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+          <img
+            src="/blog/hotcook-onion-thumbnail-1600x900.png"
+            alt="ホットクックで玉ねぎの甘みを引き出した料理のイメージ"
+            class="w-full rounded-3xl border border-gray-100 shadow-sm"
+          />
+        </div>
+      </section>
+
+      <section class="px-4 py-10 bg-white">
+        <div class="blog-content max-w-3xl mx-auto">
+
+          <nav class="toc" aria-label="目次">
+            <p class="toc-title">目次</p>
+            <ol>
+              <li><a href="#why-sweet">ホットクックで玉ねぎが甘くなる仕組み</a></li>
+              <li><a href="#five-patterns">5つの調理パターン一覧</a></li>
+              <li><a href="#tips">切り方が仕上がりを変える</a></li>
+              <li><a href="#weekly">1袋（5〜6個）を週内で使い切るプラン</a></li>
+              <li><a href="#snapmeal">今日の冷蔵庫から献立を逆算する</a></li>
+            </ol>
+          </nav>
+
+          <h2 id="why-sweet">ホットクックで玉ねぎが甘くなる仕組み</h2>
+          <p>
+            玉ねぎの辛み成分（硫化アリル）は熱で分解され、加熱することで糖度が増します。フライパンで炒める場合も同じ反応が起きますが、炒め時間が短いと辛みが残りやすい。
+          </p>
+          <p>
+            ホットクックの密閉加熱は、じっくり均一に温度をかけるため、玉ねぎの糖化が進みやすい。炒め玉ねぎを長時間かけて作るのと似た効果が、スイッチを押して待つだけで得られます。
+          </p>
+          <p>
+            料理のベースに使うと、わざわざ飴色玉ねぎを作る手間がかからなくなるのもメリットです。
+          </p>
+
+          <h2 id="five-patterns">5つの調理パターン一覧</h2>
+          <p>
+            玉ねぎをどんな用途で使うかによって、調理パターンを選んでください。
+          </p>
+
+          <div class="pattern-table" role="table" aria-label="玉ねぎの5つの調理パターン">
+            <div class="pattern-head" role="row">
+              <div role="columnheader">パターン</div>
+              <div role="columnheader">加熱時間の目安</div>
+              <div role="columnheader">ベース</div>
+              <div role="columnheader">仕上がり</div>
+              <div role="columnheader">合う食材</div>
+            </div>
+            {patterns.map((p) => (
+              <div class="pattern-row" role="row">
+                <div role="cell" class="pattern-name">{p.name}</div>
+                <div role="cell">{p.time}</div>
+                <div role="cell">{p.base}</div>
+                <div role="cell">{p.result}</div>
+                <div role="cell">{p.pairs}</div>
+              </div>
+            ))}
+          </div>
+
+          <p>
+            最も汎用性が高いのは<strong>スープベース</strong>です。玉ねぎだけで作ったスープをベースに、翌日に別の食材を加えるという「2日使い」もできます。
+          </p>
+
+          <h2 id="tips">切り方が仕上がりを変える</h2>
+
+          <h3>くし形切り → 食感が残る</h3>
+          <p>
+            6〜8等分のくし形にすると、長時間煮ても形が崩れにくい。スープや煮物で「玉ねぎを食べる」感覚を残したいときに。
+          </p>
+
+          <h3>薄切り → とろみの素になる</h3>
+          <p>
+            薄くスライスすると加熱中に溶けやすくなり、スープやカレーにとろみを与えます。玉ねぎの甘みも全体に拡散します。
+          </p>
+
+          <h3>半分にして丸ごと → 甘みが最大化</h3>
+          <p>
+            水を少量加えて丸ごと蒸すと、内部まで均一に火が通り、甘みが最大限に引き出されます。取り出してバター・ポン酢・みそなど好きな味で食べる「蒸し玉ねぎ」は副菜として完結します。
+          </p>
+
+          <div class="highlight-box">
+            <p class="highlight-label">切り方の選び方</p>
+            <p>形を残したい → <strong>くし形</strong>。溶かしてとろみを出したい → <strong>薄切り</strong>。副菜として食べたい → <strong>丸ごと・半分</strong>。</p>
+          </div>
+
+          <h2 id="weekly">1袋（5〜6個）を週内で使い切るプラン</h2>
+          <p>
+            玉ねぎを1袋まとめて買ったとき、週の中でどう使い切るかを考えておくと無駄が出にくいです。
+          </p>
+          <ul>
+            <li><strong>月曜</strong>：薄切り2個をカレーの土台として投入。他の野菜と一緒に煮込む</li>
+            <li><strong>水曜</strong>：くし形1個を豚こまと一緒に甘辛煮。ご飯のおかずに</li>
+            <li><strong>金曜</strong>：残りを丸ごと2個蒸して副菜に。ポン酢をかけて完成</li>
+          </ul>
+          <p>
+            3回の調理で使い切れるので、「また余らせた」が起きにくくなります。
+          </p>
+
+          <figure class="wide-figure">
+            <img src="/blog/hotcook-onion-thumbnail-1600x900.png" alt="玉ねぎがとろとろに仕上がったホットクック料理のイメージ" loading="lazy" />
+            <figcaption>玉ねぎは「わき役」ではなく、調理の仕方によっては主役にもなります。</figcaption>
+          </figure>
+
+          <h2 id="snapmeal">今日の冷蔵庫から献立を逆算する</h2>
+          <p>
+            玉ねぎが余っている日、他に何があるかによって最適なパターンが違います。豚こまがあれば甘辛煮、じゃがいももあればカレー、何もなければ蒸し玉ねぎ——それを毎回考えるのは意外と手間です。
+          </p>
+          <p>
+            Snapmealは冷蔵庫の写真を撮ると、今ある食材の組み合わせからホットクックで作れる献立を提案します。玉ねぎの「今日の使い道」を決める判断を、代わりにやってくれます。
+          </p>
+
+          <BlogCta title="冷蔵庫を撮るだけで今夜の献立が決まる" />
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <style>
+    .blog-content {
+      color: rgb(55 65 81);
+      font-size: 1.0625rem;
+      line-height: 1.9;
+    }
+    .blog-content p { margin: 0 0 1.35rem; }
+    .blog-content ul { margin: 0 0 1.35rem; padding-left: 1.5rem; }
+    .blog-content li { margin: 0.4rem 0; }
+    .blog-content h2 {
+      color: rgb(17 24 39);
+      font-size: clamp(1.65rem, 3vw, 2.15rem);
+      line-height: 1.25;
+      font-weight: 800;
+      margin: 3rem 0 1rem;
+      scroll-margin-top: 5rem;
+    }
+    .blog-content h3 {
+      color: rgb(17 24 39);
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin: 2rem 0 0.75rem;
+    }
+    .blog-content strong { color: rgb(17 24 39); font-weight: 800; }
+    .toc, .highlight-box {
+      border: 1px solid rgb(209 250 229);
+      border-radius: 1.5rem;
+      background: rgb(240 253 244);
+      padding: 1.25rem;
+      margin: 2rem 0;
+    }
+    .toc-title, .highlight-label {
+      color: rgb(5 150 105);
+      font-size: 0.8rem;
+      font-weight: 800;
+      margin: 0 0 0.5rem;
+    }
+    .highlight-box { background: rgb(255 251 235); border-color: rgb(253 230 138); }
+    .highlight-label { color: rgb(180 83 9); }
+    .toc ol { margin: 0; padding-left: 1.25rem; }
+    .toc li { margin: 0.35rem 0; }
+    .toc a { color: rgb(55 65 81); font-weight: 700; text-decoration: none; }
+    .toc a:hover { color: rgb(5 150 105); text-decoration: underline; }
+    .wide-figure { margin: 2.4rem 0; }
+    .wide-figure img {
+      width: 100%;
+      border-radius: 1.5rem;
+      border: 1px solid rgb(229 231 235);
+      box-shadow: 0 18px 45px rgb(15 23 42 / 0.1);
+    }
+    .wide-figure figcaption {
+      color: rgb(107 114 128);
+      font-size: 0.875rem;
+      margin-top: 0.75rem;
+      text-align: center;
+    }
+    .pattern-table {
+      border: 1px solid rgb(229 231 235);
+      border-radius: 1.25rem;
+      overflow: hidden;
+      margin: 1.5rem 0 2rem;
+      font-size: 0.85rem;
+    }
+    .pattern-head, .pattern-row {
+      display: grid;
+      grid-template-columns: 6rem 5rem 1fr 1.5fr 1fr;
+      border-top: 1px solid rgb(229 231 235);
+    }
+    .pattern-head:first-child { border-top: 0; }
+    .pattern-head > div, .pattern-row > div {
+      padding: 0.75rem 0.85rem;
+      line-height: 1.55;
+    }
+    .pattern-head {
+      background: rgb(249 250 251);
+      color: rgb(17 24 39);
+      font-weight: 800;
+    }
+    .pattern-name { font-weight: 800; color: rgb(17 24 39); }
+    @media (max-width: 640px) {
+      .pattern-head, .pattern-row { grid-template-columns: 1fr; }
+      .pattern-head > div:not(:first-child), .pattern-row > div:first-child {
+        font-weight: 800;
+      }
+    }
+  </style>
+</Layout>
