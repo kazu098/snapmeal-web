@@ -213,7 +213,7 @@ export const articles: Article[] = [
     href: '/blog/hotcook-curry-tips/',
     date: '2025年6月18日',
     category: 'ホットクック',
-    image: '/blog/hotcook-curry-thumbnail-1600x900.png',
+    image: '/blog/hotcook-curry-tips-thumbnail-1600x900.png',
     tags: ['カレー', '野菜', '鶏肉', 'ひき肉'],
   },
   {
@@ -222,7 +222,7 @@ export const articles: Article[] = [
     href: '/blog/hotcook-nabe-recipes/',
     date: '2025年6月19日',
     category: 'ホットクック',
-    image: '/blog/hotcook-nabe-thumbnail-1600x900.png',
+    image: '/blog/hotcook-nabe-recipes-thumbnail-1600x900.png',
     tags: ['スープ', '豆腐', '野菜', 'ファミリー'],
   },
   {
