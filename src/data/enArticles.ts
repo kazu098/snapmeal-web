@@ -17,12 +17,19 @@ export interface EnArticle {
 }
 
 const article = (
-  data: Omit<EnArticle, 'href' | 'category'>,
-): EnArticle => ({
-  ...data,
-  href: `/en/blog/${data.slug}/`,
-  category: data.slug === 'why-we-built-snapmeal' ? 'Product Story' : 'Smart Cooker',
-});
+  data: Omit<EnArticle, 'href' | 'category'> & { category?: string },
+): EnArticle => {
+  const {
+    category = data.slug === 'why-we-built-snapmeal' ? 'Product Story' : 'Smart Cooker',
+    ...rest
+  } = data;
+
+  return {
+    ...rest,
+    href: `/en/blog/${data.slug}/`,
+    category,
+  };
+};
 
 export const staticEnglishBlogSlugs = new Set([
   'hotcook-chicken-thigh-recipes',
@@ -30,6 +37,86 @@ export const staticEnglishBlogSlugs = new Set([
 ]);
 
 export const enArticles: EnArticle[] = [
+  article({
+    slug: 'fridge-meal-planning',
+    title: 'How to Plan Dinner from What Is Already in Your Fridge',
+    description: 'A practical way to turn fridge ingredients into dinner when you have food, but no clear meal idea.',
+    jaHref: '/blog/fridge-meal-planning/',
+    date: 'July 20, 2025',
+    category: 'Meal Planning',
+    image: '/blog/fridge-meal-planning-thumbnail-1600x900.png',
+    tags: ['Meal planning', 'Fridge ingredients', 'Weeknight dinner', 'Time saving'],
+    intro: 'When the fridge is not empty but dinner still feels impossible, the problem is usually not a lack of ingredients. It is a lack of structure. Sort the food into protein, vegetables, flavor base, and use-soon items before looking for a recipe.',
+    angle: 'This approach works because it changes the question from “What recipe can I search for?” to “What meal shape fits these ingredients?” A smart cooker, frying pan, microwave, or soup pot can all work once the role of each ingredient is clear.',
+    decision: 'Start with the ingredient that can become the main protein, then decide whether tonight should be a one-pan main, a large soup, a rice bowl, noodles, or a simple simmered dish.',
+    patterns: ['Chicken, cabbage, and mushrooms become a soy-ginger simmer or tomato stew.', 'Tofu, eggs, and leftover vegetables become a larger miso soup or rice bowl.', 'Small amounts of several vegetables become soup, fried rice, or a side dish instead of separate recipes.'],
+    mistakes: ['Searching one ingredient at a time can ignore the rest of the fridge.', 'Trying to make a perfect multi-dish meal creates friction on tired weeknights.', 'Buying one more ingredient for a recipe can leave older food unused.'],
+    snapmeal: 'Snapmeal helps by starting from a fridge photo. You confirm the ingredients, remove anything irrelevant, and get meal ideas based on what is actually available tonight.',
+  }),
+  article({
+    slug: 'chicken-thigh-cabbage-meal',
+    title: 'Chicken Thigh and Cabbage Dinner Ideas: Smart Cooker, Pan, or Microwave',
+    description: 'How to turn chicken thigh and cabbage into an easy weeknight meal by choosing the right cooking method.',
+    jaHref: '/blog/chicken-thigh-cabbage-meal/',
+    date: 'July 22, 2025',
+    category: 'Ingredient Pairing',
+    image: '/blog/chicken-thigh-cabbage-meal-thumbnail-1600x900.png',
+    tags: ['Chicken', 'Cabbage', 'Meal planning', 'Vegetables'],
+    intro: 'Chicken thigh and cabbage are a strong weeknight pair. The chicken brings fat and umami, while cabbage becomes sweet and tender when cooked. The key is choosing the cooking method before choosing the final seasoning.',
+    angle: 'A smart cooker is best for hands-off simmering, a frying pan is best for browning, and a microwave is best for small steamed portions. The same ingredients can become very different dinners depending on that first decision.',
+    decision: 'Use a smart cooker when you want a stew-like dish, a pan when you want browned chicken, and a microwave when you want a fast one-person steamed meal.',
+    patterns: ['Soy, sake, ginger, and a little sugar for a rice-friendly Japanese-style simmer.', 'Tomato, garlic, and consommé for a cabbage-rich stew.', 'Steamed cabbage and sliced chicken finished with ponzu or sesame sauce.'],
+    mistakes: ['Adding too much water ignores the liquid released by cabbage.', 'Cutting cabbage too finely can make it collapse in a smart cooker.', 'Microwaving thick chicken pieces without checking the center can lead to uneven cooking.'],
+    snapmeal: 'Snapmeal can take the chicken, cabbage, and other fridge ingredients, then suggest a meal that fits the tool you want to use tonight.',
+  }),
+  article({
+    slug: 'pork-onion-meal',
+    title: 'Pork and Onion Dinner Ideas for Affordable Weeknights',
+    description: 'How thin-sliced pork and onions can become satisfying, budget-friendly dinners without feeling repetitive.',
+    jaHref: '/blog/pork-onion-meal/',
+    date: 'July 24, 2025',
+    category: 'Ingredient Pairing',
+    image: '/blog/pork-onion-meal-thumbnail-1600x900.png',
+    tags: ['Pork', 'Onion', 'Budget', 'Meal planning'],
+    intro: 'Thin-sliced pork and onions are humble ingredients, but they are excellent for weeknight cooking. Pork cooks quickly, onions add sweetness and volume, and the pair works with Japanese, Chinese-style, citrus, or curry-like seasoning.',
+    angle: 'The best way to avoid boredom is not to memorize more recipes, but to rotate the flavor direction and meal format. The same pork and onions can become a rice bowl, stir-fry, simmered dish, or egg-topped dinner.',
+    decision: 'Choose sweet soy when you want comfort, ponzu when you want something lighter, oyster sauce when you want stronger umami, and curry powder when you want leftovers that still taste good.',
+    patterns: ['Pork and onions simmered with soy sauce, sake, ginger, and a little sugar.', 'Pork and onions stir-fried with ponzu and topped with grated daikon if available.', 'Pork, onions, cabbage, and oyster sauce as a quick rice-friendly stir-fry.'],
+    mistakes: ['Using only a small amount of pork without adding onion, egg, tofu, or mushrooms can feel unsatisfying.', 'Making every version sweet soy flavored leads to fatigue.', 'Adding too many vegetables at once can make a quick dish watery.'],
+    snapmeal: 'Snapmeal can combine pork and onions with whatever else is in the fridge, helping you decide whether to make a rice bowl, stir-fry, soup, or smart-cooker dish.',
+  }),
+  article({
+    slug: 'mirin-substitute',
+    title: 'What to Use When You Do Not Have Mirin',
+    description: 'How to substitute mirin with sake, sugar, mentsuyu, or other pantry ingredients depending on the dish.',
+    jaHref: '/blog/mirin-substitute/',
+    date: 'July 26, 2025',
+    category: 'Seasoning Substitution',
+    image: '/blog/mirin-substitute-thumbnail-1600x900.png',
+    tags: ['Mirin', 'Substitution', 'Seasoning', 'Cooking tips'],
+    intro: 'If a recipe calls for mirin and the bottle is empty, dinner does not have to stop. Mirin adds sweetness, shine, aroma, and roundness. Once you separate those roles, you can substitute it more calmly.',
+    angle: 'For many home dishes, sake plus a small amount of sugar is the most flexible substitute. Mentsuyu can also work, but it adds soy sauce and dashi, so the rest of the seasoning should be reduced.',
+    decision: 'Use sake and sugar for simmered dishes and teriyaki-style sauces. Use mentsuyu only when extra soy and dashi flavor make sense. In soups or stir-fries, a small amount of mirin can often be reduced or skipped.',
+    patterns: ['For 1 tablespoon mirin, start with 1 tablespoon sake plus a little less than 1 teaspoon sugar.', 'For simmered dishes, combine soy sauce, sake, sugar, and dashi instead of mirin.', 'For teriyaki, reduce the sauce slightly so it clings even without mirin’s natural gloss.'],
+    mistakes: ['Replacing mirin with the same volume of sugar makes food too sweet.', 'Using mentsuyu without reducing soy sauce can make the dish too salty.', 'Forgetting to heat sake-based substitutes can leave the flavor rough.'],
+    snapmeal: 'Snapmeal can suggest meals and seasoning adjustments when one pantry item is missing, so a missing bottle of mirin does not force a shopping trip.',
+  }),
+  article({
+    slug: 'mentsuyu-substitute',
+    title: 'What to Use When You Do Not Have Mentsuyu',
+    description: 'How to replace mentsuyu with soy sauce, mirin, and dashi for noodles, simmered dishes, and rice bowls.',
+    jaHref: '/blog/mentsuyu-substitute/',
+    date: 'July 28, 2025',
+    category: 'Seasoning Substitution',
+    image: '/blog/mentsuyu-substitute-thumbnail-1600x900.png',
+    tags: ['Mentsuyu', 'Substitution', 'Seasoning', 'Cooking tips'],
+    intro: 'Mentsuyu is convenient because it combines soy sauce, sweetness, and dashi. When you run out, the useful move is to rebuild those parts instead of replacing it with soy sauce alone.',
+    angle: 'A simple starting point is soy sauce, mirin, and dashi. The exact strength depends on whether you are making dipping sauce, simmered food, or a rice bowl sauce.',
+    decision: 'Use more dashi for noodles, less dashi for simmered dishes where vegetables release water, and a slightly stronger sauce for rice bowls that need to season the rice.',
+    patterns: ['Basic substitute: 1 part soy sauce, 1 part mirin, 3 to 4 parts dashi.', 'Without mirin: soy sauce, sake, a little sugar, and dashi.', 'For rice bowls, use less dashi and taste before reducing the sauce.'],
+    mistakes: ['Replacing mentsuyu with equal soy sauce makes food too salty.', 'Forgetting that granulated dashi or white dashi may contain salt can over-season the dish.', 'Adding too much sugar makes the sauce sweet without tasting like mentsuyu.'],
+    snapmeal: 'Snapmeal can help adjust dinner ideas around the seasonings you actually have, turning “no mentsuyu” into a small substitution rather than a blocked recipe.',
+  }),
   article({
     slug: 'hotcook-frozen-vegetables',
     title: 'Using Frozen Vegetables in a Hotcook: No-Knife Dinner Combinations',
