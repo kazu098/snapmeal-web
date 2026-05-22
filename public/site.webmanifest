@@ -1,0 +1,13 @@
+{
+  "name": "Snapmeal",
+  "short_name": "Snapmeal",
+  "description": "冷蔵庫を撮るだけ。30秒で今夜の献立が決まる。",
+  "icons": [
+    { "src": "/icon-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#2A6B54",
+  "background_color": "#ffffff",
+  "display": "browser",
+  "start_url": "/"
+}
