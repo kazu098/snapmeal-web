@@ -12,12 +12,12 @@ const steps = [
   {
     icon: '🤖',
     title: 'AIが食材を認識',
-    desc: 'Google Gemini AIが食材を自動識別。認識結果は確認・編集できます。',
+    desc: 'AIが食材を自動識別。認識結果は確認・編集できます。',
   },
   {
     icon: '🍽️',
     title: '献立が決まる！',
-    desc: '30秒で今夜の夕食を提案。3案から選べるのでマンネリ知らず。',
+    desc: '30秒で今夜の献立を提案。3案から選べるのでマンネリ知らず。',
   },
 ];
 
@@ -40,7 +40,7 @@ const features = [
   {
     icon: '🛒',
     title: '買い物リスト',
-    desc: '不足食材を自動でリスト化。ワンタップでコピーしてそのままLINEで共有できます。',
+    desc: '不足食材を自動でリスト化。ワンタップでコピーできます。',
   },
   {
     icon: '⚡',
@@ -57,7 +57,7 @@ const features = [
 const faqs = [
   {
     q: '食材の認識精度はどのくらいですか？',
-    a: 'Google Gemini 2.5 を使用しており、一般的な食材は高精度で認識します。万が一、認識もれがあっても確認画面で追加・削除できるのでご安心ください。',
+    a: '最新のAIを使用しており、一般的な食材は高精度で認識します。万が一、認識もれがあっても確認画面で追加・削除できるのでご安心ください。',
   },
   {
     q: '写真はサーバーに保存されますか？',
@@ -116,7 +116,7 @@ const faqs = [
           </div>
           <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 mb-6 flex flex-col gap-4">
             <span>冷蔵庫を撮るだけ。</span>
-            <span><span class="text-primary">30秒</span>で今夜の夕食が決まる。</span>
+            <span><span class="text-primary">30秒</span>で今夜の献立が決まる。</span>
           </h1>
           <p class="text-lg sm:text-xl text-gray-600 mb-10 leading-relaxed">
             平日18時の「今夜どうしよう」から解放される。<br class="hidden sm:block" />
@@ -259,7 +259,7 @@ const faqs = [
               「この献立で作る」を押すだけで、材料の分量から調理手順、ホットクックの操作ガイドまで自動生成。レシピを調べる手間がゼロになります。
             </p>
             <ul class="space-y-2 text-sm text-gray-700 mb-8">
-              {['今ある食材だけで作れるレシピを提案', 'ホットクックのメニュー番号まで案内', '調理ポイント・コツもAIが解説'].map(t => (
+              {['今ある食材だけで作れるレシピを提案', 'ホットクックのカテゴリ・メニューを案内', '調理ポイント・コツもAIが解説'].map(t => (
                 <li class="flex items-center gap-2">
                   <span class="text-primary font-bold text-base">✓</span>
                   {t}
@@ -301,9 +301,10 @@ const faqs = [
             <ul class="space-y-3 text-sm text-gray-600 mb-8">
               {[
                 '月10回まで献立提案',
-                'AI食材認識',
-                'レシピ詳細',
+                'AI食材認識・レシピ詳細',
                 '買い物リスト',
+                'お気に入り献立の保存',
+                '家族の反応メモ・履歴閲覧',
                 '家庭設定（人数・調理器具）',
               ].map(item => (
                 <li class="flex items-center gap-2">
@@ -331,9 +332,6 @@ const faqs = [
               {[
                 '月90回まで献立提案（回数を気にせず毎日使える）',
                 'Freeの全機能',
-                'お気に入り献立の保存',
-                '家族の反応メモ',
-                '履歴閲覧（過去20セッション）',
               ].map(item => (
                 <li class="flex items-start gap-2">
                   <span class="text-white font-bold mt-0.5 flex-shrink-0">✓</span>
@@ -347,10 +345,6 @@ const faqs = [
           </div>
         </div>
 
-        <div class="mt-8 bg-white rounded-2xl p-6 border border-gray-100 text-sm text-gray-600">
-          <p class="font-semibold text-gray-800 mb-2">💡 コスパで考えると</p>
-          <p>「今夜何作ろう」と悩む時間は平日5分×20日 = <strong>月100分</strong>。時給¥1,500換算で<strong>¥2,500相当</strong>を、¥980で解決できます。Spotifyと同額で、毎日の夕食の意思決定を丸ごとAIに任せられます。</p>
-        </div>
       </div>
     </section>
 
