@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import BlogCta from '../../components/BlogCta.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
 import RelatedArticles from '../../components/RelatedArticles.astro';
+import ArticleTags from '../../components/ArticleTags.astro';
 ---
 
 <Layout
@@ -185,6 +186,9 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
           <p>
             Snapmealは冷蔵庫の写真を撮るだけで、今日の食材からホットクックで作れる献立を提案します。鍋の仕立てを毎回考える手間を減らします。
           </p>
+
+          <ArticleTags currentHref="/blog/hotcook-nabe-recipes/" />
+
 
           <RelatedArticles currentHref="/blog/hotcook-nabe-recipes/" />
 

@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import BlogCta from '../../components/BlogCta.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
 import RelatedArticles from '../../components/RelatedArticles.astro';
+import ArticleTags from '../../components/ArticleTags.astro';
 ---
 
 <Layout
@@ -134,6 +135,9 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
           <p>
             Snapmealは冷蔵庫の写真を撮るだけで、今日ある食材からホットクックで作れる献立を提案します。1人分でも対応しているので、食材の量に合わせた料理を提案してくれます。
           </p>
+
+          <ArticleTags currentHref="/blog/hotcook-solo-cooking/" />
+
 
           <RelatedArticles currentHref="/blog/hotcook-solo-cooking/" />
 

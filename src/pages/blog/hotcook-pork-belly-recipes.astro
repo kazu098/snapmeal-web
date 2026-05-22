@@ -32,6 +32,7 @@ const weekdayIdeas = [
   },
 ];
 import RelatedArticles from '../../components/RelatedArticles.astro';
+import ArticleTags from '../../components/ArticleTags.astro';
 ---
 
 <Layout
@@ -213,6 +214,9 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
           <p>
             Snapmealでは、冷蔵庫の写真を撮るだけでAIが食材を自動認識し、今夜作れる献立を提案します。豚バラ肉と白菜があれば重ね煮、大根があれば豚バラ大根、根菜が複数あれば豚汁風——今ある食材から、ホットクックに向く献立かどうかも含めて提案します。
           </p>
+
+          <ArticleTags currentHref="/blog/hotcook-pork-belly-recipes/" />
+
 
           <RelatedArticles currentHref="/blog/hotcook-pork-belly-recipes/" />
 

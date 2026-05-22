@@ -72,7 +72,14 @@ const canonicalUrl = isFirstPage
               <h2 class="text-2xl font-extrabold text-gray-900 leading-[1.35] mb-3">
                 <a href={article.href} class="hover:text-primary transition">{article.title}</a>
               </h2>
-              <p class="text-gray-600 leading-relaxed mb-5">{article.description}</p>
+              <p class="text-gray-600 leading-relaxed mb-4">{article.description}</p>
+              {article.tags.length > 0 && (
+                <div class="card-tags">
+                  {article.tags.map((tag: string) => (
+                    <a href={`/blog/tag/${encodeURIComponent(tag)}/`} class="card-tag">#{tag}</a>
+                  ))}
+                </div>
+              )}
               <a href={article.href} class="text-primary font-bold text-sm hover:underline underline-offset-4">
                 記事を読む →
               </a>
@@ -154,6 +161,29 @@ const canonicalUrl = isFirstPage
   .page-num:hover {
     border-color: rgb(5 150 105);
     color: rgb(5 150 105);
+  }
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 0.85rem;
+  }
+  .card-tag {
+    display: inline-block;
+    background: rgb(243 244 246);
+    color: rgb(75 85 99);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.2rem 0.6rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    border: 1px solid rgb(229 231 235);
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+  }
+  .card-tag:hover {
+    background: rgb(240 253 244);
+    color: rgb(5 150 105);
+    border-color: rgb(167 243 208);
   }
   .page-num--active {
     background: rgb(5 150 105);

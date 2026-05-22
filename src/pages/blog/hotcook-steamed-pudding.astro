@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import BlogCta from '../../components/BlogCta.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
 import RelatedArticles from '../../components/RelatedArticles.astro';
+import ArticleTags from '../../components/ArticleTags.astro';
 ---
 
 <Layout
@@ -243,6 +244,9 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
           <p>
             卵・牛乳・だしがある日にデザートや副菜として何を作るか迷ったとき、Snapmealは冷蔵庫の写真から献立候補を提案します。茶碗蒸しとメインおかずの組み合わせも、写真1枚で決まります。
           </p>
+
+          <ArticleTags currentHref="/blog/hotcook-steamed-pudding/" />
+
 
           <RelatedArticles currentHref="/blog/hotcook-steamed-pudding/" />
           <BlogCta title="冷蔵庫を撮って、今夜の献立を決める" />

@@ -11,6 +11,7 @@ const mushroomData = [
   { name: 'えりんぎ', flavor: '淡白・ほのかなうまみ', texture: '弾力あり・崩れにくい', hotcook: '○', best: '煮物・バター醤油・洋風スープ', note: 'くせがなく子どもにも食べやすい。縦に切ると食感が楽しめる。' },
 ];
 import RelatedArticles from '../../components/RelatedArticles.astro';
+import ArticleTags from '../../components/ArticleTags.astro';
 ---
 
 <Layout
@@ -203,6 +204,9 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
           <p>
             Snapmealは冷蔵庫の写真を撮るだけで、今日の食材の組み合わせからホットクックで作れる献立を提案します。きのこと何があるかを見て、今日の料理を決める手間を減らします。
           </p>
+
+          <ArticleTags currentHref="/blog/hotcook-mushroom-recipes/" />
+
 
           <RelatedArticles currentHref="/blog/hotcook-mushroom-recipes/" />
 

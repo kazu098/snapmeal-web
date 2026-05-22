@@ -30,6 +30,7 @@ const styleTable = [
   },
 ];
 import RelatedArticles from '../../components/RelatedArticles.astro';
+import ArticleTags from '../../components/ArticleTags.astro';
 ---
 
 <Layout
@@ -173,6 +174,9 @@ import RelatedArticles from '../../components/RelatedArticles.astro';
           <p>
             Snapmealは冷蔵庫の写真を撮るだけで、今ある食材からホットクックで作れる献立を提案します。鮭と大根があればみそ煮、玉ねぎとじゃがいもがあればクリーム煮——今日の冷蔵庫の状態から考えてくれます。
           </p>
+
+          <ArticleTags currentHref="/blog/hotcook-salmon-recipes/" />
+
 
           <RelatedArticles currentHref="/blog/hotcook-salmon-recipes/" />
 
