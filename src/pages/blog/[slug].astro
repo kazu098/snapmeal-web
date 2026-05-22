@@ -1,0 +1,208 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogCta from '../../components/BlogCta.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+import ArticleTags from '../../components/ArticleTags.astro';
+import RelatedArticles from '../../components/RelatedArticles.astro';
+import { jaSeoArticles, type JaSeoArticle } from '../../data/jaSeoArticles';
+
+export function getStaticPaths() {
+  return jaSeoArticles.map((article) => ({
+    params: { slug: article.slug },
+    props: { article },
+  }));
+}
+
+interface Props {
+  article: JaSeoArticle;
+}
+
+const { article } = Astro.props;
+---
+
+<Layout
+  lang="ja"
+  title={article.title}
+  description={article.description}
+  ogImage={article.image}
+  alternateUrl={`https://snap-meal.com/en/blog/${article.slug}/`}
+>
+  <BlogHeader />
+
+  <main>
+    <article>
+      <section class="bg-surface px-4 pt-14 pb-10 sm:pt-20">
+        <div class="max-w-3xl mx-auto">
+          <a href="/blog/" class="inline-flex items-center text-sm font-bold text-primary mb-8 hover:underline underline-offset-4">
+            ← ブログ一覧へ
+          </a>
+          <div class="flex flex-wrap items-center gap-3 text-xs font-bold text-gray-400 mb-5">
+            <span class="text-primary bg-green-50 px-3 py-1 rounded-full">{article.category}</span>
+            <time>{article.date}</time>
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-[1.25] mb-6">
+            {article.title}
+          </h1>
+          <p class="text-lg text-gray-600 leading-relaxed">{article.description}</p>
+          <ArticleTags currentHref={article.href} />
+        </div>
+      </section>
+
+      <section class="px-4 py-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+          <img
+            src={article.image}
+            alt=""
+            class="w-full rounded-3xl border border-gray-100 shadow-sm"
+          />
+        </div>
+      </section>
+
+      <section class="px-4 py-10 bg-white">
+        <div class="blog-content max-w-3xl mx-auto">
+          {article.intro.map((paragraph) => <p>{paragraph}</p>)}
+
+          <nav class="toc" aria-label="目次">
+            <p class="toc-title">目次</p>
+            <ol>
+              {article.toc.map((item) => (
+                <li><a href={`#${item.id}`}>{item.label}</a></li>
+              ))}
+            </ol>
+          </nav>
+
+          {article.sections.map((section, index) => (
+            <>
+              <h2 id={section.id}>{section.title}</h2>
+              {section.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+              {section.highlight && (
+                <div class="highlight-box">
+                  <p class="highlight-label">{section.highlight.label}</p>
+                  <p>{section.highlight.text}</p>
+                </div>
+              )}
+              {section.items && (
+                <ul class="idea-list">
+                  {section.items.map((item) => <li>{item}</li>)}
+                </ul>
+              )}
+              {index === 2 && (
+                <figure class="wide-figure">
+                  <img src={article.image} alt="" loading="lazy" />
+                  <figcaption>
+                    冷蔵庫にある食材から考えると、ホットクックの使い道はぐっと増えます。
+                  </figcaption>
+                </figure>
+              )}
+            </>
+          ))}
+
+          <RelatedArticles currentHref={article.href} />
+          <BlogCta title={article.ctaTitle} />
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <style>
+    .blog-content {
+      color: rgb(55 65 81);
+      font-size: 1.0625rem;
+      line-height: 1.9;
+    }
+
+    .blog-content p {
+      margin: 0 0 1.35rem;
+    }
+
+    .blog-content h2 {
+      color: rgb(17 24 39);
+      font-size: clamp(1.65rem, 3vw, 2.15rem);
+      line-height: 1.25;
+      font-weight: 800;
+      margin: 3rem 0 1rem;
+      scroll-margin-top: 5rem;
+    }
+
+    .toc,
+    .highlight-box {
+      border: 1px solid rgb(209 250 229);
+      border-radius: 1.5rem;
+      background: rgb(240 253 244);
+      padding: 1.25rem;
+      margin: 2rem 0;
+    }
+
+    .toc-title,
+    .highlight-label {
+      color: rgb(5 150 105);
+      font-size: 0.8rem;
+      font-weight: 800;
+      margin: 0 0 0.5rem;
+    }
+
+    .toc ol {
+      margin: 0;
+      padding-left: 1.25rem;
+    }
+
+    .toc li {
+      margin: 0.35rem 0;
+    }
+
+    .toc a {
+      color: rgb(55 65 81);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .toc a:hover {
+      color: rgb(5 150 105);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .highlight-box {
+      background: rgb(255 251 235);
+      border-color: rgb(253 230 138);
+    }
+
+    .highlight-label {
+      color: rgb(180 83 9);
+    }
+
+    .idea-list {
+      border: 1px solid rgb(229 231 235);
+      border-radius: 1.5rem;
+      padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+      margin: 1.5rem 0 2rem;
+      background: rgb(249 250 251);
+    }
+
+    .idea-list li {
+      margin: 0.55rem 0;
+      line-height: 1.75;
+      font-weight: 700;
+      color: rgb(31 41 55);
+    }
+
+    .wide-figure {
+      margin: 2.4rem 0;
+    }
+
+    .wide-figure img {
+      width: 100%;
+      border-radius: 1.5rem;
+      border: 1px solid rgb(229 231 235);
+      box-shadow: 0 18px 45px rgb(15 23 42 / 0.1);
+    }
+
+    .wide-figure figcaption {
+      color: rgb(107 114 128);
+      font-size: 0.875rem;
+      line-height: 1.6;
+      margin-top: 0.75rem;
+      text-align: center;
+    }
+  </style>
+</Layout>

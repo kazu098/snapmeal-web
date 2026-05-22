@@ -1,4 +1,5 @@
 export interface Article {
+  readingTime: number;
   title: string;
   description: string;
   href: string;
@@ -10,6 +11,51 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    title: 'ホットクックで冷凍野菜を使う——包丁なしで夕飯を作るための組み合わせ方',
+    description: 'ホットクックで冷凍野菜を使うと水っぽくなる、味が薄い、食感が悪い。そうならないための食材選び、入れる順番、味付けの考え方をまとめました。',
+    href: '/blog/hotcook-frozen-vegetables/',
+    date: '2025年7月10日',
+    category: 'ホットクック',
+    image: '/blog/hotcook-frozen-vegetables-thumbnail-1600x900.png',
+    tags: ['冷凍野菜', '時短', '初心者', '野菜'],
+  },
+  {
+    title: 'ホットクックで缶詰を使い切る——さば缶・ツナ缶・トマト缶で作る救済レシピ',
+    description: 'さば缶、ツナ缶、トマト缶はホットクックと相性のよい常備食材です。冷蔵庫が寂しい日でも夕飯に変える考え方をまとめました。',
+    href: '/blog/hotcook-canned-food/',
+    date: '2025年7月12日',
+    category: 'ホットクック',
+    image: '/blog/hotcook-canned-food-thumbnail-1600x900.png',
+    tags: ['缶詰', '魚', '節約', '食材活用'],
+  },
+  {
+    title: 'ホットクックでもやしを使うなら——安い・早い・水っぽくしない調理のコツ',
+    description: 'もやしは安くて便利ですが、ホットクックでは水っぽくなりがちです。入れるタイミング、味付け、相性のよい食材を解説します。',
+    href: '/blog/hotcook-bean-sprouts/',
+    date: '2025年7月14日',
+    category: 'ホットクック',
+    image: '/blog/hotcook-bean-sprouts-thumbnail-1600x900.png',
+    tags: ['もやし', '節約', '時短', '野菜'],
+  },
+  {
+    title: 'ホットクックでパスタは作れる？——別ゆでなしで失敗しにくい一皿ごはん',
+    description: 'ホットクックでパスタを作るときの水分量、麺の種類、くっつき防止、具材選びを解説します。別ゆでなしで一皿ごはんにする考え方です。',
+    href: '/blog/hotcook-pasta/',
+    date: '2025年7月16日',
+    category: 'ホットクック',
+    image: '/blog/hotcook-pasta-thumbnail-1600x900.png',
+    tags: ['パスタ', '時短', '昼ごはん', 'トマト'],
+  },
+  {
+    title: 'ホットクックの手動モード入門——公式メニューにない料理を作るときの考え方',
+    description: 'ホットクックの手動モードを使いこなすために、煮物・スープ・蒸し・低温調理の考え方を整理します。公式メニューにない料理で迷う人向けです。',
+    href: '/blog/hotcook-manual-mode/',
+    date: '2025年7月18日',
+    category: 'ホットクック',
+    image: '/blog/hotcook-manual-mode-thumbnail-1600x900.png',
+    tags: ['手動モード', '初心者', '調理テクニック'],
+  },
+  {
     title: '1人暮らしのホットクック——少量調理と食材を余らせないための使い方',
     description: '1人暮らしにこそホットクックが向いている理由と、食材を余らせない少量調理のコツ、1人でも完結するメニューの考え方を解説します。',
     href: '/blog/hotcook-solo-cooking/',
@@ -17,6 +63,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-solo-thumbnail-1600x900.png',
     tags: ['初心者', '節約', '一人暮らし', '食材活用'],
+  readingTime: 4,
   },
   {
     title: 'ホットクックで節約する——安い食材でも満足できる3つの考え方',
@@ -26,6 +73,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-budget-thumbnail-1600x900.png',
     tags: ['節約', '食材活用', '鶏肉', '豆腐'],
+  readingTime: 3,
   },
   {
     title: '18時に帰宅して18時30分に夕飯を出す——ホットクック予約機能の使い方',
@@ -35,6 +83,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-working-parent-thumbnail-1600x900.png',
     tags: ['ファミリー', '時短', '作り置き'],
+  readingTime: 4,
   },
   {
     title: '週末2時間でホットクックのバッチクック——平日5日間を乗り切る仕込みの組み立て方',
@@ -44,6 +93,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-batch-cooking-thumbnail-1600x900.png',
     tags: ['作り置き', '食材活用', '時短', 'ファミリー'],
+  readingTime: 3,
   },
   {
     title: 'ホットクックで牛肉を使うとき——部位別の向き不向きと失敗しない煮込み方',
@@ -53,6 +103,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-beef-thumbnail-1600x900.png',
     tags: ['牛肉', '煮込み'],
+  readingTime: 4,
   },
   {
     title: '合いびき肉がある日のホットクック——そぼろから煮込みまで、全部入れてスイッチだけ',
@@ -62,6 +113,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-minced-meat-thumbnail-1600x900.png',
     tags: ['ひき肉', '肉', 'カレー', '節約'],
+  readingTime: 4,
   },
   {
     title: 'キャベツを買いすぎた週のホットクック——3日間で1玉使い切るパターン',
@@ -71,6 +123,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-cabbage-thumbnail-1600x900.png',
     tags: ['野菜', '食材活用', '節約'],
+  readingTime: 4,
   },
   {
     title: '大根1本をホットクックで使い切る——無水調理で中まで味をしみ込ませる方法',
@@ -80,6 +133,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-daikon-thumbnail-1600x900.png',
     tags: ['野菜', '根菜', '食材活用'],
+  readingTime: 4,
   },
   {
     title: '玉ねぎ1袋をホットクックで使い切る——甘みを引き出す5つの調理パターン',
@@ -89,6 +143,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-onion-thumbnail-1600x900.png',
     tags: ['野菜', '食材活用', 'カレー'],
+  readingTime: 3,
   },
   {
     title: 'ホットクックのじゃがいも問題——煮崩れを防ぐ唯一の正解と、活かせる3品',
@@ -98,6 +153,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-potato-thumbnail-1600x900.png',
     tags: ['野菜', '根菜', 'カレー'],
+  readingTime: 4,
   },
   {
     title: '子どもが食べるホットクック献立——「嫌いな野菜」を乗り越えるコツと定番3品',
@@ -107,6 +163,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-kids-meal-thumbnail-1600x900.png',
     tags: ['ファミリー', 'カレー', '鶏肉', '野菜'],
+  readingTime: 4,
   },
   {
     title: '冷蔵庫の残り野菜を全部スープにする——ホットクックでやる理由と4つの味の型',
@@ -116,6 +173,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-leftover-soup-thumbnail-1600x900.png',
     tags: ['スープ', '食材活用', '野菜'],
+  readingTime: 4,
   },
   {
     title: '豆腐・厚揚げはホットクックで化ける——崩さずに煮る方法と献立の広げ方',
@@ -125,6 +183,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-tofu-aburaage-thumbnail-1600x900.png',
     tags: ['豆腐', '節約', '食材活用'],
+  readingTime: 4,
   },
   {
     title: 'もう立ちたくない夜のホットクック——材料を切らずに作れる献立3つ',
@@ -134,6 +193,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-tired-day-thumbnail-1600x900.png',
     tags: ['初心者', '時短', '一人暮らし'],
+  readingTime: 4,
   },
   {
     title: '鮭の切り身がある日のホットクック献立——和・洋・中華・みそ、全部いける',
@@ -143,6 +203,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-salmon-thumbnail-1600x900.png',
     tags: ['魚', '食材活用'],
+  readingTime: 4,
   },
   {
     title: 'ホットクックで豚バラ肉を使うなら？冷蔵庫の残り食材で作れる献立アイデア',
@@ -152,6 +213,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-pork-belly-thumbnail-1600x900.png',
     tags: ['豚肉', '肉', 'スープ'],
+  readingTime: 6,
   },
   {
     title: 'ホットクックで鶏もも肉を使うなら？冷蔵庫の残り食材で作れる献立アイデア',
@@ -161,6 +223,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-chicken-thigh-thumbnail-1600x900.png',
     tags: ['鶏肉', '肉', '食材活用'],
+  readingTime: 7,
   },
   {
     title: 'ホットクックできのこを使い倒す——しめじ・えのき・まいたけ、種類別の特徴と4つの使い方',
@@ -170,6 +233,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-mushroom-thumbnail-1600x900.png',
     tags: ['野菜', '食材活用', 'スープ'],
+  readingTime: 8,
   },
   {
     title: 'かぼちゃをホットクックで甘く仕上げる——煮崩れを防ぐコツと和洋3つのレシピ',
@@ -179,6 +243,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-pumpkin-thumbnail-1600x900.png',
     tags: ['野菜', '根菜', '食材活用'],
+  readingTime: 7,
   },
   {
     title: 'ホットクックで鶏むね肉をしっとり仕上げる——低温調理の考え方と5つの展開レシピ',
@@ -188,6 +253,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-chicken-breast-thumbnail-1600x900.png',
     tags: ['鶏肉', '肉', '作り置き', '節約'],
+  readingTime: 7,
   },
   {
     title: 'ホットクックで硬い根菜を攻略する——ごぼう・れんこん・さつまいも、火の通し方の違い',
@@ -197,6 +263,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-root-vegetables-thumbnail-1600x900.png',
     tags: ['野菜', '根菜', 'スープ'],
+  readingTime: 7,
   },
   {
     title: '乾物はホットクックで生まれ変わる——ひじき・切り干し大根・乾燥豆の戻し不要レシピ',
@@ -206,6 +273,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-dried-ingredients-thumbnail-1600x900.png',
     tags: ['食材活用', '節約', '作り置き'],
+  readingTime: 7,
   },
   {
     title: 'ホットクックカレーを失敗しない——水っぽい・味が薄い・じゃがいも溶ける、全部解決',
@@ -215,6 +283,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-curry-tips-thumbnail-1600x900.png',
     tags: ['カレー', '野菜', '鶏肉', 'ひき肉'],
+  readingTime: 6,
   },
   {
     title: 'ホットクックで鍋料理——寄せ鍋・豆乳鍋・みそキムチ鍋、3つの仕立てと〆の活用法',
@@ -224,6 +293,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-nabe-recipes-thumbnail-1600x900.png',
     tags: ['スープ', '豆腐', '野菜', 'ファミリー'],
+  readingTime: 6,
   },
   {
     title: 'ホットクックで葉物野菜を使うには——小松菜・ほうれん草・春菊、入れるタイミングが全て',
@@ -233,6 +303,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-greens-recipes-thumbnail-1600x900.png',
     tags: ['野菜', '食材活用', '豆腐'],
+  readingTime: 6,
   },
   {
     title: '週末の冷蔵庫を空にする——ホットクックで食材ロスをなくすための整理術',
@@ -242,6 +313,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-fridge-clear-thumbnail-1600x900.png',
     tags: ['食材活用', '作り置き', '節約'],
+  readingTime: 8,
   },
   {
     title: 'ホットクックのマンネリを脱する——いつもの食材で「別の国」の味を出す方法',
@@ -251,6 +323,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-new-flavors-thumbnail-1600x900.png',
     tags: ['カレー', '鶏肉', '野菜', '調理テクニック'],
+  readingTime: 7,
   },
   {
     title: 'ホットクックで手羽元をやわらかく仕上げる——骨付き肉の旨みと3つの味付けパターン',
@@ -260,6 +333,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-chicken-wings-thumbnail-1600x900.png',
     tags: ['鶏肉', '肉', 'スープ', '煮込み'],
+  readingTime: 7,
   },
   {
     title: 'ホットクックで茶碗蒸し・プリンを作る——蒸し調理が得意な理由と「す」が立たないコツ',
@@ -269,6 +343,7 @@ export const articles: Article[] = [
     category: 'ホットクック',
     image: '/blog/hotcook-steamed-pudding-thumbnail-1600x900.png',
     tags: ['卵', 'スイーツ', 'ファミリー'],
+  readingTime: 7,
   },
   {
     title: '冷蔵庫を撮るだけで、今夜の献立が30秒で決まる。──Snapmealをつくった話',
@@ -278,5 +353,6 @@ export const articles: Article[] = [
     category: '開発ストーリー',
     image: '/og-ja.png',
     tags: [],
+  readingTime: 8,
   },
 ];

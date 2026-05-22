@@ -4,6 +4,8 @@ import BlogCta from '../../components/BlogCta.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
 import RelatedArticles from '../../components/RelatedArticles.astro';
 import ArticleTags from '../../components/ArticleTags.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import ReadingTime from '../../components/ReadingTime.astro';
 ---
 
 <Layout
@@ -19,12 +21,11 @@ import ArticleTags from '../../components/ArticleTags.astro';
     <article>
       <section class="bg-surface px-4 pt-14 pb-10 sm:pt-20">
         <div class="max-w-3xl mx-auto">
-          <a href="/blog/" class="inline-flex items-center text-sm font-bold text-primary mb-8 hover:underline underline-offset-4">
-            ← ブログ一覧へ
-          </a>
+          <Breadcrumb pageTitle="ホットクックで茶碗蒸し・プリンを作る——蒸し調理が得意な理由と「す」が立たないコツ" pageHref="/blog/hotcook-steamed-pudding/" />
           <div class="flex flex-wrap items-center gap-3 text-xs font-bold text-gray-400 mb-5">
             <span class="text-primary bg-green-50 px-3 py-1 rounded-full">ホットクック</span>
             <time datetime="2025-07-05">2025年7月5日</time>
+              <ReadingTime currentHref="/blog/hotcook-steamed-pudding/" />
           </div>
           <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-[1.25] mb-6">
             ホットクックで茶碗蒸し・プリンを作る——蒸し調理が得意な理由と「す」が立たないコツ
