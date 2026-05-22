@@ -3,5 +3,5 @@ import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
   integrations: [tailwind()],
-  site: 'https://snapmeal.jp',
+  site: 'https://snap-meal.com',
 });

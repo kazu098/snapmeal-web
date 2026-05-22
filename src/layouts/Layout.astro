@@ -7,32 +7,34 @@ interface Props {
   alternateUrl?: string;
 }
 
-const {
-  lang = 'ja',
-  ogImage = '/og.png',
-} = Astro.props;
+const { lang = 'ja' } = Astro.props;
 
 const defaults = {
   ja: {
-    title: 'Snapmeal — 冷蔵庫を撮るだけ。30秒で今夜の夕食が決まる',
-    description: '献立に悩むすべての人のためのAI献立アシスタント。冷蔵庫を撮影するだけで、AIが食材を認識して今夜の献立を提案します。',
+    title: 'Snapmeal — 冷蔵庫を撮るだけ。30秒で今夜の献立が決まる',
+    description: 'ベータ版公開中・全機能無料。冷蔵庫を撮影するだけでAIが食材を認識し、今夜の献立をすぐ提案。ホットクック対応・疲れた日モード搭載。',
+    ogImage: '/og-ja.png',
     ogLocale: 'ja_JP',
   },
   en: {
-    title: "Snapmeal — Just snap your fridge. Tonight's dinner in 30 seconds.",
-    description: "The AI meal planner for busy families. Snap your fridge, let AI recognize the ingredients, and get tonight's dinner suggestion instantly.",
+    title: "Snapmeal — Just snap your fridge. Dinner in 30 seconds.",
+    description: "Beta is live — all features free. AI reads your fridge and suggests tonight's meal instantly. Smart Cooker support, Tired Mode, and more.",
+    ogImage: '/og-en.png',
     ogLocale: 'en_US',
   },
 };
 
-const { title, description, ogLocale } = {
-  ...defaults[lang],
-  ...(Astro.props.title ? { title: Astro.props.title } : {}),
-  ...(Astro.props.description ? { description: Astro.props.description } : {}),
-};
+const base = defaults[lang];
+const title = Astro.props.title ?? base.title;
+const description = Astro.props.description ?? base.description;
+const ogImage = Astro.props.ogImage ?? base.ogImage;
+const ogLocale = base.ogLocale;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const alternateUrl = Astro.props.alternateUrl;
+
+// GA4 Measurement ID — 環境変数 PUBLIC_GA_ID に設定する (例: G-XXXXXXXXXX)
+const gaId = import.meta.env.PUBLIC_GA_ID ?? '';
 ---
 
 <!doctype html>
@@ -44,6 +46,7 @@ const alternateUrl = Astro.props.alternateUrl;
     <link rel="canonical" href={canonicalURL} />
     {lang === 'ja' && alternateUrl && <link rel="alternate" hreflang="en" href={alternateUrl} />}
     {lang === 'en' && alternateUrl && <link rel="alternate" hreflang="ja" href={alternateUrl} />}
+    <link rel="alternate" hreflang="x-default" href="https://snap-meal.com/" />
 
     <title>{title}</title>
     <meta name="description" content={description} />
@@ -54,10 +57,12 @@ const alternateUrl = Astro.props.alternateUrl;
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={new URL(ogImage, Astro.site)} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:locale" content={ogLocale} />
     <meta property="og:site_name" content="Snapmeal" />
 
-    <!-- Twitter -->
+    <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
@@ -67,8 +72,32 @@ const alternateUrl = Astro.props.alternateUrl;
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Google Analytics 4 -->
+    {gaId && (
+      <>
+        <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>
+        <script is:inline define:vars={{ gaId }}>
+          window.dataLayer = window.dataLayer || [];
+          window.gtag = function() { window.dataLayer.push(arguments); };
+          window.gtag('js', new Date());
+          window.gtag('config', gaId, { send_page_view: true });
+        </script>
+      </>
+    )}
   </head>
   <body class="bg-white text-gray-900 font-sans antialiased">
     <slot />
+
+    <!-- コンバージョントラッキング: data-ga-event="xxx" のボタン/リンクを監視 -->
+    <script is:inline>
+      document.addEventListener('click', function(e) {
+        var el = e.target && e.target.closest('[data-ga-event]');
+        if (!el || !window.gtag) return;
+        var eventName = el.getAttribute('data-ga-event') || 'cta_click';
+        var label = el.getAttribute('data-ga-label') || el.textContent.trim();
+        window.gtag('event', eventName, { event_label: label });
+      });
+    </script>
   </body>
 </html>
