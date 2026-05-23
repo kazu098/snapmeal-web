@@ -41,7 +41,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     "description": "鶏ひき肉と豆腐は、そぼろあん・つくね風・スープ・丼に展開しやすい組み合わせです。軽くても満足できる夕飯にする考え方をまとめます。",
     "date": "2026年5月23日",
     "category": "献立",
-    "image": "/blog/chicken-mince-tofu-meal-thumbnail-1600x900.png",
+    "image": "/blog/chicken-mince-tofu-meal-thumbnail-1600x900.jpg",
     "tags": [
       "鶏ひき肉",
       "豆腐",
@@ -160,7 +160,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     "description": "豚こまとなすは、炒め物だけでなく、みそ煮・甘酢・トマト煮・ホットクックの蒸し煮にも向いています。平日夜に使いやすい献立化のコツです。",
     "date": "2026年5月23日",
     "category": "献立",
-    "image": "/blog/pork-eggplant-meal-thumbnail-1600x900.png",
+    "image": "/blog/pork-eggplant-meal-thumbnail-1600x900.jpg",
     "tags": [
       "豚こま",
       "なす",
@@ -278,7 +278,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     "description": "卵とツナ缶があれば、買い物なしでも夕飯のたんぱく質を補えます。丼・炒め物・スープ・オムレツ風に広げる考え方です。",
     "date": "2026年5月23日",
     "category": "献立",
-    "image": "/blog/egg-tuna-can-meal-thumbnail-1600x900.png",
+    "image": "/blog/egg-tuna-can-meal-thumbnail-1600x900.jpg",
     "tags": [
       "卵",
       "ツナ缶",
@@ -397,7 +397,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     "description": "キャベツとウインナーは、スープ・蒸し煮・焼きうどん・ホットクックの一品料理にしやすい組み合わせです。子どもが食べやすい味付けも整理します。",
     "date": "2026年5月23日",
     "category": "ファミリー",
-    "image": "/blog/cabbage-sausage-meal-thumbnail-1600x900.png",
+    "image": "/blog/cabbage-sausage-meal-thumbnail-1600x900.jpg",
     "tags": [
       "キャベツ",
       "ウインナー",
@@ -515,7 +515,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     "description": "冷凍うどんは、冷蔵庫の半端な肉・卵・野菜を一皿にまとめやすい常備品です。焼きうどん・煮込みうどん・あんかけにする判断軸をまとめます。",
     "date": "2026年5月23日",
     "category": "時短",
-    "image": "/blog/frozen-udon-dinner-thumbnail-1600x900.png",
+    "image": "/blog/frozen-udon-dinner-thumbnail-1600x900.jpg",
     "tags": [
       "冷凍うどん",
       "夕飯",
@@ -1800,7 +1800,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     description: '子どもが食べやすい献立は、別メニューを作るより、同じ食材を味・大きさ・食感で調整すると続きます。平日夜に使える考え方をまとめました。',
     date: '2026年5月23日',
     category: 'ファミリー',
-    image: '/blog/kid-friendly-dinner-thumbnail-1600x900.png',
+    image: '/blog/kid-friendly-dinner-thumbnail-1600x900.jpg',
     tags: ['子ども', 'ファミリー', '献立', '野菜'],
     ctaTitle: '家族が食べやすい献立を、冷蔵庫から決める',
     intro: [
@@ -1874,7 +1874,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     description: '洗い物を減らしたい日は、品数ではなく一皿完結・一鍋・ワンパンで考えると楽になります。平日夜向けの献立設計です。',
     date: '2026年5月23日',
     category: '時短',
-    image: '/blog/fewer-dishes-dinner-thumbnail-1600x900.png',
+    image: '/blog/fewer-dishes-dinner-thumbnail-1600x900.jpg',
     tags: ['洗い物', '時短', 'ワンパン', '献立'],
     ctaTitle: '洗い物を増やさず、今夜の夕飯を決める',
     intro: [
@@ -1948,7 +1948,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     description: '薄味にすると物足りないと感じるときは、塩分ではなく香り・酸味・だし・食感で満足感を足すと続けやすくなります。',
     date: '2026年5月23日',
     category: '献立',
-    image: '/blog/mild-flavor-satisfying-dinner-thumbnail-1600x900.png',
+    image: '/blog/mild-flavor-satisfying-dinner-thumbnail-1600x900.jpg',
     tags: ['薄味', 'だし', '健康', '献立'],
     ctaTitle: '薄味でも満足できる献立を、今ある食材から考える',
     intro: [
@@ -2022,7 +2022,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     description: '作り置きが続かない人でも、食材を少し整えるだけで平日夜は楽になります。作り切らない仕込みの考え方を紹介します。',
     date: '2026年5月23日',
     category: '時短',
-    image: '/blog/no-batch-cooking-weeknight-thumbnail-1600x900.png',
+    image: '/blog/no-batch-cooking-weeknight-thumbnail-1600x900.jpg',
     tags: ['作り置き', '平日夜', '時短', '仕込み'],
     ctaTitle: '作り置きなしでも、平日夜の献立をラクに決める',
     intro: [
@@ -2096,7 +2096,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     description: '辛いものが好き、薄味がいい、野菜が苦手。家族の好みが違う日は、同じ土台を作って仕上げだけ変えると夕飯が楽になります。',
     date: '2026年5月23日',
     category: 'ファミリー',
-    image: '/blog/family-preferences-dinner-thumbnail-1600x900.png',
+    image: '/blog/family-preferences-dinner-thumbnail-1600x900.jpg',
     tags: ['家族', '献立', '味変', 'ファミリー'],
     ctaTitle: '家族の好みに合わせて、同じ食材から献立を決める',
     intro: [
@@ -2170,7 +2170,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     description: '買い物に行けない日でも、卵・豆腐・缶詰・冷凍野菜・米があれば夕飯は作れます。食材を役割で分けて献立にする方法を解説します。',
     date: '2026年5月23日',
     category: '献立',
-    image: '/blog/no-shopping-dinner-thumbnail-1600x900.png',
+    image: '/blog/no-shopping-dinner-thumbnail-1600x900.jpg',
     tags: ['買い物なし', '献立', '冷蔵庫', '常備品'],
     ctaTitle: '買い物に行かずに、今ある食材で夕飯を決める',
     intro: [
@@ -2250,7 +2250,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     description: '半端に残った食材を、主菜・汁物・丼・副菜に振り分けるだけで夕飯は作りやすくなります。食品ロスを減らす献立の考え方です。',
     date: '2026年5月23日',
     category: '献立',
-    image: '/blog/leftover-ingredients-dinner-thumbnail-1600x900.png',
+    image: '/blog/leftover-ingredients-dinner-thumbnail-1600x900.jpg',
     tags: ['余り食材', '冷蔵庫整理', '食品ロス', '献立'],
     ctaTitle: '余り食材を見落とさず、夕飯に戻す',
     intro: [
@@ -2324,7 +2324,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     description: '疲れた日は料理の腕より判断を減らすことが大切です。15分・30分・放置調理の3パターンで夕飯を決める方法をまとめました。',
     date: '2026年5月23日',
     category: '時短',
-    image: '/blog/tired-day-dinner-thumbnail-1600x900.png',
+    image: '/blog/tired-day-dinner-thumbnail-1600x900.jpg',
     tags: ['疲れた日', '時短', '献立', '簡単'],
     ctaTitle: '疲れた日でも、今ある食材から夕飯を決める',
     intro: [
@@ -2398,7 +2398,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     description: '平日夜の献立は、食材より先に使える時間で分けると決まりやすくなります。15分、30分、放置調理の考え方を解説します。',
     date: '2026年5月23日',
     category: '時短',
-    image: '/blog/weeknight-quick-dinner-thumbnail-1600x900.png',
+    image: '/blog/weeknight-quick-dinner-thumbnail-1600x900.jpg',
     tags: ['平日夜', '時短', 'ホットクック', '献立'],
     ctaTitle: '平日夜の残り時間から、現実的な献立を決める',
     intro: [
@@ -2472,7 +2472,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     description: 'いつも同じ献立になるときは、食材ではなく味の軸・調理法・主食との合わせ方を変えると抜け出しやすくなります。',
     date: '2026年5月23日',
     category: '献立',
-    image: '/blog/dinner-rut-solutions-thumbnail-1600x900.png',
+    image: '/blog/dinner-rut-solutions-thumbnail-1600x900.jpg',
     tags: ['マンネリ', '献立', '味変', '食材活用'],
     ctaTitle: 'いつもの食材から、違う献立を提案してもらう',
     intro: [
@@ -2546,7 +2546,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     description: '卵とキャベツだけでは物足りないと思う日に、主菜・汁物・丼・ホットクック向け副菜まで広げる献立の考え方をまとめました。',
     date: '2026年5月23日',
     category: '献立',
-    image: '/blog/egg-cabbage-meal-thumbnail-1600x900.png',
+    image: '/blog/egg-cabbage-meal-thumbnail-1600x900.jpg',
     tags: ['卵', 'キャベツ', '節約', '献立'],
     ctaTitle: '卵とキャベツから、今夜の献立を組み立てる',
     intro: [
@@ -2629,7 +2629,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     description: 'ひき肉とじゃがいもがある日に、肉じゃが風だけで終わらせず、主菜・丼・スープに展開する方法を解説します。',
     date: '2026年5月23日',
     category: '献立',
-    image: '/blog/ground-meat-potato-meal-thumbnail-1600x900.png',
+    image: '/blog/ground-meat-potato-meal-thumbnail-1600x900.jpg',
     tags: ['ひき肉', 'じゃがいも', '献立', '作り置き'],
     ctaTitle: 'ひき肉とじゃがいもから、満足できる献立を決める',
     intro: [
@@ -2709,7 +2709,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     description: '白菜と豚肉は鍋以外にも、重ね蒸し、あんかけ、みそ煮、スープに展開できます。冷蔵庫の残り食材で献立にする方法をまとめました。',
     date: '2026年5月23日',
     category: '献立',
-    image: '/blog/napa-cabbage-pork-meal-thumbnail-1600x900.png',
+    image: '/blog/napa-cabbage-pork-meal-thumbnail-1600x900.jpg',
     tags: ['白菜', '豚肉', '献立', '鍋'],
     ctaTitle: '白菜と豚肉を、鍋以外の献立にも広げる',
     intro: [
@@ -2788,7 +2788,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     description: '大根と鶏肉を、煮物・スープ・ホットクック・レンジ下ごしらえで使い分ける考え方を解説します。',
     date: '2026年5月23日',
     category: '献立',
-    image: '/blog/daikon-chicken-meal-thumbnail-1600x900.png',
+    image: '/blog/daikon-chicken-meal-thumbnail-1600x900.jpg',
     tags: ['大根', '鶏肉', '煮物', '献立'],
     ctaTitle: '大根と鶏肉から、煮物以外の献立も考える',
     intro: [
@@ -2867,7 +2867,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     description: 'きのこと卵がある日に、卵とじ、スープ、丼、オムレツに展開して、軽い食材を満足できる献立にする考え方をまとめました。',
     date: '2026年5月23日',
     category: '献立',
-    image: '/blog/mushroom-egg-meal-thumbnail-1600x900.png',
+    image: '/blog/mushroom-egg-meal-thumbnail-1600x900.jpg',
     tags: ['きのこ', '卵', '時短', '献立'],
     ctaTitle: 'きのこと卵を、あと一品ではなく献立の中心にする',
     intro: [
@@ -2950,7 +2950,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     description: '冷蔵庫に食材はあるのに献立が決まらない。主菜・副菜・汁物に分ける考え方、足りない食材の見極め、調理器具別の組み立て方を解説します。',
     date: '2026年5月22日',
     category: '献立',
-    image: '/blog/fridge-meal-planning-thumbnail-1600x900.png',
+    image: '/blog/fridge-meal-planning-thumbnail-1600x900.jpg',
     tags: ['献立', '冷蔵庫', '食材活用', '時短'],
     ctaTitle: '冷蔵庫を撮って、今ある食材から献立を決める',
     intro: [
@@ -3033,7 +3033,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     description: '鶏もも肉とキャベツがある日に、ホットクック・フライパン・電子レンジのどれで作るとよいかを整理します。',
     date: '2026年5月22日',
     category: '献立',
-    image: '/blog/chicken-thigh-cabbage-meal-thumbnail-1600x900.png',
+    image: '/blog/chicken-thigh-cabbage-meal-thumbnail-1600x900.jpg',
     tags: ['鶏肉', 'キャベツ', '献立', '野菜'],
     ctaTitle: '鶏もも肉とキャベツで作れる献立をすぐ決める',
     intro: [
@@ -3112,7 +3112,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     description: '豚こまと玉ねぎだけでも平日夜の主菜は作れます。味付けの方向性、副菜、汁物まで含めた献立の考え方をまとめました。',
     date: '2026年5月22日',
     category: '献立',
-    image: '/blog/pork-onion-meal-thumbnail-1600x900.png',
+    image: '/blog/pork-onion-meal-thumbnail-1600x900.jpg',
     tags: ['豚肉', '玉ねぎ', '節約', '献立'],
     ctaTitle: '豚こまと玉ねぎから、平日夜の献立を決める',
     intro: [
@@ -3195,7 +3195,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     description: 'みりんを切らしていても、酒・砂糖・めんつゆなどで味は近づけられます。料理別に代用の考え方を解説します。',
     date: '2026年5月22日',
     category: '調味料',
-    image: '/blog/mirin-substitute-thumbnail-1600x900.png',
+    image: '/blog/mirin-substitute-thumbnail-1600x900.jpg',
     tags: ['みりん', '代用', '調味料', '料理のコツ'],
     ctaTitle: '足りない調味料があっても、今あるもので献立を決める',
     intro: [
@@ -3274,7 +3274,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     description: 'めんつゆがないときに、醤油・みりん・だしで味を組み立てる基本比率を紹介します。煮物、丼、麺つゆで使い分けます。',
     date: '2026年5月22日',
     category: '調味料',
-    image: '/blog/mentsuyu-substitute-thumbnail-1600x900.png',
+    image: '/blog/mentsuyu-substitute-thumbnail-1600x900.jpg',
     tags: ['めんつゆ', '代用', '調味料', '料理のコツ'],
     ctaTitle: 'めんつゆがなくても、代用込みで献立を決める',
     intro: [
@@ -3352,7 +3352,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     title: 'ホットクックで冷凍野菜を使う——包丁なしで夕飯を作るための組み合わせ方',
     description: 'ホットクックで冷凍野菜を使うと水っぽくなる、味が薄い、食感が悪い。そうならないための食材選び、入れる順番、味付けの考え方をまとめました。',
     date: '2026年5月22日',
-    image: '/blog/hotcook-frozen-vegetables-thumbnail-1600x900.png',
+    image: '/blog/hotcook-frozen-vegetables-thumbnail-1600x900.jpg',
     tags: ['冷凍野菜', '時短', '初心者', '野菜'],
     ctaTitle: '冷凍野菜と冷蔵庫の食材で、今夜の献立を決める',
     intro: [
@@ -3430,7 +3430,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     title: 'ホットクックで缶詰を使い切る——さば缶・ツナ缶・トマト缶で作る救済レシピ',
     description: 'さば缶、ツナ缶、トマト缶はホットクックと相性のよい常備食材です。冷蔵庫が寂しい日でも夕飯に変える考え方をまとめました。',
     date: '2026年5月22日',
-    image: '/blog/hotcook-canned-food-thumbnail-1600x900.png',
+    image: '/blog/hotcook-canned-food-thumbnail-1600x900.jpg',
     tags: ['缶詰', '魚', '節約', '食材活用'],
     ctaTitle: '缶詰と残り食材で、買い物に行かずに献立を決める',
     intro: [
@@ -3506,7 +3506,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     title: 'ホットクックでもやしを使うなら——安い・早い・水っぽくしない調理のコツ',
     description: 'もやしは安くて便利ですが、ホットクックでは水っぽくなりがちです。入れるタイミング、味付け、相性のよい食材を解説します。',
     date: '2026年5月22日',
-    image: '/blog/hotcook-bean-sprouts-thumbnail-1600x900.png',
+    image: '/blog/hotcook-bean-sprouts-thumbnail-1600x900.jpg',
     tags: ['もやし', '節約', '時短', '野菜'],
     ctaTitle: 'もやしと残り食材で、安くて早い献立を決める',
     intro: [
@@ -3580,7 +3580,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     title: 'ホットクックでパスタは作れる？——別ゆでなしで失敗しにくい一皿ごはん',
     description: 'ホットクックでパスタを作るときの水分量、麺の種類、くっつき防止、具材選びを解説します。別ゆでなしで一皿ごはんにする考え方です。',
     date: '2026年5月22日',
-    image: '/blog/hotcook-pasta-thumbnail-1600x900.png',
+    image: '/blog/hotcook-pasta-thumbnail-1600x900.jpg',
     tags: ['パスタ', '時短', '昼ごはん', 'トマト'],
     ctaTitle: '冷蔵庫の食材で、ホットクックの一皿ごはんを決める',
     intro: [
@@ -3654,7 +3654,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     title: 'ホットクックの手動モード入門——公式メニューにない料理を作るときの考え方',
     description: 'ホットクックの手動モードを使いこなすために、煮物・スープ・蒸し・低温調理の考え方を整理します。公式メニューにない料理で迷う人向けです。',
     date: '2026年5月22日',
-    image: '/blog/hotcook-manual-mode-thumbnail-1600x900.png',
+    image: '/blog/hotcook-manual-mode-thumbnail-1600x900.jpg',
     tags: ['手動モード', '初心者', '調理テクニック'],
     ctaTitle: '公式メニューにない料理も、今ある食材から考える',
     intro: [
