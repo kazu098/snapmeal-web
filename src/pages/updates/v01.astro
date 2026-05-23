@@ -1,0 +1,119 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+
+const APP_URL = 'https://app.snap-meal.com';
+---
+
+<Layout
+  lang="ja"
+  title="v0.1 ベータ版ローンチ — Snapmeal"
+  description="Snapmeal v0.1 ベータ版を公開。冷蔵庫を撮るだけで献立が決まるAIアプリ。ホットクック対応・疲れた日モード・献立履歴など。"
+>
+  <BlogHeader current="blog" />
+
+  <main class="bg-white">
+    <!-- ヘッダー -->
+    <section class="bg-surface px-4 py-12 sm:py-16">
+      <div class="max-w-2xl mx-auto">
+        <a href="/updates/" class="inline-flex items-center gap-1 text-sm text-gray-400 hover:text-primary mb-6 transition">
+          ← アップデート一覧
+        </a>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="text-3xl font-extrabold text-primary">v0.1</span>
+          <span class="text-sm text-gray-400 font-semibold">2026年4月</span>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-tight mb-3">
+          ベータ版ローンチ
+        </h1>
+        <p class="text-gray-500 leading-relaxed">
+          「冷蔵庫を撮るだけで献立が決まる」AIアプリのベータ版を公開しました。
+        </p>
+      </div>
+    </section>
+
+    <!-- メイン機能 -->
+    <section class="px-4 py-12 border-t border-gray-100">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-6">主な機能</h2>
+
+        <div class="flex justify-center mb-10">
+          <div class="relative">
+            <img
+              src="/updates/upload-screen.png"
+              alt="Snapmeal — 冷蔵庫写真をアップロードして献立を提案"
+              class="w-[220px] rounded-[2rem] shadow-2xl shadow-gray-300 border border-gray-100"
+            />
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <div class="flex gap-4 p-4 rounded-2xl border border-gray-100">
+            <span class="text-2xl flex-shrink-0">📸</span>
+            <div>
+              <p class="font-bold text-gray-800 text-sm">食材の自動認識</p>
+              <p class="text-xs text-gray-500 mt-0.5 leading-relaxed">冷蔵庫の写真を撮るだけで、AIが食材を認識。複数枚の写真を組み合わせることで認識精度が上がります。</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4 p-4 rounded-2xl border border-gray-100">
+            <span class="text-2xl flex-shrink-0">🍽️</span>
+            <div>
+              <p class="font-bold text-gray-800 text-sm">3候補から献立を選択</p>
+              <p class="text-xs text-gray-500 mt-0.5 leading-relaxed">AIが3つの献立候補を提案。気に入ったものを選ぶとレシピをその場で生成します。</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4 p-4 rounded-2xl border border-gray-100">
+            <span class="text-2xl flex-shrink-0">⚡</span>
+            <div>
+              <p class="font-bold text-gray-800 text-sm">疲れた日モード</p>
+              <p class="text-xs text-gray-500 mt-0.5 leading-relaxed">今日の体力に合わせて「疲れた」を選ぶと、15分以内で作れる料理だけを提案します。</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4 p-4 rounded-2xl border border-gray-100">
+            <span class="text-2xl flex-shrink-0">🥘</span>
+            <div>
+              <p class="font-bold text-gray-800 text-sm">ホットクック対応</p>
+              <p class="text-xs text-gray-500 mt-0.5 leading-relaxed">ホットクックを選ぶと、自動メニュー番号つきのレシピを生成。本体操作まで丸ごとガイドします。</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4 p-4 rounded-2xl border border-gray-100">
+            <span class="text-2xl flex-shrink-0">📅</span>
+            <div>
+              <p class="font-bold text-gray-800 text-sm">献立履歴</p>
+              <p class="text-xs text-gray-500 mt-0.5 leading-relaxed">過去の献立を記録して、AIの提案に反映。同じ料理が続くマンネリを防ぎます。</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4 p-4 rounded-2xl border border-gray-100">
+            <span class="text-2xl flex-shrink-0">🌐</span>
+            <div>
+              <p class="font-bold text-gray-800 text-sm">日本語・英語対応</p>
+              <p class="text-xs text-gray-500 mt-0.5 leading-relaxed">設定から言語を切り替えられます。英語モードでも同じ機能をすべてご利用いただけます。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="px-4 py-16 bg-surface border-t border-gray-100 text-center">
+      <p class="text-sm text-gray-500 mb-4">ベータ版は無料でお試しいただけます</p>
+      <a
+        href={APP_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-ga-event="cta_click"
+        class="inline-block bg-primary text-white font-bold px-8 py-3.5 rounded-full hover:bg-primary-dark transition shadow-lg shadow-green-100"
+      >
+        Snapmealを試す（ベータ・無料）
+      </a>
+      <div class="mt-6">
+        <a href="/updates/" class="text-sm text-gray-400 hover:text-primary transition">← アップデート一覧に戻る</a>
+      </div>
+    </section>
+  </main>
+</Layout>
