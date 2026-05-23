@@ -1,0 +1,125 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+
+const APP_URL = 'https://app.snap-meal.com';
+---
+
+<Layout
+  lang="ja"
+  title="v0.6 アップデート — 食材優先指定・ジャンル選択 | Snapmeal"
+  description="Snapmeal v0.6：写真解析後の食材一覧から「今日使いたい食材」をタップ指定できるように。献立スタイル（和食・洋食・中華など）の選択機能も追加。"
+>
+  <BlogHeader current="blog" />
+
+  <main class="bg-white">
+    <!-- ヘッダー -->
+    <section class="bg-surface px-4 py-12 sm:py-16">
+      <div class="max-w-2xl mx-auto">
+        <a href="/updates/" class="inline-flex items-center gap-1 text-sm text-gray-400 hover:text-primary mb-6 transition">
+          ← アップデート一覧
+        </a>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="text-3xl font-extrabold text-primary">v0.6</span>
+          <span class="text-sm text-gray-400 font-semibold">2026年5月</span>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-tight mb-3">
+          食材を使いたい順に選べるように・ジャンル選択
+        </h1>
+        <p class="text-gray-500 leading-relaxed">
+          写真解析後の食材一覧で「今日これを使いたい」とタップ指定できるようになりました。指定した食材をAIが必ず料理に組み込みます。献立スタイルの選択機能もあわせて追加しています。
+        </p>
+      </div>
+    </section>
+
+    <!-- 食材オプトイン指定 -->
+    <section class="px-4 py-12 border-t border-gray-100">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-2">使いたい食材をタップで指定</h2>
+        <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+          冷蔵庫の写真を解析すると、認識した食材の一覧が表示されます。その中から「今日はこれを使い切りたい」という食材をタップすると、アンバー色でハイライトされ「優先」マークが付きます。AIはその食材を必ず料理に使った献立を提案します。
+        </p>
+
+        <div class="flex justify-center gap-6 mb-8 flex-wrap sm:flex-nowrap">
+          <div class="text-center">
+            <img
+              src="/updates/v06-ingredient-confirm.png"
+              alt="食材確認画面 — 認識した食材の一覧"
+              class="w-[160px] rounded-[1.5rem] shadow-xl shadow-gray-200 border border-gray-100 mx-auto"
+            />
+            <p class="text-xs text-gray-400 mt-2">タップ前</p>
+          </div>
+          <div class="text-center">
+            <img
+              src="/updates/v06-ingredient-priority.png"
+              alt="食材確認画面 — 優先食材をタップ指定した状態"
+              class="w-[160px] rounded-[1.5rem] shadow-xl shadow-gray-200 border border-gray-100 mx-auto"
+            />
+            <p class="text-xs text-gray-400 mt-2">優先指定後</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4 mb-6">
+          <div class="bg-surface rounded-2xl p-4">
+            <p class="text-sm font-bold text-gray-800 mb-1">タップで優先指定</p>
+            <p class="text-xs text-gray-500 leading-relaxed">食材チップをタップするとアンバー色になり「優先」バッジが表示されます。もう一度タップすると解除。</p>
+          </div>
+          <div class="bg-surface rounded-2xl p-4">
+            <p class="text-sm font-bold text-gray-800 mb-1">× で削除</p>
+            <p class="text-xs text-gray-500 leading-relaxed">認識ミスや使いたくない食材は × ボタンで一覧から外せます。優先指定とは別の操作です。</p>
+          </div>
+        </div>
+
+        <div class="bg-amber-50 border border-amber-200 rounded-2xl p-4 text-sm text-amber-800 leading-relaxed">
+          <strong>何もタップしなければ全食材から提案</strong><br />
+          優先指定はあくまで任意です。タップしなければ、認識した全食材をもとにAIが提案します。
+        </div>
+      </div>
+    </section>
+
+    <!-- 別の献立にも反映 -->
+    <section class="px-4 py-12 bg-surface border-t border-gray-100">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-2">「別のコンダテ」にも優先食材が反映</h2>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          優先指定した食材は、最初に提案される献立だけでなく「別のコンダテを見る」で表示される候補にも反映されます。どの選択肢を選んでも、指定した食材が必ず使われます。
+        </p>
+      </div>
+    </section>
+
+    <!-- ジャンル選択 -->
+    <section class="px-4 py-12 border-t border-gray-100">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-2">献立スタイルをジャンルで絞り込む</h2>
+        <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+          撮影前の画面で、提案してほしい献立スタイルを選べるようになりました。今夜はエスニック気分、洋食が食べたい——そんな日に使ってください。
+        </p>
+
+        <div class="flex justify-center mb-6">
+          <img
+            src="/updates/v06-genre-select.png"
+            alt="献立スタイル選択画面 — 和食・洋食・中華・韓国・エスニック・ワンプレート"
+            class="w-[220px] rounded-[2rem] shadow-2xl shadow-gray-300 border border-gray-100"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="px-4 py-16 bg-surface border-t border-gray-100 text-center">
+      <p class="text-sm text-gray-500 mb-4">v0.6 の機能を今すぐ試せます</p>
+      <a
+        href={APP_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-ga-event="cta_click"
+        class="inline-block bg-primary text-white font-bold px-8 py-3.5 rounded-full hover:bg-primary-dark transition shadow-lg shadow-green-100"
+      >
+        Snapmealを試す（ベータ・無料）
+      </a>
+      <div class="mt-6">
+        <a href="/updates/" class="text-sm text-gray-400 hover:text-primary transition">← アップデート一覧に戻る</a>
+      </div>
+    </section>
+  </main>
+</Layout>
