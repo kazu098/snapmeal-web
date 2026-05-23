@@ -45,6 +45,46 @@ const newImages = [
     secondary: '#f97316',
     bg: '#f8fafc',
   },
+  {
+    slug: 'tofu-ground-meat-meal',
+    title: '豆腐×ひき肉',
+    subtitle: 'soft protein',
+    primary: '#14b8a6',
+    secondary: '#a16207',
+    bg: '#f0fdfa',
+  },
+  {
+    slug: 'chicken-breast-broccoli-meal',
+    title: '鶏むね×ブロッコリー',
+    subtitle: 'lean dinner',
+    primary: '#22c55e',
+    secondary: '#0f766e',
+    bg: '#f0fdf4',
+  },
+  {
+    slug: 'salmon-mushroom-meal',
+    title: '鮭×きのこ',
+    subtitle: 'umami steam',
+    primary: '#fb7185',
+    secondary: '#92400e',
+    bg: '#fff1f2',
+  },
+  {
+    slug: 'mackerel-can-daikon-meal',
+    title: 'さば缶×大根',
+    subtitle: 'pantry simmer',
+    primary: '#0ea5e9',
+    secondary: '#64748b',
+    bg: '#f0f9ff',
+  },
+  {
+    slug: 'tomato-can-frozen-vegetables-meal',
+    title: 'トマト缶×冷凍野菜',
+    subtitle: 'no shopping stew',
+    primary: '#ef4444',
+    secondary: '#16a34a',
+    bg: '#fef2f2',
+  },
 ];
 
 const buildSvg = ({ title, subtitle, primary, secondary, bg }) => `
