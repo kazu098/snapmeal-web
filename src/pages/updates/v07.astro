@@ -40,7 +40,26 @@ const APP_URL = 'https://app.snap-meal.com';
           v0.6で追加した食材の優先指定機能について、最初に表示される献立には反映されていましたが、「別のコンダテを見る」で表示される候補には反映されていないバグがありました。v0.7で修正し、優先指定した食材はすべての候補に必ず使われるようになっています。
         </p>
 
-        <div class="bg-amber-50 border border-amber-200 rounded-2xl p-4 text-sm text-amber-800 leading-relaxed mb-6">
+        <div class="flex justify-center gap-6 mb-8 flex-wrap sm:flex-nowrap">
+          <div class="text-center">
+            <img
+              src="/updates/v07-priority-confirm.png"
+              alt="食材確認画面 — 鶏もも肉・豆腐を優先指定した状態"
+              class="w-[160px] rounded-[1.5rem] shadow-xl shadow-gray-200 border border-gray-100 mx-auto"
+            />
+            <p class="text-xs text-gray-400 mt-2">優先食材を指定</p>
+          </div>
+          <div class="text-center">
+            <img
+              src="/updates/v07-alternatives.png"
+              alt="献立提案画面 — 優先食材（鶏もも肉・豆腐）が使われた別の献立候補"
+              class="w-[160px] rounded-[1.5rem] shadow-xl shadow-gray-200 border border-gray-100 mx-auto"
+            />
+            <p class="text-xs text-gray-400 mt-2">「別のコンダテ」にも反映</p>
+          </div>
+        </div>
+
+        <div class="bg-amber-50 border border-amber-200 rounded-2xl p-4 text-sm text-amber-800 leading-relaxed mb-4">
           <strong>修正前の動作</strong><br />
           「鶏もも肉」を優先指定 → 最初の献立には使われるが、「別のコンダテ」の候補では使われないことがあった
         </div>
@@ -59,6 +78,17 @@ const APP_URL = 'https://app.snap-meal.com';
         <p class="text-gray-500 text-sm mb-6 leading-relaxed">
           英語版を利用する海外ユーザーに対して、より実際に作りやすい料理が提案されるよう改善しました。
         </p>
+
+        <div class="flex justify-center mb-6">
+          <div class="text-center">
+            <img
+              src="/updates/v07-en-meal.png"
+              alt="英語版献立提案画面 — Chicken and Cabbage Stir-fry with Tofu and Carrot"
+              class="w-[200px] rounded-[1.5rem] shadow-xl shadow-gray-200 border border-gray-100 mx-auto"
+            />
+            <p class="text-xs text-gray-400 mt-2">英語版の献立提案</p>
+          </div>
+        </div>
 
         <div class="grid sm:grid-cols-2 gap-4 mb-6">
           <div class="bg-white rounded-2xl p-4 border border-gray-100">
