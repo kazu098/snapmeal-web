@@ -1,0 +1,127 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+
+const APP_URL = 'https://app.snap-meal.com';
+---
+
+<Layout
+  lang="ja"
+  title="v0.7 アップデート — 優先食材の精度向上・英語版改善 | Snapmeal"
+  description="Snapmeal v0.7：優先指定した食材が「別のコンダテ」にも確実に反映されるよう修正。英語版では欧米スタイルの料理提案に改善。"
+>
+  <BlogHeader current="blog" />
+
+  <main class="bg-white">
+    <!-- ヘッダー -->
+    <section class="bg-surface px-4 py-12 sm:py-16">
+      <div class="max-w-2xl mx-auto">
+        <a href="/updates/" class="inline-flex items-center gap-1 text-sm text-gray-400 hover:text-primary mb-6 transition">
+          ← アップデート一覧
+        </a>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="text-3xl font-extrabold text-primary">v0.7</span>
+          <span class="text-sm text-gray-400 font-semibold">2026年5月</span>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-tight mb-3">
+          優先食材の精度向上・英語版の料理提案を改善
+        </h1>
+        <p class="text-gray-500 leading-relaxed">
+          優先指定した食材が「別のコンダテを見る」の候補にも確実に反映されるよう修正しました。また英語版では、欧米ユーザーの冷蔵庫に合わせた料理スタイルへの改善を行っています。
+        </p>
+      </div>
+    </section>
+
+    <!-- 優先食材の修正 -->
+    <section class="px-4 py-12 border-t border-gray-100">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-2">優先食材が「別のコンダテ」にも確実に反映</h2>
+        <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+          v0.6で追加した食材の優先指定機能について、最初に表示される献立には反映されていましたが、「別のコンダテを見る」で表示される候補には反映されていないバグがありました。v0.7で修正し、優先指定した食材はすべての候補に必ず使われるようになっています。
+        </p>
+
+        <div class="flex justify-center gap-6 mb-8 flex-wrap sm:flex-nowrap">
+          <div class="text-center">
+            <img
+              src="/updates/v07-priority-confirm.png"
+              alt="食材確認画面 — 鶏もも肉・豆腐を優先指定した状態"
+              class="w-[160px] rounded-[1.5rem] shadow-xl shadow-gray-200 border border-gray-100 mx-auto"
+            />
+            <p class="text-xs text-gray-400 mt-2">優先食材を指定</p>
+          </div>
+          <div class="text-center">
+            <img
+              src="/updates/v07-alternatives.png"
+              alt="献立提案画面 — 優先食材（鶏もも肉・豆腐）が使われた別の献立候補"
+              class="w-[160px] rounded-[1.5rem] shadow-xl shadow-gray-200 border border-gray-100 mx-auto"
+            />
+            <p class="text-xs text-gray-400 mt-2">「別のコンダテ」にも反映</p>
+          </div>
+        </div>
+
+        <div class="bg-amber-50 border border-amber-200 rounded-2xl p-4 text-sm text-amber-800 leading-relaxed mb-4">
+          <strong>修正前の動作</strong><br />
+          「鶏もも肉」を優先指定 → 最初の献立には使われるが、「別のコンダテ」の候補では使われないことがあった
+        </div>
+
+        <div class="bg-green-50 border border-green-200 rounded-2xl p-4 text-sm text-green-800 leading-relaxed">
+          <strong>修正後の動作</strong><br />
+          「鶏もも肉」を優先指定 → 最初の献立にも、「別のコンダテ」のすべての候補にも必ず鶏もも肉が使われる
+        </div>
+      </div>
+    </section>
+
+    <!-- 英語版改善 -->
+    <section class="px-4 py-12 bg-surface border-t border-gray-100">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-2">英語版の料理提案を欧米スタイルに改善</h2>
+        <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+          英語版を利用する海外ユーザーに対して、より実際に作りやすい料理が提案されるよう改善しました。
+        </p>
+
+        <div class="flex justify-center mb-6">
+          <div class="text-center">
+            <img
+              src="/updates/v07-en-meal.png"
+              alt="英語版献立提案画面 — Chicken and Cabbage Stir-fry with Tofu and Carrot"
+              class="w-[200px] rounded-[1.5rem] shadow-xl shadow-gray-200 border border-gray-100 mx-auto"
+            />
+            <p class="text-xs text-gray-400 mt-2">英語版の献立提案</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4 mb-6">
+          <div class="bg-white rounded-2xl p-4 border border-gray-100">
+            <p class="text-sm font-bold text-gray-800 mb-1">グローバルな料理を優先</p>
+            <p class="text-xs text-gray-500 leading-relaxed">ジャンル未指定の場合、パスタ・グリル・スープ・タコスなど欧米でなじみのある料理を優先提案するように変更しました。</p>
+          </div>
+          <div class="bg-white rounded-2xl p-4 border border-gray-100">
+            <p class="text-sm font-bold text-gray-800 mb-1">常備調味料リストを更新</p>
+            <p class="text-xs text-gray-500 leading-relaxed">みりん・めんつゆなど日本固有の調味料から、クミン・パプリカ・ハーブ類など欧米の家庭で一般的な調味料に更新しました。</p>
+          </div>
+        </div>
+
+        <p class="text-xs text-gray-400 leading-relaxed">
+          ※ 日本語版には影響しません。英語版でジャンルを明示的に選択した場合はそのジャンルが優先されます。
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="px-4 py-16 bg-white border-t border-gray-100 text-center">
+      <p class="text-sm text-gray-500 mb-4">最新版をお試しください</p>
+      <a
+        href={APP_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-ga-event="cta_click"
+        class="inline-block bg-primary text-white font-bold px-8 py-3.5 rounded-full hover:bg-primary-dark transition shadow-lg shadow-green-100"
+      >
+        Snapmealを試す（ベータ・無料）
+      </a>
+      <div class="mt-6">
+        <a href="/updates/" class="text-sm text-gray-400 hover:text-primary transition">← アップデート一覧に戻る</a>
+      </div>
+    </section>
+  </main>
+</Layout>
