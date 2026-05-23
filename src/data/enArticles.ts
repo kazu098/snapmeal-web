@@ -38,6 +38,152 @@ export const staticEnglishBlogSlugs = new Set([
 
 export const enArticles: EnArticle[] = [
   article({
+    "slug": "microwave-only-dinner",
+    "title": "How to Make Dinner Using Only a Microwave",
+    "description": "Build a complete microwave-only dinner by combining staple, protein, vegetables, and one clear flavor base.",
+    "jaHref": "/blog/microwave-only-dinner/",
+    "date": "May 24, 2026",
+    "category": "Time Saving",
+    "image": "/blog/microwave-only-dinner-thumbnail-1600x900.jpg",
+    "tags": [
+      "Microwave cooking",
+      "No stove",
+      "Dinner",
+      "Time saving"
+    ],
+    "intro": "A microwave-only dinner works best when you choose a meal format first: bowl, soup, steamed dish, noodles, or rice porridge.",
+    "angle": "Do not think of microwave cooking as a side dish only. Combine rice or noodles, protein, vegetables, and sauce into one practical meal.",
+    "decision": "Pick ingredients that heat quickly, such as tofu, eggs, mushrooms, bean sprouts, frozen vegetables, thinly sliced meat, canned fish, frozen rice, or frozen udon.",
+    "patterns": [
+      "Microwave-steamed vegetables and meat over rice.",
+      "Tofu, egg, and mushrooms as a soup bowl.",
+      "Frozen udon with vegetables and tuna."
+    ],
+    "mistakes": [
+      "Starting with a recipe name before choosing a format.",
+      "Using large thick ingredients that heat unevenly.",
+      "Adding too much water before heating."
+    ],
+    "snapmeal": "Snapmeal can suggest microwave-friendly dinners from a fridge photo when you do not want to use the stove."
+  }),
+  article({
+    "slug": "microwave-fridge-staples",
+    "title": "Microwave Meals from Fridge Staples: Tofu, Eggs, and Mushrooms",
+    "description": "Use tofu, eggs, mushrooms, and frozen vegetables as the base for simple microwave meals.",
+    "jaHref": "/blog/microwave-fridge-staples/",
+    "date": "May 24, 2026",
+    "category": "Fridge Use",
+    "image": "/blog/microwave-fridge-staples-thumbnail-1600x900.jpg",
+    "tags": [
+      "Microwave cooking",
+      "Fridge",
+      "Tofu",
+      "Eggs"
+    ],
+    "intro": "Tofu, eggs, mushrooms, and frozen vegetables are especially useful for microwave meals because they heat quickly and combine easily.",
+    "angle": "Think by role: tofu as the main ingredient, egg as the binder, mushrooms for umami, frozen vegetables for volume, and rice or udon as the staple.",
+    "decision": "Choose a flavor base first, such as mentsuyu, chicken stock, miso, consommé, or ponzu. Then combine the staple ingredients around it.",
+    "patterns": [
+      "Tofu and mushrooms with egg over rice.",
+      "Frozen vegetables and tuna mixed into warmed rice.",
+      "Mushrooms, egg, and frozen udon as a warm bowl."
+    ],
+    "mistakes": [
+      "Overheating tofu until it releases too much water.",
+      "Microwaving whole eggs without breaking them.",
+      "Using too many flavor bases at once."
+    ],
+    "snapmeal": "Snapmeal can identify fridge staples and suggest microwave-friendly combinations."
+  }),
+  article({
+    "slug": "no-knife-microwave-dinner",
+    "title": "No-Knife Microwave Dinners for Tired Nights",
+    "description": "Choose ingredients that do not need chopping and turn them into microwave dinners with fewer dishes.",
+    "jaHref": "/blog/no-knife-microwave-dinner/",
+    "date": "May 24, 2026",
+    "category": "Time Saving",
+    "image": "/blog/no-knife-microwave-dinner-thumbnail-1600x900.jpg",
+    "tags": [
+      "No knife",
+      "Microwave cooking",
+      "Dinner",
+      "Tired day"
+    ],
+    "intro": "Some nights the hardest part of cooking is taking out the knife and cutting board. A no-knife microwave dinner starts with the right ingredients.",
+    "angle": "Use bean sprouts, cut vegetables, tofu, eggs, canned fish, frozen vegetables, mushrooms you can tear by hand, frozen udon, or packaged rice.",
+    "decision": "Choose one format: microwave steam, soup, udon, or rice bowl. Keep seasoning simple with ponzu, sesame sauce, mentsuyu, chicken stock, or miso.",
+    "patterns": [
+      "Bean sprouts, cut vegetables, and sliced meat as a steamed bowl.",
+      "Tofu, egg, and frozen vegetables as soup.",
+      "Frozen udon with tuna and greens."
+    ],
+    "mistakes": [
+      "Choosing ingredients that secretly require chopping.",
+      "Using thick meat pieces in a microwave-only meal.",
+      "Creating extra dishes while trying to keep things easy."
+    ],
+    "snapmeal": "Snapmeal helps narrow dinner ideas to no-knife, microwave-friendly options from what is already in your fridge."
+  }),
+  article({
+    "slug": "microwave-one-container-meal",
+    "title": "One-Container Microwave Dinners: How to Layer Ingredients",
+    "description": "Layer ingredients correctly in a heatproof container to reduce uneven heating and watery results.",
+    "jaHref": "/blog/microwave-one-container-meal/",
+    "date": "May 24, 2026",
+    "category": "Cooking Tips",
+    "image": "/blog/microwave-one-container-meal-thumbnail-1600x900.jpg",
+    "tags": [
+      "Heatproof container",
+      "Microwave cooking",
+      "Cooking tips",
+      "Time saving"
+    ],
+    "intro": "One-container microwave cooking depends on how you layer ingredients. The order affects texture, moisture, and doneness.",
+    "angle": "Place harder or slower-cooking ingredients lower or preheat them, spread meat thinly, keep watery vegetables in mind, and season lightly at first.",
+    "decision": "Use a container with extra space, vent steam safely, heat in stages when needed, and finish seasoning after heating.",
+    "patterns": [
+      "Pork and cabbage steamed in one container.",
+      "Tofu and mushrooms heated before adding egg.",
+      "Frozen udon and vegetables warmed before final seasoning."
+    ],
+    "mistakes": [
+      "Piling ingredients too thickly in the center.",
+      "Adding too much liquid before heating.",
+      "Overcooking egg or thin meat."
+    ],
+    "snapmeal": "Snapmeal can suggest meals that fit a one-container microwave approach based on the ingredients in your fridge."
+  }),
+  article({
+    "slug": "microwave-cooking-fails",
+    "title": "How to Prevent Watery, Tough, or Uneven Microwave Cooking",
+    "description": "Fix common microwave cooking problems by controlling moisture, ingredient thickness, and heating stages.",
+    "jaHref": "/blog/microwave-cooking-fails/",
+    "date": "May 24, 2026",
+    "category": "Cooking Tips",
+    "image": "/blog/microwave-cooking-fails-thumbnail-1600x900.jpg",
+    "tags": [
+      "Microwave cooking",
+      "Uneven heating",
+      "Cooking tips",
+      "Troubleshooting"
+    ],
+    "intro": "Microwave cooking can become watery, tough, or uneven when moisture and ingredient thickness are not controlled.",
+    "angle": "Start with less liquid, spread ingredients evenly, pause to mix, and use residual heat instead of overcooking.",
+    "decision": "For watery vegetables or tofu, add seasoning after heating. For meat, spread it thinly and let it rest. For frozen ingredients, warm them in stages.",
+    "patterns": [
+      "Turn excess liquid into soup or ankake sauce.",
+      "Steam thin meat with vegetables to prevent drying.",
+      "Heat frozen udon or vegetables before combining with delicate ingredients."
+    ],
+    "mistakes": [
+      "Adding a lot of sauce before watery ingredients release moisture.",
+      "Heating meat in a thick pile.",
+      "Trying to cook frozen and delicate ingredients at the same pace."
+    ],
+    "snapmeal": "Snapmeal can help choose a cooking method that matches the ingredients instead of forcing everything into the microwave."
+  }),
+
+  article({
       "slug": "breakfast-dinner-prep",
       "title": "How to Connect Breakfast Prep to Dinner Planning",
       "description": "Use breakfast ingredients and leftovers to reduce dinner decisions later in the day.",

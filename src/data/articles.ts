@@ -11,6 +11,82 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    "title": "レンジだけで作る夕飯——火を使わずに一食として成立させる考え方",
+    "description": "レンジだけで夕飯を作る日は、主食・たんぱく質・野菜を一つの耐熱容器にまとめると決めやすくなります。火を使わない献立設計です。",
+    "href": "/blog/microwave-only-dinner/",
+    "date": "2026年5月24日",
+    "category": "時短",
+    "image": "/blog/microwave-only-dinner-thumbnail-1600x900.jpg",
+    "tags": [
+      "レンジ調理",
+      "火を使わない",
+      "夕飯",
+      "時短"
+    ],
+    "readingTime": 7
+  },
+  {
+    "title": "冷蔵庫の食材でレンジ献立を作る方法——豆腐・卵・きのこを軸にする",
+    "description": "冷蔵庫にある豆腐・卵・きのこ・冷凍野菜は、レンジ献立にしやすい食材です。火を使わず夕飯にまとめる方法です。",
+    "href": "/blog/microwave-fridge-staples/",
+    "date": "2026年5月24日",
+    "category": "冷蔵庫活用",
+    "image": "/blog/microwave-fridge-staples-thumbnail-1600x900.jpg",
+    "tags": [
+      "レンジ調理",
+      "冷蔵庫",
+      "豆腐",
+      "卵"
+    ],
+    "readingTime": 7
+  },
+  {
+    "title": "包丁なしで作れるレンジ夕飯——切らずに使える食材の選び方",
+    "description": "包丁を使いたくない日は、もやし・カット野菜・豆腐・缶詰・冷凍野菜を使うとレンジだけで夕飯にできます。",
+    "href": "/blog/no-knife-microwave-dinner/",
+    "date": "2026年5月24日",
+    "category": "時短",
+    "image": "/blog/no-knife-microwave-dinner-thumbnail-1600x900.jpg",
+    "tags": [
+      "包丁なし",
+      "レンジ調理",
+      "夕飯",
+      "疲れた日"
+    ],
+    "readingTime": 7
+  },
+  {
+    "title": "耐熱容器ひとつで作る夕飯——レンジ調理を失敗しにくくする重ね方",
+    "description": "耐熱容器ひとつで夕飯を作るなら、火の通りにくい食材を下、葉物や豆腐を上に置くと失敗しにくくなります。",
+    "href": "/blog/microwave-one-container-meal/",
+    "date": "2026年5月24日",
+    "category": "料理のコツ",
+    "image": "/blog/microwave-one-container-meal-thumbnail-1600x900.jpg",
+    "tags": [
+      "耐熱容器",
+      "レンジ調理",
+      "時短",
+      "料理のコツ"
+    ],
+    "readingTime": 7
+  },
+  {
+    "title": "レンジ調理が水っぽい・固いを防ぐ方法——加熱ムラを減らす基本",
+    "description": "レンジ調理で水っぽい、肉が固い、加熱ムラが出る原因は食材の置き方と水分量にあります。失敗を減らす基本をまとめます。",
+    "href": "/blog/microwave-cooking-fails/",
+    "date": "2026年5月24日",
+    "category": "料理のコツ",
+    "image": "/blog/microwave-cooking-fails-thumbnail-1600x900.jpg",
+    "tags": [
+      "レンジ調理",
+      "加熱ムラ",
+      "料理のコツ",
+      "失敗しない"
+    ],
+    "readingTime": 7
+  },
+
+  {
     "title": "朝ごはんと夕飯をまとめて考える方法——朝の残りを夜に活かす献立",
     "description": "朝ごはんの準備や残りを夕飯に活かすと、1日の献立決めが少し軽くなります。卵・ご飯・みそ汁・野菜を夜へつなげる考え方です。",
     "href": "/blog/breakfast-dinner-prep/",
