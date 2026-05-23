@@ -11,6 +11,82 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    "title": "朝ごはんと夕飯をまとめて考える方法——朝の残りを夜に活かす献立",
+    "description": "朝ごはんの準備や残りを夕飯に活かすと、1日の献立決めが少し軽くなります。卵・ご飯・みそ汁・野菜を夜へつなげる考え方です。",
+    "href": "/blog/breakfast-dinner-prep/",
+    "date": "2026年5月24日",
+    "category": "献立",
+    "image": "/blog/breakfast-dinner-prep-thumbnail-1600x900.jpg",
+    "tags": [
+      "朝ごはん",
+      "夕飯",
+      "献立",
+      "作り置き"
+    ],
+    "readingTime": 7
+  },
+  {
+    "title": "帰宅が遅い日の夕飯——21時からでも重くならない献立の決め方",
+    "description": "帰宅が遅い日は、早さだけでなく重くなりすぎないことも大切です。21時からでも食べやすい夕飯の決め方を整理します。",
+    "href": "/blog/late-return-dinner/",
+    "date": "2026年5月24日",
+    "category": "時短",
+    "image": "/blog/late-return-dinner-thumbnail-1600x900.jpg",
+    "tags": [
+      "帰宅が遅い",
+      "夕飯",
+      "夜遅い",
+      "時短"
+    ],
+    "readingTime": 7
+  },
+  {
+    "title": "お弁当の残りで夕飯を作る——少量おかずを一皿にまとめる考え方",
+    "description": "お弁当の残りはそのまま出すだけでなく、丼・スープ・卵とじにすると夕飯になります。少量おかずを活かす献立術です。",
+    "href": "/blog/bento-leftovers-dinner/",
+    "date": "2026年5月24日",
+    "category": "冷蔵庫活用",
+    "image": "/blog/bento-leftovers-dinner-thumbnail-1600x900.jpg",
+    "tags": [
+      "お弁当",
+      "残りおかず",
+      "夕飯",
+      "リメイク"
+    ],
+    "readingTime": 7
+  },
+  {
+    "title": "家族の好みが分かれる日の献立——作り分けずに調整する方法",
+    "description": "家族の好みが分かれる日は、料理を作り分けるより、味付けや具材を後から調整できる献立にすると楽になります。",
+    "href": "/blog/family-preferences-meal/",
+    "date": "2026年5月24日",
+    "category": "ファミリー",
+    "image": "/blog/family-preferences-meal-thumbnail-1600x900.jpg",
+    "tags": [
+      "家族",
+      "好き嫌い",
+      "献立",
+      "作り分け"
+    ],
+    "readingTime": 7
+  },
+  {
+    "title": "週末前に冷蔵庫を空けたい日の献立——半端食材を使い切る順番",
+    "description": "週末前に冷蔵庫を空けたい日は、傷みやすい食材から使い、汁物・丼・炒め物にまとめると無理なく使い切れます。",
+    "href": "/blog/friday-fridge-cleanout/",
+    "date": "2026年5月24日",
+    "category": "冷蔵庫活用",
+    "image": "/blog/friday-fridge-cleanout-thumbnail-1600x900.jpg",
+    "tags": [
+      "冷蔵庫整理",
+      "週末",
+      "食品ロス",
+      "献立"
+    ],
+    "readingTime": 7
+  },
+
+  {
     "title": "夕飯を考えるのがしんどい日の対処法——レシピ検索の前に決める3つのこと",
     "description": "夕飯を考えるのがしんどい日は、レシピを探す前に時間・気力・主食を決めると迷いが減ります。献立決めの負担を軽くする考え方です。",
     "href": "/blog/dinner-mental-load/",

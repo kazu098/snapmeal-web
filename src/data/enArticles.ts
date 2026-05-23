@@ -38,6 +38,152 @@ export const staticEnglishBlogSlugs = new Set([
 
 export const enArticles: EnArticle[] = [
   article({
+      "slug": "breakfast-dinner-prep",
+      "title": "How to Connect Breakfast Prep to Dinner Planning",
+      "description": "Use breakfast ingredients and leftovers to reduce dinner decisions later in the day.",
+      "jaHref": "/blog/breakfast-dinner-prep/",
+      "date": "May 24, 2026",
+      "category": "Meal Planning",
+      "image": "/blog/breakfast-dinner-prep-thumbnail-1600x900.jpg",
+      "tags": [
+        "Breakfast",
+        "Dinner",
+        "Meal planning",
+        "Leftovers"
+      ],
+      "intro": "Breakfast and dinner do not need to be planned as two completely separate tasks.",
+      "angle": "When you already open the fridge in the morning, briefly check what could become dinner: rice, eggs, tofu, soup vegetables, fish, or leftovers.",
+      "decision": "Choose just one dinner direction in the morning, such as egg bowl, soup, noodles, or rice plate. The goal is not to cook dinner early, but to reduce decisions later.",
+      "patterns": [
+        "Extra miso soup vegetables become dinner soup.",
+        "One saved egg can turn tofu or vegetables into a bowl.",
+        "Frozen rice plus breakfast leftovers becomes a simple plate."
+      ],
+      "mistakes": [
+        "Trying to complete dinner prep in the morning.",
+        "Using every leftover at once.",
+        "Forgetting that a small morning decision is enough."
+      ],
+      "snapmeal": "Snapmeal can turn a fridge photo into dinner ideas, so morning ingredients are easier to reuse at night."
+  }),
+  article({
+      "slug": "late-return-dinner",
+      "title": "Dinner Ideas for Nights When You Get Home Late",
+      "description": "Choose late-night dinners that are quick, light, warm, and easy to clean up.",
+      "jaHref": "/blog/late-return-dinner/",
+      "date": "May 24, 2026",
+      "category": "Time Saving",
+      "image": "/blog/late-return-dinner-thumbnail-1600x900.jpg",
+      "tags": [
+        "Late dinner",
+        "Dinner",
+        "Time saving",
+        "Light meal"
+      ],
+      "intro": "When you get home late, speed is not the only issue. Dinner should also feel light and easy to clean up.",
+      "angle": "Use soup, microwave steaming, light noodles, or rice porridge instead of heavy stir-fries or multi-dish meals.",
+      "decision": "Pick one format: warm soup, microwave bowl, light udon, or one-bowl rice. Avoid recipes with many steps or many dishes.",
+      "patterns": [
+        "Tofu, egg, and mushrooms become a quick soup.",
+        "Cabbage and pork can be microwave steamed.",
+        "Frozen udon works better as light soup udon than heavy fried noodles."
+      ],
+      "mistakes": [
+        "Choosing only by cooking time.",
+        "Making oily or salty meals too late.",
+        "Ignoring cleanup after dinner."
+      ],
+      "snapmeal": "Snapmeal can suggest low-effort dinner ideas from your fridge when it is already late."
+  }),
+  article({
+      "slug": "bento-leftovers-dinner",
+      "title": "How to Turn Bento Leftovers into Dinner",
+      "description": "Use small leftover lunch-box sides as ingredients for bowls, soups, and egg dishes.",
+      "jaHref": "/blog/bento-leftovers-dinner/",
+      "date": "May 24, 2026",
+      "category": "Fridge Use",
+      "image": "/blog/bento-leftovers-dinner-thumbnail-1600x900.jpg",
+      "tags": [
+        "Bento",
+        "Leftovers",
+        "Dinner",
+        "Food waste"
+      ],
+      "intro": "Bento leftovers often feel too small for dinner, but they can become useful ingredients.",
+      "angle": "Do not serve tiny leftovers as separate dishes. Put them on rice, bind them with egg, or add them to soup.",
+      "decision": "Choose the base first: rice, egg, soup, or noodles. Then use leftovers as toppings or filling.",
+      "patterns": [
+        "Small chicken pieces become a rice bowl.",
+        "Tamagoyaki or grilled fish becomes mixed rice.",
+        "Cooked vegetables become soup ingredients."
+      ],
+      "mistakes": [
+        "Serving tiny leftovers separately.",
+        "Adding more seasoning to already-seasoned food.",
+        "Using leftovers that were not stored safely."
+      ],
+      "snapmeal": "Snapmeal helps you notice leftovers in the fridge and turn them into dinner candidates."
+  }),
+  article({
+      "slug": "family-preferences-meal",
+      "title": "Dinner Planning When Everyone in the Family Likes Different Things",
+      "description": "Reduce separate cooking by making one simple base and adjusting flavor at the table.",
+      "jaHref": "/blog/family-preferences-meal/",
+      "date": "May 24, 2026",
+      "category": "Family Meals",
+      "image": "/blog/family-preferences-meal-thumbnail-1600x900.jpg",
+      "tags": [
+        "Family",
+        "Preferences",
+        "Meal planning",
+        "Dinner"
+      ],
+      "intro": "Family dinner gets harder when one person wants mild food, another wants stronger flavor, and someone dislikes vegetables.",
+      "angle": "Instead of cooking separate meals, make one flexible base and adjust toppings, spice, and staple for each person.",
+      "decision": "Start with a mild soup, bowl, steamed dish, or simmered base. Add spice, cheese, egg, herbs, or sauce after serving.",
+      "patterns": [
+        "Mild soup becomes spicy for adults with chili oil.",
+        "A tofu bowl can be topped differently for each person.",
+        "Steamed vegetables can be served with separate sauces."
+      ],
+      "mistakes": [
+        "Trying to find one perfect dish for everyone.",
+        "Adding spice to the whole pot.",
+        "Making full separate meals every night."
+      ],
+      "snapmeal": "Snapmeal can help choose meals that match fridge ingredients and family constraints without starting from scratch."
+  }),
+  article({
+      "slug": "friday-fridge-cleanout",
+      "title": "How to Plan Dinner When You Want to Empty the Fridge Before the Weekend",
+      "description": "Use perishable and half-used ingredients first, then turn them into soup, bowls, or stir-fries.",
+      "jaHref": "/blog/friday-fridge-cleanout/",
+      "date": "May 24, 2026",
+      "category": "Fridge Use",
+      "image": "/blog/friday-fridge-cleanout-thumbnail-1600x900.jpg",
+      "tags": [
+        "Fridge cleanout",
+        "Weekend",
+        "Food waste",
+        "Dinner"
+      ],
+      "intro": "Before the weekend, the fridge often contains many half-used ingredients that are hard to turn into dinner.",
+      "angle": "Start with what spoils fastest, then identify small leftovers and one flavor anchor. This makes cleanout meals easier.",
+      "decision": "Choose soup, rice bowl, stir-fry, or steamed simmer. Do not try to use every ingredient in one dish.",
+      "patterns": [
+        "Tofu, mushrooms, and egg become soup or ankake rice.",
+        "Cabbage and sausage become soup or udon.",
+        "Daikon and pork become a simple miso simmer."
+      ],
+      "mistakes": [
+        "Mixing every leftover together.",
+        "Ignoring ingredients that spoil quickly.",
+        "Buying more before checking the fridge."
+      ],
+      "snapmeal": "Snapmeal can read your fridge photo and suggest meals that use what is already there before the next grocery trip."
+  }),
+
+  article({
     "slug": "dinner-mental-load",
     "title": "When Thinking About Dinner Feels Exhausting: Three Decisions Before Searching Recipes",
     "description": "Reduce dinner decision fatigue by choosing time, energy level, and staple before opening recipe search.",
