@@ -38,6 +38,152 @@ export const staticEnglishBlogSlugs = new Set([
 
 export const enArticles: EnArticle[] = [
   article({
+    "slug": "chicken-mince-tofu-meal",
+    "title": "Chicken Mince and Tofu Dinner Ideas: Light Meals That Still Feel Satisfying",
+    "description": "How to turn chicken mince and tofu into soboro ankake, tofu chicken patties, soups, and rice bowls for weeknight dinners.",
+    "jaHref": "/blog/chicken-mince-tofu-meal/",
+    "date": "May 23, 2026",
+    "category": "Meal Planning",
+    "image": "/blog/chicken-mince-tofu-meal-thumbnail-1600x900.png",
+    "tags": [
+      "Chicken mince",
+      "Tofu",
+      "Meal planning",
+      "Budget"
+    ],
+    "intro": "Chicken mince and tofu are both gentle ingredients, which makes them useful on weeknights but easy to under-season.",
+    "angle": "Use chicken mince for umami and tofu for volume and softness, then choose a strong enough flavor base such as ginger soy, dashi, miso, or chicken stock.",
+    "decision": "Decide whether the meal should become a rice bowl, soup, tofu chicken patty, or ankake dish before choosing seasonings.",
+    "patterns": [
+      "Chicken soboro and tofu ankake over rice.",
+      "Tofu chicken patties with teriyaki sauce.",
+      "Chicken mince, tofu, mushrooms, and vegetables in soup."
+    ],
+    "mistakes": [
+      "Using silken tofu when you need shape and structure.",
+      "Adding too much liquid and making the flavor weak.",
+      "Forgetting aroma such as ginger, green onion, sesame oil, or shiso."
+    ],
+    "snapmeal": "Snapmeal can read what is in your fridge and suggest whether chicken mince and tofu should become a bowl, soup, or smart-cooker meal."
+  }),
+  article({
+    "slug": "pork-eggplant-meal",
+    "title": "Pork and Eggplant Dinner Ideas Beyond Stir-Fry",
+    "description": "Pork and eggplant can become miso stir-fry, sweet vinegar dishes, tomato simmer, or smart-cooker steamed meals.",
+    "jaHref": "/blog/pork-eggplant-meal/",
+    "date": "May 23, 2026",
+    "category": "Meal Planning",
+    "image": "/blog/pork-eggplant-meal-thumbnail-1600x900.png",
+    "tags": [
+      "Pork",
+      "Eggplant",
+      "Dinner",
+      "Seasoning"
+    ],
+    "intro": "Pork and eggplant are a reliable weeknight pair because eggplant absorbs flavor and pork adds richness quickly.",
+    "angle": "The key is controlling oil, moisture, and timing. Eggplant tastes best when it is not watery and not overloaded with oil.",
+    "decision": "Choose miso, sweet vinegar, tomato, or steamed style based on the other ingredients in your fridge and the staple you want to serve.",
+    "patterns": [
+      "Miso pork and eggplant with rice.",
+      "Sweet vinegar pork and eggplant for a lighter finish.",
+      "Tomato pork and eggplant with pasta or bread."
+    ],
+    "mistakes": [
+      "Adding seasonings before eggplant has softened.",
+      "Cutting eggplant too thin for smart-cooker simmering.",
+      "Using a heavy sauce without a fresh side dish."
+    ],
+    "snapmeal": "Snapmeal can suggest a flavor direction from the full fridge, so pork and eggplant do not always become the same stir-fry."
+  }),
+  article({
+    "slug": "egg-tuna-can-meal",
+    "title": "Egg and Canned Tuna Dinner Ideas When You Cannot Shop",
+    "description": "Use eggs and canned tuna for bowls, stir-fries, soups, and omelet-style meals with leftover vegetables.",
+    "jaHref": "/blog/egg-tuna-can-meal/",
+    "date": "May 23, 2026",
+    "category": "Meal Planning",
+    "image": "/blog/egg-tuna-can-meal-thumbnail-1600x900.png",
+    "tags": [
+      "Eggs",
+      "Canned tuna",
+      "No shopping",
+      "Dinner"
+    ],
+    "intro": "Eggs and canned tuna can rescue dinner because they add protein without requiring a grocery trip.",
+    "angle": "To make them feel like dinner, add vegetables, a staple, warmth, or broth instead of treating them as a small breakfast dish.",
+    "decision": "Choose a tuna egg rice bowl, vegetable stir-fry, soup, or omelet based on whether you have rice, noodles, or leftover vegetables.",
+    "patterns": [
+      "Tuna and egg rice bowl with onion or mushrooms.",
+      "Cabbage, tuna, and egg stir-fry.",
+      "Tuna egg soup with green onion and mushrooms."
+    ],
+    "mistakes": [
+      "Overcooking the eggs until the whole dish turns dry.",
+      "Ignoring the oil and salt already in the tuna can.",
+      "Using only egg and tuna without texture from vegetables."
+    ],
+    "snapmeal": "Snapmeal can combine fridge ingredients and pantry items so eggs and tuna become a real dinner instead of a fallback snack."
+  }),
+  article({
+    "slug": "cabbage-sausage-meal",
+    "title": "Cabbage and Sausage Dinner Ideas Kids Can Eat on Weeknights",
+    "description": "Turn cabbage and sausages into soup, steamed dishes, yaki udon, or smart-cooker meals that work for family dinners.",
+    "jaHref": "/blog/cabbage-sausage-meal/",
+    "date": "May 23, 2026",
+    "category": "Family",
+    "image": "/blog/cabbage-sausage-meal-thumbnail-1600x900.png",
+    "tags": [
+      "Cabbage",
+      "Sausage",
+      "Kids",
+      "Meal planning"
+    ],
+    "intro": "Cabbage and sausages are easy to keep around, and together they can become a quick family-friendly dinner.",
+    "angle": "Use the sweetness of cooked cabbage and the savory flavor of sausage, then avoid making the dish too salty by adding potatoes, eggs, tofu, or noodles.",
+    "decision": "Choose soup, steamed cabbage, yaki udon, or egg-toji depending on whether you need warmth, volume, or a one-dish meal.",
+    "patterns": [
+      "Cabbage and sausage soup with potatoes.",
+      "Steamed cabbage and sausage with butter soy sauce.",
+      "Cabbage sausage yaki udon for a one-plate dinner."
+    ],
+    "mistakes": [
+      "Adding too much seasoning on top of salty sausage.",
+      "Leaving cabbage too large or tough for kids.",
+      "Using sausage as the whole meal instead of a flavor anchor."
+    ],
+    "snapmeal": "Snapmeal can suggest family-friendly meals from the fridge and adapt the flavor direction for kids and adults."
+  }),
+  article({
+    "slug": "frozen-udon-dinner",
+    "title": "Dinner Ideas When You Have Frozen Udon",
+    "description": "Use frozen udon with leftover meat, eggs, mushrooms, and vegetables for yaki udon, simmered udon, or ankake udon.",
+    "jaHref": "/blog/frozen-udon-dinner/",
+    "date": "May 23, 2026",
+    "category": "Time Saving",
+    "image": "/blog/frozen-udon-dinner-thumbnail-1600x900.png",
+    "tags": [
+      "Frozen udon",
+      "Dinner",
+      "Leftovers",
+      "Time saving"
+    ],
+    "intro": "Frozen udon makes dinner easier because the staple is already decided. The remaining question is what to combine with it.",
+    "angle": "Think of udon as the base for using leftover protein and vegetables. Then choose stir-fried, simmered, or ankake style.",
+    "decision": "Make yaki udon when you have pork and cabbage, simmered udon when you are tired, and ankake udon when you have small amounts of vegetables.",
+    "patterns": [
+      "Yaki udon with pork, cabbage, and mushrooms.",
+      "Simmered udon with egg, tofu, and green onion.",
+      "Ankake udon with leftover vegetables and ground meat or tuna."
+    ],
+    "mistakes": [
+      "Using the same mentsuyu flavor every time.",
+      "Adding watery frozen vegetables directly to stir-fry.",
+      "Forgetting protein and ending up with only noodles."
+    ],
+    "snapmeal": "Snapmeal can start from a fridge photo and suggest how to turn frozen udon and leftovers into a complete dinner."
+  }),
+
+  article({
     slug: 'dinner-no-idea-fridge',
     title: 'How to Decide Dinner When Your Fridge Looks Full but Nothing Comes to Mind',
     description: 'A practical way to look at fridge ingredients by role and narrow dinner options before searching recipes.',

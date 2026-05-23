@@ -11,6 +11,82 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    "title": "鶏ひき肉と豆腐で作れる献立——軽いのに満足できる夕飯の組み立て方",
+    "description": "鶏ひき肉と豆腐は、そぼろあん・つくね風・スープ・丼に展開しやすい組み合わせです。軽くても満足できる夕飯にする考え方をまとめます。",
+    "href": "/blog/chicken-mince-tofu-meal/",
+    "date": "2026年5月23日",
+    "category": "献立",
+    "image": "/blog/chicken-mince-tofu-meal-thumbnail-1600x900.png",
+    "tags": [
+      "鶏ひき肉",
+      "豆腐",
+      "献立",
+      "節約"
+    ],
+    "readingTime": 7
+  },
+  {
+    "title": "豚こまとなすで作れる献立——炒め物だけにしない味付けの広げ方",
+    "description": "豚こまとなすは、炒め物だけでなく、みそ煮・甘酢・トマト煮・ホットクックの蒸し煮にも向いています。平日夜に使いやすい献立化のコツです。",
+    "href": "/blog/pork-eggplant-meal/",
+    "date": "2026年5月23日",
+    "category": "献立",
+    "image": "/blog/pork-eggplant-meal-thumbnail-1600x900.png",
+    "tags": [
+      "豚こま",
+      "なす",
+      "献立",
+      "味付け"
+    ],
+    "readingTime": 7
+  },
+  {
+    "title": "卵とツナ缶で作れる献立——買い物なしでたんぱく質を足す方法",
+    "description": "卵とツナ缶があれば、買い物なしでも夕飯のたんぱく質を補えます。丼・炒め物・スープ・オムレツ風に広げる考え方です。",
+    "href": "/blog/egg-tuna-can-meal/",
+    "date": "2026年5月23日",
+    "category": "献立",
+    "image": "/blog/egg-tuna-can-meal-thumbnail-1600x900.png",
+    "tags": [
+      "卵",
+      "ツナ缶",
+      "買い物なし",
+      "献立"
+    ],
+    "readingTime": 7
+  },
+  {
+    "title": "キャベツとウインナーで作れる献立——子どもも食べやすい平日夜の一品",
+    "description": "キャベツとウインナーは、スープ・蒸し煮・焼きうどん・ホットクックの一品料理にしやすい組み合わせです。子どもが食べやすい味付けも整理します。",
+    "href": "/blog/cabbage-sausage-meal/",
+    "date": "2026年5月23日",
+    "category": "ファミリー",
+    "image": "/blog/cabbage-sausage-meal-thumbnail-1600x900.png",
+    "tags": [
+      "キャベツ",
+      "ウインナー",
+      "子ども",
+      "献立"
+    ],
+    "readingTime": 7
+  },
+  {
+    "title": "冷凍うどんがある日の夕飯——冷蔵庫の残り食材で一皿にする方法",
+    "description": "冷凍うどんは、冷蔵庫の半端な肉・卵・野菜を一皿にまとめやすい常備品です。焼きうどん・煮込みうどん・あんかけにする判断軸をまとめます。",
+    "href": "/blog/frozen-udon-dinner/",
+    "date": "2026年5月23日",
+    "category": "時短",
+    "image": "/blog/frozen-udon-dinner-thumbnail-1600x900.png",
+    "tags": [
+      "冷凍うどん",
+      "夕飯",
+      "残り野菜",
+      "時短"
+    ],
+    "readingTime": 7
+  },
+
+  {
     title: '夕飯が思いつかない日は冷蔵庫をどう見る？——食材から候補を3つに絞る手順',
     description: '夕飯が思いつかない日は、レシピ検索の前に冷蔵庫の食材を役割で分けると決めやすくなります。候補を3つに絞る実用的な手順です。',
     href: '/blog/dinner-no-idea-fridge/',
