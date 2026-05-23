@@ -38,6 +38,152 @@ export const staticEnglishBlogSlugs = new Set([
 
 export const enArticles: EnArticle[] = [
   article({
+    "slug": "dinner-mental-load",
+    "title": "When Thinking About Dinner Feels Exhausting: Three Decisions Before Searching Recipes",
+    "description": "Reduce dinner decision fatigue by choosing time, energy level, and staple before opening recipe search.",
+    "jaHref": "/blog/dinner-mental-load/",
+    "date": "May 23, 2026",
+    "category": "Meal Planning",
+    "image": "/blog/dinner-mental-load-thumbnail-1600x900.jpg",
+    "tags": [
+      "Dinner",
+      "Decision fatigue",
+      "Meal planning",
+      "Time saving"
+    ],
+    "intro": "Some nights, thinking about dinner is harder than cooking it. The problem is often too many decisions at once.",
+    "angle": "Before searching recipes, decide your available time, energy level, and staple. These constraints make choices easier instead of harder.",
+    "decision": "Pick 15 minutes, 30 minutes, or hands-off; decide whether you can chop, stand at the stove, and wash dishes; then choose rice, noodles, bread, or no staple.",
+    "patterns": [
+      "Rice plus egg or tofu becomes a bowl.",
+      "Small leftovers become soup.",
+      "Frozen udon or rice turns scattered ingredients into dinner."
+    ],
+    "mistakes": [
+      "Opening broad recipe search before deciding constraints.",
+      "Ignoring your energy level.",
+      "Treating dinner as a perfect project instead of a practical meal."
+    ],
+    "snapmeal": "Snapmeal starts from a fridge photo and suggests meals that match what you have and how much energy you can spend."
+  }),
+  article({
+    "slug": "fridge-nothing-to-cook",
+    "title": "Why Your Fridge Feels Full but You Still Think You Have Nothing to Cook",
+    "description": "A practical way to turn ingredients into meal formats when your fridge does not suggest a dish.",
+    "jaHref": "/blog/fridge-nothing-to-cook/",
+    "date": "May 23, 2026",
+    "category": "Fridge Use",
+    "image": "/blog/fridge-nothing-to-cook-thumbnail-1600x900.jpg",
+    "tags": [
+      "Fridge",
+      "Meal planning",
+      "Ingredients",
+      "Dinner"
+    ],
+    "intro": "A fridge can contain food and still not suggest dinner. Ingredients are not the same as a meal idea.",
+    "angle": "Look at ingredients by role: protein, volume, staple, flavor base, and aroma. Roles turn scattered items into meal formats.",
+    "decision": "Choose a broad format such as bowl, soup, stir-fry, simmered dish, or noodles before trying to name the exact recipe.",
+    "patterns": [
+      "Tofu, egg, and green onion become soup or ankake rice.",
+      "Cabbage, sausage, and frozen udon become yaki udon or soup udon.",
+      "Pork, onion, and mushrooms become a bowl or simmer."
+    ],
+    "mistakes": [
+      "Looking for an exact recipe name too early.",
+      "Counting missing ingredients first.",
+      "Trying to combine every leftover at once."
+    ],
+    "snapmeal": "Snapmeal can identify fridge ingredients from a photo and turn them into concrete meal suggestions."
+  }),
+  article({
+    "slug": "daily-dinner-stress",
+    "title": "How to Make Daily Dinner Planning Less Stressful with Loose Rules",
+    "description": "Use loose weekly patterns instead of rigid meal plans so dinner can adapt to your fridge and schedule.",
+    "jaHref": "/blog/daily-dinner-stress/",
+    "date": "May 23, 2026",
+    "category": "Meal Planning",
+    "image": "/blog/daily-dinner-stress-thumbnail-1600x900.jpg",
+    "tags": [
+      "Meal planning",
+      "Stress",
+      "Dinner",
+      "Routine"
+    ],
+    "intro": "Daily dinner planning is stressful because it repeats and conditions keep changing.",
+    "angle": "Rigid weekday menus often break. Loose rules based on meal format, staple, or flavor are easier to keep.",
+    "decision": "Assign flexible formats such as rice bowl day, soup day, noodle day, smart-cooker day, and fridge-cleanout day.",
+    "patterns": [
+      "Monday rice bowls from whatever protein exists.",
+      "Tuesday soup for leftover vegetables.",
+      "Friday no-shopping fridge cleanout."
+    ],
+    "mistakes": [
+      "Fixing exact recipes by weekday.",
+      "Treating a missed plan as failure.",
+      "Planning without checking what is already in the fridge."
+    ],
+    "snapmeal": "Snapmeal can combine loose rules with real fridge contents so every night does not start from zero."
+  }),
+  article({
+    "slug": "no-energy-cooking",
+    "title": "Dinner When You Have No Energy to Cook: Reduce Chopping, Stove Time, and Dishes",
+    "description": "When cooking energy is low, choose dinner by what you can remove: chopping, standing at the stove, or cleanup.",
+    "jaHref": "/blog/no-energy-cooking/",
+    "date": "May 23, 2026",
+    "category": "Time Saving",
+    "image": "/blog/no-energy-cooking-thumbnail-1600x900.jpg",
+    "tags": [
+      "No energy",
+      "Dinner",
+      "Dishes",
+      "Time saving"
+    ],
+    "intro": "Low-energy cooking is not only about minutes. Chopping, stove attention, and cleanup can be the real burden.",
+    "angle": "Choose what to reduce first. No-knife meals, microwave meals, smart-cooker soups, and one-bowl dinners solve different problems.",
+    "decision": "If chopping feels impossible, use eggs, tofu, canned food, frozen vegetables, mushrooms, or cut vegetables. If stove time is hard, use microwave or hands-off cooking.",
+    "patterns": [
+      "Tofu and egg soup without chopping.",
+      "Frozen vegetables and sausage microwave bowl.",
+      "Smart-cooker soup with canned fish or tofu."
+    ],
+    "mistakes": [
+      "Choosing a fast recipe with many dishes.",
+      "Forcing side dishes when one bowl is enough.",
+      "Ignoring cleanup when choosing dinner."
+    ],
+    "snapmeal": "Snapmeal can suggest meals based on low effort, fewer steps, and what is already in your fridge."
+  }),
+  article({
+    "slug": "no-buy-dinner",
+    "title": "Dinner from What You Already Have: How to Feel Satisfied Without Buying More",
+    "description": "Plan dinner from existing staples, proteins, vegetables, and flavor bases instead of starting from missing ingredients.",
+    "jaHref": "/blog/no-buy-dinner/",
+    "date": "May 23, 2026",
+    "category": "Fridge Use",
+    "image": "/blog/no-buy-dinner-thumbnail-1600x900.jpg",
+    "tags": [
+      "No shopping",
+      "Dinner",
+      "Fridge",
+      "Budget"
+    ],
+    "intro": "Some nights you want to avoid grocery shopping and use what is already at home.",
+    "angle": "Do not start by counting missing ingredients. Start by assigning roles to what you have: staple, protein, volume, and flavor base.",
+    "decision": "Choose whether the existing ingredients can become a bowl, soup, noodles, one-plate meal, or pantry-based simmer.",
+    "patterns": [
+      "Egg, onion, and frozen rice become an egg bowl.",
+      "Tofu, mushrooms, and green onion become soup or udon.",
+      "Canned fish, cabbage, and rice become a satisfying no-shopping meal."
+    ],
+    "mistakes": [
+      "Trying to follow a recipe that assumes a full shopping list.",
+      "Using too many mismatched leftovers together.",
+      "Forgetting pantry items such as canned fish, tomato cans, or curry powder."
+    ],
+    "snapmeal": "Snapmeal can start from what is already in your fridge and suggest dinners that do not require a shopping trip."
+  }),
+
+  article({
     "slug": "chicken-mince-tofu-meal",
     "title": "Chicken Mince and Tofu Dinner Ideas: Light Meals That Still Feel Satisfying",
     "description": "How to turn chicken mince and tofu into soboro ankake, tofu chicken patties, soups, and rice bowls for weeknight dinners.",

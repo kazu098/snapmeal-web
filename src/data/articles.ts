@@ -11,6 +11,82 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    "title": "夕飯を考えるのがしんどい日の対処法——レシピ検索の前に決める3つのこと",
+    "description": "夕飯を考えるのがしんどい日は、レシピを探す前に時間・気力・主食を決めると迷いが減ります。献立決めの負担を軽くする考え方です。",
+    "href": "/blog/dinner-mental-load/",
+    "date": "2026年5月23日",
+    "category": "献立",
+    "image": "/blog/dinner-mental-load-thumbnail-1600x900.jpg",
+    "tags": [
+      "夕飯",
+      "献立",
+      "考えたくない",
+      "時短"
+    ],
+    "readingTime": 7
+  },
+  {
+    "title": "冷蔵庫を開けても何も作れないと感じる理由——食材を料理名に変える考え方",
+    "description": "冷蔵庫に食材はあるのに何も作れないと感じるのは、食材が料理名に変換されていないからです。献立に変える見方を整理します。",
+    "href": "/blog/fridge-nothing-to-cook/",
+    "date": "2026年5月23日",
+    "category": "冷蔵庫活用",
+    "image": "/blog/fridge-nothing-to-cook-thumbnail-1600x900.jpg",
+    "tags": [
+      "冷蔵庫",
+      "献立",
+      "料理名",
+      "食材活用"
+    ],
+    "readingTime": 7
+  },
+  {
+    "title": "夕飯の献立を毎日決めるのが負担な人へ——曜日で固定しすぎないゆるいルール",
+    "description": "毎日の献立決めが負担なら、曜日で完全固定するより、主食・調理法・味の軸だけをゆるく決めると続きます。現実的なルール作りです。",
+    "href": "/blog/daily-dinner-stress/",
+    "date": "2026年5月23日",
+    "category": "献立",
+    "image": "/blog/daily-dinner-stress-thumbnail-1600x900.jpg",
+    "tags": [
+      "献立",
+      "毎日",
+      "ストレス",
+      "ルール"
+    ],
+    "readingTime": 7
+  },
+  {
+    "title": "料理する気力がない日の夕飯——包丁・火・洗い物を減らす順番",
+    "description": "料理する気力がない日は、完璧な時短より、包丁・火・洗い物をどの順番で減らすかが大切です。夕飯を成立させる現実的な考え方です。",
+    "href": "/blog/no-energy-cooking/",
+    "date": "2026年5月23日",
+    "category": "時短",
+    "image": "/blog/no-energy-cooking-thumbnail-1600x900.jpg",
+    "tags": [
+      "料理したくない",
+      "夕飯",
+      "洗い物",
+      "時短"
+    ],
+    "readingTime": 7
+  },
+  {
+    "title": "家にあるもので済ませたい日の夕飯——買い足さずに満足感を出す考え方",
+    "description": "家にあるもので夕飯を済ませたい日は、足りないものではなく、今ある食材の役割を見ます。買い足さずに満足感を出す献立の考え方です。",
+    "href": "/blog/no-buy-dinner/",
+    "date": "2026年5月23日",
+    "category": "冷蔵庫活用",
+    "image": "/blog/no-buy-dinner-thumbnail-1600x900.jpg",
+    "tags": [
+      "家にあるもの",
+      "買い足さない",
+      "夕飯",
+      "節約"
+    ],
+    "readingTime": 7
+  },
+
+  {
     "title": "鶏ひき肉と豆腐で作れる献立——軽いのに満足できる夕飯の組み立て方",
     "description": "鶏ひき肉と豆腐は、そぼろあん・つくね風・スープ・丼に展開しやすい組み合わせです。軽くても満足できる夕飯にする考え方をまとめます。",
     "href": "/blog/chicken-mince-tofu-meal/",
