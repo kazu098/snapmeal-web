@@ -1,5 +1,6 @@
 ---
 import { articles, type Article } from '../data/articles';
+import { getBlogCardImage } from '../utils/blogImages';
 
 interface Props {
   currentHref: string;
@@ -47,7 +48,7 @@ if (related.length < 3) {
     <div class="related-grid">
       {related.map((a) => (
         <a href={a.href} class="related-card">
-          <img src={a.image} alt="" loading="lazy" class="related-img" />
+          <img src={getBlogCardImage(a.image)} alt="" loading="lazy" class="related-img" />
           <div class="related-body">
             <span class="related-cat">{a.category}</span>
             <p class="related-ttl">{a.title}</p>

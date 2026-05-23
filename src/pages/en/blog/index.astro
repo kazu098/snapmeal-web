@@ -2,6 +2,7 @@
 import Layout from '../../../layouts/Layout.astro';
 import BlogHeader from '../../../components/BlogHeader.astro';
 import { enArticles } from '../../../data/enArticles';
+import { getBlogCardImage } from '../../../utils/blogImages';
 
 const articles = enArticles;
 ---
@@ -34,7 +35,7 @@ const articles = enArticles;
         {articles.map((article) => (
           <article class="grid md:grid-cols-[280px_1fr] gap-6 border border-gray-100 rounded-3xl p-4 sm:p-5 shadow-sm hover:shadow-md transition">
             <a href={article.href} class="block overflow-hidden rounded-2xl bg-surface">
-              <img src={article.image} alt="" class="w-full h-full min-h-48 object-cover" loading="lazy" />
+              <img src={getBlogCardImage(article.image)} alt="" class="w-full h-full min-h-48 object-cover" loading="lazy" />
             </a>
             <div class="flex flex-col justify-center">
               <div class="flex flex-wrap items-center gap-3 text-xs font-bold text-gray-400 mb-3">
