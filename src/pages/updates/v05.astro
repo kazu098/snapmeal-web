@@ -1,0 +1,111 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+
+const APP_URL = 'https://app.snap-meal.com';
+---
+
+<Layout
+  lang="ja"
+  title="v0.5 アップデート — お気に入り・不要フラグ・買い物リスト | Snapmeal"
+  description="Snapmeal v0.5：献立のお気に入り保存、興味なし機能、不足食材の買い物リストコピーを追加。AIが好みを学習します。"
+>
+  <BlogHeader current="blog" />
+
+  <main class="bg-white">
+    <!-- ヘッダー -->
+    <section class="bg-surface px-4 py-12 sm:py-16">
+      <div class="max-w-2xl mx-auto">
+        <a href="/updates/" class="inline-flex items-center gap-1 text-sm text-gray-400 hover:text-primary mb-6 transition">
+          ← アップデート一覧
+        </a>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="text-3xl font-extrabold text-primary">v0.5</span>
+          <span class="text-sm text-gray-400 font-semibold">2026年5月</span>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-tight mb-3">
+          お気に入り・不要フラグ・買い物リストコピー
+        </h1>
+        <p class="text-gray-500 leading-relaxed">
+          毎日使うほど提案が好みに近づく仕組みと、献立後の「次のアクション」を使いやすくしました。
+        </p>
+      </div>
+    </section>
+
+    <!-- 献立カード：コピー・お気に入り・興味なし -->
+    <section class="px-4 py-12 border-t border-gray-100">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-2">買い物リストをワンタップでコピー</h2>
+        <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+          献立カードに「買い足すもの」セクションを追加。不足食材の一覧を📋ボタン1つでクリップボードにコピーできます。そのままスーパーのメモとして使えます。
+        </p>
+        <div class="flex justify-center mb-8">
+          <div class="relative">
+            <img
+              src="/updates/result-meal.png"
+              alt="献立カード — 買い足すものコピー・お気に入り・興味なしボタン"
+              class="w-[220px] rounded-[2rem] shadow-2xl shadow-gray-300 border border-gray-100"
+            />
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4 mt-2">
+          <div class="bg-surface rounded-2xl p-4">
+            <p class="text-sm font-bold text-gray-800 mb-1">♡ お気に入り保存</p>
+            <p class="text-xs text-gray-500 leading-relaxed">気に入った献立をタップ1つで保存。後から一覧で見返せます。ログインすると端末をまたいで同期されます。</p>
+          </div>
+          <div class="bg-surface rounded-2xl p-4">
+            <p class="text-sm font-bold text-gray-800 mb-1">👎 興味なし機能</p>
+            <p class="text-xs text-gray-500 leading-relaxed">「今はいらない」献立を除外できます。次回以降の提案から自動的に外れます。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI学習 -->
+    <section class="px-4 py-12 bg-surface border-t border-gray-100">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-2">AIがお気に入りを学習</h2>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          保存した献立のジャンル・食材傾向を次回の提案プロンプトに反映します。使えば使うほど、自分の食の好みにカスタマイズされていきます。
+        </p>
+      </div>
+    </section>
+
+    <!-- 作った！ボタン改善 -->
+    <section class="px-4 py-12 border-t border-gray-100">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-2">「作った！」ボタンを整理</h2>
+        <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+          以前は「作った」「作らなかった」の2ボタンでしたが、シンプルなトグル1つに整理しました。押すと緑に変わり、もう1度押すと取り消せます。
+        </p>
+        <div class="flex justify-center">
+          <div class="relative">
+            <img
+              src="/updates/recipe-tips.png"
+              alt="レシピ画面 — 作った！ボタンと仕上げのコツ"
+              class="w-[220px] rounded-[2rem] shadow-2xl shadow-gray-300 border border-gray-100"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="px-4 py-16 bg-surface border-t border-gray-100 text-center">
+      <p class="text-sm text-gray-500 mb-4">v0.5 の機能を今すぐ試せます</p>
+      <a
+        href={APP_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-ga-event="cta_click"
+        class="inline-block bg-primary text-white font-bold px-8 py-3.5 rounded-full hover:bg-primary-dark transition shadow-lg shadow-green-100"
+      >
+        Snapmealを試す（ベータ・無料）
+      </a>
+      <div class="mt-6">
+        <a href="/updates/" class="text-sm text-gray-400 hover:text-primary transition">← アップデート一覧に戻る</a>
+      </div>
+    </section>
+  </main>
+</Layout>
