@@ -195,11 +195,16 @@ export const enArticles: EnArticle[] = [
     angle: 'Target a common urgent search moment and guide users from panic to safe, realistic dinner choices.',
     decision: 'Use thin sliced meat and ground meat in soups, noodles, thickened sauces, or steam-fries; switch thick cuts to another day if safety is uncertain.',
     patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Frozen meat, Forgot to defrost, Dinner, Time saving as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For time saving topics like Forgot to Defrost Meat? Dinner Ideas for Frozen or Half-Frozen Meat, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.',
       'Thin sliced pork with cabbage and mushrooms as a covered steam-fry.',
       'Ground meat as curry-style sauce, mapo-style tofu, or noodle topping.',
       'Eggs, tofu, canned fish, or natto as backup protein when frozen meat is not practical.',
     ],
     mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.',
       'Trying to pan-fry a thick frozen cut quickly.',
       'Forcing the planned recipe instead of changing the meal format.',
       'Ignoring whether the center is fully cooked.',
@@ -219,11 +224,16 @@ export const enArticles: EnArticle[] = [
     angle: 'Serve users who think they need to shop because the usual main dish is missing.',
     decision: 'Choose eggs, tofu, natto, canned tuna, canned mackerel, or fried tofu, then pair it with rice, noodles, soup, or vegetables.',
     patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use No meat, No fish, Protein, Dinner as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For fridge planning topics like No Meat or Fish for Dinner? Use Eggs, Tofu, Natto, and Cans, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.',
       'Egg and greens as a rice bowl or soup.',
       'Tofu with thickened sauce, mapo-style seasoning, or miso soup.',
       'Canned fish with rice, noodles, or leftover vegetables.',
     ],
     mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.',
       'Thinking dinner needs a meat or fish centerpiece.',
       'Making several side dishes instead of one complete bowl.',
       'Forgetting pantry proteins such as canned fish or dried goods.',
@@ -243,11 +253,16 @@ export const enArticles: EnArticle[] = [
     angle: 'Capture family schedule searches and connect them to practical meal planning from fridge ingredients.',
     decision: 'Choose light pre-lesson meals or reheatable after-lesson meals before choosing the recipe.',
     patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Kids activities, Family dinner, Time saving, Dinner as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For family topics like Dinner on Kids’ Lesson Days: Plan Around Before and After, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.',
       'Before leaving: rice balls, egg soup, small rice bowls, or light udon.',
       'After returning: curry, stew, soboro, thickened sauce, or soup ready to reheat.',
       'Prep only partway: cut vegetables, make soup, thaw rice, or season protein.',
     ],
     mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.',
       'Planning a normal dinner for an abnormal schedule.',
       'Choosing dishes that must be eaten immediately.',
       'Trying to complete all meal prep instead of reducing evening decisions.',
@@ -267,11 +282,16 @@ export const enArticles: EnArticle[] = [
     angle: 'Address a household operations problem: the recipe has to fit staggered eating times, not just ingredients.',
     decision: 'Choose curry, stew, soup, simmered dishes, soboro, thickened sauces, or rice bowl toppings that can be portioned later.',
     patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Family, Different schedules, Dinner, Reheating as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For family topics like Family Members Coming Home at Different Times? Choose Reheatable Dinners, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.',
       'A meat-and-vegetable sauce served over rice at different times.',
       'A hearty soup with frozen rice or noodles added later.',
       'Tofu or vegetable ankake that reheats without drying out.',
     ],
     mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.',
       'Relying on crispy or freshly fried textures.',
       'Cooking multiple times for each person.',
       'Forgetting to separate the staple from the topping when timing varies.',
@@ -291,11 +311,16 @@ export const enArticles: EnArticle[] = [
     angle: 'Target health-aware but tired users who want practical ways to improve dinner without more work.',
     decision: 'Add vegetables through soup, rice bowls, noodles, curry, thickened sauces, or frozen vegetables that match the dish.',
     patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Vegetables, Frozen vegetables, Dinner, Healthy meals as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For meal planning topics like Not Enough Vegetables at Dinner? Add Them Without Making Extra Sides, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.',
       'Add mushrooms, greens, or frozen spinach to miso soup.',
       'Mix cabbage, bean sprouts, or frozen vegetables into rice bowls or noodles.',
       'Use frozen broccoli, spinach, mushrooms, or mixed vegetables as emergency add-ins.',
     ],
     mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.',
       'Trying to make a perfect side dish on a tired day.',
       'Adding watery frozen vegetables directly to a dry stir-fry.',
       'Thinking a small vegetable addition does not count.',
@@ -315,11 +340,16 @@ export const enArticles: EnArticle[] = [
     angle: 'Target people searching for ways to avoid wasting food and convert urgent fridge items into realistic weeknight meals.',
     decision: 'Choose the ingredient that should be used today, then decide whether it should be the protein, volume, binder, or flavor base.',
     patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Expiry dates, Fridge, Food waste, Dinner as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For fridge planning topics like How to Turn Near-Expiry Ingredients into Dinner, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.',
       'Tofu and ground meat as mapo-style tofu, thickened sauce, or rice bowl topping.',
       'Eggs and leafy greens as egg-drop soup, omelet-style dish, or rice bowl.',
       'Chicken and leftover vegetables as stir-steam, soup, or smart-cooker stew.',
     ],
     mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.',
       'Trying to use every near-expiry ingredient in one dish.',
       'Searching for exact recipe names before deciding the ingredient role.',
       'Using food that smells, looks, or feels unsafe just because the date is close.',
@@ -339,11 +369,16 @@ export const enArticles: EnArticle[] = [
     angle: 'Reach users who search for ways to use leftover vegetables and guide them from scattered ingredients to a meal format.',
     decision: 'Separate hard vegetables, watery vegetables, and finishing greens before choosing stir-fry, soup, steam, or noodles.',
     patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Vegetables, Crisper drawer, Food waste, Dinner as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For fridge planning topics like How to Make Dinner from Leftover Vegetables in the Crisper Drawer, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.',
       'Hard vegetables first, then cabbage, mushrooms, and leafy greens.',
       'Watery vegetables as soup, thickened sauce, or noodle toppings.',
       'Add eggs, tofu, pork, canned tuna, or frozen vegetables to make the dish feel complete.',
     ],
     mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.',
       'Putting every vegetable into the pan at the same time.',
       'Forcing watery vegetables into a dry stir-fry.',
       'Using too many sauces when the vegetables are already mixed.',
@@ -363,11 +398,16 @@ export const enArticles: EnArticle[] = [
     angle: 'Capture the everyday decision query behind dinner planning: users do not just need recipes, they need a way to choose the main dish.',
     decision: 'Use fish fillets, thin-sliced meat, eggs, or ground meat for faster meals; choose bigger cuts or stews only when time allows.',
     patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Main dish, Meat, Fish, Dinner as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For meal planning topics like Meat or Fish for Dinner? How to Choose from What Is in Your Fridge, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.',
       'Pork and cabbage when you want a quick pan dinner.',
       'Salmon or cod with mushrooms and greens when you want a lighter meal.',
       'Ground meat, eggs, or tofu when family-friendly texture matters.',
     ],
     mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.',
       'Choosing a thick cut when dinner needs to be ready quickly.',
       'Ignoring which vegetables need to be used with the main dish.',
       'Picking a cooking tool that does not match tonight’s energy.',
@@ -387,11 +427,16 @@ export const enArticles: EnArticle[] = [
     angle: 'Teach a low-friction planning method for users who have ingredients but cannot turn them into a meal idea.',
     decision: 'Pick the staple first, then convert fridge ingredients into a rice bowl, noodle dish, soup, toast, or side-like main.',
     patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Staple food, Dinner, Meal planning, Time saving as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For meal planning topics like Start Dinner Planning with Rice, Noodles, or Bread, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.',
       'Rice with ground meat, tofu, eggs, or thickened vegetable sauce.',
       'Noodles with cabbage, mushrooms, pork, tuna, or egg.',
       'Bread with soup, toaster-baked fish or chicken, eggs, and cheese.',
     ],
     mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.',
       'Starting from every ingredient at once.',
       'Trying to make separate side dishes when one bowl would work.',
       'Forgetting frozen rice, noodles, and bread as dinner anchors.',
@@ -411,11 +456,16 @@ export const enArticles: EnArticle[] = [
     angle: 'Reach users who want to avoid extra shopping, reduce waste, and make a practical dinner from a sparse fridge.',
     decision: 'Look at the fridge, freezer, and pantry together, then match one staple, one protein, and one vegetable source.',
     patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Before shopping, Fridge, Dinner, Budget as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For fridge planning topics like Dinner the Day Before Grocery Shopping: Use What Is Left, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.',
       'Frozen rice, egg, and leftover vegetables as a bowl or fried-rice-style meal.',
       'Udon, canned tuna, and mushrooms as a quick noodle dinner.',
       'Bread, eggs, and vegetable soup when rice is not ready.',
     ],
     mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.',
       'Judging the fridge as empty before checking the freezer and pantry.',
       'Buying extra ingredients that will become the next leftovers.',
       'Trying to make the meal look special instead of simply complete.',
@@ -435,11 +485,16 @@ export const enArticles: EnArticle[] = [
     angle: 'Explain watery results as a food-and-tool mismatch, then show how to choose soups, stews, or thicker dishes intentionally.',
     decision: 'Use cabbage, napa cabbage, mushrooms, onions, bean sprouts, and frozen vegetables with less added water or as soup-style meals.',
     patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Hotcook, Watery meals, Cooking tips, Troubleshooting as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For smart cooker topics like Why Hotcook Meals Turn Watery and How to Fix Them, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.',
       'Turn watery cabbage and chicken into a soup or thickened stew.',
       'Use root vegetables and meat when you want a richer simmered dish.',
       'Finish with miso, curry powder, vinegar, butter, or aromatics instead of only adding salt.',
     ],
     mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.',
       'Adding water before considering vegetable moisture.',
       'Expecting stir-fry texture from a sealed cooker.',
       'Over-seasoning at the start instead of adjusting at the end.',
@@ -459,11 +514,16 @@ export const enArticles: EnArticle[] = [
     angle: 'Frame scheduling as a way to reduce evening decisions, not as a way to cook every dish perfectly unattended.',
     decision: 'Choose meat, root vegetables, onions, mushrooms, tomato cans, curry, stew, and simmered dishes for scheduled cooking.',
     patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Hotcook, Scheduled cooking, Time saving, Family dinner as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For smart cooker topics like Hotcook Scheduled Cooking: Ingredients That Work for Morning Setup, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.',
       'Chicken, potato, carrot, and onion as curry or stew.',
       'Pork and root vegetables as a simmered dinner base.',
       'Tomato can, mushrooms, and meat as a flexible sauce.',
     ],
     mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.',
       'Putting delicate seafood or leafy greens into a long scheduled cook.',
       'Trying to finish the entire dinner in one pot every time.',
       'Deciding the menu from scratch during a busy morning.',
@@ -483,11 +543,16 @@ export const enArticles: EnArticle[] = [
     angle: 'Teach users to move from recipe-name search to cooking-type decisions based on what they actually have.',
     decision: 'Sort ingredients into protein, volume, flavor base, and finishing ingredients before choosing a Hotcook menu direction.',
     patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Hotcook, Official recipes, Fridge ingredients, Meal planning as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For smart cooker topics like How to Cook Non-Official Hotcook Recipes from Fridge Ingredients, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.',
       'Pork, cabbage, and mushrooms as miso steam-simmer.',
       'Tofu, napa cabbage, and egg as a soup-style meal.',
       'Chicken, potato, carrot, and onion as curry, stew, or simmered dish.',
     ],
     mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.',
       'Searching only for an exact official recipe name.',
       'Ignoring how much water the vegetables release.',
       'Cooking delicate ingredients for the same time as root vegetables.',
@@ -507,11 +572,16 @@ export const enArticles: EnArticle[] = [
     angle: 'Compare Hotcook with a frying pan, microwave, and toaster so users choose the right tool for the ingredients and goal.',
     decision: 'Use Hotcook for wet-heat dishes, stews, soups, and steaming; choose other tools when browning or quick evaporation matters.',
     patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Hotcook, Cooking tools, Stir-fry, Cooking tips as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For smart cooker topics like What Hotcook Is Good At and What It Is Not Good At, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.',
       'Simmer root vegetables and meat in the Hotcook.',
       'Use a frying pan for cabbage, bean sprouts, and pork when you want browning.',
       'Use a toaster for fish, tofu, cheese, and roasted vegetables.',
     ],
     mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.',
       'Expecting a sealed cooker to make dry stir-fries.',
       'Treating watery results as user failure instead of tool mismatch.',
       'Forcing every fridge ingredient into the Hotcook.',
@@ -531,11 +601,16 @@ export const enArticles: EnArticle[] = [
     angle: 'Position continued use as a meal-planning problem: build a few reliable patterns, track what worked, and reduce decisions.',
     decision: 'Start with three repeatable meal types such as curry, soup, and tomato stew before expanding the recipe list.',
     patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Hotcook, Meal planning, Habit, Fridge use as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For smart cooker topics like Why People Stop Using Hotcook and How to Keep It Useful, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.',
       'Keep a few default dishes for tired days.',
       'Sort fridge ingredients by Hotcook-friendly and quick-cooking ingredients.',
       'Use Hotcook on the days it truly reduces evening decisions.',
     ],
     mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.',
       'Trying a new recipe every time.',
       'Blaming the appliance when the real issue is menu selection.',
       'Expecting daily use instead of building realistic habits.',
@@ -556,11 +631,16 @@ export const enArticles: EnArticle[] = [
     angle: 'Use the frying pan as a complete dinner tool: sear protein, steam vegetables, then add one clear sauce at the end.',
     decision: 'Choose thin meat, fish fillets, tofu, eggs, cabbage, mushrooms, bean sprouts, or frozen vegetables when you want dinner fast.',
     patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Frying pan, One-pan, Dinner, Fewer dishes as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For time saving topics like One-Pan Dinner Ideas with a Frying Pan, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.',
       'Pork and cabbage with ponzu or miso sauce.',
       'Salmon and mushrooms as a covered steam-fry.',
       'Tofu, bean sprouts, and egg with soy-based seasoning.',
     ],
     mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.',
       'Adding sauce too early and making the pan watery.',
       'Stirring meat before it browns.',
       'Using thick ingredients when you need dinner quickly.',
@@ -580,11 +660,16 @@ export const enArticles: EnArticle[] = [
     angle: 'Think about what can be ready when the rice finishes: a quick protein, soup, or mixed rice using simple ingredients.',
     decision: 'Use mushrooms, carrots, fried tofu, canned tuna, chicken pieces, or frozen vegetables when making rice-cooker-friendly meals.',
     patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Rice cooker, Dinner, Time saving, Meal prep as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For time saving topics like How to Plan Dinner Around a Rice Cooker, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.',
       'Mixed rice with mushrooms and fried tofu.',
       'Plain rice with a quick frying-pan main dish.',
       'Rice-cooker timing plus soup and frozen vegetables.',
     ],
     mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.',
       'Trying unsafe or unsupported rice-cooker cooking methods.',
       'Adding too much watery produce to rice.',
       'Forgetting that strong-smelling ingredients affect the whole pot.',
@@ -604,11 +689,16 @@ export const enArticles: EnArticle[] = [
     angle: 'Choose one format first: hearty soup, stew, noodles, rice porridge, or hot-pot style.',
     decision: 'Add one protein, enough vegetables, and either a staple inside the pot or a simple staple on the side.',
     patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use One pot, Soup, Stew, Dinner as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For meal planning topics like One-Pot Dinner Ideas: Soup, Stew, and Noodles, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.',
       'Pork, tofu, and napa cabbage as a hearty soup.',
       'Canned fish and vegetables as a miso-style stew.',
       'Frozen udon with egg and mushrooms.',
     ],
     mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.',
       'Making a light soup and expecting it to feel like dinner.',
       'Adding noodles too early and letting them absorb all the broth.',
       'Using too many flavor bases at once.',
@@ -628,11 +718,16 @@ export const enArticles: EnArticle[] = [
     angle: 'Use foil packets or oven-safe dishes to avoid mess and turn simple ingredients into a main dish.',
     decision: 'Choose fish, chicken, thick tofu, mushrooms, eggplant, potatoes, tomato, or cheese when you want a toaster-friendly meal.',
     patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Toaster oven, Bake-only, Dinner, Time saving as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For time saving topics like Toaster Oven Dinner Ideas: Ingredients That Work When You Just Want to Bake, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.',
       'Salmon and mushrooms with miso butter.',
       'Thick tofu with green onion and cheese.',
       'Chicken and onion in a ponzu foil packet.',
     ],
     mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.',
       'Using watery ingredients without a dish or foil packet.',
       'Letting sauce or cheese burn before the center is cooked.',
       'Forgetting to check meat and fish doneness.',
@@ -652,11 +747,16 @@ export const enArticles: EnArticle[] = [
     angle: 'Do not wait for a recipe name. Combine frozen ingredients with eggs, tofu, canned food, or seasonings to complete dinner.',
     decision: 'Use frozen rice for bowls, frozen vegetables for volume, frozen meat for the main protein, and frozen udon for one-dish meals.',
     patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Frozen staples, Frozen vegetables, Frozen rice, Meal planning as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For fridge use topics like How to Make Dinner from Frozen Staples, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.',
       'Frozen rice, egg, and frozen vegetables as fried-rice style dinner.',
       'Frozen udon with mushrooms and pork.',
       'Frozen meat, broccoli, and tomato can as a stew-like meal.',
     ],
     mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.',
       'Adding too much water when frozen ingredients already release moisture.',
       'Trying to use only frozen ingredients when eggs or canned food would complete the meal.',
       'Cooking frozen meat unevenly without partial thawing.',
@@ -677,11 +777,16 @@ export const enArticles: EnArticle[] = [
     angle: 'Use cod for steamed dishes, soups, or finish-stage cooking. If it breaks, make the dish a soup-style meal instead of trying to preserve perfect fillets.',
     decision: 'Pair cod with cabbage, napa cabbage, mushrooms, tofu, miso, ginger, or tomato depending on how light or filling you want dinner to be.',
     patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Hotcook, Cod, Fish, White fish as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For smart cooker topics like Hotcook Cod Recipes: How to Cook Delicate White Fish Without Breaking It, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.',
       'Cod with napa cabbage and ginger as a gentle steamed dish.',
       'Cod, tofu, mushrooms, and miso as a dinner soup.',
       'Cod with tomato and onion for a lighter Western-style meal.',
     ],
     mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.',
       'Cooking cod for as long as root vegetables.',
       'Adding too much water at the start.',
       'Trying to keep the fillet perfect in a soup-style dish.',
@@ -701,11 +806,16 @@ export const enArticles: EnArticle[] = [
     angle: 'Start by deciding whether to use yellowtail fat as richness or lighten it with daikon, ginger, green onion, or vegetables.',
     decision: 'If you have daikon, make a simmered dish. If you have napa cabbage or mushrooms, use miso. If you have onion and tomato, go Western-style.',
     patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Hotcook, Yellowtail, Fish, Simmered fish as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For smart cooker topics like Hotcook Yellowtail Recipes Beyond Teriyaki, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.',
       'Yellowtail and daikon with ginger soy sauce.',
       'Yellowtail with napa cabbage and miso.',
       'Yellowtail with tomato, onion, and mushrooms.',
     ],
     mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.',
       'Adding too much water and making the fat feel heavy.',
       'Cooking thick daikon and fish for the same timing without adjusting.',
       'Using strong seasoning before checking how much liquid the fish releases.',
@@ -725,11 +835,16 @@ export const enArticles: EnArticle[] = [
     angle: 'Build the vegetable or soup base first, then add shrimp near the end so it stays tender.',
     decision: 'Use onion and tomato for a Western-style base, cabbage and mushrooms for a soup, or tofu and egg for a lighter dinner.',
     patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Hotcook, Shrimp, Seafood, Time saving as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For smart cooker topics like Hotcook Shrimp Recipes: Add Shrimp at the Right Time, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.',
       'Shrimp with tomato and onion.',
       'Shrimp, cabbage, and mushrooms in a Chinese-style soup.',
       'Shrimp with tofu and egg as a light main dish.',
     ],
     mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.',
       'Adding shrimp at the beginning of a long cooking cycle.',
       'Using frozen shrimp without accounting for extra water.',
       'Trying to make a small amount of shrimp carry the whole meal alone.',
@@ -749,11 +864,16 @@ export const enArticles: EnArticle[] = [
     angle: 'Think of clams as an umami base rather than the only main ingredient. Pair them with vegetables that can absorb the broth.',
     decision: 'Use cabbage for steamed dishes, potatoes for soup, tomato for a lighter stew, or milk for a chowder-style meal.',
     patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Hotcook, Clams, Seafood, Soup as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For smart cooker topics like Hotcook Clam Recipes: Use Clams for Broth, Soup, and Steamed Vegetables, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.',
       'Clams and cabbage steamed with sake and ginger.',
       'Clams, potatoes, and onion as a soup.',
       'Clams with tomato and mushrooms as a stew.',
     ],
     mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.',
       'Seasoning heavily before checking the saltiness of the clams.',
       'Overcooking clams until the meat shrinks.',
       'Forgetting that frozen or canned clams may add extra liquid and salt.',
@@ -773,11 +893,16 @@ export const enArticles: EnArticle[] = [
     angle: 'Do not treat squid like a long-simmering meat. Build the base first or pair it with ingredients that can carry the dish if the squid is added near the end.',
     decision: 'Use taro for a Japanese simmered dish, tomato and onion for a Western-style stew, or cabbage and ginger for a light steamed dish.',
     patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Hotcook, Squid, Seafood, Simmered food as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For smart cooker topics like Hotcook Squid Recipes: How to Avoid Tough Squid, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.',
       'Squid and taro simmered with ginger soy sauce.',
       'Squid with tomato, onion, and mushrooms.',
       'Squid and cabbage steamed with ginger.',
     ],
     mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.',
       'Cooking squid for too long without a clear reason.',
       'Using large pieces that heat unevenly.',
       'Ignoring the extra water from frozen squid.',
@@ -803,11 +928,16 @@ export const enArticles: EnArticle[] = [
     "angle": "Do not think of microwave cooking as a side dish only. Combine rice or noodles, protein, vegetables, and sauce into one practical meal.",
     "decision": "Pick ingredients that heat quickly, such as tofu, eggs, mushrooms, bean sprouts, frozen vegetables, thinly sliced meat, canned fish, frozen rice, or frozen udon.",
     "patterns": [
+        "Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.",
+        "Use Microwave cooking, No stove, Dinner, Time saving as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.",
+        "For time saving topics like How to Make Dinner Using Only a Microwave, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.",
       "Microwave-steamed vegetables and meat over rice.",
       "Tofu, egg, and mushrooms as a soup bowl.",
       "Frozen udon with vegetables and tuna."
     ],
     "mistakes": [
+        "Treating the search result as a fixed recipe instead of adapting it to the fridge.",
+        "Adding extra work when one practical decision would make dinner good enough.",
       "Starting with a recipe name before choosing a format.",
       "Using large thick ingredients that heat unevenly.",
       "Adding too much water before heating."
@@ -832,11 +962,16 @@ export const enArticles: EnArticle[] = [
     "angle": "Think by role: tofu as the main ingredient, egg as the binder, mushrooms for umami, frozen vegetables for volume, and rice or udon as the staple.",
     "decision": "Choose a flavor base first, such as mentsuyu, chicken stock, miso, consommé, or ponzu. Then combine the staple ingredients around it.",
     "patterns": [
+        "Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.",
+        "Use Microwave cooking, Fridge, Tofu, Eggs as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.",
+        "For fridge use topics like Microwave Meals from Fridge Staples: Tofu, Eggs, and Mushrooms, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.",
       "Tofu and mushrooms with egg over rice.",
       "Frozen vegetables and tuna mixed into warmed rice.",
       "Mushrooms, egg, and frozen udon as a warm bowl."
     ],
     "mistakes": [
+        "Treating the search result as a fixed recipe instead of adapting it to the fridge.",
+        "Adding extra work when one practical decision would make dinner good enough.",
       "Overheating tofu until it releases too much water.",
       "Microwaving whole eggs without breaking them.",
       "Using too many flavor bases at once."
@@ -861,11 +996,16 @@ export const enArticles: EnArticle[] = [
     "angle": "Use bean sprouts, cut vegetables, tofu, eggs, canned fish, frozen vegetables, mushrooms you can tear by hand, frozen udon, or packaged rice.",
     "decision": "Choose one format: microwave steam, soup, udon, or rice bowl. Keep seasoning simple with ponzu, sesame sauce, mentsuyu, chicken stock, or miso.",
     "patterns": [
+        "Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.",
+        "Use No knife, Microwave cooking, Dinner, Tired day as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.",
+        "For time saving topics like No-Knife Microwave Dinners for Tired Nights, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.",
       "Bean sprouts, cut vegetables, and sliced meat as a steamed bowl.",
       "Tofu, egg, and frozen vegetables as soup.",
       "Frozen udon with tuna and greens."
     ],
     "mistakes": [
+        "Treating the search result as a fixed recipe instead of adapting it to the fridge.",
+        "Adding extra work when one practical decision would make dinner good enough.",
       "Choosing ingredients that secretly require chopping.",
       "Using thick meat pieces in a microwave-only meal.",
       "Creating extra dishes while trying to keep things easy."
@@ -890,11 +1030,16 @@ export const enArticles: EnArticle[] = [
     "angle": "Place harder or slower-cooking ingredients lower or preheat them, spread meat thinly, keep watery vegetables in mind, and season lightly at first.",
     "decision": "Use a container with extra space, vent steam safely, heat in stages when needed, and finish seasoning after heating.",
     "patterns": [
+        "Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.",
+        "Use Heatproof container, Microwave cooking, Cooking tips, Time saving as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.",
+        "For cooking tips topics like One-Container Microwave Dinners: How to Layer Ingredients, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.",
       "Pork and cabbage steamed in one container.",
       "Tofu and mushrooms heated before adding egg.",
       "Frozen udon and vegetables warmed before final seasoning."
     ],
     "mistakes": [
+        "Treating the search result as a fixed recipe instead of adapting it to the fridge.",
+        "Adding extra work when one practical decision would make dinner good enough.",
       "Piling ingredients too thickly in the center.",
       "Adding too much liquid before heating.",
       "Overcooking egg or thin meat."
@@ -919,11 +1064,16 @@ export const enArticles: EnArticle[] = [
     "angle": "Start with less liquid, spread ingredients evenly, pause to mix, and use residual heat instead of overcooking.",
     "decision": "For watery vegetables or tofu, add seasoning after heating. For meat, spread it thinly and let it rest. For frozen ingredients, warm them in stages.",
     "patterns": [
+        "Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.",
+        "Use Microwave cooking, Uneven heating, Cooking tips, Troubleshooting as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.",
+        "For cooking tips topics like How to Prevent Watery, Tough, or Uneven Microwave Cooking, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.",
       "Turn excess liquid into soup or ankake sauce.",
       "Steam thin meat with vegetables to prevent drying.",
       "Heat frozen udon or vegetables before combining with delicate ingredients."
     ],
     "mistakes": [
+        "Treating the search result as a fixed recipe instead of adapting it to the fridge.",
+        "Adding extra work when one practical decision would make dinner good enough.",
       "Adding a lot of sauce before watery ingredients release moisture.",
       "Heating meat in a thick pile.",
       "Trying to cook frozen and delicate ingredients at the same pace."
@@ -949,11 +1099,16 @@ export const enArticles: EnArticle[] = [
       "angle": "When you already open the fridge in the morning, briefly check what could become dinner: rice, eggs, tofu, soup vegetables, fish, or leftovers.",
       "decision": "Choose just one dinner direction in the morning, such as egg bowl, soup, noodles, or rice plate. The goal is not to cook dinner early, but to reduce decisions later.",
       "patterns": [
+        "Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.",
+        "Use Breakfast, Dinner, Meal planning, Leftovers as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.",
+        "For meal planning topics like How to Connect Breakfast Prep to Dinner Planning, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.",
         "Extra miso soup vegetables become dinner soup.",
         "One saved egg can turn tofu or vegetables into a bowl.",
         "Frozen rice plus breakfast leftovers becomes a simple plate."
       ],
       "mistakes": [
+        "Treating the search result as a fixed recipe instead of adapting it to the fridge.",
+        "Adding extra work when one practical decision would make dinner good enough.",
         "Trying to complete dinner prep in the morning.",
         "Using every leftover at once.",
         "Forgetting that a small morning decision is enough."
@@ -978,11 +1133,16 @@ export const enArticles: EnArticle[] = [
       "angle": "Use soup, microwave steaming, light noodles, or rice porridge instead of heavy stir-fries or multi-dish meals.",
       "decision": "Pick one format: warm soup, microwave bowl, light udon, or one-bowl rice. Avoid recipes with many steps or many dishes.",
       "patterns": [
+        "Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.",
+        "Use Late dinner, Dinner, Time saving, Light meal as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.",
+        "For time saving topics like Dinner Ideas for Nights When You Get Home Late, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.",
         "Tofu, egg, and mushrooms become a quick soup.",
         "Cabbage and pork can be microwave steamed.",
         "Frozen udon works better as light soup udon than heavy fried noodles."
       ],
       "mistakes": [
+        "Treating the search result as a fixed recipe instead of adapting it to the fridge.",
+        "Adding extra work when one practical decision would make dinner good enough.",
         "Choosing only by cooking time.",
         "Making oily or salty meals too late.",
         "Ignoring cleanup after dinner."
@@ -1007,11 +1167,16 @@ export const enArticles: EnArticle[] = [
       "angle": "Do not serve tiny leftovers as separate dishes. Put them on rice, bind them with egg, or add them to soup.",
       "decision": "Choose the base first: rice, egg, soup, or noodles. Then use leftovers as toppings or filling.",
       "patterns": [
+        "Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.",
+        "Use Bento, Leftovers, Dinner, Food waste as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.",
+        "For fridge use topics like How to Turn Bento Leftovers into Dinner, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.",
         "Small chicken pieces become a rice bowl.",
         "Tamagoyaki or grilled fish becomes mixed rice.",
         "Cooked vegetables become soup ingredients."
       ],
       "mistakes": [
+        "Treating the search result as a fixed recipe instead of adapting it to the fridge.",
+        "Adding extra work when one practical decision would make dinner good enough.",
         "Serving tiny leftovers separately.",
         "Adding more seasoning to already-seasoned food.",
         "Using leftovers that were not stored safely."
@@ -1036,11 +1201,16 @@ export const enArticles: EnArticle[] = [
       "angle": "Instead of cooking separate meals, make one flexible base and adjust toppings, spice, and staple for each person.",
       "decision": "Start with a mild soup, bowl, steamed dish, or simmered base. Add spice, cheese, egg, herbs, or sauce after serving.",
       "patterns": [
+        "Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.",
+        "Use Family, Preferences, Meal planning, Dinner as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.",
+        "For family meals topics like Dinner Planning When Everyone in the Family Likes Different Things, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.",
         "Mild soup becomes spicy for adults with chili oil.",
         "A tofu bowl can be topped differently for each person.",
         "Steamed vegetables can be served with separate sauces."
       ],
       "mistakes": [
+        "Treating the search result as a fixed recipe instead of adapting it to the fridge.",
+        "Adding extra work when one practical decision would make dinner good enough.",
         "Trying to find one perfect dish for everyone.",
         "Adding spice to the whole pot.",
         "Making full separate meals every night."
@@ -1065,11 +1235,16 @@ export const enArticles: EnArticle[] = [
       "angle": "Start with what spoils fastest, then identify small leftovers and one flavor anchor. This makes cleanout meals easier.",
       "decision": "Choose soup, rice bowl, stir-fry, or steamed simmer. Do not try to use every ingredient in one dish.",
       "patterns": [
+        "Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.",
+        "Use Fridge cleanout, Weekend, Food waste, Dinner as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.",
+        "For fridge use topics like How to Plan Dinner When You Want to Empty the Fridge Before the Weekend, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.",
         "Tofu, mushrooms, and egg become soup or ankake rice.",
         "Cabbage and sausage become soup or udon.",
         "Daikon and pork become a simple miso simmer."
       ],
       "mistakes": [
+        "Treating the search result as a fixed recipe instead of adapting it to the fridge.",
+        "Adding extra work when one practical decision would make dinner good enough.",
         "Mixing every leftover together.",
         "Ignoring ingredients that spoil quickly.",
         "Buying more before checking the fridge."
@@ -1095,11 +1270,16 @@ export const enArticles: EnArticle[] = [
     "angle": "Before searching recipes, decide your available time, energy level, and staple. These constraints make choices easier instead of harder.",
     "decision": "Pick 15 minutes, 30 minutes, or hands-off; decide whether you can chop, stand at the stove, and wash dishes; then choose rice, noodles, bread, or no staple.",
     "patterns": [
+        "Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.",
+        "Use Dinner, Decision fatigue, Meal planning, Time saving as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.",
+        "For meal planning topics like When Thinking About Dinner Feels Exhausting: Three Decisions Before Searching Recipes, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.",
       "Rice plus egg or tofu becomes a bowl.",
       "Small leftovers become soup.",
       "Frozen udon or rice turns scattered ingredients into dinner."
     ],
     "mistakes": [
+        "Treating the search result as a fixed recipe instead of adapting it to the fridge.",
+        "Adding extra work when one practical decision would make dinner good enough.",
       "Opening broad recipe search before deciding constraints.",
       "Ignoring your energy level.",
       "Treating dinner as a perfect project instead of a practical meal."
@@ -1124,11 +1304,16 @@ export const enArticles: EnArticle[] = [
     "angle": "Look at ingredients by role: protein, volume, staple, flavor base, and aroma. Roles turn scattered items into meal formats.",
     "decision": "Choose a broad format such as bowl, soup, stir-fry, simmered dish, or noodles before trying to name the exact recipe.",
     "patterns": [
+        "Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.",
+        "Use Fridge, Meal planning, Ingredients, Dinner as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.",
+        "For fridge use topics like Why Your Fridge Feels Full but You Still Think You Have Nothing to Cook, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.",
       "Tofu, egg, and green onion become soup or ankake rice.",
       "Cabbage, sausage, and frozen udon become yaki udon or soup udon.",
       "Pork, onion, and mushrooms become a bowl or simmer."
     ],
     "mistakes": [
+        "Treating the search result as a fixed recipe instead of adapting it to the fridge.",
+        "Adding extra work when one practical decision would make dinner good enough.",
       "Looking for an exact recipe name too early.",
       "Counting missing ingredients first.",
       "Trying to combine every leftover at once."
@@ -1153,11 +1338,16 @@ export const enArticles: EnArticle[] = [
     "angle": "Rigid weekday menus often break. Loose rules based on meal format, staple, or flavor are easier to keep.",
     "decision": "Assign flexible formats such as rice bowl day, soup day, noodle day, smart-cooker day, and fridge-cleanout day.",
     "patterns": [
+        "Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.",
+        "Use Meal planning, Stress, Dinner, Routine as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.",
+        "For meal planning topics like How to Make Daily Dinner Planning Less Stressful with Loose Rules, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.",
       "Monday rice bowls from whatever protein exists.",
       "Tuesday soup for leftover vegetables.",
       "Friday no-shopping fridge cleanout."
     ],
     "mistakes": [
+        "Treating the search result as a fixed recipe instead of adapting it to the fridge.",
+        "Adding extra work when one practical decision would make dinner good enough.",
       "Fixing exact recipes by weekday.",
       "Treating a missed plan as failure.",
       "Planning without checking what is already in the fridge."
@@ -1182,11 +1372,16 @@ export const enArticles: EnArticle[] = [
     "angle": "Choose what to reduce first. No-knife meals, microwave meals, smart-cooker soups, and one-bowl dinners solve different problems.",
     "decision": "If chopping feels impossible, use eggs, tofu, canned food, frozen vegetables, mushrooms, or cut vegetables. If stove time is hard, use microwave or hands-off cooking.",
     "patterns": [
+        "Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.",
+        "Use No energy, Dinner, Dishes, Time saving as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.",
+        "For time saving topics like Dinner When You Have No Energy to Cook: Reduce Chopping, Stove Time, and Dishes, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.",
       "Tofu and egg soup without chopping.",
       "Frozen vegetables and sausage microwave bowl.",
       "Smart-cooker soup with canned fish or tofu."
     ],
     "mistakes": [
+        "Treating the search result as a fixed recipe instead of adapting it to the fridge.",
+        "Adding extra work when one practical decision would make dinner good enough.",
       "Choosing a fast recipe with many dishes.",
       "Forcing side dishes when one bowl is enough.",
       "Ignoring cleanup when choosing dinner."
@@ -1211,11 +1406,16 @@ export const enArticles: EnArticle[] = [
     "angle": "Do not start by counting missing ingredients. Start by assigning roles to what you have: staple, protein, volume, and flavor base.",
     "decision": "Choose whether the existing ingredients can become a bowl, soup, noodles, one-plate meal, or pantry-based simmer.",
     "patterns": [
+        "Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.",
+        "Use No shopping, Dinner, Fridge, Budget as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.",
+        "For fridge use topics like Dinner from What You Already Have: How to Feel Satisfied Without Buying More, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.",
       "Egg, onion, and frozen rice become an egg bowl.",
       "Tofu, mushrooms, and green onion become soup or udon.",
       "Canned fish, cabbage, and rice become a satisfying no-shopping meal."
     ],
     "mistakes": [
+        "Treating the search result as a fixed recipe instead of adapting it to the fridge.",
+        "Adding extra work when one practical decision would make dinner good enough.",
       "Trying to follow a recipe that assumes a full shopping list.",
       "Using too many mismatched leftovers together.",
       "Forgetting pantry items such as canned fish, tomato cans, or curry powder."
@@ -1241,11 +1441,16 @@ export const enArticles: EnArticle[] = [
     "angle": "Use chicken mince for umami and tofu for volume and softness, then choose a strong enough flavor base such as ginger soy, dashi, miso, or chicken stock.",
     "decision": "Decide whether the meal should become a rice bowl, soup, tofu chicken patty, or ankake dish before choosing seasonings.",
     "patterns": [
+        "Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.",
+        "Use Chicken mince, Tofu, Meal planning, Budget as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.",
+        "For meal planning topics like Chicken Mince and Tofu Dinner Ideas: Light Meals That Still Feel Satisfying, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.",
       "Chicken soboro and tofu ankake over rice.",
       "Tofu chicken patties with teriyaki sauce.",
       "Chicken mince, tofu, mushrooms, and vegetables in soup."
     ],
     "mistakes": [
+        "Treating the search result as a fixed recipe instead of adapting it to the fridge.",
+        "Adding extra work when one practical decision would make dinner good enough.",
       "Using silken tofu when you need shape and structure.",
       "Adding too much liquid and making the flavor weak.",
       "Forgetting aroma such as ginger, green onion, sesame oil, or shiso."
@@ -1270,11 +1475,16 @@ export const enArticles: EnArticle[] = [
     "angle": "The key is controlling oil, moisture, and timing. Eggplant tastes best when it is not watery and not overloaded with oil.",
     "decision": "Choose miso, sweet vinegar, tomato, or steamed style based on the other ingredients in your fridge and the staple you want to serve.",
     "patterns": [
+        "Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.",
+        "Use Pork, Eggplant, Dinner, Seasoning as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.",
+        "For meal planning topics like Pork and Eggplant Dinner Ideas Beyond Stir-Fry, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.",
       "Miso pork and eggplant with rice.",
       "Sweet vinegar pork and eggplant for a lighter finish.",
       "Tomato pork and eggplant with pasta or bread."
     ],
     "mistakes": [
+        "Treating the search result as a fixed recipe instead of adapting it to the fridge.",
+        "Adding extra work when one practical decision would make dinner good enough.",
       "Adding seasonings before eggplant has softened.",
       "Cutting eggplant too thin for smart-cooker simmering.",
       "Using a heavy sauce without a fresh side dish."
@@ -1299,11 +1509,16 @@ export const enArticles: EnArticle[] = [
     "angle": "To make them feel like dinner, add vegetables, a staple, warmth, or broth instead of treating them as a small breakfast dish.",
     "decision": "Choose a tuna egg rice bowl, vegetable stir-fry, soup, or omelet based on whether you have rice, noodles, or leftover vegetables.",
     "patterns": [
+        "Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.",
+        "Use Eggs, Canned tuna, No shopping, Dinner as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.",
+        "For meal planning topics like Egg and Canned Tuna Dinner Ideas When You Cannot Shop, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.",
       "Tuna and egg rice bowl with onion or mushrooms.",
       "Cabbage, tuna, and egg stir-fry.",
       "Tuna egg soup with green onion and mushrooms."
     ],
     "mistakes": [
+        "Treating the search result as a fixed recipe instead of adapting it to the fridge.",
+        "Adding extra work when one practical decision would make dinner good enough.",
       "Overcooking the eggs until the whole dish turns dry.",
       "Ignoring the oil and salt already in the tuna can.",
       "Using only egg and tuna without texture from vegetables."
@@ -1328,11 +1543,16 @@ export const enArticles: EnArticle[] = [
     "angle": "Use the sweetness of cooked cabbage and the savory flavor of sausage, then avoid making the dish too salty by adding potatoes, eggs, tofu, or noodles.",
     "decision": "Choose soup, steamed cabbage, yaki udon, or egg-toji depending on whether you need warmth, volume, or a one-dish meal.",
     "patterns": [
+        "Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.",
+        "Use Cabbage, Sausage, Kids, Meal planning as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.",
+        "For family topics like Cabbage and Sausage Dinner Ideas Kids Can Eat on Weeknights, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.",
       "Cabbage and sausage soup with potatoes.",
       "Steamed cabbage and sausage with butter soy sauce.",
       "Cabbage sausage yaki udon for a one-plate dinner."
     ],
     "mistakes": [
+        "Treating the search result as a fixed recipe instead of adapting it to the fridge.",
+        "Adding extra work when one practical decision would make dinner good enough.",
       "Adding too much seasoning on top of salty sausage.",
       "Leaving cabbage too large or tough for kids.",
       "Using sausage as the whole meal instead of a flavor anchor."
@@ -1357,11 +1577,16 @@ export const enArticles: EnArticle[] = [
     "angle": "Think of udon as the base for using leftover protein and vegetables. Then choose stir-fried, simmered, or ankake style.",
     "decision": "Make yaki udon when you have pork and cabbage, simmered udon when you are tired, and ankake udon when you have small amounts of vegetables.",
     "patterns": [
+        "Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.",
+        "Use Frozen udon, Dinner, Leftovers, Time saving as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.",
+        "For time saving topics like Dinner Ideas When You Have Frozen Udon, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.",
       "Yaki udon with pork, cabbage, and mushrooms.",
       "Simmered udon with egg, tofu, and green onion.",
       "Ankake udon with leftover vegetables and ground meat or tuna."
     ],
     "mistakes": [
+        "Treating the search result as a fixed recipe instead of adapting it to the fridge.",
+        "Adding extra work when one practical decision would make dinner good enough.",
       "Using the same mentsuyu flavor every time.",
       "Adding watery frozen vegetables directly to stir-fry.",
       "Forgetting protein and ending up with only noodles."
@@ -1381,8 +1606,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Dinner often feels impossible even when the fridge is not empty. The problem is not always a lack of ingredients. It is that the ingredients do not immediately suggest a meal.',
     angle: 'Before searching recipes, sort what you have into roles: protein, volume, flavor base, and staple. This reduces the number of choices and makes the next step clearer.',
     decision: 'Choose only three possible meal formats, such as bowl, soup, or one-pan meal, then pick based on your energy level rather than chasing the perfect recipe.',
-    patterns: ['Protein plus vegetables becomes a rice bowl or stir-fry.', 'Small amounts of vegetables become a large soup.', 'Frozen rice or noodles turn scattered ingredients into a complete meal.'],
-    mistakes: ['Searching broad recipe keywords before checking what is actually in the fridge.', 'Trying to create too many options and getting stuck again.', 'Ignoring energy level, dishes, and cooking time when choosing dinner.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Dinner, Fridge, Meal planning, Time saving as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For meal planning topics like How to Decide Dinner When Your Fridge Looks Full but Nothing Comes to Mind, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Protein plus vegetables becomes a rice bowl or stir-fry.', 'Small amounts of vegetables become a large soup.', 'Frozen rice or noodles turn scattered ingredients into a complete meal.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Searching broad recipe keywords before checking what is actually in the fridge.', 'Trying to create too many options and getting stuck again.', 'Ignoring energy level, dishes, and cooking time when choosing dinner.'],
     snapmeal: 'Snapmeal starts from a fridge photo so dinner suggestions are based on what you actually have, not on an endless recipe search.',
   }),
   article({
@@ -1397,8 +1627,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Using up fridge ingredients is easier when you stop trying to use everything at once. The better question is what should become tonight’s anchor.',
     angle: 'Prioritize fragile ingredients, opened packages, and ingredients that can actually become a meal. Dates matter, but compatibility matters too.',
     decision: 'Pick one urgent ingredient as the anchor, add one or two supporting ingredients, and leave the rest for another meal instead of forcing everything together.',
-    patterns: ['Leafy vegetables, tofu, and mushrooms become a soup.', 'Opened meat plus vegetables becomes a main dish or bowl.', 'Small leftover vegetables become soup rather than separate side dishes.'],
-    mistakes: ['Using expiration dates alone and combining ingredients that do not fit.', 'Trying to use every leftover in one dish.', 'Forgetting sturdy ingredients such as onions and potatoes can often wait.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Fridge cleanout, Food waste, Meal planning, Ingredient use as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For fridge use topics like What to Use First in the Fridge: A Practical Order for Meal Planning, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Leafy vegetables, tofu, and mushrooms become a soup.', 'Opened meat plus vegetables becomes a main dish or bowl.', 'Small leftover vegetables become soup rather than separate side dishes.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Using expiration dates alone and combining ingredients that do not fit.', 'Trying to use every leftover in one dish.', 'Forgetting sturdy ingredients such as onions and potatoes can often wait.'],
     snapmeal: 'Snapmeal can help identify fridge ingredients and suggest meals that use the items you should prioritize first.',
   }),
   article({
@@ -1413,8 +1648,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Dinner does not always need a main dish, side dish, and soup. On busy nights, one complete dish can be the most realistic option.',
     angle: 'The goal is not to skip nutrition. It is to put protein, vegetables, a flavor base, and a staple into one format so dinner still feels satisfying.',
     decision: 'Choose a large soup, rice bowl, one-pan meal, or one-plate dinner depending on what you can cook and clean up that night.',
-    patterns: ['Large tofu, egg, and vegetable soup with rice.', 'Ground meat, vegetables, and egg over rice.', 'Chicken or canned fish with vegetables on one plate.'],
-    mistakes: ['Treating side dishes as mandatory even when they make dinner harder.', 'Making one dish too light by forgetting protein.', 'Adding many small sides and increasing cleanup.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use No side dishes, One dish meal, Time saving, Meal planning as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For time saving topics like How to Make Dinner Without Cooking Side Dishes, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Large tofu, egg, and vegetable soup with rice.', 'Ground meat, vegetables, and egg over rice.', 'Chicken or canned fish with vegetables on one plate.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Treating side dishes as mandatory even when they make dinner harder.', 'Making one dish too light by forgetting protein.', 'Adding many small sides and increasing cleanup.'],
     snapmeal: 'Snapmeal can suggest one-dish dinners from your fridge when you want dinner to be complete without extra side dishes.',
   }),
   article({
@@ -1429,8 +1669,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Frozen rice can make dinner easier because the staple is already decided. The remaining question is what to put on it, mix into it, or serve beside it.',
     angle: 'Starting from rice narrows the meal format. Bowls, zosui, soup rice, and one-plate dinners work especially well with small fridge leftovers.',
     decision: 'Choose bowls when you have protein, zosui when you are tired or want something warm, and one-plate meals when you want fewer dishes.',
-    patterns: ['Egg-toji, soboro, tuna, tofu ankake, or leftovers over rice.', 'Rice simmered in soup with egg, tofu, mushrooms, and vegetables.', 'One plate with rice, protein, and vegetables under one sauce.'],
-    mistakes: ['Thawing rice and then still trying to plan separate side dishes.', 'Forgetting vegetables can be cooked into the topping.', 'Choosing a dry topping when the rice needs sauce or broth.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Frozen rice, Rice bowls, Time saving, Meal planning as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For meal planning topics like Dinner Ideas When You Have Frozen Rice Ready, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Egg-toji, soboro, tuna, tofu ankake, or leftovers over rice.', 'Rice simmered in soup with egg, tofu, mushrooms, and vegetables.', 'One plate with rice, protein, and vegetables under one sauce.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Thawing rice and then still trying to plan separate side dishes.', 'Forgetting vegetables can be cooked into the topping.', 'Choosing a dry topping when the rice needs sauce or broth.'],
     snapmeal: 'Snapmeal can treat frozen rice as part of the meal plan and suggest bowls, soups, or one-plate dinners from your fridge.',
   }),
   article({
@@ -1445,8 +1690,13 @@ export const enArticles: EnArticle[] = [
     intro: 'A useful shopping list does not start with what you want to buy. It starts with what is already in the fridge and needs a destination.',
     angle: 'When you shop from the fridge outward, the list becomes shorter and more intentional. You buy one missing role instead of buying a full new recipe set.',
     decision: 'Pick the ingredients you need to use, decide what role is missing, then buy only the protein, vegetable, flavor base, or staple that completes the meal.',
-    patterns: ['Cabbage at home means buy eggs, pork, or tofu instead of more vegetables.', 'Tofu at home means buy mushrooms or ground meat.', 'Tomato can at home means buy chicken, beans, or use frozen vegetables.'],
-    mistakes: ['Buying for a new recipe while older ingredients stay unused.', 'Forgetting to decide what not to buy.', 'Planning a perfect week instead of a flexible two- or three-day flow.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Shopping list, Fridge, Food waste, Meal planning as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For fridge use topics like How to Make a Shopping List from What Is Already in Your Fridge, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Cabbage at home means buy eggs, pork, or tofu instead of more vegetables.', 'Tofu at home means buy mushrooms or ground meat.', 'Tomato can at home means buy chicken, beans, or use frozen vegetables.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Buying for a new recipe while older ingredients stay unused.', 'Forgetting to decide what not to buy.', 'Planning a perfect week instead of a flexible two- or three-day flow.'],
     snapmeal: 'Snapmeal can start from a fridge photo and help you decide meals first, which makes the shopping list smaller and less wasteful.',
   }),
   article({
@@ -1461,8 +1711,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Tofu and ground meat often lead to mapo tofu, but the pairing can do much more. Tofu adds volume and softness while ground meat provides umami and protein.',
     angle: 'This is a flexible budget pairing. With ginger, miso, mentsuyu, tomato, curry powder, or chicken stock, the same ingredients can become a rice bowl, soup, or simmered main.',
     decision: 'Choose a thick sauce when you want rice-friendly comfort, a soup when you are tired, and a mild simmer when cooking for the whole family.',
-    patterns: ['Ground meat ankake over tofu with ginger and soy-based seasoning.', 'Tofu, ground meat, mushrooms, and napa cabbage in a large soup.', 'Tofu and ground meat rice bowl with a mild sweet-savory sauce.'],
-    mistakes: ['Defaulting to spicy mapo tofu even when the family needs something mild.', 'Stirring tofu too aggressively in a smart cooker.', 'Forgetting vegetables that can make the dish feel more complete.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Tofu, Ground meat, Meal planning, Budget as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For meal planning topics like Tofu and Ground Meat Dinner Ideas Beyond Mapo Tofu, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Ground meat ankake over tofu with ginger and soy-based seasoning.', 'Tofu, ground meat, mushrooms, and napa cabbage in a large soup.', 'Tofu and ground meat rice bowl with a mild sweet-savory sauce.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Defaulting to spicy mapo tofu even when the family needs something mild.', 'Stirring tofu too aggressively in a smart cooker.', 'Forgetting vegetables that can make the dish feel more complete.'],
     snapmeal: 'Snapmeal can look at the rest of your fridge and decide whether tofu and ground meat should become soup, rice bowl, or smart-cooker simmer.',
   }),
   article({
@@ -1477,8 +1732,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Chicken breast and broccoli are useful and high in protein, but they can become dry and repetitive if every meal is just steamed and seasoned lightly.',
     angle: 'The key is timing and flavor direction. Chicken breast needs gentle cooking, while broccoli should usually be added near the end or cooked separately.',
     decision: 'Use Chinese-style thick sauce for rice, creamy stew for a softer family meal, and soup when you want a lighter dinner with fewer dishes.',
-    patterns: ['Chicken breast and broccoli in ginger chicken-stock ankake.', 'Creamy chicken, broccoli, potato, and onion stew.', 'Large soup with chicken breast, broccoli, mushrooms, and egg.'],
-    mistakes: ['Cooking broccoli from the beginning of a long cycle.', 'Cutting chicken breast too thick for a quick dinner.', 'Keeping the flavor too plain and then getting bored after two meals.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Chicken breast, Broccoli, Protein, Meal planning as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For meal planning topics like Chicken Breast and Broccoli Dinner Ideas That Do Not Feel Repetitive, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Chicken breast and broccoli in ginger chicken-stock ankake.', 'Creamy chicken, broccoli, potato, and onion stew.', 'Large soup with chicken breast, broccoli, mushrooms, and egg.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Cooking broccoli from the beginning of a long cycle.', 'Cutting chicken breast too thick for a quick dinner.', 'Keeping the flavor too plain and then getting bored after two meals.'],
     snapmeal: 'Snapmeal can suggest the flavor direction and cooking tool based on what else is in your fridge, making lean dinners less monotonous.',
   }),
   article({
@@ -1493,8 +1753,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Salmon and mushrooms naturally suggest foil packets, but they can also become miso simmered dishes, creamy stews, soups, and rice-friendly mains.',
     angle: 'Salmon provides protein and richness, while mushrooms add aroma and umami. Together they can make dinner feel complete with only a few additional ingredients.',
     decision: 'Choose miso when you want rice, cream when you want a gentle family meal, and soup when you want the main and side to become one dish.',
-    patterns: ['Salmon and mushrooms simmered with miso, ginger, and napa cabbage.', 'Creamy salmon, mushrooms, onion, and potato stew.', 'Salmon and mushroom soup finished with herbs, citrus, or miso.'],
-    mistakes: ['Using salted salmon without reducing added seasoning.', 'Overmixing salmon in a smart cooker and breaking it apart.', 'Assuming foil packets are the only easy option.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Salmon, Mushrooms, Fish, Meal planning as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For meal planning topics like Salmon and Mushroom Dinner Ideas Beyond Foil Packets, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Salmon and mushrooms simmered with miso, ginger, and napa cabbage.', 'Creamy salmon, mushrooms, onion, and potato stew.', 'Salmon and mushroom soup finished with herbs, citrus, or miso.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Using salted salmon without reducing added seasoning.', 'Overmixing salmon in a smart cooker and breaking it apart.', 'Assuming foil packets are the only easy option.'],
     snapmeal: 'Snapmeal can turn salmon and mushrooms into the best format for your current fridge, whether that means soup, simmered dish, or creamy meal.',
   }),
   article({
@@ -1509,8 +1774,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Canned mackerel and daikon can become a real dinner even when you cannot shop. The can brings protein and umami, while daikon adds volume and comfort.',
     angle: 'The main challenge is aroma and absorption. Ginger, miso, sake, scallions, or ume plum can make canned fish easier to eat and help the daikon feel intentional.',
     decision: 'Use thin daikon for speed, thicker daikon for comfort, and choose canned mackerel in water when you want to control the seasoning yourself.',
-    patterns: ['Miso-simmered canned mackerel and daikon with ginger.', 'Canned mackerel and daikon simmered with ume plum for a lighter finish.', 'Large mackerel, daikon, tofu, and mushroom soup.'],
-    mistakes: ['Adding all the can liquid when the aroma feels too strong.', 'Cutting daikon too thick for a quick meal.', 'Forgetting that canned mackerel may already be salty.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Canned mackerel, Daikon, No shopping, Meal planning as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For meal planning topics like Canned Mackerel and Daikon Dinner Ideas for No-Shopping Nights, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Miso-simmered canned mackerel and daikon with ginger.', 'Canned mackerel and daikon simmered with ume plum for a lighter finish.', 'Large mackerel, daikon, tofu, and mushroom soup.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Adding all the can liquid when the aroma feels too strong.', 'Cutting daikon too thick for a quick meal.', 'Forgetting that canned mackerel may already be salty.'],
     snapmeal: 'Snapmeal can combine fridge ingredients with pantry cans, helping you turn daikon and canned mackerel into a no-shopping dinner.',
   }),
   article({
@@ -1525,8 +1795,13 @@ export const enArticles: EnArticle[] = [
     intro: 'A tomato can plus frozen vegetables can become dinner when you do not want to chop, shop, or think too hard.',
     angle: 'Tomato creates the flavor base, frozen vegetables add volume, and pantry proteins such as tuna, beans, eggs, chicken, or sausage make the meal satisfying.',
     decision: 'Choose soup when the vegetables release a lot of water, stew when you have protein, and pasta sauce when you can simmer the tomato down.',
-    patterns: ['Tomato soup with frozen vegetables, beans, and tuna.', 'Tomato stew with chicken, sausage, broccoli, or eggplant.', 'Quick tomato pasta sauce with frozen vegetables, tuna, and cheese.'],
-    mistakes: ['Adding too much extra water when frozen vegetables already release moisture.', 'Skipping protein and ending up with a meal that feels too light.', 'Only adding salt instead of using garlic, miso, cheese, curry powder, or stock for depth.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Tomato can, Frozen vegetables, Pantry, Time saving as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For time saving topics like Tomato Can and Frozen Vegetable Dinner Ideas Without Chopping, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Tomato soup with frozen vegetables, beans, and tuna.', 'Tomato stew with chicken, sausage, broccoli, or eggplant.', 'Quick tomato pasta sauce with frozen vegetables, tuna, and cheese.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Adding too much extra water when frozen vegetables already release moisture.', 'Skipping protein and ending up with a meal that feels too light.', 'Only adding salt instead of using garlic, miso, cheese, curry powder, or stock for depth.'],
     snapmeal: 'Snapmeal can include pantry and frozen ingredients in the dinner decision, so a sparse fridge can still become a practical meal.',
   }),
   article({
@@ -1540,8 +1815,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Carrots are easy to keep in the fridge but easy to forget. In a smart cooker, they work best when you use their sweetness in simmered dishes, soups, and gentle steam-cooked meals.',
     angle: 'Carrots hold their shape, become sweeter with heat, and can support Japanese, Western, or curry-style seasoning. The key is to treat them as a flavor-building vegetable, not just a garnish.',
     decision: 'Choose chunky cuts for simmered dishes, thin slices for soups, and grated carrot when you want body in curry or potage-style meals.',
-    patterns: ['Carrot and chicken simmered with soy, mirin, and sake.', 'Carrot and tuna steam-simmer with mushrooms or cabbage.', 'Carrot, onion, and potato potage finished with milk or soy milk.'],
-    mistakes: ['Adding too much water when other vegetables already release moisture.', 'Cutting carrots too large when you need a fast weeknight meal.', 'Using carrots only as color instead of building the meal around their sweetness.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Hotcook, Carrots, Vegetables, Sides as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Hotcook Carrot Recipe Ideas: Turn Carrots into Sides, Soups, and Mains, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Carrot and chicken simmered with soy, mirin, and sake.', 'Carrot and tuna steam-simmer with mushrooms or cabbage.', 'Carrot, onion, and potato potage finished with milk or soy milk.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Adding too much water when other vegetables already release moisture.', 'Cutting carrots too large when you need a fast weeknight meal.', 'Using carrots only as color instead of building the meal around their sweetness.'],
     snapmeal: 'Snapmeal can look at your actual fridge and decide whether carrots should become a side, soup base, or part of a Hotcook main dish.',
   }),
   article({
@@ -1555,8 +1835,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Eggs are useful on nights when meat or fish is limited, but they need careful timing in a smart cooker. Add them too early and they can become firm or scattered.',
     angle: 'The best smart-cooker egg dishes cook the vegetables or broth first, then add egg near the end. This keeps texture softer and makes the dish feel intentional.',
     decision: 'Use eggs as a finishing ingredient for soup or egg-toji, or use a dedicated gentle steam setting when the egg mixture itself is the main dish.',
-    patterns: ['Tofu, mushroom, and egg soup finished near the end.', 'Chicken, onion, or mushroom egg-toji over rice.', 'Soft steamed egg with dashi and small vegetables.'],
-    mistakes: ['Putting beaten egg in at the beginning of a long cook.', 'Leaving the broth too watery before adding egg.', 'Expecting eggs to fix a dish that has no clear seasoning base.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Hotcook, Eggs, Protein, Quick dinner as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Hotcook Egg Recipe Ideas: Use Eggs Without Overcooking Them, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Tofu, mushroom, and egg soup finished near the end.', 'Chicken, onion, or mushroom egg-toji over rice.', 'Soft steamed egg with dashi and small vegetables.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Putting beaten egg in at the beginning of a long cook.', 'Leaving the broth too watery before adding egg.', 'Expecting eggs to fix a dish that has no clear seasoning base.'],
     snapmeal: 'Snapmeal can suggest when eggs should become the protein anchor, a finishing touch, or a soft side dish based on the rest of your fridge.',
   }),
   article({
@@ -1570,8 +1855,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Eggplant is delicious when fried, but weeknights do not always need extra oil and stove attention. A smart cooker can make it tender through simmering and steam-cooking.',
     angle: 'Eggplant needs a strong flavor partner. Ground meat, tuna, tomato, miso, ginger, or chicken can give it enough body to become dinner rather than a soft side.',
     decision: 'Use miso for rice-friendly meals, tomato for pantry dinners, and ground meat or tuna when you need the dish to feel more like a main.',
-    patterns: ['Eggplant and ground meat simmered with miso and ginger.', 'Eggplant, tuna, and tomato can stew.', 'Eggplant and chicken steam-simmer with a light soy-based sauce.'],
-    mistakes: ['Adding too much water and making the dish taste thin.', 'Using eggplant alone without umami-rich ingredients.', 'Trying to recreate fried texture in a cooking method designed for simmering.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Hotcook, Eggplant, Vegetables, Simmered dishes as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Hotcook Eggplant Recipe Ideas: Tender, Rich Dishes Without Too Much Oil, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Eggplant and ground meat simmered with miso and ginger.', 'Eggplant, tuna, and tomato can stew.', 'Eggplant and chicken steam-simmer with a light soy-based sauce.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Adding too much water and making the dish taste thin.', 'Using eggplant alone without umami-rich ingredients.', 'Trying to recreate fried texture in a cooking method designed for simmering.'],
     snapmeal: 'Snapmeal can match eggplant with the protein, canned goods, and seasonings already in your kitchen so it becomes a realistic dinner option.',
   }),
   article({
@@ -1585,8 +1875,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Broccoli often becomes a simple boiled side, but it can do more. In a smart cooker, the main trick is to avoid overcooking it.',
     angle: 'Broccoli is best used near the end of cooking or in dishes that can accept a softer texture, such as soups and creamy stews.',
     decision: 'Use broccoli as a finishing vegetable for soups, pair it with egg or chicken, or add it to creamy dishes where frozen broccoli also works.',
-    patterns: ['Broccoli and egg soup with tofu or mushrooms.', 'Chicken, potato, onion, and broccoli creamy stew.', 'Steamed broccoli served beside a smart-cooker chicken or fish main.'],
-    mistakes: ['Cooking broccoli from the beginning of a long cycle.', 'Expecting it to carry a whole meal without protein or a clear flavor base.', 'Using frozen broccoli in dry dishes where released water becomes a problem.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Hotcook, Broccoli, Vegetables, Sides as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Hotcook Broccoli Recipe Ideas: Go Beyond a Boiled Side Dish, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Broccoli and egg soup with tofu or mushrooms.', 'Chicken, potato, onion, and broccoli creamy stew.', 'Steamed broccoli served beside a smart-cooker chicken or fish main.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Cooking broccoli from the beginning of a long cycle.', 'Expecting it to carry a whole meal without protein or a clear flavor base.', 'Using frozen broccoli in dry dishes where released water becomes a problem.'],
     snapmeal: 'Snapmeal can decide whether broccoli should be a side, soup ingredient, or part of the main plate based on what else is in your fridge.',
   }),
   article({
@@ -1600,8 +1895,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Canned tuna is more than a salad topping. In a smart cooker, it adds protein, oil, and umami to vegetables when you cannot shop or forgot to thaw meat.',
     angle: 'Tuna helps vegetables taste more complete. Cabbage, potatoes, onion, tomato cans, mushrooms, and frozen vegetables all become easier to turn into dinner.',
     decision: 'Use oil-packed tuna for richness, water-packed tuna for lighter soups, and reduce added seasoning until you know how salty the can is.',
-    patterns: ['Tuna and cabbage steam-simmer finished with ponzu or soy sauce.', 'Tuna, potato, onion, and carrot simmered like a lighter nikujaga.', 'Tuna tomato stew with eggplant, mushrooms, or frozen vegetables.'],
-    mistakes: ['Treating canned tuna only as a cold topping.', 'Adding too much seasoning before checking the salt level.', 'Forgetting to pair tuna with enough vegetables or a staple carb to make dinner satisfying.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Hotcook, Canned tuna, Pantry, No shopping as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Hotcook Tuna Can Recipe Ideas for No-Shopping Dinners, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Tuna and cabbage steam-simmer finished with ponzu or soy sauce.', 'Tuna, potato, onion, and carrot simmered like a lighter nikujaga.', 'Tuna tomato stew with eggplant, mushrooms, or frozen vegetables.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Treating canned tuna only as a cold topping.', 'Adding too much seasoning before checking the salt level.', 'Forgetting to pair tuna with enough vegetables or a staple carb to make dinner satisfying.'],
     snapmeal: 'Snapmeal can combine pantry tuna with the vegetables in your fridge and suggest a Hotcook meal without requiring a grocery trip.',
   }),
   article({
@@ -1616,8 +1916,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Kid-friendly dinner does not have to mean a separate menu. It is often easier to use the same base ingredients and adjust flavor, size, and texture.',
     angle: 'Many dinner conflicts are not about the ingredient itself. Pieces may be too large, meat may be too firm, flavors may be too spicy, or vegetables may be mixed in a way that feels suspicious.',
     decision: 'Build one shared base, then adjust the finish: adults can add spice or acidity, while children get milder sauce, smaller pieces, and softer textures.',
-    patterns: ['Mild chicken and vegetables with separate ponzu, sesame sauce, or chili topping.', 'Ground meat and potatoes with small pieces and a familiar rice-friendly flavor.', 'Tofu and egg soup with vegetables cut small and seasoning kept gentle.'],
-    mistakes: ['Cooking fully separate meals every night increases fatigue.', 'Adding spice or acidity too early can make the whole dish harder for children.', 'Hiding too many vegetables can reduce trust when the texture is obvious.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Kids, Family meals, Meal planning, Vegetables as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For family meals topics like How to Plan Kid-Friendly Dinners Without Cooking Separate Meals, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Mild chicken and vegetables with separate ponzu, sesame sauce, or chili topping.', 'Ground meat and potatoes with small pieces and a familiar rice-friendly flavor.', 'Tofu and egg soup with vegetables cut small and seasoning kept gentle.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Cooking fully separate meals every night increases fatigue.', 'Adding spice or acidity too early can make the whole dish harder for children.', 'Hiding too many vegetables can reduce trust when the texture is obvious.'],
     snapmeal: 'Snapmeal can help suggest meals from your fridge while considering family preferences, disliked ingredients, and low-effort weeknight cooking.',
   }),
   article({
@@ -1632,8 +1937,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Dinner is not finished when the food is cooked. Cleanup matters too. A fewer-dishes dinner starts by choosing the format before choosing the recipe.',
     angle: 'One-plate meals, one-pot soups, rice bowls, noodles, and one-pan steam-fries can include protein, vegetables, and carbs without creating a pile of dishes.',
     decision: 'Choose bowls or noodles for one-plate meals, soups for scattered ingredients, and one-pan cooking when you want a proper main dish with minimal cleanup.',
-    patterns: ['Egg or canned fish rice bowl with vegetables mixed in.', 'One-pot tofu, mushroom, and egg soup with rice.', 'One-pan chicken or pork with cabbage, onion, or frozen vegetables.'],
-    mistakes: ['Trying to make many small side dishes creates more dishes than the meal needs.', 'Using extra bowls for prep can defeat the purpose.', 'A one-pan meal still needs a clear flavor base to avoid tasting random.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Fewer dishes, Time saving, One pan, Meal planning as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For time saving topics like Dinner Ideas with Fewer Dishes to Wash, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Egg or canned fish rice bowl with vegetables mixed in.', 'One-pot tofu, mushroom, and egg soup with rice.', 'One-pan chicken or pork with cabbage, onion, or frozen vegetables.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Trying to make many small side dishes creates more dishes than the meal needs.', 'Using extra bowls for prep can defeat the purpose.', 'A one-pan meal still needs a clear flavor base to avoid tasting random.'],
     snapmeal: 'Snapmeal can suggest one-dish or low-cleanup meals from your fridge, which is useful when the goal is not just fast cooking but an easier evening.',
   }),
   article({
@@ -1648,8 +1958,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Mild flavor can feel bland when salt is simply reduced. The better approach is to support the meal with dashi, aroma, acidity, texture, and umami.',
     angle: 'Satisfaction does not come only from salt or soy sauce. Ginger, citrus, sesame, mushrooms, tomato, dashi, herbs, and texture can make a lighter meal feel complete.',
     decision: 'Use dashi or umami as the base, then add aroma or acidity at the end. Keep texture varied so the meal does not feel flat.',
-    patterns: ['Tofu, mushrooms, and egg in a dashi-based soup.', 'Chicken or fish with grated daikon, citrus, and herbs.', 'Steamed vegetables with sesame, ginger, and a small amount of sauce.'],
-    mistakes: ['Reducing salt without adding aroma or umami makes food taste weak.', 'Soft textures throughout the meal can feel unsatisfying.', 'Adding more sauce at the end can undo the mild-flavor goal.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Mild flavor, Dashi, Healthy dinner, Meal planning as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For meal planning topics like How to Make Mild-Flavored Dinners Feel Satisfying, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Tofu, mushrooms, and egg in a dashi-based soup.', 'Chicken or fish with grated daikon, citrus, and herbs.', 'Steamed vegetables with sesame, ginger, and a small amount of sauce.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Reducing salt without adding aroma or umami makes food taste weak.', 'Soft textures throughout the meal can feel unsatisfying.', 'Adding more sauce at the end can undo the mild-flavor goal.'],
     snapmeal: 'Snapmeal can suggest meals that use the ingredients and seasonings you already have, including dashi-forward and mild-flavor options.',
   }),
   article({
@@ -1664,8 +1979,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Batch cooking is useful, but it is not for everyone. If full meal prep feels heavy, light ingredient prep may work better.',
     angle: 'Instead of cooking five finished dishes on the weekend, wash vegetables, divide proteins, freeze rice, and keep flexible flavor bases ready.',
     decision: 'Prep ingredients, not complete meals, when you want weeknight flexibility and less weekend pressure.',
-    patterns: ['Cut cabbage and mushrooms become stir-fry, soup, or smart-cooker simmer.', 'Portioned chicken or ground meat becomes rice bowls, soup, or one-pan meals.', 'Frozen rice, eggs, tofu, and canned fish become emergency weeknight anchors.'],
-    mistakes: ['Prepping too many finished dishes can create boredom and waste.', 'Strong marinades reduce flexibility later in the week.', 'Ignoring quick proteins such as eggs, tofu, and cans makes weekdays harder.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Meal prep, Weeknight, Time saving, Prep as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For time saving topics like Weeknight Meal Planning for People Who Do Not Like Batch Cooking, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Cut cabbage and mushrooms become stir-fry, soup, or smart-cooker simmer.', 'Portioned chicken or ground meat becomes rice bowls, soup, or one-pan meals.', 'Frozen rice, eggs, tofu, and canned fish become emergency weeknight anchors.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Prepping too many finished dishes can create boredom and waste.', 'Strong marinades reduce flexibility later in the week.', 'Ignoring quick proteins such as eggs, tofu, and cans makes weekdays harder.'],
     snapmeal: 'Snapmeal can turn prepped ingredients into dinner ideas on the day itself, so you do not need to predict every meal in advance.',
   }),
   article({
@@ -1680,8 +2000,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Family preferences can make dinner feel impossible: spicy versus mild, vegetables versus no vegetables, meat versus fish, rich versus light. The trick is to separate the base from the finish.',
     angle: 'Make one shared base dish, then adjust with toppings, sauces, spice, citrus, cheese, herbs, or ponzu at the table.',
     decision: 'Keep the main cooking step neutral, then customize the final flavor for each person instead of cooking separate meals from the beginning.',
-    patterns: ['Steamed chicken and vegetables with separate ponzu, sesame sauce, and chili topping.', 'Ground meat base served as rice bowl, lettuce wrap, or mild child plate.', 'Soup base finished with herbs, spice, or extra miso per person.'],
-    mistakes: ['Adding strong spice or acidity to the whole dish removes flexibility.', 'Trying to satisfy everyone with separate mains is exhausting.', 'Forgetting who liked what makes the same conflict repeat.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Family, Meal planning, Flavor change, Preferences as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For family meals topics like How to Cook One Dinner When Family Preferences Are Different, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Steamed chicken and vegetables with separate ponzu, sesame sauce, and chili topping.', 'Ground meat base served as rice bowl, lettuce wrap, or mild child plate.', 'Soup base finished with herbs, spice, or extra miso per person.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Adding strong spice or acidity to the whole dish removes flexibility.', 'Trying to satisfy everyone with separate mains is exhausting.', 'Forgetting who liked what makes the same conflict repeat.'],
     snapmeal: 'Snapmeal can use your fridge and family notes to suggest a shared base meal with flexible finishing options.',
   }),
   article({
@@ -1696,8 +2021,13 @@ export const enArticles: EnArticle[] = [
     intro: 'When you cannot go grocery shopping, the goal is not a perfect recipe. The goal is to turn what you already have into a warm, satisfying meal.',
     angle: 'Start by finding protein, volume, a staple carb, and a flavor base. Eggs, tofu, canned fish, frozen vegetables, rice, noodles, and miso can do more than they seem.',
     decision: 'Choose a large soup when ingredients are scattered, a rice bowl when you have some protein, and a one-pan dish when vegetables need to be used soon.',
-    patterns: ['Tofu, eggs, and mushrooms as a large soup with rice.', 'Canned fish, onion, and rice as a quick bowl.', 'Frozen vegetables and tomato or curry seasoning as a no-shopping stew.'],
-    mistakes: ['Counting missing ingredients first makes the fridge feel emptier than it is.', 'Trying to make several small side dishes creates unnecessary work.', 'Ignoring pantry staples can lead to shopping even when dinner is possible.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use No shopping, Meal planning, Fridge ingredients, Pantry as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For meal planning topics like Dinner Ideas When You Cannot Go Grocery Shopping, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Tofu, eggs, and mushrooms as a large soup with rice.', 'Canned fish, onion, and rice as a quick bowl.', 'Frozen vegetables and tomato or curry seasoning as a no-shopping stew.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Counting missing ingredients first makes the fridge feel emptier than it is.', 'Trying to make several small side dishes creates unnecessary work.', 'Ignoring pantry staples can lead to shopping even when dinner is possible.'],
     snapmeal: 'Snapmeal can start from a fridge photo and suggest meals using both fresh ingredients and pantry staples, helping you avoid an unnecessary shopping trip.',
   }),
   article({
@@ -1712,8 +2042,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Leftover ingredients often do not look like a recipe. A little cabbage, half a block of tofu, a few mushrooms, and yesterday’s chicken need a destination, not a recipe title.',
     angle: 'Sort leftovers by urgency and role: use-soon items, protein, vegetables for volume, and flavor builders such as miso, kimchi, tomato, or curry powder.',
     decision: 'Send small vegetables to soup, leftover protein to rice bowls, and mixed scraps to one-pot meals rather than trying to make many separate side dishes.',
-    patterns: ['Cabbage, tofu, and egg become a large soup.', 'Leftover chicken, mushrooms, and onion become an egg-toji rice bowl.', 'Carrots, potatoes, and canned tuna become a simple tuna-jaga style dish.'],
-    mistakes: ['Adding every leftover ingredient can make the flavor muddy.', 'Trying to use everything in one day may create more leftovers.', 'Ignoring the most perishable item first can increase food waste.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Leftovers, Food waste, Fridge cleanout, Meal planning as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For meal planning topics like How to Make Dinner from Leftover Ingredients, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Cabbage, tofu, and egg become a large soup.', 'Leftover chicken, mushrooms, and onion become an egg-toji rice bowl.', 'Carrots, potatoes, and canned tuna become a simple tuna-jaga style dish.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Adding every leftover ingredient can make the flavor muddy.', 'Trying to use everything in one day may create more leftovers.', 'Ignoring the most perishable item first can increase food waste.'],
     snapmeal: 'Snapmeal can identify fridge ingredients from a photo and help route leftovers into soup, bowls, mains, or sides before they disappear in the back of the fridge.',
   }),
   article({
@@ -1728,8 +2063,13 @@ export const enArticles: EnArticle[] = [
     intro: 'On exhausted nights, the hard part is often not cooking. It is deciding. A useful dinner system reduces decisions before it suggests recipes.',
     angle: 'Ask three questions first: can you use a knife, can you stand at the stove, and can you handle extra dishes? The answers narrow dinner quickly.',
     decision: 'Pick one of three lanes: 15-minute one-dish meal, 30-minute simple main plus soup, or hands-off cooking with a microwave or smart cooker.',
-    patterns: ['Egg rice bowl, frozen udon, or a large soup for 15-minute nights.', 'Pork and onion stir-fry plus miso soup for 30-minute nights.', 'Smart-cooker stew or microwave-steamed tofu and vegetables for hands-off nights.'],
-    mistakes: ['Opening too many recipe pages adds fatigue.', 'Trying a new recipe on a tired night increases decisions.', 'Chasing perfect nutrition can make dinner harder than necessary.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Tired day, Easy dinner, Time saving, Meal planning as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For time saving topics like How to Decide Dinner When You Are Too Tired to Think, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Egg rice bowl, frozen udon, or a large soup for 15-minute nights.', 'Pork and onion stir-fry plus miso soup for 30-minute nights.', 'Smart-cooker stew or microwave-steamed tofu and vegetables for hands-off nights.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Opening too many recipe pages adds fatigue.', 'Trying a new recipe on a tired night increases decisions.', 'Chasing perfect nutrition can make dinner harder than necessary.'],
     snapmeal: 'Snapmeal can prioritize low-effort suggestions from your actual fridge, so tired-night dinner starts from what is realistic rather than what is ideal.',
   }),
   article({
@@ -1744,8 +2084,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Weeknight dinner becomes easier when you decide by time first. Fifteen minutes, thirty minutes, and hands-off cooking each lead to different meal shapes.',
     angle: 'Instead of asking “What can I make with chicken?” ask “How much active time do I have?” Then choose bowls, noodles, soups, stir-fries, or smart-cooker meals accordingly.',
     decision: 'Use 15 minutes for bowls and noodles, 30 minutes for a main plus soup, and hands-off time for smart-cooker or microwave meals that let you do something else.',
-    patterns: ['15 minutes: egg bowls, tuna udon, tofu soup, frozen vegetable stir-fry.', '30 minutes: chicken and cabbage steam-simmer, ground meat and potato soboro, pork and onion stir-fry.', 'Hands-off: smart-cooker soup, layered napa cabbage and pork, tomato stew.'],
-    mistakes: ['Choosing a recipe before estimating time can create stress.', 'Hard root vegetables slow down quick dinners unless sliced thin or preheated.', 'Fast cooking still fails if the seasoning direction is unclear.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Weeknight, Quick dinner, Smart cooker, Meal planning as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For time saving topics like Weeknight Quick Dinner Ideas: 15 Minutes, 30 Minutes, or Hands-Off, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', '15 minutes: egg bowls, tuna udon, tofu soup, frozen vegetable stir-fry.', '30 minutes: chicken and cabbage steam-simmer, ground meat and potato soboro, pork and onion stir-fry.', 'Hands-off: smart-cooker soup, layered napa cabbage and pork, tomato stew.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Choosing a recipe before estimating time can create stress.', 'Hard root vegetables slow down quick dinners unless sliced thin or preheated.', 'Fast cooking still fails if the seasoning direction is unclear.'],
     snapmeal: 'Snapmeal can suggest meals based on your fridge, available time, and cooking tool, reducing the gap between recipe ideas and real weeknight dinner.',
   }),
   article({
@@ -1760,8 +2105,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Dinner ruts happen because we buy familiar ingredients and cook them in familiar ways. The solution is not always new ingredients. Often it is a new flavor direction or meal format.',
     angle: 'Change one variable at a time: flavor base, cooking method, or staple pairing. Chicken and cabbage can become soy-ginger, tomato, miso, curry, soup, rice bowl, or pasta.',
     decision: 'Before shopping, try changing the flavor direction first. If that is not enough, change the format from stir-fry to soup, simmer, rice bowl, or one-pot meal.',
-    patterns: ['Same protein, different flavor: soy, miso, tomato, curry, ponzu.', 'Same vegetables, different format: soup, bowl, stir-fry, smart-cooker simmer.', 'Same dinner base, different staple: rice, noodles, bread, or pasta.'],
-    mistakes: ['Buying new ingredients without changing the cooking pattern can still feel repetitive.', 'Trying too many new things at once makes weeknight cooking harder.', 'Ignoring recent meals makes it easy to repeat the same flavor several days in a row.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Dinner rut, Meal planning, Flavor change, Fridge use as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For meal planning topics like How to Escape a Dinner Rut Without Buying New Ingredients, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Same protein, different flavor: soy, miso, tomato, curry, ponzu.', 'Same vegetables, different format: soup, bowl, stir-fry, smart-cooker simmer.', 'Same dinner base, different staple: rice, noodles, bread, or pasta.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Buying new ingredients without changing the cooking pattern can still feel repetitive.', 'Trying too many new things at once makes weeknight cooking harder.', 'Ignoring recent meals makes it easy to repeat the same flavor several days in a row.'],
     snapmeal: 'Snapmeal can use your fridge and recent meal history to suggest a different direction, helping familiar ingredients feel less repetitive.',
   }),
   article({
@@ -1776,8 +2126,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Eggs and cabbage can look too simple for dinner, but they work well when you separate their roles: cabbage brings volume and sweetness, while eggs add protein and bind the dish together.',
     angle: 'This article is not about one cabbage recipe. It is about deciding the meal format first: pancake-style, rice bowl, soup, skillet egg, or smart-cooker side dish.',
     decision: 'Choose pancake-style when you want a main dish, egg-toji over rice when you want a quick bowl, and soup when you want something light but warm.',
-    patterns: ['Cabbage and egg pancake with a simple soup on the side.', 'Cabbage simmered in dashi or mentsuyu, then closed with egg and served over rice.', 'Cabbage and egg soup with tofu, mushrooms, or glass noodles for extra body.'],
-    mistakes: ['Treating eggs and cabbage as separate side dishes can make dinner feel incomplete.', 'Adding too much water makes cabbage dishes bland.', 'Adding many extra ingredients can defeat the point of a cheap, simple meal.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Eggs, Cabbage, Budget, Meal planning as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For ingredient pairing topics like Egg and Cabbage Dinner Ideas: Turning Cheap Ingredients into a Meal, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Cabbage and egg pancake with a simple soup on the side.', 'Cabbage simmered in dashi or mentsuyu, then closed with egg and served over rice.', 'Cabbage and egg soup with tofu, mushrooms, or glass noodles for extra body.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Treating eggs and cabbage as separate side dishes can make dinner feel incomplete.', 'Adding too much water makes cabbage dishes bland.', 'Adding many extra ingredients can defeat the point of a cheap, simple meal.'],
     snapmeal: 'Snapmeal can look at the rest of your fridge and suggest whether eggs and cabbage should become a main dish, rice bowl, soup, or side.',
   }),
   article({
@@ -1792,8 +2147,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Ground meat spreads flavor through a dish, and potatoes create volume. Together they can feel satisfying even when the amount of meat is modest.',
     angle: 'Instead of making the same sweet soy simmer every time, rotate the format: Japanese-style soboro, omelet filling, curry-flavored bowl, soup, or a reusable base for tomorrow.',
     decision: 'Use smaller potato pieces when you need speed, a soup format when you want one comforting bowl, and a drier soboro-style base when you want leftovers.',
-    patterns: ['Ground meat and potatoes simmered with soy, sake, sugar, and dashi.', 'Potato and ground meat omelet with ketchup or cheese.', 'Curry-flavored ground meat and potato served over rice or toast.'],
-    mistakes: ['Cutting potatoes too large makes weeknight cooking slow.', 'Always using the same sweet soy flavor leads to fatigue.', 'Making the dish too watery reduces its usefulness for bowls, omelets, or leftovers.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Ground meat, Potatoes, Leftovers, Meal planning as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For ingredient pairing topics like Ground Meat and Potato Dinner Ideas Beyond Simple Simmered Dishes, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Ground meat and potatoes simmered with soy, sake, sugar, and dashi.', 'Potato and ground meat omelet with ketchup or cheese.', 'Curry-flavored ground meat and potato served over rice or toast.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Cutting potatoes too large makes weeknight cooking slow.', 'Always using the same sweet soy flavor leads to fatigue.', 'Making the dish too watery reduces its usefulness for bowls, omelets, or leftovers.'],
     snapmeal: 'Snapmeal can combine ground meat and potatoes with onions, carrots, eggs, cheese, or mushrooms already in your fridge and suggest the most practical dinner shape.',
   }),
   article({
@@ -1808,8 +2168,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Napa cabbage and pork naturally suggest hot pot, but the same pairing can become layered steaming, ankake, miso simmering, or a large soup.',
     angle: 'The real decision is how to use the water released by napa cabbage. Let it become soup, thicken it into sauce, or keep it minimal for steamed layers.',
     decision: 'Choose hot pot or soup when you have a lot of cabbage, ankake when you want rice or noodles to feel complete, and layered steaming when you want a simple main dish.',
-    patterns: ['Layered napa cabbage and pork steamed with sake, finished with ponzu or sesame sauce.', 'Napa cabbage and pork ankake served over rice or noodles.', 'Miso or soy milk soup with pork, tofu, mushrooms, and napa cabbage.'],
-    mistakes: ['Adding too much water ignores the liquid from napa cabbage.', 'Cooking leaves and thick stems for the same time can ruin texture.', 'Thinking this pair only means hot pot makes it feel repetitive.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Napa cabbage, Pork, Hot pot, Meal planning as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For ingredient pairing topics like Napa Cabbage and Pork Dinner Ideas That Are Not Just Hot Pot, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Layered napa cabbage and pork steamed with sake, finished with ponzu or sesame sauce.', 'Napa cabbage and pork ankake served over rice or noodles.', 'Miso or soy milk soup with pork, tofu, mushrooms, and napa cabbage.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Adding too much water ignores the liquid from napa cabbage.', 'Cooking leaves and thick stems for the same time can ruin texture.', 'Thinking this pair only means hot pot makes it feel repetitive.'],
     snapmeal: 'Snapmeal can check whether you also have tofu, mushrooms, noodles, eggs, or spring vermicelli and suggest a meal beyond the default hot pot.',
   }),
   article({
@@ -1824,8 +2189,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Daikon and chicken are perfect for simmered dishes, but that is not the only option. The best choice depends on the cut of daikon, the type of chicken, and how much time you have.',
     angle: 'Daikon is slow when cut large and quick when sliced thin. Chicken thigh, breast, and drumettes each need different handling, so the meal should be designed around both ingredients.',
     decision: 'Use a classic simmer when you have time, a ginger soup when you want something lighter, and grated daikon with ponzu when you want a faster meal.',
-    patterns: ['Chicken and daikon simmered with ginger, soy sauce, and dashi.', 'Thin-sliced daikon and chicken in a large warming soup.', 'Grilled or steamed chicken served with grated daikon and ponzu.'],
-    mistakes: ['Expecting large daikon pieces to absorb flavor quickly leads to bland results.', 'Cooking chicken breast as long as daikon can make it dry.', 'Using daikon in both the main dish and soup can make the meal feel repetitive.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Daikon, Chicken, Simmered dishes, Meal planning as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For ingredient pairing topics like Daikon and Chicken Dinner Ideas Beyond the Usual Simmer, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Chicken and daikon simmered with ginger, soy sauce, and dashi.', 'Thin-sliced daikon and chicken in a large warming soup.', 'Grilled or steamed chicken served with grated daikon and ponzu.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Expecting large daikon pieces to absorb flavor quickly leads to bland results.', 'Cooking chicken breast as long as daikon can make it dry.', 'Using daikon in both the main dish and soup can make the meal feel repetitive.'],
     snapmeal: 'Snapmeal can suggest whether your daikon should be simmered, grated, sliced for soup, or saved for another meal based on the rest of the fridge.',
   }),
   article({
@@ -1840,8 +2210,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Mushrooms and eggs are fast and useful, but they can feel too light for dinner. The trick is to combine them with rice, noodles, soup, or one extra protein.',
     angle: 'Mushrooms bring umami and aroma; eggs bring protein and softness. Together they work best when the meal format is clear before cooking.',
     decision: 'Choose egg-toji over rice for a quick bowl, soup for a light meal, omelet for a stronger main, and udon or zosui when you want one-dish comfort.',
-    patterns: ['Mushrooms simmered in dashi and soy, closed with egg, served over rice.', 'Mushroom and egg soup with tofu, glass noodles, or frozen spinach.', 'Mushroom omelet with cheese, tuna, or a simple salad.'],
-    mistakes: ['Leaving mushrooms as only a side dish can make dinner feel incomplete.', 'Adding too much liquid dilutes mushroom flavor.', 'Adding too many extras makes a quick meal slow.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Mushrooms, Eggs, Time saving, Meal planning as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For ingredient pairing topics like Mushroom and Egg Dinner Ideas: From Side Dish to Main Meal, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Mushrooms simmered in dashi and soy, closed with egg, served over rice.', 'Mushroom and egg soup with tofu, glass noodles, or frozen spinach.', 'Mushroom omelet with cheese, tuna, or a simple salad.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Leaving mushrooms as only a side dish can make dinner feel incomplete.', 'Adding too much liquid dilutes mushroom flavor.', 'Adding too many extras makes a quick meal slow.'],
     snapmeal: 'Snapmeal can find the half-used tofu, cabbage, spinach, or noodles in your fridge and turn mushrooms and eggs into a complete dinner idea.',
   }),
   article({
@@ -1856,8 +2231,13 @@ export const enArticles: EnArticle[] = [
     intro: 'When the fridge is not empty but dinner still feels impossible, the problem is usually not a lack of ingredients. It is a lack of structure. Sort the food into protein, vegetables, flavor base, and use-soon items before looking for a recipe.',
     angle: 'This approach works because it changes the question from “What recipe can I search for?” to “What meal shape fits these ingredients?” A smart cooker, frying pan, microwave, or soup pot can all work once the role of each ingredient is clear.',
     decision: 'Start with the ingredient that can become the main protein, then decide whether tonight should be a one-pan main, a large soup, a rice bowl, noodles, or a simple simmered dish.',
-    patterns: ['Chicken, cabbage, and mushrooms become a soy-ginger simmer or tomato stew.', 'Tofu, eggs, and leftover vegetables become a larger miso soup or rice bowl.', 'Small amounts of several vegetables become soup, fried rice, or a side dish instead of separate recipes.'],
-    mistakes: ['Searching one ingredient at a time can ignore the rest of the fridge.', 'Trying to make a perfect multi-dish meal creates friction on tired weeknights.', 'Buying one more ingredient for a recipe can leave older food unused.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Meal planning, Fridge ingredients, Weeknight dinner, Time saving as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For meal planning topics like How to Plan Dinner from What Is Already in Your Fridge, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Chicken, cabbage, and mushrooms become a soy-ginger simmer or tomato stew.', 'Tofu, eggs, and leftover vegetables become a larger miso soup or rice bowl.', 'Small amounts of several vegetables become soup, fried rice, or a side dish instead of separate recipes.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Searching one ingredient at a time can ignore the rest of the fridge.', 'Trying to make a perfect multi-dish meal creates friction on tired weeknights.', 'Buying one more ingredient for a recipe can leave older food unused.'],
     snapmeal: 'Snapmeal helps by starting from a fridge photo. You confirm the ingredients, remove anything irrelevant, and get meal ideas based on what is actually available tonight.',
   }),
   article({
@@ -1872,8 +2252,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Chicken thigh and cabbage are a strong weeknight pair. The chicken brings fat and umami, while cabbage becomes sweet and tender when cooked. The key is choosing the cooking method before choosing the final seasoning.',
     angle: 'A smart cooker is best for hands-off simmering, a frying pan is best for browning, and a microwave is best for small steamed portions. The same ingredients can become very different dinners depending on that first decision.',
     decision: 'Use a smart cooker when you want a stew-like dish, a pan when you want browned chicken, and a microwave when you want a fast one-person steamed meal.',
-    patterns: ['Soy, sake, ginger, and a little sugar for a rice-friendly Japanese-style simmer.', 'Tomato, garlic, and consommé for a cabbage-rich stew.', 'Steamed cabbage and sliced chicken finished with ponzu or sesame sauce.'],
-    mistakes: ['Adding too much water ignores the liquid released by cabbage.', 'Cutting cabbage too finely can make it collapse in a smart cooker.', 'Microwaving thick chicken pieces without checking the center can lead to uneven cooking.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Chicken, Cabbage, Meal planning, Vegetables as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For ingredient pairing topics like Chicken Thigh and Cabbage Dinner Ideas: Smart Cooker, Pan, or Microwave, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Soy, sake, ginger, and a little sugar for a rice-friendly Japanese-style simmer.', 'Tomato, garlic, and consommé for a cabbage-rich stew.', 'Steamed cabbage and sliced chicken finished with ponzu or sesame sauce.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Adding too much water ignores the liquid released by cabbage.', 'Cutting cabbage too finely can make it collapse in a smart cooker.', 'Microwaving thick chicken pieces without checking the center can lead to uneven cooking.'],
     snapmeal: 'Snapmeal can take the chicken, cabbage, and other fridge ingredients, then suggest a meal that fits the tool you want to use tonight.',
   }),
   article({
@@ -1888,8 +2273,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Thin-sliced pork and onions are humble ingredients, but they are excellent for weeknight cooking. Pork cooks quickly, onions add sweetness and volume, and the pair works with Japanese, Chinese-style, citrus, or curry-like seasoning.',
     angle: 'The best way to avoid boredom is not to memorize more recipes, but to rotate the flavor direction and meal format. The same pork and onions can become a rice bowl, stir-fry, simmered dish, or egg-topped dinner.',
     decision: 'Choose sweet soy when you want comfort, ponzu when you want something lighter, oyster sauce when you want stronger umami, and curry powder when you want leftovers that still taste good.',
-    patterns: ['Pork and onions simmered with soy sauce, sake, ginger, and a little sugar.', 'Pork and onions stir-fried with ponzu and topped with grated daikon if available.', 'Pork, onions, cabbage, and oyster sauce as a quick rice-friendly stir-fry.'],
-    mistakes: ['Using only a small amount of pork without adding onion, egg, tofu, or mushrooms can feel unsatisfying.', 'Making every version sweet soy flavored leads to fatigue.', 'Adding too many vegetables at once can make a quick dish watery.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Pork, Onion, Budget, Meal planning as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For ingredient pairing topics like Pork and Onion Dinner Ideas for Affordable Weeknights, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Pork and onions simmered with soy sauce, sake, ginger, and a little sugar.', 'Pork and onions stir-fried with ponzu and topped with grated daikon if available.', 'Pork, onions, cabbage, and oyster sauce as a quick rice-friendly stir-fry.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Using only a small amount of pork without adding onion, egg, tofu, or mushrooms can feel unsatisfying.', 'Making every version sweet soy flavored leads to fatigue.', 'Adding too many vegetables at once can make a quick dish watery.'],
     snapmeal: 'Snapmeal can combine pork and onions with whatever else is in the fridge, helping you decide whether to make a rice bowl, stir-fry, soup, or smart-cooker dish.',
   }),
   article({
@@ -1904,8 +2294,13 @@ export const enArticles: EnArticle[] = [
     intro: 'If a recipe calls for mirin and the bottle is empty, dinner does not have to stop. Mirin adds sweetness, shine, aroma, and roundness. Once you separate those roles, you can substitute it more calmly.',
     angle: 'For many home dishes, sake plus a small amount of sugar is the most flexible substitute. Mentsuyu can also work, but it adds soy sauce and dashi, so the rest of the seasoning should be reduced.',
     decision: 'Use sake and sugar for simmered dishes and teriyaki-style sauces. Use mentsuyu only when extra soy and dashi flavor make sense. In soups or stir-fries, a small amount of mirin can often be reduced or skipped.',
-    patterns: ['For 1 tablespoon mirin, start with 1 tablespoon sake plus a little less than 1 teaspoon sugar.', 'For simmered dishes, combine soy sauce, sake, sugar, and dashi instead of mirin.', 'For teriyaki, reduce the sauce slightly so it clings even without mirin’s natural gloss.'],
-    mistakes: ['Replacing mirin with the same volume of sugar makes food too sweet.', 'Using mentsuyu without reducing soy sauce can make the dish too salty.', 'Forgetting to heat sake-based substitutes can leave the flavor rough.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Mirin, Substitution, Seasoning, Cooking tips as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For seasoning substitution topics like What to Use When You Do Not Have Mirin, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'For 1 tablespoon mirin, start with 1 tablespoon sake plus a little less than 1 teaspoon sugar.', 'For simmered dishes, combine soy sauce, sake, sugar, and dashi instead of mirin.', 'For teriyaki, reduce the sauce slightly so it clings even without mirin’s natural gloss.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Replacing mirin with the same volume of sugar makes food too sweet.', 'Using mentsuyu without reducing soy sauce can make the dish too salty.', 'Forgetting to heat sake-based substitutes can leave the flavor rough.'],
     snapmeal: 'Snapmeal can suggest meals and seasoning adjustments when one pantry item is missing, so a missing bottle of mirin does not force a shopping trip.',
   }),
   article({
@@ -1920,8 +2315,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Mentsuyu is convenient because it combines soy sauce, sweetness, and dashi. When you run out, the useful move is to rebuild those parts instead of replacing it with soy sauce alone.',
     angle: 'A simple starting point is soy sauce, mirin, and dashi. The exact strength depends on whether you are making dipping sauce, simmered food, or a rice bowl sauce.',
     decision: 'Use more dashi for noodles, less dashi for simmered dishes where vegetables release water, and a slightly stronger sauce for rice bowls that need to season the rice.',
-    patterns: ['Basic substitute: 1 part soy sauce, 1 part mirin, 3 to 4 parts dashi.', 'Without mirin: soy sauce, sake, a little sugar, and dashi.', 'For rice bowls, use less dashi and taste before reducing the sauce.'],
-    mistakes: ['Replacing mentsuyu with equal soy sauce makes food too salty.', 'Forgetting that granulated dashi or white dashi may contain salt can over-season the dish.', 'Adding too much sugar makes the sauce sweet without tasting like mentsuyu.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Mentsuyu, Substitution, Seasoning, Cooking tips as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For seasoning substitution topics like What to Use When You Do Not Have Mentsuyu, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Basic substitute: 1 part soy sauce, 1 part mirin, 3 to 4 parts dashi.', 'Without mirin: soy sauce, sake, a little sugar, and dashi.', 'For rice bowls, use less dashi and taste before reducing the sauce.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Replacing mentsuyu with equal soy sauce makes food too salty.', 'Forgetting that granulated dashi or white dashi may contain salt can over-season the dish.', 'Adding too much sugar makes the sauce sweet without tasting like mentsuyu.'],
     snapmeal: 'Snapmeal can help adjust dinner ideas around the seasonings you actually have, turning “no mentsuyu” into a small substitution rather than a blocked recipe.',
   }),
   article({
@@ -1935,8 +2335,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Frozen vegetables are useful when you are too tired to wash and cut fresh produce. The challenge is that they release water inside a sealed smart cooker, so dinner can become thin unless you plan the seasoning and liquid level.',
     angle: 'The best approach is to treat frozen vegetables as convenience ingredients with built-in moisture. They work especially well when paired with a clear flavor base such as tomato, miso, curry, consommé, or chicken stock.',
     decision: 'Choose frozen vegetables when you want a no-knife meal, then add one protein so the dish feels like dinner. Chicken, tofu, eggs, tuna, or canned mackerel can turn frozen vegetables into a complete meal.',
-    patterns: ['Frozen vegetables and chicken in tomato stew with no added water.', 'Frozen spinach and tofu in a miso or ginger soup.', 'Frozen pumpkin and minced chicken in a rice-friendly simmer.'],
-    mistakes: ['Adding full recipe water ignores the moisture released by frozen vegetables.', 'Long cooking can make delicate frozen greens dull and soft.', 'Using only frozen vegetables without protein often feels more like a side dish than dinner.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Frozen vegetables, Time saving, Beginner, Vegetables as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Using Frozen Vegetables in a Hotcook: No-Knife Dinner Combinations, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Frozen vegetables and chicken in tomato stew with no added water.', 'Frozen spinach and tofu in a miso or ginger soup.', 'Frozen pumpkin and minced chicken in a rice-friendly simmer.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Adding full recipe water ignores the moisture released by frozen vegetables.', 'Long cooking can make delicate frozen greens dull and soft.', 'Using only frozen vegetables without protein often feels more like a side dish than dinner.'],
     snapmeal: 'Snapmeal can help combine fridge ingredients, freezer ingredients, and pantry staples so frozen vegetables become part of a real meal instead of an emergency backup.',
   }),
   article({
@@ -1950,8 +2355,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Canned food can save dinner when the fridge looks uninspiring. Canned mackerel, tuna, tomatoes, beans, and corn already contain flavor, moisture, or protein, which makes them useful in a Hotcook-style cooker.',
     angle: 'The smart cooker does not need to “cook” the canned food from scratch. Its job is to combine the can with vegetables, seasoning, and heat so the result feels like a planned meal.',
     decision: 'Use canned mackerel when you need a main protein, tuna when vegetables need umami, and canned tomatoes when you need a strong flavor base.',
-    patterns: ['Canned mackerel and daikon simmered with ginger and soy sauce.', 'Tuna and potatoes in a nikujaga-style dish without meat.', 'Canned tomatoes with beans, onions, and frozen vegetables for a pantry stew.'],
-    mistakes: ['Adding too much seasoning before tasting the can can make the dish salty.', 'Draining every can removes useful flavor and moisture.', 'Thinking of cans only as emergency food makes you miss easy weeknight meals.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Canned food, Fish, Budget, Fridge use as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Using Canned Food in a Hotcook: Mackerel, Tuna, and Tomato Cans as Dinner Rescue, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Canned mackerel and daikon simmered with ginger and soy sauce.', 'Tuna and potatoes in a nikujaga-style dish without meat.', 'Canned tomatoes with beans, onions, and frozen vegetables for a pantry stew.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Adding too much seasoning before tasting the can can make the dish salty.', 'Draining every can removes useful flavor and moisture.', 'Thinking of cans only as emergency food makes you miss easy weeknight meals.'],
     snapmeal: 'Snapmeal can start from what is in the fridge and let you add pantry items such as mackerel or tomato cans, expanding the meals you can make without shopping.',
   }),
   article({
@@ -1965,8 +2375,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Bean sprouts are inexpensive and fast, but they are mostly water. In a Hotcook-style cooker, that water stays in the pot, so the dish can become thin unless you choose the right timing.',
     angle: 'Bean sprouts should either be added late for texture or treated as part of a soup or nabe-style dish. Fighting the moisture usually works less well than deciding how to use it.',
     decision: 'Pair bean sprouts with strong umami: pork belly, ground meat, tofu, kimchi, egg, garlic, miso, sesame oil, or chicken stock.',
-    patterns: ['Pork belly and bean sprouts with miso and garlic.', 'Bean sprouts, tofu, and ginger in a light soup.', 'Kimchi, pork, mushrooms, and bean sprouts as a nabe-style dish.'],
-    mistakes: ['Cooking bean sprouts for the same time as root vegetables destroys texture.', 'Using a weak seasoning makes the released water taste bland.', 'Trying to make bean sprouts the only main ingredient often feels unsatisfying.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Bean sprouts, Budget, Time saving, Vegetables as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Cooking Bean Sprouts in a Hotcook: Cheap, Fast, and Not Watery, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Pork belly and bean sprouts with miso and garlic.', 'Bean sprouts, tofu, and ginger in a light soup.', 'Kimchi, pork, mushrooms, and bean sprouts as a nabe-style dish.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Cooking bean sprouts for the same time as root vegetables destroys texture.', 'Using a weak seasoning makes the released water taste bland.', 'Trying to make bean sprouts the only main ingredient often feels unsatisfying.'],
     snapmeal: 'Snapmeal can help prioritize bean sprouts before they spoil and suggest a Hotcook-friendly pairing from the protein and seasonings already in your kitchen.',
   }),
   article({
@@ -1980,8 +2395,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Hotcook pasta is possible, but it works best when you think of it as a one-pot meal rather than a restaurant-style pasta. The goal is convenience and a satisfying plate, not perfect al dente technique.',
     angle: 'Short pasta is easier than long spaghetti because it moves better in the pot and mixes with sauce more evenly. Tomato-based recipes are the most forgiving because extra liquid still tastes like sauce.',
     decision: 'Choose pasta when you want one dish for lunch or dinner and have quick-cooking ingredients such as tuna, mushrooms, onions, canned tomatoes, bacon, or frozen spinach.',
-    patterns: ['Short pasta with canned tomato, tuna, onion, and garlic.', 'Mushroom and bacon pasta with milk or soy milk added near the end.', 'Frozen vegetable soup pasta when you expect extra liquid.'],
-    mistakes: ['Using too much water makes the dish soupy.', 'Long pasta can clump unless broken and mixed carefully.', 'Large root vegetables do not cook at the same speed as pasta.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Pasta, Time saving, Lunch, Tomato as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Can You Make Pasta in a Hotcook? One-Pot Meals Without Separate Boiling, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Short pasta with canned tomato, tuna, onion, and garlic.', 'Mushroom and bacon pasta with milk or soy milk added near the end.', 'Frozen vegetable soup pasta when you expect extra liquid.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Using too much water makes the dish soupy.', 'Long pasta can clump unless broken and mixed carefully.', 'Large root vegetables do not cook at the same speed as pasta.'],
     snapmeal: 'Snapmeal can suggest whether today’s ingredients are better as pasta, soup, or a rice-based dish, which helps when you want a one-pot meal but are not sure the fridge supports it.',
   }),
   article({
@@ -1995,8 +2415,13 @@ export const enArticles: EnArticle[] = [
     intro: 'At some point, every Hotcook user wants to cook something that does not match an official menu. Manual mode looks intimidating, but the first step is simple: identify the type of cooking before choosing the time.',
     angle: 'Manual mode becomes easier when you separate dishes into simmered dishes, soups, steamed dishes, and low-temperature cooking. Each has a different risk: undercooked root vegetables, diluted soup, over-steamed custard, or unsafe meat temperatures.',
     decision: 'Before choosing minutes, ask whether the dish is watery, whether the ingredients are hard, whether texture matters, and whether temperature control is important.',
-    patterns: ['Use longer simmering for root vegetables and large pieces of meat.', 'Use soup mode thinking when leftover vegetables can release plenty of water.', 'Use cautious timing for steaming and low-temperature cooking, especially with eggs, meat, and fish.'],
-    mistakes: ['Choosing time before understanding the cooking type leads to random results.', 'Adding too much water to vegetable-heavy dishes makes them bland.', 'Treating low-temperature cooking casually can create food-safety risk.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Manual mode, Beginner, Cooking technique as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Hotcook Manual Mode for Beginners: How to Cook Dishes Without an Official Menu, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Use longer simmering for root vegetables and large pieces of meat.', 'Use soup mode thinking when leftover vegetables can release plenty of water.', 'Use cautious timing for steaming and low-temperature cooking, especially with eggs, meat, and fish.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Choosing time before understanding the cooking type leads to random results.', 'Adding too much water to vegetable-heavy dishes makes them bland.', 'Treating low-temperature cooking casually can create food-safety risk.'],
     snapmeal: 'Snapmeal can help translate fridge ingredients into a cooking direction before you search for a menu number, making manual mode less mysterious.',
   }),
   article({
@@ -2010,8 +2435,13 @@ export const enArticles: EnArticle[] = [
     intro: 'A smart cooker can look like a family appliance, but it can be surprisingly useful when you live alone. The real challenge is not whether the cooker can make food. It is how to cook enough to feel satisfied without producing a week of the same dish or letting half-used vegetables disappear in the back of the fridge.',
     angle: 'For solo cooking, the Hotcook works best when it becomes a small meal-planning system: cook two or three portions, eat one now, save one for tomorrow, and freeze one when the dish holds up well. That rhythm reduces decision fatigue without forcing you into large-batch meal prep.',
     decision: 'Start by checking the ingredients that spoil fastest. Leafy greens, cut cabbage, tofu, and mushrooms should usually be cooked first. Root vegetables, onions, and frozen protein can wait a little longer, so they become the supporting cast rather than the urgent reason to cook.',
-    patterns: ['Make one complete main dish instead of trying to cook several side dishes for one person.', 'Turn leftover vegetables into soup at the end of the week before they lose texture.', 'Cook mild base dishes, then change the sauce or topping when you reheat them.'],
-    mistakes: ['Cooking only one tiny portion can make the appliance feel more work than it is worth.', 'Buying large vegetables without a second-use plan often leads to waste.', 'Choosing recipes by the official serving size instead of your actual fridge inventory makes weeknight cooking harder.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Beginner, Budget, Solo cooking, Fridge use as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Using a Hotcook When You Live Alone: Small Portions Without Wasting Ingredients, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Make one complete main dish instead of trying to cook several side dishes for one person.', 'Turn leftover vegetables into soup at the end of the week before they lose texture.', 'Cook mild base dishes, then change the sauce or topping when you reheat them.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Cooking only one tiny portion can make the appliance feel more work than it is worth.', 'Buying large vegetables without a second-use plan often leads to waste.', 'Choosing recipes by the official serving size instead of your actual fridge inventory makes weeknight cooking harder.'],
     snapmeal: 'Snapmeal is useful here because it starts from the food you already have. You can take a photo of your fridge, tell it you are cooking for one, and ask for a Hotcook-friendly meal that uses the ingredients before they go bad.',
   }),
   article({
@@ -2025,8 +2455,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Budget cooking is not just about buying the cheapest ingredient. It is about turning inexpensive ingredients into meals that still feel warm, complete, and worth eating after a long day. A Hotcook helps because gentle simmering can pull flavor out of vegetables, beans, tofu, and tougher cuts without constant attention.',
     angle: 'The best budget meals usually have one inexpensive protein, one vegetable that adds volume, and one seasoning direction that gives the dish a clear identity. Chicken breast, tofu, minced meat, canned tomatoes, dried seaweed, and beans all become easier to use when the cooker handles the timing.',
     decision: 'Before choosing a recipe, decide whether the meal should be soup-like, stew-like, or rice-friendly. Soup stretches ingredients with broth. Stew makes a small amount of protein feel more substantial. Rice-friendly dishes, such as soboro or curry, can turn one pot into several meals.',
-    patterns: ['Use tofu or fried tofu to add protein and texture without raising the cost.', 'Combine chicken breast with cabbage, onion, or mushrooms so the dish has enough volume.', 'Keep canned tomatoes, curry roux, miso, and stock powder as low-cost flavor anchors.'],
-    mistakes: ['Using too much water can make cheap ingredients taste even thinner.', 'Skipping aromatics such as ginger, garlic, onion, or sesame oil makes budget dishes feel flat.', 'Trying to imitate expensive recipes instead of building dishes around humble ingredients leads to disappointment.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Budget, Fridge use, Chicken, Tofu as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like How to Save Money with a Hotcook: Three Ways to Make Cheap Ingredients Feel Satisfying, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Use tofu or fried tofu to add protein and texture without raising the cost.', 'Combine chicken breast with cabbage, onion, or mushrooms so the dish has enough volume.', 'Keep canned tomatoes, curry roux, miso, and stock powder as low-cost flavor anchors.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Using too much water can make cheap ingredients taste even thinner.', 'Skipping aromatics such as ginger, garlic, onion, or sesame oil makes budget dishes feel flat.', 'Trying to imitate expensive recipes instead of building dishes around humble ingredients leads to disappointment.'],
     snapmeal: 'Snapmeal can look at your fridge and suggest meals that prioritize inexpensive ingredients first. That makes it easier to use what you already bought instead of shopping again for a recipe that only looks cheap on paper.',
   }),
   article({
@@ -2040,8 +2475,13 @@ export const enArticles: EnArticle[] = [
     intro: 'For working parents, the hardest part of dinner is often the thirty minutes after everyone gets home. Children are hungry, adults are tired, and the fridge may contain ingredients but no clear plan. The Hotcook timer can help, but only if the morning setup is realistic.',
     angle: 'Timer cooking works best for sturdy simmered dishes: curry without delicate greens, root-vegetable stews, tomato-based chicken dishes, and bean or lentil soups. These can sit safely in the pot according to the appliance instructions and finish close to dinner time.',
     decision: 'Choose timer meals by asking one question: will this ingredient survive waiting and reheating? Potatoes, carrots, onions, daikon, chicken thighs, canned tomatoes, beans, and curry bases are usually forgiving. Leafy greens, seafood, and delicate tofu are better added later or cooked separately.',
-    patterns: ['Cut vegetables the night before and store them together so morning setup takes less than five minutes.', 'Use frozen meat or pre-portioned protein when the appliance manual and food-safety rules allow it.', 'Make the Hotcook dish the main dish, then keep side dishes extremely simple.'],
-    mistakes: ['Trying a new timer recipe on a busy weekday adds risk.', 'Adding delicate greens in the morning can lead to dull color and texture by dinner.', 'Planning a meal that still needs several side dishes defeats the purpose of the timer.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Family, Time saving, Meal prep as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Dinner at 6:30 After Getting Home at 6:00: How Working Parents Can Use the Hotcook Timer, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Cut vegetables the night before and store them together so morning setup takes less than five minutes.', 'Use frozen meat or pre-portioned protein when the appliance manual and food-safety rules allow it.', 'Make the Hotcook dish the main dish, then keep side dishes extremely simple.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Trying a new timer recipe on a busy weekday adds risk.', 'Adding delicate greens in the morning can lead to dull color and texture by dinner.', 'Planning a meal that still needs several side dishes defeats the purpose of the timer.'],
     snapmeal: 'Snapmeal can help decide whether the ingredients in your fridge are timer-friendly or better suited to a quick same-day dish. That makes the morning decision faster and reduces the chance of coming home to a meal that technically cooked but does not feel right.',
   }),
   article({
@@ -2055,8 +2495,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Weekend batch cooking does not have to mean filling the refrigerator with identical containers. With a Hotcook, the better approach is to prepare a few flexible bases that can become different dinners throughout the week.',
     angle: 'Think in layers: one protein dish, one vegetable-heavy soup or stew, and one neutral side such as simmered root vegetables. If each dish has a different flavor direction, Monday through Friday feels less repetitive even when the cooking happens in one session.',
     decision: 'Choose dishes based on how well they store. Tomato stew, curry base, simmered daikon, minced-meat sauce, and vegetable soup usually keep or freeze well. Creamy dishes and delicate fish are better eaten sooner.',
-    patterns: ['Cook the longest dish first, then prep the next dish while the appliance runs.', 'Use one seasoning direction per batch so containers do not all taste the same.', 'Freeze part of the batch immediately if you know you will be tired of it by day three.'],
-    mistakes: ['Making too much of one dish creates boredom even if the plan is efficient.', 'Ignoring cooling time can make storage messy and unsafe.', 'Batch cooking without a reheating plan often leads to food that sits untouched.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Meal prep, Fridge use, Time saving, Family as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Weekend Hotcook Batch Cooking: How to Prep Five Weeknight Meals in Two Hours, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Cook the longest dish first, then prep the next dish while the appliance runs.', 'Use one seasoning direction per batch so containers do not all taste the same.', 'Freeze part of the batch immediately if you know you will be tired of it by day three.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Making too much of one dish creates boredom even if the plan is efficient.', 'Ignoring cooling time can make storage messy and unsafe.', 'Batch cooking without a reheating plan often leads to food that sits untouched.'],
     snapmeal: 'Snapmeal can help turn the ingredients you already have into a weekend batch plan. Instead of searching for five separate recipes, you can ask for a set of dishes that share ingredients without tasting identical.',
   }),
   article({
@@ -2070,8 +2515,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Beef can be excellent in a Hotcook, but it is less forgiving than chicken thigh or pork belly. Some cuts become tender with long simmering, while others turn dry or chewy if treated the same way.',
     angle: 'The key is matching the cut to the cooking style. Thin sliced beef is best for shorter simmered dishes with vegetables. Stew meat needs enough time, liquid, and seasoning. Lean steak-style cuts usually do not benefit from long automatic cooking.',
     decision: 'If the beef has visible connective tissue or is sold for stew, choose a longer simmer. If it is thinly sliced, cook it with onions, mushrooms, or potatoes and avoid overcooking. If it is very lean, consider another method or add it near the end.',
-    patterns: ['Use onion and tomato to create moisture and acidity for stew-like dishes.', 'Pair thin beef with burdock, mushrooms, shirataki, or potatoes for rice-friendly meals.', 'Season lightly at first, then adjust after cooking because reduction and vegetables change saltiness.'],
-    mistakes: ['Using lean beef in a long simmer can make it dry.', 'Adding too little liquid to stew meat can leave the texture harsh.', 'Expecting every cut to behave like curry beef leads to uneven results.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Beef, Stew as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Cooking Beef in a Hotcook: Which Cuts Work and How to Avoid Tough Stews, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Use onion and tomato to create moisture and acidity for stew-like dishes.', 'Pair thin beef with burdock, mushrooms, shirataki, or potatoes for rice-friendly meals.', 'Season lightly at first, then adjust after cooking because reduction and vegetables change saltiness.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Using lean beef in a long simmer can make it dry.', 'Adding too little liquid to stew meat can leave the texture harsh.', 'Expecting every cut to behave like curry beef leads to uneven results.'],
     snapmeal: 'Snapmeal can help interpret what kind of beef you have and suggest whether it should become a stew, a rice topping, a quick simmer, or something better cooked outside the Hotcook.',
   }),
   article({
@@ -2085,8 +2535,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Ground meat is one of the easiest proteins to use in a Hotcook because it needs no trimming, no shaping, and no careful slicing. It spreads flavor through the whole pot and can turn a few vegetables into a complete meal.',
     angle: 'The main decision is texture. Do you want loose soboro, a thick sauce, a soup, or a curry-like stew? Once you answer that, the rest is seasoning and vegetables.',
     decision: 'Choose minced meat when you want dinner to be fast, flexible, and rice-friendly. It works especially well with onion, carrot, mushrooms, tofu, canned tomato, eggplant, cabbage, and potatoes.',
-    patterns: ['Use soy sauce, sugar, and ginger for soboro that can top rice or noodles.', 'Use tomato, onion, and curry powder for a quick keema-style curry.', 'Use tofu, miso, and chili bean paste for a gentle mapo-style dish.'],
-    mistakes: ['Skipping the step of loosening the meat can leave large clumps.', 'Using only meat without vegetables makes the dish heavy and expensive.', 'Adding too much liquid can turn a rice topping into a thin soup.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Ground meat, Meat, Curry, Budget as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Ground Meat in a Hotcook: From Soboro to Stews with Almost No Prep, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Use soy sauce, sugar, and ginger for soboro that can top rice or noodles.', 'Use tomato, onion, and curry powder for a quick keema-style curry.', 'Use tofu, miso, and chili bean paste for a gentle mapo-style dish.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Skipping the step of loosening the meat can leave large clumps.', 'Using only meat without vegetables makes the dish heavy and expensive.', 'Adding too much liquid can turn a rice topping into a thin soup.'],
     snapmeal: 'Snapmeal can spot vegetables that pair well with ground meat and suggest a direction such as soboro, curry, mapo-style tofu, or soup based on what is already in your fridge.',
   }),
   article({
@@ -2100,8 +2555,13 @@ export const enArticles: EnArticle[] = [
     intro: 'A whole head of cabbage is economical, but it can become a burden if you only use a few leaves at a time. The Hotcook makes cabbage easier because it can handle volume: what looks huge raw becomes sweet, soft, and compact after cooking.',
     angle: 'The trick is not to repeat the same flavor for three days. Cabbage can become a light soup, a tomato stew, a miso-butter dish, a pork simmer, or a curry base. The appliance does the softening, while the seasoning keeps the meals distinct.',
     decision: 'Use the outer leaves for soups and stews, the sweeter inner leaves for gentler simmered dishes, and the core chopped finely in soups or curry. If the cabbage is already cut, prioritize it before root vegetables.',
-    patterns: ['Day one: cabbage and sausage soup with consommé.', 'Day two: cabbage and pork belly with miso or soy sauce.', 'Day three: remaining cabbage in curry, tomato stew, or a thick vegetable soup.'],
-    mistakes: ['Adding too much water ignores the moisture cabbage releases.', 'Repeating the same seasoning makes the ingredient feel boring.', 'Keeping cut cabbage too long leads to dry edges and off flavors.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Vegetables, Fridge use, Budget as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Bought Too Much Cabbage? Three Days of Hotcook Meals That Use a Whole Head, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Day one: cabbage and sausage soup with consommé.', 'Day two: cabbage and pork belly with miso or soy sauce.', 'Day three: remaining cabbage in curry, tomato stew, or a thick vegetable soup.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Adding too much water ignores the moisture cabbage releases.', 'Repeating the same seasoning makes the ingredient feel boring.', 'Keeping cut cabbage too long leads to dry edges and off flavors.'],
     snapmeal: 'Snapmeal can help decide which direction makes sense based on the other ingredients around the cabbage, so the second and third cabbage meals do not feel like leftovers.',
   }),
   article({
@@ -2115,8 +2575,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Daikon is one of the vegetables that makes the Hotcook feel worthwhile. It takes time to become tender, but once it does, it absorbs broth and seasoning in a way that feels deeply comforting.',
     angle: 'Different parts of the daikon behave differently. The upper part is sweeter and works well in light simmered dishes. The middle is versatile. The lower part can be sharper, so it suits miso, pork, or stronger seasoning.',
     decision: 'Choose the dish based on thickness and time. Thick rounds are good for long simmering. Half-moons cook faster. Small cubes are useful for soups when you want the daikon to disappear into the broth.',
-    patterns: ['Pair daikon with yellowtail, salmon, or chicken for a classic simmered dish.', 'Use pork belly or fried tofu when you want richness.', 'Use dashi, soy sauce, and mirin for a gentle side dish that keeps well.'],
-    mistakes: ['Cutting pieces too thin can make them collapse during long cooking.', 'Seasoning too strongly at the beginning can make the outside salty before the center absorbs flavor.', 'Ignoring the water released by daikon can make the broth thinner than expected.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Vegetables, Root vegetables, Fridge use as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Using a Whole Daikon in a Hotcook: How to Make It Absorb Flavor Without Falling Apart, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Pair daikon with yellowtail, salmon, or chicken for a classic simmered dish.', 'Use pork belly or fried tofu when you want richness.', 'Use dashi, soy sauce, and mirin for a gentle side dish that keeps well.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Cutting pieces too thin can make them collapse during long cooking.', 'Seasoning too strongly at the beginning can make the outside salty before the center absorbs flavor.', 'Ignoring the water released by daikon can make the broth thinner than expected.'],
     snapmeal: 'Snapmeal can suggest a daikon dish based on the protein and seasonings you have, which is helpful when you bought a whole daikon but only know one recipe.',
   }),
   article({
@@ -2130,8 +2595,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Onions are not just background flavor. In a Hotcook, they soften and sweeten with very little effort, becoming the foundation for soups, curries, stews, and rice-friendly dishes.',
     angle: 'The more slowly onions cook, the more they move from sharpness to sweetness. You do not need perfect caramelization for weeknight dinner; you need enough softness and moisture to support the rest of the dish.',
     decision: 'Slice onions thinly when you want them to melt into the sauce. Cut them thicker when you want visible texture. Use wedges when the onion itself is the side dish.',
-    patterns: ['Use onion, tomato, and chicken as an easy stew base.', 'Use onion as the first layer under meat to prevent sticking and add moisture.', 'Use onion, curry roux, and potatoes when you need a reliable family meal.'],
-    mistakes: ['Cutting onions too large for quick recipes can leave a sharp bite.', 'Adding too much water hides the natural sweetness.', 'Forgetting that onions shrink can leave the final dish smaller than expected.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Vegetables, Fridge use, Curry as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Using a Bag of Onions in a Hotcook: Five Ways to Bring Out Their Sweetness, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Use onion, tomato, and chicken as an easy stew base.', 'Use onion as the first layer under meat to prevent sticking and add moisture.', 'Use onion, curry roux, and potatoes when you need a reliable family meal.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Cutting onions too large for quick recipes can leave a sharp bite.', 'Adding too much water hides the natural sweetness.', 'Forgetting that onions shrink can leave the final dish smaller than expected.'],
     snapmeal: 'Snapmeal can identify onions in your fridge photo and treat them as the base of the meal, suggesting dishes that use them to connect the protein and seasoning.',
   }),
   article({
@@ -2145,8 +2615,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Potatoes are useful, filling, and inexpensive, but they can be frustrating in a Hotcook. One day they are tender and perfect; another day they collapse and make the sauce cloudy.',
     angle: 'The difference usually comes down to potato variety, cut size, and cooking time. Floury potatoes break down more easily. Waxy potatoes hold shape better. Small pieces cook quickly but also disappear faster.',
     decision: 'Use larger chunks for curry and stew, smaller cubes for soup, and add delicate potatoes later when possible. If you want the sauce clean, avoid over-stirring and long cooking with fragile varieties.',
-    patterns: ['Use potatoes in curry, tomato stew, nikujaga-style simmer, or chowder-like soup.', 'Pair potatoes with onions and carrots for reliable texture.', 'Use leftover cooked potatoes in mash or croquettes rather than reheating them repeatedly in soup.'],
-    mistakes: ['Cutting potatoes too small for long automatic programs leads to mush.', 'Using full recipe water plus watery vegetables can dilute the dish.', 'Expecting every potato variety to behave the same causes inconsistent results.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Vegetables, Root vegetables, Curry as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like The Hotcook Potato Problem: How to Prevent Potatoes from Breaking Down, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Use potatoes in curry, tomato stew, nikujaga-style simmer, or chowder-like soup.', 'Pair potatoes with onions and carrots for reliable texture.', 'Use leftover cooked potatoes in mash or croquettes rather than reheating them repeatedly in soup.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Cutting potatoes too small for long automatic programs leads to mush.', 'Using full recipe water plus watery vegetables can dilute the dish.', 'Expecting every potato variety to behave the same causes inconsistent results.'],
     snapmeal: 'Snapmeal can suggest potato dishes according to the other ingredients and the texture you want, helping you avoid choosing a long simmer when a shorter mode would be better.',
   }),
   article({
@@ -2160,8 +2635,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Cooking for children is not only about nutrition. It is about texture, familiarity, timing, and whether the meal appears on the table before everyone becomes too hungry to negotiate.',
     angle: 'The Hotcook can help by making familiar dishes consistent: curry, nikujaga-style simmered potatoes, tomato chicken stew, mild soups, and sweet vegetable dishes. Repetition is not a failure when it makes dinner calmer.',
     decision: 'Start from the dish your child already accepts, then change one element at a time. Add a small amount of carrot to curry, soften onion completely in tomato stew, or cut disliked vegetables smaller in soup.',
-    patterns: ['Use curry as a bridge for small amounts of vegetables.', 'Use tomato stew for chicken, beans, and onions because the acidity gives a clear flavor.', 'Use gentle soy-mirin seasoning for potatoes, carrots, and meat.'],
-    mistakes: ['Introducing too many new textures at once can make the whole dish fail.', 'Leaving vegetables large and undercooked makes rejection more likely.', 'Cooking adult-level spice and expecting children to adapt usually backfires.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Family, Curry, Chicken, Vegetables as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Hotcook Meals Kids Will Eat: Three Reliable Dishes and How to Handle Vegetables, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Use curry as a bridge for small amounts of vegetables.', 'Use tomato stew for chicken, beans, and onions because the acidity gives a clear flavor.', 'Use gentle soy-mirin seasoning for potatoes, carrots, and meat.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Introducing too many new textures at once can make the whole dish fail.', 'Leaving vegetables large and undercooked makes rejection more likely.', 'Cooking adult-level spice and expecting children to adapt usually backfires.'],
     snapmeal: 'Snapmeal can remember the idea that today needs to be kid-friendly and suggest meals from the fridge that stay mild, familiar, and realistic for a family evening.',
   }),
   article({
@@ -2175,8 +2655,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Leftover vegetables are rarely exciting on their own: a half carrot, a little cabbage, two mushrooms, a tired onion. But together, they can become exactly the kind of soup the Hotcook is good at.',
     angle: 'The key is choosing one flavor template before adding everything. Japanese dashi, Western consommé, Chinese-style chicken stock, and miso each make a different soup even when the vegetables overlap.',
     decision: 'Use hard vegetables first, watery vegetables for volume, and delicate greens near the end. If you have protein, add chicken, tofu, sausage, beans, or egg depending on the seasoning direction.',
-    patterns: ['Dashi and soy sauce for daikon, mushrooms, carrot, and tofu.', 'Consommé and tomato for cabbage, onion, potato, and sausage.', 'Chicken stock, ginger, and sesame oil for napa cabbage, mushrooms, and egg.'],
-    mistakes: ['Mixing too many seasoning directions makes the soup muddy.', 'Adding leafy greens too early can dull their color and texture.', 'Using only leftover vegetables without a protein or starch may not feel like dinner.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Soup, Fridge use, Vegetables as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Turn Leftover Vegetables into Soup: Four Hotcook Flavor Templates, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Dashi and soy sauce for daikon, mushrooms, carrot, and tofu.', 'Consommé and tomato for cabbage, onion, potato, and sausage.', 'Chicken stock, ginger, and sesame oil for napa cabbage, mushrooms, and egg.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Mixing too many seasoning directions makes the soup muddy.', 'Adding leafy greens too early can dull their color and texture.', 'Using only leftover vegetables without a protein or starch may not feel like dinner.'],
     snapmeal: 'Snapmeal is especially helpful for leftover soup because the starting point is visual. A fridge photo can reveal the half-used ingredients that are easy to forget.',
   }),
   article({
@@ -2190,8 +2675,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Tofu looks delicate, so many people assume it is a poor match for an automatic cooker. In practice, tofu can work well if you choose the right cut size, timing, and dish type.',
     angle: 'Firm tofu and fried tofu are the most forgiving. They absorb seasoning, add protein, and make vegetable-heavy dishes feel complete. Silken tofu needs gentler handling and is better added later or used in soup-like dishes.',
     decision: 'Choose tofu when you want a lighter dinner, a budget protein, or a dish that can stretch vegetables. Pair it with mushrooms, napa cabbage, daikon, minced meat, miso, soy sauce, or ginger.',
-    patterns: ['Use fried tofu with daikon and dashi for a simple simmered side.', 'Use firm tofu with minced meat for mapo-style or miso-based dishes.', 'Use tofu in soup when the goal is warmth rather than a heavy main dish.'],
-    mistakes: ['Cutting tofu too small before a long program can make it crumble.', 'Using silken tofu in a vigorous automatic stir program can break the texture.', 'Skipping seasoning depth makes tofu taste watery.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Tofu, Budget, Fridge use as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Tofu and Fried Tofu in a Hotcook: How to Simmer Them Without Breaking Everything, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Use fried tofu with daikon and dashi for a simple simmered side.', 'Use firm tofu with minced meat for mapo-style or miso-based dishes.', 'Use tofu in soup when the goal is warmth rather than a heavy main dish.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Cutting tofu too small before a long program can make it crumble.', 'Using silken tofu in a vigorous automatic stir program can break the texture.', 'Skipping seasoning depth makes tofu taste watery.'],
     snapmeal: 'Snapmeal can help decide whether the tofu in your fridge should become a main dish, a soup, or a supporting ingredient based on what else is available.',
   }),
   article({
@@ -2205,8 +2695,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Some nights, the problem is not skill. It is energy. You may technically have ingredients and a recipe, but even taking out the cutting board feels like too much.',
     angle: 'The Hotcook helps most on these nights when the recipe accepts rough prep: frozen vegetables, cut mushrooms, tofu, canned tomatoes, sausages, thin-sliced meat, or pre-cut cabbage.',
     decision: 'Choose a tired-day recipe by counting actions, not ingredients. If it requires washing, peeling, chopping, frying, and finishing sauce, it is not a tired-day recipe. If it is mostly open, add, season, and press start, it qualifies.',
-    patterns: ['Canned tomato, frozen vegetables, and chicken for a quick stew.', 'Tofu, mushrooms, and miso for a warm soup-like main dish.', 'Pre-cut cabbage and pork slices with soy sauce or ponzu for a simple simmer.'],
-    mistakes: ['Choosing an impressive recipe when you need a recovery meal makes cooking harder to sustain.', 'Relying only on instant food can leave you unsatisfied.', 'Forgetting pantry shortcuts means the appliance cannot save you when energy is low.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Beginner, Time saving, Solo cooking as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Hotcook Meals for Nights When You Do Not Want to Stand in the Kitchen, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Canned tomato, frozen vegetables, and chicken for a quick stew.', 'Tofu, mushrooms, and miso for a warm soup-like main dish.', 'Pre-cut cabbage and pork slices with soy sauce or ponzu for a simple simmer.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Choosing an impressive recipe when you need a recovery meal makes cooking harder to sustain.', 'Relying only on instant food can leave you unsatisfied.', 'Forgetting pantry shortcuts means the appliance cannot save you when energy is low.'],
     snapmeal: 'Snapmeal can be used like a tired-day filter: take a fridge photo, choose a low-effort mode, and ask for meals with minimal cutting and a short ingredient list.',
   }),
   article({
@@ -2220,8 +2715,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Salmon fillets are useful because they already come portioned, cook quickly, and pair with many vegetables. The challenge is not overcooking them or letting the flavor become monotonous.',
     angle: 'Salmon works best in moist environments: miso simmer, cream-style stew, tomato stew, soy-ginger broth, or a light Chinese-style soup. The Hotcook can support these, but timing matters more than with chicken.',
     decision: 'If the fillets are thin, choose a shorter program or add them later. If the vegetables need longer cooking, cook the vegetables first and use the fish as the final protein layer.',
-    patterns: ['Salmon and cabbage with miso for a familiar Japanese-style dinner.', 'Salmon, potato, onion, and milk or soy milk for a gentle stew.', 'Salmon with napa cabbage, ginger, and mushrooms for a light soup.'],
-    mistakes: ['Long cooking can make salmon dry and flaky in a bad way.', 'Adding strong seasoning too early can overpower the fish.', 'Using watery vegetables without adjusting liquid can dilute the broth.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Fish, Fridge use as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Hotcook Meal Ideas for Salmon Fillets: Japanese, Western, Chinese-Style, and Miso, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Salmon and cabbage with miso for a familiar Japanese-style dinner.', 'Salmon, potato, onion, and milk or soy milk for a gentle stew.', 'Salmon with napa cabbage, ginger, and mushrooms for a light soup.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Long cooking can make salmon dry and flaky in a bad way.', 'Adding strong seasoning too early can overpower the fish.', 'Using watery vegetables without adjusting liquid can dilute the broth.'],
     snapmeal: 'Snapmeal can suggest whether salmon should be the main dish today or whether another cooking method is better, depending on the vegetables and time you have.',
   }),
   article({
@@ -2235,8 +2735,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Pork belly is powerful in a Hotcook because it brings fat, aroma, and satisfaction. That same richness can also make dinner feel heavy if the rest of the dish is not balanced.',
     angle: 'The best pork belly dishes pair the meat with vegetables that can absorb or cut through the fat: cabbage, daikon, napa cabbage, onion, mushrooms, kimchi, and root vegetables.',
     decision: 'If you want a lighter dish, choose soup or daikon simmer. If you want a rice-friendly main, choose miso, soy sauce, or kimchi seasoning. If the pork is very fatty, use more vegetables and less added oil.',
-    patterns: ['Pork belly and cabbage with miso or soy sauce.', 'Pork belly and daikon for a comforting simmered dish.', 'Pork belly, napa cabbage, and kimchi for a spicy soup-like dinner.'],
-    mistakes: ['Adding oil when the pork already has enough fat makes the dish greasy.', 'Using too little vegetable volume can make the meal feel heavy.', 'Seasoning too aggressively before the fat renders can produce a salty finish.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Pork, Meat, Soup as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like What to Cook with Pork Belly in a Hotcook? Meal Ideas from What Is in Your Fridge, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Pork belly and cabbage with miso or soy sauce.', 'Pork belly and daikon for a comforting simmered dish.', 'Pork belly, napa cabbage, and kimchi for a spicy soup-like dinner.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Adding oil when the pork already has enough fat makes the dish greasy.', 'Using too little vegetable volume can make the meal feel heavy.', 'Seasoning too aggressively before the fat renders can produce a salty finish.'],
     snapmeal: 'Snapmeal can help balance pork belly with the vegetables you already have, suggesting dishes that feel satisfying without becoming too rich.',
   }),
   article({
@@ -2250,8 +2755,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Chicken thigh is one of the easiest proteins to use in a Hotcook-style smart cooker because it stays juicy and gives enough flavor to vegetables and broth.',
     angle: 'The main question is which vegetable should lead the dish: daikon for simmering, cabbage for waterless stew, potato for tomato stew, mushrooms for umami, or napa cabbage for soup.',
     decision: 'Choose the direction by looking at the vegetables first, then decide whether the meal should be soy-based, tomato-based, miso-based, or soup-like.',
-    patterns: ['Chicken thigh and daikon simmered with soy sauce.', 'Chicken thigh and cabbage in a waterless-style stew.', 'Chicken thigh, potato, and tomato for a complete one-pot dinner.'],
-    mistakes: ['Adding too much water when using watery vegetables weakens the flavor.', 'Cutting chicken pieces too small can make them feel less satisfying.', 'Choosing the official menu before checking the ingredients can lead to a mismatched dish.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Chicken, Meat, Fridge use as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like What to Cook with Chicken Thigh in a Hotcook? Meal Ideas from What’s in Your Fridge, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Chicken thigh and daikon simmered with soy sauce.', 'Chicken thigh and cabbage in a waterless-style stew.', 'Chicken thigh, potato, and tomato for a complete one-pot dinner.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Adding too much water when using watery vegetables weakens the flavor.', 'Cutting chicken pieces too small can make them feel less satisfying.', 'Choosing the official menu before checking the ingredients can lead to a mismatched dish.'],
     snapmeal: 'Snapmeal can read your fridge photo and suggest which chicken-thigh meal makes sense today, including whether the Hotcook or another method is better.',
   }),
   article({
@@ -2265,8 +2775,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Mushrooms are small, inexpensive flavor boosters. In a Hotcook, they release moisture and umami, helping soups, stews, rice toppings, and simmered dishes taste deeper without much extra work.',
     angle: 'Each mushroom has a slightly different role. Shimeji adds balanced umami. Enoki softens quickly and thickens soup. Maitake has a strong aroma. Shiitake gives a deeper broth-like flavor. Eryngii adds chew.',
     decision: 'Use mushrooms when the dish needs depth but not heaviness. They pair well with chicken, tofu, pork, salmon, leafy greens, butter, soy sauce, miso, cream, and tomato.',
-    patterns: ['Mushroom and tofu soup for a light dinner.', 'Chicken and mushrooms with butter soy sauce.', 'Mushrooms in curry or tomato stew for extra depth.'],
-    mistakes: ['Washing mushrooms heavily can make them watery.', 'Using only one delicate mushroom in a long stew can make the texture disappear.', 'Forgetting mushrooms release water can dilute seasoning.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Vegetables, Fridge use, Soup as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Using Mushrooms in a Hotcook: Shimeji, Enoki, Maitake, and Four Practical Patterns, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Mushroom and tofu soup for a light dinner.', 'Chicken and mushrooms with butter soy sauce.', 'Mushrooms in curry or tomato stew for extra depth.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Washing mushrooms heavily can make them watery.', 'Using only one delicate mushroom in a long stew can make the texture disappear.', 'Forgetting mushrooms release water can dilute seasoning.'],
     snapmeal: 'Snapmeal can spot small packs of mushrooms and suggest ways to use them before they get slimy, often as the flavor bridge between protein and vegetables.',
   }),
   article({
@@ -2280,8 +2795,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Pumpkin can become beautifully sweet in a Hotcook, but it can also collapse into the broth if the pieces are too small or the cooking time is too long.',
     angle: 'The goal is to decide whether you want the pumpkin to keep its shape or become part of the sauce. Shape-retaining simmered pumpkin needs larger pieces and gentle seasoning. Soup and potage can embrace softness.',
     decision: 'Use skin-on chunks for simmered dishes. Use peeled or smaller pieces when making potage. Pair pumpkin with dashi, soy sauce, butter, milk, consommé, bacon, or onion depending on the direction.',
-    patterns: ['Japanese dashi simmer with soy sauce and mirin.', 'Consommé pumpkin with onion and bacon.', 'Pumpkin potage with onion and milk or soy milk.'],
-    mistakes: ['Cutting pumpkin too small makes it dissolve.', 'Over-stirring breaks the edges.', 'Adding too much liquid hides the natural sweetness.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Vegetables, Root vegetables, Fridge use as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Sweet Pumpkin in a Hotcook: Preventing Collapse and Three Japanese/Western Recipes, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Japanese dashi simmer with soy sauce and mirin.', 'Consommé pumpkin with onion and bacon.', 'Pumpkin potage with onion and milk or soy milk.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Cutting pumpkin too small makes it dissolve.', 'Over-stirring breaks the edges.', 'Adding too much liquid hides the natural sweetness.'],
     snapmeal: 'Snapmeal can suggest whether the pumpkin in your fridge should become a side dish, a soup, or part of a larger dinner based on what else is available.',
   }),
   article({
@@ -2295,8 +2815,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Chicken breast is affordable and useful, but it dries out quickly when cooked too hot for too long. The Hotcook can help if you treat chicken breast differently from chicken thigh.',
     angle: 'The important idea is temperature. Gentle cooking allows the protein to set while retaining moisture. Once cooked, chicken breast can become a flexible base for salads, rice bowls, soups, and sandwiches.',
     decision: 'Use chicken breast when you want lean protein or meal prep. Choose low-temperature cooking, salt koji, miso marinade, ginger-scallion sauce, or light soup rather than a long aggressive stew.',
-    patterns: ['Salt koji chicken breast for meal prep.', 'Ginger-scallion chicken for rice bowls.', 'Miso-marinated chicken sliced over vegetables.'],
-    mistakes: ['Cooking chicken breast like thigh makes it dry.', 'Skipping salt or marinade leaves it bland.', 'Reheating too aggressively can undo the careful cooking.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Chicken, Meat, Meal prep, Budget as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Moist Chicken Breast in a Hotcook: Low-Temperature Thinking and Five Ways to Use It, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Salt koji chicken breast for meal prep.', 'Ginger-scallion chicken for rice bowls.', 'Miso-marinated chicken sliced over vegetables.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Cooking chicken breast like thigh makes it dry.', 'Skipping salt or marinade leaves it bland.', 'Reheating too aggressively can undo the careful cooking.'],
     snapmeal: 'Snapmeal can suggest chicken breast meals that fit your time and energy level, including when it should be cooked gently instead of thrown into a long simmer.',
   }),
   article({
@@ -2310,8 +2835,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Root vegetables are not all the same. Burdock, lotus root, sweet potato, carrot, and daikon each respond differently to heat, moisture, and time.',
     angle: 'A Hotcook is good at making hard vegetables tender, but the best result comes from matching the cut to the vegetable. Burdock needs time. Lotus root benefits from texture. Sweet potato needs care because it can become too soft.',
     decision: 'Choose longer simmering for burdock and daikon, medium cooking for carrot and lotus root, and gentler handling for sweet potato. Seasoning can be Japanese, miso-based, pork-soup style, or lightly sweet.',
-    patterns: ['Pork soup with burdock, carrot, and daikon.', 'Simmered lotus root and chicken.', 'Sweet potato with lemon for a gentle side dish.'],
-    mistakes: ['Cutting all root vegetables the same size leads to uneven texture.', 'Using too little liquid can leave dense vegetables undercooked.', 'Cooking sweet potato too long can make it collapse.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Vegetables, Root vegetables, Soup as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Root Vegetables in a Hotcook: Burdock, Lotus Root, and Sweet Potato Need Different Timing, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Pork soup with burdock, carrot, and daikon.', 'Simmered lotus root and chicken.', 'Sweet potato with lemon for a gentle side dish.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Cutting all root vegetables the same size leads to uneven texture.', 'Using too little liquid can leave dense vegetables undercooked.', 'Cooking sweet potato too long can make it collapse.'],
     snapmeal: 'Snapmeal can identify which root vegetables you have and suggest a dish where their cooking times make sense together.',
   }),
   article({
@@ -2325,8 +2855,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Dried ingredients are easy to forget because they sit quietly in the pantry. But they are powerful when the fridge is nearly empty: hijiki, kiriboshi daikon, beans, kombu, and glass noodles can all become real meals.',
     angle: 'The Hotcook is useful because dried ingredients need time and moisture. Automatic simmering can soften them while pulling flavor into the broth.',
     decision: 'Choose dried ingredients when fresh vegetables are low, when you need a budget side, or when you want a meal-prep dish that keeps well. Add carrots, fried tofu, beans, mushrooms, or chicken to make the dish more complete.',
-    patterns: ['Hijiki with carrot and fried tofu.', 'Kiriboshi daikon simmered with dashi and soy sauce.', 'Beans in tomato soup or curry-style stew.'],
-    mistakes: ['Adding dried ingredients without accounting for water absorption can make the pot dry.', 'Using too many strong dried flavors together can overwhelm the dish.', 'Forgetting pantry stock leads to unnecessary grocery trips.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Fridge use, Budget, Meal prep as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Dried Ingredients Come Back to Life in a Hotcook: Hijiki, Kiriboshi Daikon, and Beans, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Hijiki with carrot and fried tofu.', 'Kiriboshi daikon simmered with dashi and soy sauce.', 'Beans in tomato soup or curry-style stew.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Adding dried ingredients without accounting for water absorption can make the pot dry.', 'Using too many strong dried flavors together can overwhelm the dish.', 'Forgetting pantry stock leads to unnecessary grocery trips.'],
     snapmeal: 'Snapmeal can combine fridge ingredients with pantry ideas, helping you use dried foods when the fresh options are limited.',
   }),
   article({
@@ -2340,8 +2875,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Curry should be one of the easiest Hotcook meals, yet it often goes wrong: watery sauce, weak flavor, potatoes that disappear, or meat that feels disconnected from the vegetables.',
     angle: 'Most problems come from ignoring the water released by onions, carrots, potatoes, mushrooms, and meat. A smart cooker traps moisture, so the amount of added water usually needs to be lower than a stovetop recipe.',
     decision: 'Use less water when the pot contains many vegetables. Cut potatoes larger if you want them to keep shape. Choose chicken thigh, pork, ground meat, or beans depending on the texture you want.',
-    patterns: ['Use 70 to 75 percent of the box water as a starting point, then adjust.', 'Layer onions and watery vegetables under the meat.', 'Add small flavor boosters such as grated apple, soy sauce, coffee, or tomato when the curry tastes flat.'],
-    mistakes: ['Following stovetop water amounts exactly can make curry thin.', 'Cutting potatoes too small makes them dissolve.', 'Adding roux without enough stirring or resting can leave uneven seasoning.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Curry, Vegetables, Chicken, Ground meat as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like How Not to Fail at Hotcook Curry: Watery Sauce, Weak Flavor, and Melting Potatoes, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Use 70 to 75 percent of the box water as a starting point, then adjust.', 'Layer onions and watery vegetables under the meat.', 'Add small flavor boosters such as grated apple, soy sauce, coffee, or tomato when the curry tastes flat.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Following stovetop water amounts exactly can make curry thin.', 'Cutting potatoes too small makes them dissolve.', 'Adding roux without enough stirring or resting can leave uneven seasoning.'],
     snapmeal: 'Snapmeal can suggest curry only when the ingredient mix is actually curry-friendly and can warn when watery vegetables need a lower-liquid approach.',
   }),
   article({
@@ -2355,8 +2895,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Nabe is naturally compatible with a Hotcook because it is flexible, vegetable-heavy, and forgiving. The only challenge is timing ingredients so everything does not become equally soft.',
     angle: 'Think in three layers: hard vegetables first, protein and tofu next, delicate greens or noodles near the end. That simple order makes the final pot feel more intentional.',
     decision: 'Choose the broth direction based on the strongest ingredient. Seafood and mushrooms suit yose-nabe. Tofu and pork work with soy milk. Pork, cabbage, and tofu can carry miso-kimchi.',
-    patterns: ['Yose-nabe with napa cabbage, mushrooms, tofu, and fish or chicken.', 'Soy milk nabe with pork, tofu, and greens.', 'Miso-kimchi nabe with cabbage, pork belly, and mushrooms.'],
-    mistakes: ['Adding all ingredients at the same time can overcook greens and tofu.', 'Using too much broth at the start dilutes vegetables.', 'Forgetting the finishing meal wastes the most flavorful part of the pot.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Soup, Tofu, Vegetables, Family as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Nabe in a Hotcook: Three Styles and How to Use the Leftover Broth, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Yose-nabe with napa cabbage, mushrooms, tofu, and fish or chicken.', 'Soy milk nabe with pork, tofu, and greens.', 'Miso-kimchi nabe with cabbage, pork belly, and mushrooms.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Adding all ingredients at the same time can overcook greens and tofu.', 'Using too much broth at the start dilutes vegetables.', 'Forgetting the finishing meal wastes the most flavorful part of the pot.'],
     snapmeal: 'Snapmeal can look at your vegetables and proteins and suggest which nabe style fits, including whether the leftovers should become udon, rice porridge, or soup the next day.',
   }),
   article({
@@ -2370,8 +2915,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Leafy greens are healthy and quick, but they are not the best candidates for long automatic cooking. In a Hotcook, timing matters more than almost anything else.',
     angle: 'Komatsuna is relatively sturdy, spinach is delicate, shungiku has a strong aroma, and napa cabbage behaves more like a watery vegetable than a leafy garnish. Treating them all the same leads to dull results.',
     decision: 'Add leafy greens in the final five to ten minutes when possible. If the program cannot be interrupted easily, choose sturdier greens or use them in soup where softness is acceptable.',
-    patterns: ['Chicken and spinach in a light salt broth.', 'Pork and komatsuna in miso-style simmer.', 'Tofu and greens in a gentle soup.'],
-    mistakes: ['Adding spinach at the start can make it dark and limp.', 'Ignoring the water released by greens can dilute seasoning.', 'Using strongly flavored greens without balancing the broth can dominate the dish.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Vegetables, Fridge use, Tofu as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Leafy Greens in a Hotcook: Komatsuna, Spinach, and Shungiku Are All About Timing, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Chicken and spinach in a light salt broth.', 'Pork and komatsuna in miso-style simmer.', 'Tofu and greens in a gentle soup.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Adding spinach at the start can make it dark and limp.', 'Ignoring the water released by greens can dilute seasoning.', 'Using strongly flavored greens without balancing the broth can dominate the dish.'],
     snapmeal: 'Snapmeal can help decide whether the greens in your fridge should be cooked in the Hotcook, added at the end, or used as a quick side outside the cooker.',
   }),
   article({
@@ -2385,8 +2935,13 @@ export const enArticles: EnArticle[] = [
     intro: 'The weekend fridge often contains fragments: half an onion, a few mushrooms, leftover cabbage, a carrot, one pack of tofu, and maybe a piece of meat. None of them looks like dinner alone.',
     angle: 'The Hotcook turns these fragments into a system. Take inventory, group ingredients by cooking time, choose one flavor direction, and cook before shopping again.',
     decision: 'Start with the ingredient that will spoil first, then choose the supporting ingredients around it. If the fridge contains many vegetables, soup or stew is usually the safest answer.',
-    patterns: ['Make a clear soup from watery vegetables and tofu.', 'Make curry or tomato stew from root vegetables and meat.', 'Make a miso-based simmer when you have cabbage, mushrooms, pork, or fried tofu.'],
-    mistakes: ['Shopping before checking leftovers creates duplicates.', 'Mixing every leftover into one pot without a flavor plan can taste confused.', 'Waiting until vegetables are already damaged reduces your options.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Fridge use, Meal prep, Budget as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Clear Out the Weekend Fridge: A Hotcook System for Reducing Food Waste, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Make a clear soup from watery vegetables and tofu.', 'Make curry or tomato stew from root vegetables and meat.', 'Make a miso-based simmer when you have cabbage, mushrooms, pork, or fried tofu.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Shopping before checking leftovers creates duplicates.', 'Mixing every leftover into one pot without a flavor plan can taste confused.', 'Waiting until vegetables are already damaged reduces your options.'],
     snapmeal: 'Snapmeal is built for this exact moment: take a fridge photo, see what is there, and get a meal idea that uses what would otherwise be forgotten.',
   }),
   article({
@@ -2400,8 +2955,13 @@ export const enArticles: EnArticle[] = [
     intro: 'A Hotcook can make dinner easier, but repetition can creep in. Chicken, potatoes, onions, and carrots become curry again. Cabbage becomes soup again. The appliance is not the problem; the seasoning pattern is.',
     angle: 'Changing the cuisine direction changes the meal without changing the shopping list. Soy sauce and mirin feel Japanese. Ginger, sesame oil, and chicken stock feel Chinese-style. Gochujang and garlic feel Korean. Tomato and herbs feel Western.',
     decision: 'Choose the flavor direction before choosing the official recipe. Ask what mood you want: comforting Japanese, bright tomato, spicy Korean, creamy Western, fragrant curry, or light soup.',
-    patterns: ['Use the same chicken and potato base with curry powder for Indian-style flavor.', 'Use soy sauce, ginger, and sesame oil for a Chinese-style simmer.', 'Use tomato, garlic, and herbs for a Western stew.'],
-    mistakes: ['Adding random seasonings from several cuisines makes the dish unclear.', 'Using the same base seasoning every time creates boredom.', 'Changing flavor without adjusting salt, acid, or sweetness can make the dish unbalanced.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Curry, Chicken, Vegetables, Cooking technique as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Escape Hotcook Repetition: How to Make the Same Ingredients Taste Like Another Country, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Use the same chicken and potato base with curry powder for Indian-style flavor.', 'Use soy sauce, ginger, and sesame oil for a Chinese-style simmer.', 'Use tomato, garlic, and herbs for a Western stew.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Adding random seasonings from several cuisines makes the dish unclear.', 'Using the same base seasoning every time creates boredom.', 'Changing flavor without adjusting salt, acid, or sweetness can make the dish unbalanced.'],
     snapmeal: 'Snapmeal can suggest multiple flavor directions from the same ingredients, which is useful when the fridge is familiar but your appetite wants something different.',
   }),
   article({
@@ -2415,8 +2975,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Chicken wings and drumettes are excellent in a Hotcook because bone-in meat rewards slow simmering. The broth becomes richer, the meat softens, and the dish feels more satisfying than the price suggests.',
     angle: 'The key is giving the collagen enough time while choosing a seasoning that matches the final texture. Soy sauce makes a classic rice-friendly dish. Salt and lemon keep it lighter. Korean-style seasoning turns it into a bold main dish.',
     decision: 'Choose wings when you want a dish that can simmer without much attention. Add daikon, potatoes, boiled eggs, cabbage, or mushrooms depending on whether the goal is stew, soup, or a rice side.',
-    patterns: ['Soy sauce, sake, ginger, and a little sugar for a classic simmer.', 'Salt, lemon, garlic, and cabbage for a lighter broth.', 'Gochujang, garlic, soy sauce, and onion for a Korean-style dish.'],
-    mistakes: ['Cooking too briefly can leave the meat tight around the bone.', 'Adding delicate vegetables too early can make them collapse.', 'Using too much sugar in a long simmer can make the sauce feel heavy.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Chicken, Meat, Soup, Stew as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Tender Chicken Wings in a Hotcook: Bone-In Flavor and Three Seasoning Patterns, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Soy sauce, sake, ginger, and a little sugar for a classic simmer.', 'Salt, lemon, garlic, and cabbage for a lighter broth.', 'Gochujang, garlic, soy sauce, and onion for a Korean-style dish.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Cooking too briefly can leave the meat tight around the bone.', 'Adding delicate vegetables too early can make them collapse.', 'Using too much sugar in a long simmer can make the sauce feel heavy.'],
     snapmeal: 'Snapmeal can help match chicken wings with the vegetables in your fridge and choose a seasoning direction that does not repeat yesterday’s dinner.',
   }),
   article({
@@ -2430,8 +2995,13 @@ export const enArticles: EnArticle[] = [
     intro: 'The Hotcook is usually associated with soups and stews, but its steaming function can be excellent for egg dishes. Chawanmushi and pudding both depend on gentle heat, and that is exactly where stable steaming helps.',
     angle: 'The enemy is overheating. When egg mixtures heat too aggressively, they form bubbles, holes, or a rough texture. A controlled steaming environment makes it easier to keep the custard smooth.',
     decision: 'Choose chawanmushi when you want a savory side with dashi, chicken, shrimp, mushrooms, or kamaboko. Choose pudding when you want a simple dessert built from eggs, milk, sugar, and caramel.',
-    patterns: ['Strain the egg mixture for a smoother texture.', 'Cover cups with foil or lids to prevent dripping water.', 'Use smaller cups when you want more reliable heating.'],
-    mistakes: ['Whisking too hard creates foam that can remain in the custard.', 'Using high heat or too long a steam time causes holes.', 'Filling large containers makes the center harder to set evenly.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use Eggs, Dessert, Family as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Chawanmushi and Pudding in a Hotcook: Why Steaming Works and How to Avoid Bubbles, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Strain the egg mixture for a smoother texture.', 'Cover cups with foil or lids to prevent dripping water.', 'Use smaller cups when you want more reliable heating.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'Whisking too hard creates foam that can remain in the custard.', 'Using high heat or too long a steam time causes holes.', 'Filling large containers makes the center harder to set evenly.'],
     snapmeal: 'Snapmeal can suggest whether eggs in your fridge should become a savory chawanmushi, a simple pudding, or a more practical dinner dish depending on what else you have.',
   }),
   article({
@@ -2445,8 +3015,13 @@ export const enArticles: EnArticle[] = [
     intro: 'Snapmeal began from a very ordinary problem: opening the fridge after work, seeing ingredients, and still not knowing what to cook.',
     angle: 'A Hotcook made cooking easier, but it did not solve the decision before cooking. That gap led first to a custom GPT and then to a dedicated web app.',
     decision: 'The product is designed around real weeknight friction: recognizing ingredients from fridge photos, correcting AI mistakes, choosing between cooking tools, and adapting to fatigue.',
-    patterns: ['Recognize ingredients from photos instead of typing everything.', 'Suggest meals for Hotcook, pan, microwave, and other realistic tools.', 'Use preferences and feedback to avoid repeating the same meals.'],
-    mistakes: ['A recipe list is not enough when the user does not have those ingredients.', 'Chat alone can be awkward when ingredient recognition is wrong.', 'A cooking tool is less useful if the meal decision still feels hard.'],
+    patterns: [
+      'Choose the search intent first: whether the real problem is ingredients, time, cleanup, family schedule, or flavor direction.',
+      'Use fridge ingredients as decision clues, then turn the idea into a bowl, soup, noodle dish, rice topping, or simple main.',
+      'For dinner topics like Just Snap Your Fridge. Dinner Decided in 30 Seconds. The Story Behind Snapmeal, prioritize what can realistically be cooked and eaten tonight over a perfect recipe match.', 'Recognize ingredients from photos instead of typing everything.', 'Suggest meals for Hotcook, pan, microwave, and other realistic tools.', 'Use preferences and feedback to avoid repeating the same meals.'],
+    mistakes: [
+      'Treating the search result as a fixed recipe instead of adapting it to the fridge.',
+      'Adding extra work when one practical decision would make dinner good enough.', 'A recipe list is not enough when the user does not have those ingredients.', 'Chat alone can be awkward when ingredient recognition is wrong.', 'A cooking tool is less useful if the meal decision still feels hard.'],
     snapmeal: 'Snapmeal is currently available in beta, runs in the browser, and is free to use during the beta period.',
   }),
 ];
