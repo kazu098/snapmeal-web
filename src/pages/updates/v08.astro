@@ -1,0 +1,134 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+
+const APP_URL = 'https://app.snap-meal.com';
+---
+
+<Layout
+  lang="ja"
+  title="v0.8 アップデート — 結果からジャンル変更・解析安定性向上 | Snapmeal"
+  description="Snapmeal v0.8：献立提案の後にジャンルをその場で変更して再提案できるように。解析のタイムアウト対応と、ログイン後に履歴が残る訴求も改善。"
+>
+  <BlogHeader current="blog" />
+
+  <main class="bg-white">
+    <!-- ヘッダー -->
+    <section class="bg-surface px-4 py-12 sm:py-16">
+      <div class="max-w-2xl mx-auto">
+        <a href="/updates/" class="inline-flex items-center gap-1 text-sm text-gray-400 hover:text-primary mb-6 transition">
+          ← アップデート一覧
+        </a>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="text-3xl font-extrabold text-primary">v0.8</span>
+          <span class="text-sm text-gray-400 font-semibold">2026年5月</span>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-tight mb-3">
+          結果画面からジャンル変更・解析の安定性向上
+        </h1>
+        <p class="text-gray-500 leading-relaxed">
+          提案された献立を見てから「やっぱり洋食にしたい」と思っても、写真を撮り直さずその場でジャンルを変更して再提案できるようになりました。解析の安定性改善も含みます。
+        </p>
+      </div>
+    </section>
+
+    <!-- ① ジャンル切り替え -->
+    <section class="px-4 py-12 border-t border-gray-100">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-2">結果画面からジャンルを変えて再提案</h2>
+        <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+          献立の提案を受け取ったあと、画面下部にジャンル切り替えチップが表示されるようになりました。「和食」→「洋食」などのジャンルをタップするだけで、同じ冷蔵庫の食材のまま別ジャンルの献立を即座に再提案します。
+        </p>
+
+        <div class="flex justify-center mb-8">
+          <div class="text-center">
+            <img
+              src="/updates/v08-result-genre-chips.png"
+              alt="結果画面 — 献立提案の下にジャンル切り替えチップ（和食・洋食・中華・韓国・エスニック）が表示されている"
+              class="w-[200px] rounded-[1.5rem] shadow-xl shadow-gray-200 border border-gray-100 mx-auto"
+            />
+            <p class="text-xs text-gray-400 mt-2">「別のジャンルで再提案」でワンタップ切り替え</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4 mb-6">
+          <div class="bg-white rounded-2xl p-4 border border-gray-100">
+            <p class="text-sm font-bold text-gray-800 mb-1">写真の撮り直し不要</p>
+            <p class="text-xs text-gray-500 leading-relaxed">すでに認識した食材をそのまま使って再解析するため、カメラを開き直す必要がありません。</p>
+          </div>
+          <div class="bg-white rounded-2xl p-4 border border-gray-100">
+            <p class="text-sm font-bold text-gray-800 mb-1">6ジャンルに対応</p>
+            <p class="text-xs text-gray-500 leading-relaxed">和食・洋食・中華・韓国・エスニック・ワンプレートをその場で切り替えられます。現在のジャンルはハイライト表示。</p>
+          </div>
+        </div>
+
+        <div class="bg-green-50 border border-green-200 rounded-2xl p-4 text-sm text-green-800 leading-relaxed">
+          <strong>使い方</strong><br />
+          献立提案画面を下にスクロール →「別のジャンルで再提案」のチップをタップするだけ。提案中の献立をキープしながら別ジャンルの候補を受け取れます。
+        </div>
+      </div>
+    </section>
+
+    <!-- ② ログイン誘導 -->
+    <section class="px-4 py-12 bg-surface border-t border-gray-100">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-2">献立決定後に履歴保存を案内</h2>
+        <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+          ゲストで使っていて献立が決まったタイミングで、「ログインすると今日の献立が履歴に保存される」ことをお知らせするようにしました。強制ではなく「あとで」で閉じられます。
+        </p>
+
+        <div class="flex justify-center mb-8">
+          <div class="text-center">
+            <img
+              src="/updates/v08-login-nudge.png"
+              alt="ログイン誘導モーダル — 「献立が決まりました！ログインすると今日の献立が履歴に保存され、来週以降も参考にできます」"
+              class="w-[200px] rounded-[1.5rem] shadow-xl shadow-gray-200 border border-gray-100 mx-auto"
+            />
+            <p class="text-xs text-gray-400 mt-2">献立決定の直後に表示（1回限り・閉じられます）</p>
+          </div>
+        </div>
+
+        <div class="bg-amber-50 border border-amber-200 rounded-2xl p-4 text-sm text-amber-800 leading-relaxed">
+          <strong>以前の表示との違い</strong><br />
+          以前は「無料回数を超えた」ときのみログインを促していました。v0.8 からは「献立が決まったこと」を前向きに伝えるメッセージに変えています。ゲストのまま使い続けることも可能です。
+        </div>
+      </div>
+    </section>
+
+    <!-- ③ 安定性改善 -->
+    <section class="px-4 py-12 border-t border-gray-100">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-2">解析のタイムアウト対応</h2>
+        <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+          ネットワーク状況などにより解析が長時間無応答になるケースで、90秒後に自動でタイムアウトし「もう一度試す」を案内するようにしました。以前は応答が来ないまま待ち続ける場合がありました。
+        </p>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div class="bg-white rounded-2xl p-4 border border-gray-100">
+            <p class="text-sm font-bold text-red-600 mb-1">修正前</p>
+            <p class="text-xs text-gray-500 leading-relaxed">解析中のまま何分でも待ち続ける。ユーザーがアプリを閉じるしかなかった。</p>
+          </div>
+          <div class="bg-white rounded-2xl p-4 border border-gray-100">
+            <p class="text-sm font-bold text-green-600 mb-1">修正後</p>
+            <p class="text-xs text-gray-500 leading-relaxed">90秒でタイムアウト。「解析に時間がかかっています。もう一度お試しください。」と表示してリトライを案内。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="px-4 py-16 bg-white border-t border-gray-100 text-center">
+      <p class="text-sm text-gray-500 mb-4">最新版をお試しください</p>
+      <a
+        href={APP_URL}
+        data-ga-event="cta_click"
+        class="inline-block bg-primary text-white font-bold px-8 py-3.5 rounded-full hover:bg-primary-dark transition shadow-lg shadow-green-100"
+      >
+        Snapmealを試す（ベータ・無料）
+      </a>
+      <div class="mt-6">
+        <a href="/updates/" class="text-sm text-gray-400 hover:text-primary transition">← アップデート一覧に戻る</a>
+      </div>
+    </section>
+  </main>
+</Layout>
