@@ -1,0 +1,78 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import BlogHeader from '../../../components/BlogHeader.astro';
+
+const APP_URL = 'https://app.snap-meal.com';
+---
+
+<Layout
+  lang="en"
+  title="v0.1 Beta Launch — Snapmeal"
+  description="Snapmeal beta is live. Snap your fridge, get AI meal suggestions in 30 seconds. Hotcook support, low-energy mode, and meal history included."
+  alternateUrl="https://snap-meal.com/updates/v01/"
+>
+  <BlogHeader current="blog" />
+
+  <main class="bg-white">
+    <section class="bg-surface px-4 py-12 sm:py-16">
+      <div class="max-w-2xl mx-auto">
+        <a href="/en/updates/" class="inline-flex items-center gap-1 text-sm text-gray-400 hover:text-primary mb-6 transition">
+          ← All updates
+        </a>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="text-3xl font-extrabold text-primary">v0.1</span>
+          <span class="text-sm text-gray-400 font-semibold">April 2026</span>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-tight mb-3">
+          Beta Launch
+        </h1>
+        <p class="text-gray-500 leading-relaxed">
+          Snapmeal beta is live — snap your fridge, get AI meal suggestions in 30 seconds.
+        </p>
+      </div>
+    </section>
+
+    <section class="px-4 py-12 border-t border-gray-100">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-6">What's included</h2>
+
+        <div class="flex justify-center mb-10">
+          <img
+            src="/updates/upload-screen.png"
+            alt="Snapmeal — Upload fridge photo to get meal suggestions"
+            class="w-[220px] rounded-[2rem] shadow-2xl shadow-gray-300 border border-gray-100"
+          />
+        </div>
+
+        <div class="space-y-4">
+          {[
+            { icon: '📸', title: 'AI ingredient recognition', desc: 'Take a photo of your fridge and AI identifies what\'s inside. Combine multiple photos for better accuracy.' },
+            { icon: '🍽️', title: '3 meal suggestions to choose from', desc: 'AI proposes three dinner options. Select one and get a step-by-step recipe generated on the spot.' },
+            { icon: '⚡', title: 'Low-energy mode', desc: 'Feeling tired? Select "Low energy" and only meals ready in under 15 minutes are suggested.' },
+            { icon: '🥘', title: 'Hotcook support', desc: 'Enable Hotcook and get recipes with automatic cooker menu numbers — full operation guide included.' },
+            { icon: '📅', title: 'Meal history', desc: 'Past suggestions are recorded and used to prevent repetition. No more cooking the same thing week after week.' },
+            { icon: '🌐', title: 'Japanese & English', desc: 'Switch language in settings. All features are available in both languages.' },
+          ].map(({ icon, title, desc }) => (
+            <div class="flex gap-4 p-4 rounded-2xl border border-gray-100">
+              <span class="text-2xl flex-shrink-0">{icon}</span>
+              <div>
+                <p class="font-bold text-gray-800 text-sm">{title}</p>
+                <p class="text-xs text-gray-500 mt-0.5 leading-relaxed">{desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="px-4 py-16 bg-surface border-t border-gray-100 text-center">
+      <p class="text-sm text-gray-500 mb-4">Beta is free — try it now</p>
+      <a href={APP_URL} data-ga-event="cta_click" class="inline-block bg-primary text-white font-bold px-8 py-3.5 rounded-full hover:bg-primary-dark transition shadow-lg shadow-green-100">
+        Open Snapmeal (Beta · Free)
+      </a>
+      <div class="mt-6">
+        <a href="/en/updates/" class="text-sm text-gray-400 hover:text-primary transition">← All updates</a>
+      </div>
+    </section>
+  </main>
+</Layout>

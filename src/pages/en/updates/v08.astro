@@ -1,0 +1,126 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import BlogHeader from '../../../components/BlogHeader.astro';
+
+const APP_URL = 'https://app.snap-meal.com';
+---
+
+<Layout
+  lang="en"
+  title="v0.8 Genre Switch from Results & Stability Fixes — Snapmeal"
+  description="Snapmeal v0.8: Switch cuisine style directly from the result screen without re-scanning. Login nudge after meal selection, and 90-second analysis timeout added."
+  alternateUrl="https://snap-meal.com/updates/v08/"
+>
+  <BlogHeader current="blog" />
+
+  <main class="bg-white">
+    <section class="bg-surface px-4 py-12 sm:py-16">
+      <div class="max-w-2xl mx-auto">
+        <a href="/en/updates/" class="inline-flex items-center gap-1 text-sm text-gray-400 hover:text-primary mb-6 transition">
+          ← All updates
+        </a>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="text-3xl font-extrabold text-primary">v0.8</span>
+          <span class="text-sm text-gray-400 font-semibold">May 2026</span>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-tight mb-3">
+          Genre Switch from Results & Stability Fixes
+        </h1>
+        <p class="text-gray-500 leading-relaxed">
+          Changed your mind about cuisine style after seeing the suggestion? Switch it on the spot — no re-scan needed. Also includes a login nudge after meal selection and an analysis timeout fix.
+        </p>
+      </div>
+    </section>
+
+    <section class="px-4 py-12 border-t border-gray-100">
+      <div class="max-w-2xl mx-auto space-y-10">
+
+        <div>
+          <h2 class="text-xl font-extrabold text-gray-900 mb-2">Switch cuisine style directly from results</h2>
+          <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+            After receiving a meal suggestion, cuisine style chips now appear at the bottom of the result screen. Tap any style — Japanese, Western, Chinese, Korean, Ethnic, or One-plate — to get a new suggestion using the same ingredients, instantly.
+          </p>
+
+          <div class="flex justify-center mb-8">
+            <div class="text-center">
+              <img
+                src="/updates/v08-result-genre-chips.png"
+                alt="Result screen — cuisine style chips below the meal suggestion"
+                class="w-[200px] rounded-[1.5rem] shadow-xl shadow-gray-200 border border-gray-100 mx-auto"
+              />
+              <p class="text-xs text-gray-400 mt-2">One tap to switch genre and re-suggest</p>
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4 mb-6">
+            <div class="bg-white rounded-2xl p-4 border border-gray-100">
+              <p class="text-sm font-bold text-gray-800 mb-1">No re-scan required</p>
+              <p class="text-xs text-gray-500 leading-relaxed">Already-recognized ingredients are reused — no need to open the camera again.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-4 border border-gray-100">
+              <p class="text-sm font-bold text-gray-800 mb-1">6 cuisine styles</p>
+              <p class="text-xs text-gray-500 leading-relaxed">Japanese, Western, Chinese, Korean, Ethnic, and One-plate. The current style is highlighted so you always know where you are.</p>
+            </div>
+          </div>
+
+          <div class="bg-green-50 border border-green-200 rounded-2xl p-4 text-sm text-green-800 leading-relaxed">
+            <strong>How to use</strong><br />
+            Scroll down on the meal result screen → tap a genre chip under "Try another genre". The current suggestion stays on screen while the new one loads.
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-extrabold text-gray-900 mb-2">Login nudge after meal selection</h2>
+          <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+            When you're using Snapmeal as a guest and settle on a meal, a gentle prompt now appears letting you know that logging in will save today's meal to your history — so AI can learn from it next time. You can dismiss it and continue as a guest.
+          </p>
+
+          <div class="flex justify-center mb-8">
+            <div class="text-center">
+              <img
+                src="/updates/v08-login-nudge.png"
+                alt="Login nudge modal — shown after meal selection as a guest"
+                class="w-[200px] rounded-[1.5rem] shadow-xl shadow-gray-200 border border-gray-100 mx-auto"
+              />
+              <p class="text-xs text-gray-400 mt-2">Shown once after you decide on a meal (dismissible)</p>
+            </div>
+          </div>
+
+          <div class="bg-amber-50 border border-amber-200 rounded-2xl p-4 text-sm text-amber-800 leading-relaxed">
+            <strong>What changed from before</strong><br />
+            Previously, login was only prompted when the free usage limit was reached. v0.8 changes the tone — it's framed as a positive outcome ("your meal is saved") rather than a hard gate.
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-extrabold text-gray-900 mb-2">Analysis timeout fix</h2>
+          <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+            In cases where the analysis took too long due to network conditions, the app would silently wait with no feedback. Now after 90 seconds, it times out and shows a "Try again" prompt.
+          </p>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div class="bg-white rounded-2xl p-4 border border-gray-100">
+              <p class="text-sm font-bold text-red-600 mb-1">Before</p>
+              <p class="text-xs text-gray-500 leading-relaxed">The app would wait indefinitely during analysis with no way to recover except closing and reopening.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-4 border border-gray-100">
+              <p class="text-sm font-bold text-green-600 mb-1">After</p>
+              <p class="text-xs text-gray-500 leading-relaxed">Times out after 90 seconds and shows "Analysis is taking longer than expected. Please try again."</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="px-4 py-16 bg-surface border-t border-gray-100 text-center">
+      <p class="text-sm text-gray-500 mb-4">Try the latest version</p>
+      <a href={APP_URL} data-ga-event="cta_click" class="inline-block bg-primary text-white font-bold px-8 py-3.5 rounded-full hover:bg-primary-dark transition shadow-lg shadow-green-100">
+        Open Snapmeal (Beta · Free)
+      </a>
+      <div class="mt-6">
+        <a href="/en/updates/" class="text-sm text-gray-400 hover:text-primary transition">← All updates</a>
+      </div>
+    </section>
+  </main>
+</Layout>
