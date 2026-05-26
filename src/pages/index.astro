@@ -18,20 +18,30 @@ const steps = [
   {
     icon: '🍽️',
     title: '献立が決まる！',
-    desc: '30秒で今夜の献立を提案。3案から選べるのでマンネリ知らず。',
+    desc: '30秒で今夜の献立を提案。3案から選んで感想をメモすると、次回の提案がさらに家族に合ったものになります。',
   },
 ];
 
 const features = [
   {
+    icon: '🔄',
+    title: 'マンネリ回避（学習機能）',
+    desc: '過去14日間の提案履歴を自動で学習。同じ料理・食材・ジャンルの繰り返しを防いで、毎週新鮮な献立を提案します。',
+  },
+  {
+    icon: '📝',
+    title: '家族の反応を次回に反映',
+    desc: '「また作って」「微妙だった」をメモすると、次回の提案に自動で反映。使うほど家族の好みにフィットしていきます。',
+  },
+  {
+    icon: '⭐',
+    title: 'お気に入り優先提案',
+    desc: 'お気に入り登録した食材・料理は積極的に提案されます。家族が好む料理が自然と増えていきます。',
+  },
+  {
     icon: '🎯',
     title: 'AI食材認識',
     desc: '撮った写真からAIが食材を自動識別。認識結果は自分で追加・削除できるので精度に依存しすぎません。',
-  },
-  {
-    icon: '🔄',
-    title: 'マンネリ回避',
-    desc: '過去14日間の提案履歴を学習。同じ料理・食材・ジャンルの繰り返しを自動的に防ぎます。',
   },
   {
     icon: '🥘',
@@ -42,16 +52,6 @@ const features = [
     icon: '⚡',
     title: '疲れた日モード',
     desc: '「疲れた」を選ぶと15分以内・材料少なめの超時短レシピを優先提案します。',
-  },
-  {
-    icon: '📖',
-    title: 'ステップレシピ',
-    desc: '材料・手順・コツをAIが生成。「この献立で作る」を押すだけで詳細レシピが表示されます。',
-  },
-  {
-    icon: '📝',
-    title: '家族の反応メモ',
-    desc: '「また作って」「微妙だった」をメモすると、次回の提案に自動で反映されます。',
   },
 ];
 
@@ -125,11 +125,11 @@ const faqs = [
           </div>
           <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 mb-6 flex flex-col gap-4">
             <span>冷蔵庫を撮るだけ。</span>
-            <span><span class="text-primary">30秒</span>で今夜の献立が決まる。</span>
+            <span><span class="text-primary">家族の好みを覚えて</span>、毎週違う献立を提案。</span>
           </h1>
           <p class="text-lg sm:text-xl text-gray-600 mb-10 leading-relaxed">
-            平日18時の「今夜どうしよう」から解放される。<br class="hidden sm:block" />
-            AIが食材を認識して、今夜の献立を自動で提案します。
+            使うたびに学習。過去の献立・家族の反応を記憶して、<br class="hidden sm:block" />
+            「また同じか…」が起きない献立提案を続けます。
           </p>
           <div class="flex justify-center lg:justify-start">
             <a
@@ -212,8 +212,69 @@ const faqs = [
       </div>
     </section>
 
+    <!-- Learning mechanism -->
+    <section class="py-20 px-4 bg-surface">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-14">
+          <div class="inline-block bg-primary/10 text-primary text-xs font-bold px-4 py-1.5 rounded-full mb-4 tracking-wide">
+            他のAIアプリとの違い
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">
+            使うたびに、あなたの家族に合わせていく
+          </h2>
+          <p class="text-gray-500">「冷蔵庫を撮るだけ」のアプリは他にもあります。Snapmeal が違うのは、<strong class="text-gray-700">記憶して学習する</strong>点です。</p>
+        </div>
+        <div class="grid sm:grid-cols-3 gap-6">
+          <div class="bg-white rounded-3xl p-6 border border-green-100 shadow-sm">
+            <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 text-2xl">📅</div>
+            <h3 class="font-bold text-gray-900 mb-2">過去14日の献立を記憶</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">同じ料理・食材・ジャンルが繰り返されないよう、提案履歴を自動で考慮します。「先週も唐揚げだった」がなくなります。</p>
+          </div>
+          <div class="bg-white rounded-3xl p-6 border border-green-100 shadow-sm">
+            <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 text-2xl">👨‍👩‍👧</div>
+            <h3 class="font-bold text-gray-900 mb-2">家族の反応を次回に反映</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">「また作って」「微妙だった」をメモすると、次の提案に自動で反映。家族が喜ぶ料理が増えていきます。</p>
+          </div>
+          <div class="bg-white rounded-3xl p-6 border border-green-100 shadow-sm">
+            <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 text-2xl">⭐</div>
+            <h3 class="font-bold text-gray-900 mb-2">好みの食材を優先提案</h3>
+            <p class="text-gray-500 text-sm leading-relaxed">お気に入り登録した食材・料理は積極的に使われます。家族の好みが反映された、オーダーメイドの献立へ。</p>
+          </div>
+        </div>
+        <div class="mt-10 bg-white rounded-3xl p-6 border border-gray-100 shadow-sm">
+          <div class="flex flex-col sm:flex-row items-center gap-6">
+            <div class="flex-1 text-center sm:text-left">
+              <p class="text-sm font-bold text-gray-500 uppercase tracking-wide mb-2">他のアプリとの比較</p>
+              <div class="space-y-3">
+                {[
+                  { label: '他のAI献立アプリ', items: ['冷蔵庫を認識して提案', '毎回ゼロから考える', '家族の好みを覚えない'], ok: false },
+                  { label: 'Snapmeal', items: ['冷蔵庫を認識して提案', '過去の献立・反応を学習', '使うほど家族にフィット'], ok: true },
+                ].map(({ label, items, ok }) => (
+                  <div class={`flex items-start gap-3 rounded-2xl p-3 ${ok ? 'bg-green-50 border border-green-100' : 'bg-gray-50 border border-gray-100'}`}>
+                    <span class={`font-bold text-sm flex-shrink-0 w-28 ${ok ? 'text-primary' : 'text-gray-400'}`}>{label}</span>
+                    <div class="flex flex-wrap gap-x-4 gap-y-1">
+                      {items.map(item => (
+                        <span class={`text-xs ${ok ? 'text-gray-700' : 'text-gray-400 line-through'}`}>
+                          {ok ? '✓ ' : ''}{item}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-10">
+          <a href={APP_URL} data-ga-event="cta_click" class="inline-block bg-primary text-white font-bold text-base px-8 py-4 rounded-2xl hover:bg-primary-dark transition shadow-lg shadow-green-200">
+            学習型献立AIを試してみる（無料）→
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- How it works -->
-    <section id="how" class="py-20 px-4 bg-surface">
+    <section id="how" class="py-20 px-4 bg-white">
       <div class="max-w-5xl mx-auto">
         <div class="text-center mb-14">
           <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">たった3ステップ</h2>
