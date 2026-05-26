@@ -1,0 +1,178 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import BlogHeader from '../../../components/BlogHeader.astro';
+
+const APP_URL = 'https://app.snap-meal.com';
+
+type UpdateEntry = {
+  version: string;
+  slug: string;
+  date: string;
+  title: string;
+  description: string;
+  items: string[];
+};
+
+const updates: UpdateEntry[] = [
+  {
+    version: 'v0.9',
+    slug: 'v09',
+    date: 'May 2026',
+    title: 'Taste Learning Visibility & iOS Fixes',
+    description: "Snapmeal has always learned from your history — now you can see it happening. We've also fixed iOS onboarding display and swipe navigation.",
+    items: [
+      'Learning indicator — When history exists, the loading screen shows "🧠 Learning your preferences..." instead of the generic message',
+      'Personalization badge — Meals optimized from your past history show a "🧠 Tailored to your taste" badge',
+      'Smarter reason text — The "why this dish?" explanation now references your history (e.g. variety from recent meals, liked genres)',
+      'iOS onboarding fix — The "Next" button now fits on screen without scrolling on all iPhone sizes',
+      'iOS swipe loop — Swiping right on the last meal now loops back to the first suggestion',
+    ],
+  },
+  {
+    version: 'v0.8',
+    slug: 'v08',
+    date: 'May 2026',
+    title: 'In-result Genre Switch & Stability',
+    description: "Changed your mind after seeing the suggestion? Switch cuisine style on the spot — no need to re-scan. Also improved analysis timeout handling.",
+    items: [
+      'Genre switch from results — Tap a cuisine chip (Japanese, Western, Chinese, etc.) to re-suggest with the same fridge contents',
+      'Analysis timeout — Auto-timeout at 90 seconds with a retry prompt instead of hanging indefinitely',
+      'Post-selection login nudge — Positive "save your history" prompt after a meal is picked, instead of limit-based prompts only',
+    ],
+  },
+  {
+    version: 'v0.7',
+    slug: 'v07',
+    date: 'May 2026',
+    title: 'Priority Ingredient Fix & English Meal Improvements',
+    description: "Priority ingredients now carry through to all alternative suggestions. English users get more globally relevant meal ideas.",
+    items: [
+      'Priority ingredients in all alternatives — Specified ingredients are used across all 3 suggestions, not just the first',
+      'Better English meal suggestions — Western, Mediterranean, and global recipes prioritized over Japanese defaults',
+      'Updated English pantry staples — Replaced Japanese-specific condiments with commonly available Western equivalents',
+    ],
+  },
+  {
+    version: 'v0.6',
+    slug: 'v06',
+    date: 'May 2026',
+    title: 'Priority Ingredients & Cuisine Style',
+    description: "After scanning your fridge, tap any ingredient to mark it as a priority. Also added cuisine style selection (Japanese, Western, Chinese, etc.).",
+    items: [
+      'Ingredient opt-in — Tap to mark ingredients you want to use today; AI will include them in the dish',
+      'Optional selection — Leave everything unselected to suggest from all ingredients as usual',
+      'Cuisine style selector — Choose Japanese, Western, Chinese, Korean, Ethnic, or One-plate before generating',
+    ],
+  },
+  {
+    version: 'v0.5',
+    slug: 'v05',
+    date: 'May 2026',
+    title: 'Favorites, Dislikes & Shopping List Copy',
+    description: "The more you use Snapmeal, the better it knows your taste. Added favorites, dislike flags, and one-tap shopping list copy.",
+    items: [
+      'One-tap shopping list copy — Missing ingredients copied to clipboard, ready to paste',
+      'Favorites — Save meals you liked and review them anytime',
+      'Not interested flag — Mark meals to exclude from future suggestions',
+      'AI learns your favorites — Saved meals influence future genre and ingredient suggestions',
+    ],
+  },
+  {
+    version: 'v0.1',
+    slug: 'v01',
+    date: 'April 2026',
+    title: 'Beta Launch',
+    description: "Snapmeal beta is live — snap your fridge, get AI meal suggestions in 30 seconds.",
+    items: [
+      'Fridge photo → AI ingredient recognition',
+      'Choose from 3 meal suggestions; generate step-by-step recipe on demand',
+      'Low-energy mode — Suggests meals ready in under 15 minutes',
+      'Hotcook support — Recipes with automatic cooker instructions',
+      'Meal history — Past suggestions stored to prevent repetition',
+      'Japanese & English support',
+    ],
+  },
+];
+---
+
+<Layout
+  lang="en"
+  title="What's New — Snapmeal"
+  description="Latest updates, new features, and improvements to Snapmeal."
+  alternateUrl="https://snap-meal.com/updates/"
+>
+  <BlogHeader current="blog" />
+
+  <main>
+    <section class="bg-surface px-4 py-14 sm:py-20">
+      <div class="max-w-2xl mx-auto text-center">
+        <p class="text-sm font-bold text-primary mb-3">What's New</p>
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
+          Release Notes
+        </h1>
+        <p class="text-gray-500 text-base leading-relaxed">
+          New features and improvements, shipped weekly during beta.
+        </p>
+        <a
+          href={APP_URL}
+          data-ga-event="cta_click"
+          class="inline-block mt-6 bg-primary text-white font-bold px-6 py-3 rounded-full hover:bg-primary-dark transition shadow-md"
+        >
+          Try the latest version (free)
+        </a>
+      </div>
+    </section>
+
+    <section class="px-4 py-12 bg-white">
+      <div class="max-w-2xl mx-auto">
+        <div class="relative">
+          <div class="absolute left-[5.5rem] top-0 bottom-0 w-px bg-gray-100 hidden sm:block"></div>
+
+          <div class="space-y-12">
+            {updates.map((update) => (
+              <div class="sm:grid sm:grid-cols-[7rem_1fr] sm:gap-8 group">
+                <div class="flex sm:flex-col sm:items-end gap-3 sm:gap-1 mb-4 sm:mb-0 sm:pt-0.5">
+                  <span class="text-lg font-extrabold text-primary">{update.version}</span>
+                  <span class="text-xs text-gray-400 font-semibold sm:text-right">{update.date}</span>
+                </div>
+
+                <div class="relative">
+                  <div class="absolute -left-[2.1rem] top-1.5 w-3 h-3 rounded-full bg-primary border-2 border-white shadow-sm hidden sm:block"></div>
+
+                  <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-5 hover:shadow-md transition">
+                    <h2 class="text-lg font-extrabold text-gray-900 mb-1">{update.title}</h2>
+                    <p class="text-sm text-gray-500 mb-4 leading-relaxed">{update.description}</p>
+                    <ul class="space-y-1.5 mb-4">
+                      {update.items.map((item) => (
+                        <li class="flex items-start gap-2 text-sm text-gray-700">
+                          <span class="text-primary mt-0.5 flex-shrink-0">✓</span>
+                          <span class="leading-relaxed">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <a
+                      href={`/en/updates/${update.slug}/`}
+                      class="inline-flex items-center gap-1 text-sm font-semibold text-primary hover:underline"
+                    >
+                      Read more →
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div class="mt-16 text-center">
+          <a
+            href={APP_URL}
+            data-ga-event="cta_click"
+            class="inline-block bg-primary text-white font-bold px-8 py-3.5 rounded-full hover:bg-primary-dark transition shadow-lg shadow-green-100"
+          >
+            Try Snapmeal (Beta · Free)
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

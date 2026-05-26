@@ -1,0 +1,138 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+
+const APP_URL = 'https://app.snap-meal.com';
+---
+
+<Layout
+  lang="ja"
+  title="v0.9 アップデート — 好みを学習して最適化・iOS表示改善 | Snapmeal"
+  description="Snapmeal v0.9：使うたびにあなたの好みを学習して献立を最適化する仕組みが可視化されました。iOSのオンボーディング表示とスワイプナビも改善。"
+>
+  <BlogHeader current="blog" />
+
+  <main class="bg-white">
+    <!-- ヘッダー -->
+    <section class="bg-surface px-4 py-12 sm:py-16">
+      <div class="max-w-2xl mx-auto">
+        <a href="/updates/" class="inline-flex items-center gap-1 text-sm text-gray-400 hover:text-primary mb-6 transition">
+          ← アップデート一覧
+        </a>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="text-3xl font-extrabold text-primary">v0.9</span>
+          <span class="text-sm text-gray-400 font-semibold">2026年5月</span>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-tight mb-3">
+          好みを学習して最適化・iOS表示改善
+        </h1>
+        <p class="text-gray-500 leading-relaxed">
+          使うたびにあなたの好みが学習され、献立がどんどんあなた向けに最適化されていく仕組みが画面に見えるようになりました。iOSでのオンボーディング表示とスワイプ操作も改善しています。
+        </p>
+      </div>
+    </section>
+
+    <!-- ① 学習可視化 -->
+    <section class="px-4 py-12 border-t border-gray-100">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-2">🧠 好みの学習が「見える」ようになりました</h2>
+        <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+          Snapmeal はもともと、過去14日の献立・家族の反応・お気に入りをもとにAIが提案を最適化する設計でした。ただその仕組みがユーザーには見えていませんでした。v0.9 からは学習が動いていることが画面に表示されます。
+        </p>
+
+        <div class="space-y-5 mb-6">
+          <div class="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
+            <p class="text-sm font-bold text-gray-900 mb-1">解析中のメッセージが変わります</p>
+            <p class="text-sm text-gray-500 leading-relaxed mb-3">
+              ログインして使うと、解析中に「🧠 あなたの好みを学習して最適化中...」と表示されます。初めて使うときは通常のメッセージ、2回目以降から学習メッセージに切り替わります。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <div class="flex-1 bg-gray-50 rounded-xl px-4 py-3 text-sm text-center">
+                <p class="text-gray-400 text-xs mb-1">ゲスト・初回</p>
+                <p class="font-medium text-gray-700">🍳 献立を考えています...</p>
+              </div>
+              <div class="flex-1 bg-green-50 rounded-xl px-4 py-3 text-sm text-center border border-green-100">
+                <p class="text-primary text-xs font-bold mb-1">記録あり</p>
+                <p class="font-medium text-gray-700">🧠 あなたの好みを学習して最適化中...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
+            <p class="text-sm font-bold text-gray-900 mb-1">献立提案にバッジが表示されます</p>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              過去の記録をもとに提案が最適化されている場合、料理名の上に「🧠 あなたの好みを反映した提案」バッジが表示されます。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
+            <p class="text-sm font-bold text-gray-900 mb-1">「なぜこの料理？」の説明がより具体的に</p>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              献立提案の下に表示される理由文が、記録がある場合は「先週と異なる食材を使いました」「好評だったジャンルを反映しています」など、学習内容を含む説明になります。
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-green-50 border border-green-200 rounded-2xl p-4 text-sm text-green-800 leading-relaxed">
+          <strong>使うほど賢くなります</strong><br />
+          記録が積み重なるほど、あなたの好みにぴったりな献立が提案されていきます。感想メモ（「また作って」「微妙だった」）を残すと、次回の提案に自動で反映されます。
+        </div>
+      </div>
+    </section>
+
+    <!-- ② iOS改善 -->
+    <section class="px-4 py-12 bg-surface border-t border-gray-100">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-2">📱 iOS表示の改善</h2>
+        <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+          iOSのSafariでホーム画面に追加してアプリとして使っている方向けに、2点の表示・操作を改善しました。
+        </p>
+
+        <div class="space-y-4">
+          <div class="bg-white rounded-2xl p-5 border border-gray-100">
+            <p class="text-sm font-bold text-gray-900 mb-2">初期設定画面のスクロール解消</p>
+            <div class="grid sm:grid-cols-2 gap-3 mb-3">
+              <div class="bg-red-50 rounded-xl px-4 py-3 text-xs text-red-700">
+                <p class="font-semibold mb-1">修正前</p>
+                <p>「次へ」ボタンが画面下に隠れてスクロールが必要だった</p>
+              </div>
+              <div class="bg-green-50 rounded-xl px-4 py-3 text-xs text-green-700 border border-green-100">
+                <p class="font-semibold mb-1">修正後</p>
+                <p>画面サイズに関わらずスクロールなしで全ボタンが収まるよう調整</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl p-5 border border-gray-100">
+            <p class="text-sm font-bold text-gray-900 mb-2">献立スワイプの循環ナビゲーション</p>
+            <div class="grid sm:grid-cols-2 gap-3">
+              <div class="bg-red-50 rounded-xl px-4 py-3 text-xs text-red-700">
+                <p class="font-semibold mb-1">修正前</p>
+                <p>3つ目の献立で右スワイプしても何も起きなかった</p>
+              </div>
+              <div class="bg-green-50 rounded-xl px-4 py-3 text-xs text-green-700 border border-green-100">
+                <p class="font-semibold mb-1">修正後</p>
+                <p>3つ目の献立で右スワイプすると最初の献立に戻る循環ナビに対応</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="px-4 py-16 bg-white border-t border-gray-100 text-center">
+      <p class="text-sm text-gray-500 mb-4">最新版をお試しください</p>
+      <a
+        href={APP_URL}
+        data-ga-event="cta_click"
+        class="inline-block bg-primary text-white font-bold px-8 py-3.5 rounded-full hover:bg-primary-dark transition shadow-lg shadow-green-100"
+      >
+        Snapmealを試す（ベータ・無料）
+      </a>
+      <div class="mt-6">
+        <a href="/updates/" class="text-sm text-gray-400 hover:text-primary transition">← アップデート一覧に戻る</a>
+      </div>
+    </section>
+  </main>
+</Layout>
