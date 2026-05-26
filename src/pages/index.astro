@@ -18,7 +18,7 @@ const steps = [
   {
     icon: '🍽️',
     title: '献立が決まる！',
-    desc: '30秒で今夜の献立を提案。3案から選んで感想をメモすると、次回の提案がさらに家族に合ったものになります。',
+    desc: '30秒で今夜の献立を提案。3案から選んで感想をメモすると、次回からあなたの好みに合った提案になっていきます。',
   },
 ];
 
@@ -31,7 +31,7 @@ const features = [
   {
     icon: '📝',
     title: '家族の反応を次回に反映',
-    desc: '「また作って」「微妙だった」をメモすると、次回の提案に自動で反映。使うほど家族の好みにフィットしていきます。',
+    desc: '「また作って」「微妙だった」をメモすると、次回の提案に自動で反映。記録が積み重なるほど、あなたの好みにぴったりな献立になっていきます。',
   },
   {
     icon: '⭐',
@@ -125,7 +125,7 @@ const faqs = [
           </div>
           <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 mb-6 flex flex-col gap-4">
             <span>冷蔵庫を撮るだけ。</span>
-            <span><span class="text-primary">家族の好みを覚えて</span>、毎週違う献立を提案。</span>
+            <span><span class="text-primary">あなたの好みを覚えて</span>、毎週違う献立を提案。</span>
           </h1>
           <p class="text-lg sm:text-xl text-gray-600 mb-10 leading-relaxed">
             使うたびに学習。過去の献立・家族の反応を記憶して、<br class="hidden sm:block" />
@@ -220,9 +220,9 @@ const faqs = [
             他のAIアプリとの違い
           </div>
           <h2 class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">
-            使うたびに、あなたの家族に合わせていく
+            使うたびに、あなたに合わせていく
           </h2>
-          <p class="text-gray-500">「冷蔵庫を撮るだけ」のアプリは他にもあります。Snapmeal が違うのは、<strong class="text-gray-700">記憶して学習する</strong>点です。</p>
+          <p class="text-gray-500">「冷蔵庫を撮るだけ」のアプリは他にもあります。Snapmeal が違うのは、<strong class="text-gray-700">使うほど賢くなる</strong>点です。</p>
         </div>
         <div class="grid sm:grid-cols-3 gap-6">
           <div class="bg-white rounded-3xl p-6 border border-green-100 shadow-sm">
@@ -233,12 +233,12 @@ const faqs = [
           <div class="bg-white rounded-3xl p-6 border border-green-100 shadow-sm">
             <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 text-2xl">👨‍👩‍👧</div>
             <h3 class="font-bold text-gray-900 mb-2">家族の反応を次回に反映</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">「また作って」「微妙だった」をメモすると、次の提案に自動で反映。家族が喜ぶ料理が増えていきます。</p>
+            <p class="text-gray-500 text-sm leading-relaxed">「また作って」「微妙だった」をメモすると、次の提案に自動で反映。記録が増えるほど、あなたに合った料理が提案されていきます。</p>
           </div>
           <div class="bg-white rounded-3xl p-6 border border-green-100 shadow-sm">
             <div class="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 text-2xl">⭐</div>
             <h3 class="font-bold text-gray-900 mb-2">好みの食材を優先提案</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">お気に入り登録した食材・料理は積極的に使われます。家族の好みが反映された、オーダーメイドの献立へ。</p>
+            <p class="text-gray-500 text-sm leading-relaxed">お気に入り登録した食材・料理は積極的に使われます。使うほど、あなた専用のオーダーメイド献立になっていきます。</p>
           </div>
         </div>
         <div class="mt-10 bg-white rounded-3xl p-6 border border-gray-100 shadow-sm">
@@ -248,7 +248,7 @@ const faqs = [
               <div class="space-y-3">
                 {[
                   { label: '他のAI献立アプリ', items: ['冷蔵庫を認識して提案', '毎回ゼロから考える', '家族の好みを覚えない'], ok: false },
-                  { label: 'Snapmeal', items: ['冷蔵庫を認識して提案', '過去の献立・反応を学習', '使うほど家族にフィット'], ok: true },
+                  { label: 'Snapmeal', items: ['冷蔵庫を認識して提案', '過去の献立・反応を学習', '使うほどあなたにフィット'], ok: true },
                 ].map(({ label, items, ok }) => (
                   <div class={`flex items-start gap-3 rounded-2xl p-3 ${ok ? 'bg-green-50 border border-green-100' : 'bg-gray-50 border border-gray-100'}`}>
                     <span class={`font-bold text-sm flex-shrink-0 w-28 ${ok ? 'text-primary' : 'text-gray-400'}`}>{label}</span>
