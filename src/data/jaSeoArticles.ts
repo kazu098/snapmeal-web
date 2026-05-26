@@ -46,7 +46,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     description: 'peccoのような献立・レシピ提案アプリが続かなかった人向けに、冷蔵庫写真から夕飯候補を出すアプリ選びを整理します。',
     date: '2026年5月26日',
     category: '献立アプリ比較',
-    image: '/blog/pecco-alternative-fridge-photo-thumbnail-1600x900.png',
+    image: '/blog/pecco-alternative-fridge-photo-contextual-1600x900.png',
     tags: ['pecco', '献立アプリ', '冷蔵庫', 'AI献立'],
     ctaTitle: '冷蔵庫を撮って、今夜の候補から決める',
     intro: [
@@ -84,9 +84,9 @@ export const jaSeoArticles: JaSeoArticle[] = [
           'どちらが優れているというより、入口が違います。料理のアイデアを広く探すならレシピ提案型、買い物前や帰宅後に冷蔵庫起点で決めるなら写真入力型が向いています。',
         ],
         image: {
-          src: '/blog/pecco-alternative-fridge-photo-thumbnail-1600x900.png',
-          alt: 'pecco、me:new、Snapmealの公開画面を並べた比較',
-          caption: 'pecco・me:newの公式公開画像と、Snapmealの画面を並べた比較。入口が「おすすめ」「計画」「冷蔵庫写真」で異なります。',
+          src: '/blog/pecco-alternative-fridge-photo-contextual-1600x900.png',
+          alt: 'peccoとSnapmealの入口を比較した画像',
+          caption: 'peccoの公開画像とSnapmealの画面を並べ、レシピ提案型と冷蔵庫写真型の入口を比較しています。',
         },
       },
       {
@@ -139,7 +139,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     description: 'me:newのような献立計画アプリが続かなかった家庭向けに、1週間計画と当日冷蔵庫起点の違いを比較します。',
     date: '2026年5月26日',
     category: '献立アプリ比較',
-    image: '/blog/menew-alternative-family-dinner-thumbnail-1600x900.png',
+    image: '/blog/menew-alternative-family-dinner-contextual-1600x900.png',
     tags: ['me:new', '献立アプリ', '家族', '冷蔵庫'],
     ctaTitle: '1週間分ではなく、今日の冷蔵庫から夕飯を決める',
     intro: [
@@ -173,9 +173,9 @@ export const jaSeoArticles: JaSeoArticle[] = [
           '1週間分を整えたいなら計画型、帰宅後に「今日あるもので何を出すか」を決めたいなら当日型です。家庭によって、使うタイミングが違います。',
         ],
         image: {
-          src: '/blog/menew-alternative-family-dinner-thumbnail-1600x900.png',
-          alt: 'me:new、pecco、Snapmealの公開画面比較',
-          caption: 'me:newの公開画像とSnapmealの画面を比較。週次計画型と当日冷蔵庫型では、最初に見る情報が異なります。',
+          src: '/blog/menew-alternative-family-dinner-contextual-1600x900.png',
+          alt: 'me:newとSnapmealの入口を比較した画像',
+          caption: 'me:newの公開画像とSnapmealの画面を並べ、週次計画型と当日冷蔵庫型の使うタイミングを比較しています。',
         },
       },
       {
@@ -321,7 +321,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     description: 'ChatGPTで献立を聞くと便利ですが、食材入力や条件指定が面倒なこともあります。冷蔵庫写真から始めるAI献立の考え方です。',
     date: '2026年5月26日',
     category: 'AI献立',
-    image: '/blog/chatgpt-meal-planning-photo-input-thumbnail-1600x900.png',
+    image: '/blog/chatgpt-meal-planning-photo-input-contextual-1600x900.png',
     tags: ['ChatGPT', 'AI献立', '冷蔵庫写真', '献立'],
     ctaTitle: '食材入力を減らして、AIに献立候補を出してもらう',
     intro: [
@@ -355,9 +355,9 @@ export const jaSeoArticles: JaSeoArticle[] = [
           '自由度はChatGPTが高く、入力の短さは写真AI型が得意です。どちらが向くかは、毎回どれだけ条件を書けるかで変わります。',
         ],
         image: {
-          src: '/blog/chatgpt-meal-planning-photo-input-thumbnail-1600x900.png',
-          alt: 'ChatGPT献立とSnapmealの入力方法を比較した画像',
-          caption: 'ChatGPTは自由な相談、Snapmealは冷蔵庫写真からの候補出しに寄せた使い方です。',
+          src: '/blog/chatgpt-meal-planning-photo-input-contextual-1600x900.png',
+          alt: 'ChatGPT献立の文章入力とSnapmealの写真入力を比較した画像',
+          caption: 'ChatGPTは条件を文章で整理する使い方、Snapmealは冷蔵庫写真から食材確認へ進む使い方です。',
         },
       },
       {
@@ -414,7 +414,7 @@ export const jaSeoArticles: JaSeoArticle[] = [
     description: '家族向けAI献立アプリを選ぶなら、子どもの好み、冷蔵庫の食材、買い物なしの候補、調理負担を見比べることが大切です。',
     date: '2026年5月26日',
     category: 'AI献立',
-    image: '/blog/ai-meal-planning-app-family-thumbnail-1600x900.png',
+    image: '/blog/ai-meal-planning-app-family-contextual-1600x900.png',
     tags: ['AI献立アプリ', '家族向け', '子ども', '冷蔵庫'],
     ctaTitle: '家族の好みと冷蔵庫から、今日の献立を決める',
     intro: [
@@ -448,9 +448,9 @@ export const jaSeoArticles: JaSeoArticle[] = [
           '家族向けで重要なのは、今日の家庭の状態に合う入口かどうかです。週末に計画するなら計画型、平日夜に冷蔵庫を見て決めるなら写真型が合いやすくなります。',
         ],
         image: {
-          src: '/blog/ai-meal-planning-app-family-thumbnail-1600x900.png',
-          alt: '家族向けAI献立アプリの比較画像',
-          caption: '家族向けでは、レシピ数より「今日の制約をどれだけ早く反映できるか」が重要です。',
+          src: '/blog/ai-meal-planning-app-family-contextual-1600x900.png',
+          alt: '家族向けAI献立で考える制約を整理した画像',
+          caption: '家族向けAI献立では、子どもの好み、買い物なし、疲れた日の工程数など、今日の制約を整理することが重要です。',
         },
       },
       {
