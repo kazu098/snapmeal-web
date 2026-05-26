@@ -1,0 +1,90 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import BlogHeader from '../../../components/BlogHeader.astro';
+
+const APP_URL = 'https://app.snap-meal.com';
+---
+
+<Layout
+  lang="en"
+  title="v0.5 Favorites, Dislikes & Shopping List Copy — Snapmeal"
+  description="Snapmeal v0.5: Save favorite meals, flag dislikes, copy missing ingredients as a shopping list, and let AI learn your taste."
+  alternateUrl="https://snap-meal.com/updates/v05/"
+>
+  <BlogHeader current="blog" />
+
+  <main class="bg-white">
+    <section class="bg-surface px-4 py-12 sm:py-16">
+      <div class="max-w-2xl mx-auto">
+        <a href="/en/updates/" class="inline-flex items-center gap-1 text-sm text-gray-400 hover:text-primary mb-6 transition">
+          ← All updates
+        </a>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="text-3xl font-extrabold text-primary">v0.5</span>
+          <span class="text-sm text-gray-400 font-semibold">May 2026</span>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-tight mb-3">
+          Favorites, Dislikes & Shopping List Copy
+        </h1>
+        <p class="text-gray-500 leading-relaxed">
+          The more you use Snapmeal, the better it knows your taste. This update adds favorites, dislike flags, one-tap shopping list copy, and AI taste learning.
+        </p>
+      </div>
+    </section>
+
+    <section class="px-4 py-12 border-t border-gray-100">
+      <div class="max-w-2xl mx-auto space-y-10">
+        <div>
+          <h2 class="text-xl font-extrabold text-gray-900 mb-2">One-tap shopping list copy</h2>
+          <p class="text-gray-500 text-sm mb-4 leading-relaxed">
+            Missing ingredients are shown on the result screen. Tap the copy button to send them all to your clipboard — ready to paste directly into any notes or messaging app.
+          </p>
+          <div class="flex justify-center">
+            <img
+              src="/updates/result-actions.png"
+              alt="Result screen — missing ingredients with copy button"
+              class="w-[200px] rounded-[1.5rem] shadow-xl shadow-gray-200 border border-gray-100"
+            />
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-extrabold text-gray-900 mb-2">Favorites & not interested</h2>
+          <div class="space-y-3">
+            <div class="flex gap-4 p-4 rounded-2xl border border-gray-100">
+              <span class="text-2xl flex-shrink-0">❤️</span>
+              <div>
+                <p class="font-bold text-gray-800 text-sm">Save favorites</p>
+                <p class="text-xs text-gray-500 mt-0.5 leading-relaxed">Tap the heart on any suggestion to save it. Review saved meals anytime from the favorites screen. Synced across devices when logged in.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 p-4 rounded-2xl border border-gray-100">
+              <span class="text-2xl flex-shrink-0">👎</span>
+              <div>
+                <p class="font-bold text-gray-800 text-sm">Not interested flag</p>
+                <p class="text-xs text-gray-500 mt-0.5 leading-relaxed">Mark a meal as "not interested" to exclude it from future suggestions automatically.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-extrabold text-gray-900 mb-2">AI learns your favorites</h2>
+          <p class="text-gray-500 text-sm leading-relaxed">
+            Saved meals influence future suggestions — the AI picks up on the genres and main ingredients you prefer and uses them as a signal when generating new recommendations.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-4 py-16 bg-surface border-t border-gray-100 text-center">
+      <p class="text-sm text-gray-500 mb-4">Try the latest version</p>
+      <a href={APP_URL} data-ga-event="cta_click" class="inline-block bg-primary text-white font-bold px-8 py-3.5 rounded-full hover:bg-primary-dark transition shadow-lg shadow-green-100">
+        Open Snapmeal (Beta · Free)
+      </a>
+      <div class="mt-6">
+        <a href="/en/updates/" class="text-sm text-gray-400 hover:text-primary transition">← All updates</a>
+      </div>
+    </section>
+  </main>
+</Layout>

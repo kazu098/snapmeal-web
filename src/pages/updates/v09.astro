@@ -46,6 +46,13 @@ const APP_URL = 'https://app.snap-meal.com';
             <p class="text-sm text-gray-500 leading-relaxed mb-3">
               ログインして使うと、解析中に「🧠 あなたの好みを学習して最適化中...」と表示されます。初めて使うときは通常のメッセージ、2回目以降から学習メッセージに切り替わります。
             </p>
+            <div class="flex justify-center mb-4">
+              <img
+                src="/updates/v09-analyzing-learning.png"
+                alt="解析中画面 — 「🧠 あなたの好みを学習して最適化中...」と表示されているスピナー"
+                class="w-[200px] rounded-[1.5rem] shadow-xl shadow-gray-200 border border-gray-100"
+              />
+            </div>
             <div class="flex flex-col sm:flex-row gap-3">
               <div class="flex-1 bg-gray-50 rounded-xl px-4 py-3 text-sm text-center">
                 <p class="text-gray-400 text-xs mb-1">ゲスト・初回</p>
@@ -60,9 +67,16 @@ const APP_URL = 'https://app.snap-meal.com';
 
           <div class="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
             <p class="text-sm font-bold text-gray-900 mb-1">献立提案にバッジが表示されます</p>
-            <p class="text-sm text-gray-500 leading-relaxed">
+            <p class="text-sm text-gray-500 leading-relaxed mb-4">
               過去の記録をもとに提案が最適化されている場合、料理名の上に「🧠 あなたの好みを反映した提案」バッジが表示されます。
             </p>
+            <div class="flex justify-center">
+              <img
+                src="/updates/v09-result-badge.png"
+                alt="献立提案画面 — 料理名の上に「🧠 あなたの好みを反映した提案」バッジが表示されている"
+                class="w-[200px] rounded-[1.5rem] shadow-xl shadow-gray-200 border border-gray-100"
+              />
+            </div>
           </div>
 
           <div class="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
