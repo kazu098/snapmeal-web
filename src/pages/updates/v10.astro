@@ -1,0 +1,145 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+
+const APP_URL = 'https://app.snap-meal.com';
+const TESTFLIGHT_URL = 'https://testflight.apple.com/join/PdAtaK4f';
+---
+
+<Layout
+  lang="ja"
+  title="v0.10 アップデート — iOSアプリ ベータ版リリース | Snapmeal"
+  description="Snapmeal v0.10：iOSネイティブアプリのベータ版をTestFlightで公開。アカウント削除機能、エラー回復ボタンも追加しました。"
+>
+  <BlogHeader current="blog" />
+
+  <main class="bg-white">
+    <!-- ヘッダー -->
+    <section class="bg-surface px-4 py-12 sm:py-16">
+      <div class="max-w-2xl mx-auto">
+        <a href="/updates/" class="inline-flex items-center gap-1 text-sm text-gray-400 hover:text-primary mb-6 transition">
+          ← アップデート一覧
+        </a>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="text-3xl font-extrabold text-primary">v0.10</span>
+          <span class="text-sm text-gray-400 font-semibold">2026年5月</span>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-gray-900 leading-tight mb-3">
+          iOSアプリ ベータ版リリース
+        </h1>
+        <p class="text-gray-500 leading-relaxed">
+          TestFlight から iPhone にインストールして使えるネイティブアプリのベータ版を公開しました。アカウント削除機能の追加、エラー発生時の回復ボタン表示も改善しています。
+        </p>
+      </div>
+    </section>
+
+    <!-- ① iOS ベータ -->
+    <section class="px-4 py-12 border-t border-gray-100">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-2">📱 iOSアプリ（TestFlight）ベータ版を公開</h2>
+        <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+          これまでブラウザ版のみで提供していた Snapmeal が、iPhone のネイティブアプリとしてインストールできるようになりました。TestFlight 経由で配信しているベータ版です。
+        </p>
+
+        <div class="space-y-4 mb-6">
+          <div class="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
+            <p class="text-sm font-bold text-gray-900 mb-1">ネイティブアプリならではの体験</p>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              ホーム画面にアイコンが追加され、起動がスムーズに。カメラや通知など iOS の機能とより自然に連携します。
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
+            <p class="text-sm font-bold text-gray-900 mb-2">インストール方法</p>
+            <ol class="space-y-2 text-sm text-gray-500">
+              <li class="flex gap-2"><span class="flex-none font-bold text-primary">1.</span><span>iPhone の Safari でリンクを開く</span></li>
+              <li class="flex gap-2"><span class="flex-none font-bold text-primary">2.</span><span>TestFlight アプリをインストール（初回のみ）</span></li>
+              <li class="flex gap-2"><span class="flex-none font-bold text-primary">3.</span><span>Snapmeal のベータ版をインストール</span></li>
+            </ol>
+          </div>
+        </div>
+
+        <a
+          href={TESTFLIGHT_URL}
+          target="_blank"
+          rel="noopener"
+          class="inline-flex items-center gap-2.5 bg-gray-900 text-white font-bold text-base px-7 py-3.5 rounded-2xl hover:bg-gray-700 transition shadow-lg"
+        >
+          <svg class="w-5 h-5 flex-none" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+          </svg>
+          TestFlight でインストールする
+        </a>
+      </div>
+    </section>
+
+    <!-- ② アカウント削除 -->
+    <section class="px-4 py-12 bg-surface border-t border-gray-100">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-2">🗑️ アカウント削除機能を追加</h2>
+        <p class="text-gray-500 text-sm mb-5 leading-relaxed">
+          設定画面からアカウントの削除を依頼できるようになりました。
+        </p>
+
+        <div class="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm">
+          <p class="text-sm font-bold text-gray-900 mb-2">依頼の流れ</p>
+          <ol class="space-y-2 text-sm text-gray-500">
+            <li class="flex gap-2"><span class="flex-none font-bold text-primary">1.</span><span>設定画面を開き、「アカウントを削除」をタップ</span></li>
+            <li class="flex gap-2"><span class="flex-none font-bold text-primary">2.</span><span>削除対象データの確認モーダルが表示される</span></li>
+            <li class="flex gap-2"><span class="flex-none font-bold text-primary">3.</span><span>「削除手続きページを開く」でメール依頼ページに進む</span></li>
+          </ol>
+          <p class="text-xs text-gray-400 mt-4">依頼受け付け後、本人確認が完了してから通常 30 日以内に削除処理を行います。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ③ エラー回復 -->
+    <section class="px-4 py-12 border-t border-gray-100">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-xl font-extrabold text-gray-900 mb-2">🔄 エラー時に「最初からやり直す」ボタンを追加</h2>
+        <p class="text-gray-500 text-sm mb-5 leading-relaxed">
+          解析中にエラーが発生した場合、これまではページをリロードするしかありませんでした。「最初からやり直す」ボタンがその場に表示されるようになり、すぐにリトライできます。
+        </p>
+
+        <div class="grid sm:grid-cols-2 gap-3">
+          <div class="bg-red-50 rounded-xl px-4 py-3 text-xs text-red-700">
+            <p class="font-semibold mb-1">修正前</p>
+            <p>エラーが出るとページ全体をリロードするしかなかった</p>
+          </div>
+          <div class="bg-green-50 rounded-xl px-4 py-3 text-xs text-green-700 border border-green-100">
+            <p class="font-semibold mb-1">修正後</p>
+            <p>エラー画面に「最初からやり直す」ボタンが表示されてワンタップで再開できる</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="px-4 py-16 bg-white border-t border-gray-100 text-center">
+      <p class="text-sm text-gray-500 mb-4">最新版をお試しください</p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a
+          href={TESTFLIGHT_URL}
+          target="_blank"
+          rel="noopener"
+          class="inline-flex items-center justify-center gap-2 bg-gray-900 text-white font-bold px-7 py-3.5 rounded-full hover:bg-gray-700 transition shadow-lg"
+        >
+          <svg class="w-5 h-5 flex-none" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+          </svg>
+          iOSアプリをインストール
+        </a>
+        <a
+          href={APP_URL}
+          data-ga-event="cta_click"
+          class="inline-block bg-primary text-white font-bold px-8 py-3.5 rounded-full hover:bg-primary-dark transition shadow-lg shadow-green-100"
+        >
+          ブラウザ版を試す
+        </a>
+      </div>
+      <div class="mt-6">
+        <a href="/updates/" class="text-sm text-gray-400 hover:text-primary transition">← アップデート一覧に戻る</a>
+      </div>
+    </section>
+  </main>
+</Layout>
