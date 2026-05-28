@@ -11,6 +11,56 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    title: '「今夜何作ろう」が毎日つらい人へ。献立を30秒で決める方法',
+    description: '夕方に冷蔵庫を開けても何も思いつかない人へ。判断疲れを減らし、今ある食材から夕食を決める手順を紹介します。',
+    href: '/blog/dinner-no-idea-fridge/',
+    date: '2026年5月28日',
+    category: '献立',
+    image: '/blog/dinner-no-idea-fridge-thumbnail-1600x900.png',
+    tags: ['今夜何作ろう', '献立', '冷蔵庫', '時短'],
+    readingTime: 6,
+  },
+  {
+    title: '冷蔵庫の残り物でフライパン1つ。今夜の夕食を決める方法',
+    description: 'ホットクックがなくても大丈夫。残り野菜や肉、卵をフライパン1つで夕食にする考え方をまとめました。',
+    href: '/blog/frying-pan-one-pan-dinner/',
+    date: '2026年5月28日',
+    category: '時短',
+    image: '/blog/frying-pan-one-pan-dinner-thumbnail-1600x900.jpg',
+    tags: ['フライパン', '残り物', '夕食', '冷蔵庫'],
+    readingTime: 7,
+  },
+  {
+    title: 'AI献立アプリ比較2026。冷蔵庫を撮るだけで夕食が決まるアプリとは',
+    description: 'AI献立アプリを選ぶときに見るべきポイントを、冷蔵庫写真、好みの学習、買い物なし提案、使い続けやすさで整理します。',
+    href: '/blog/meal-app-comparison-fridge-first/',
+    date: '2026年5月28日',
+    category: 'AI献立',
+    image: '/blog/meal-app-comparison-fridge-first-thumbnail-1600x900.png',
+    tags: ['AI献立アプリ', '献立アプリ比較', '冷蔵庫写真', '2026'],
+    readingTime: 8,
+  },
+  {
+    title: '毎週同じ料理になる「献立マンネリ」を抜け出す5つの方法',
+    description: '同じ食材、同じ味付け、同じメニューが続くときの抜け出し方を、無理なく続けられる5つの視点で紹介します。',
+    href: '/blog/dinner-rut-solutions/',
+    date: '2026年5月28日',
+    category: '献立',
+    image: '/blog/dinner-rut-solutions-thumbnail-1600x900.jpg',
+    tags: ['献立マンネリ', '献立', '味変', '食材活用'],
+    readingTime: 6,
+  },
+  {
+    title: '買い物なしで今夜の夕食を作る。冷蔵庫の食材だけで献立を決めるコツ',
+    description: '買い物に行けない日でも、冷蔵庫の食材だけで夕食を組み立てるための考え方と具体例を紹介します。',
+    href: '/blog/no-shopping-dinner/',
+    date: '2026年5月28日',
+    category: '冷蔵庫活用',
+    image: '/blog/no-shopping-dinner-thumbnail-1600x900.jpg',
+    tags: ['買い物なし', '夕食', '冷蔵庫', '献立'],
+    readingTime: 5,
+  },
+  {
     title: 'peccoが合わなかった人へ——冷蔵庫写真から献立を決めるアプリの選び方',
     description: 'peccoのような献立・レシピ提案アプリが続かなかった人向けに、冷蔵庫写真から夕飯候補を出すアプリ選びを整理します。',
     href: '/blog/pecco-alternative-fridge-photo/',
@@ -28,16 +78,6 @@ export const articles: Article[] = [
     category: '献立アプリ比較',
     image: '/blog/menew-alternative-family-dinner-contextual-1600x900.png',
     tags: ['me:new', '献立アプリ', '家族', '冷蔵庫'],
-    readingTime: 8,
-  },
-  {
-    title: '献立アプリ比較で見るべきポイント——レシピ数より「冷蔵庫から決められるか」',
-    description: '献立アプリを比較するときは、レシピ数やランキングだけでなく、冷蔵庫の食材から今日の夕飯を決められるかが重要です。',
-    href: '/blog/meal-app-comparison-fridge-first/',
-    date: '2026年5月26日',
-    category: '献立アプリ比較',
-    image: '/blog/meal-app-comparison-fridge-first-thumbnail-1600x900.png',
-    tags: ['献立アプリ比較', '冷蔵庫', 'レシピアプリ', 'AI献立'],
     readingTime: 8,
   },
   {
@@ -110,7 +150,6 @@ export const articles: Article[] = [
     tags: ['一人暮らし', '調理器具', '時短', 'レンジ調理'],
     readingTime: 7,
   },
-
   {
     title: '冷凍肉を解凍し忘れた日の夕飯——凍ったまま・半解凍で使える献立の考え方',
     description: '冷凍肉を解凍し忘れた日でも、薄切り肉・ひき肉・鶏肉の状態に合わせてレンジ、スープ、蒸し焼きに寄せると夕飯にできます。',
@@ -161,7 +200,6 @@ export const articles: Article[] = [
     tags: ['野菜不足', '冷凍野菜', '夕飯', '健康'],
     readingTime: 7,
   },
-
   {
     title: '賞味期限が近い食材から夕飯を決める方法——捨てる前に献立へ変える考え方',
     description: '賞味期限が近い肉・豆腐・卵・野菜は、料理名ではなく傷みやすさと火入れのしやすさで見ると夕飯に変えやすくなります。',
@@ -212,7 +250,6 @@ export const articles: Article[] = [
     tags: ['買い物前', '冷蔵庫', '夕飯', '節約'],
     readingTime: 7,
   },
-
   {
     title: 'ホットクックが水っぽくなる原因——野菜の水分・調味料・メニュー選びで失敗を減らす方法',
     description: 'ホットクック料理が水っぽい、味が薄いと感じる原因は水の入れすぎだけではありません。野菜の水分、調味料、メニュー選びを整理します。',
@@ -263,17 +300,6 @@ export const articles: Article[] = [
     tags: ['ホットクック', '使いこなし', '献立', '習慣化'],
     readingTime: 8,
   },
-
-  {
-    title: 'フライパンひとつで作る夕飯——洗い物を増やさず主菜と野菜をまとめる方法',
-    description: 'フライパンひとつで夕飯を作る日は、主菜と野菜を同じ流れで火入れすると洗い物を減らせます。ワンパン献立の組み立て方です。',
-    href: '/blog/frying-pan-one-pan-dinner/',
-    date: '2026年5月24日',
-    category: '時短',
-    image: '/blog/frying-pan-one-pan-dinner-thumbnail-1600x900.jpg',
-    tags: ['フライパン', 'ワンパン', '夕飯', '洗い物'],
-    readingTime: 7,
-  },
   {
     title: '炊飯器で夕飯を同時に作る方法——ご飯とおかずを一緒に準備する考え方',
     description: '炊飯器でご飯を炊く時間に、おかずの下ごしらえや同時調理を合わせると夕飯準備が軽くなります。無理なく使うコツをまとめます。',
@@ -314,7 +340,6 @@ export const articles: Article[] = [
     tags: ['冷凍ストック', '冷凍野菜', '冷凍ご飯', '献立'],
     readingTime: 7,
   },
-
   {
     title: 'ホットクックでたらを使うレシピ——崩れやすい白身魚を夕飯にするコツ',
     description: 'たらはホットクックで火を通しすぎると崩れやすい食材です。野菜の水分、加熱時間、味付けを分けて考えると平日の主菜にしやすくなります。',
@@ -365,7 +390,6 @@ export const articles: Article[] = [
     tags: ['ホットクック', 'いか', '魚介', '煮物'],
     readingTime: 7,
   },
-
   {
     "title": "レンジだけで作る夕飯——火を使わずに一食として成立させる考え方",
     "description": "レンジだけで夕飯を作る日は、主食・たんぱく質・野菜を一つの耐熱容器にまとめると決めやすくなります。火を使わない献立設計です。",
@@ -441,7 +465,6 @@ export const articles: Article[] = [
     ],
     "readingTime": 7
   },
-
   {
     "title": "朝ごはんと夕飯をまとめて考える方法——朝の残りを夜に活かす献立",
     "description": "朝ごはんの準備や残りを夕飯に活かすと、1日の献立決めが少し軽くなります。卵・ご飯・みそ汁・野菜を夜へつなげる考え方です。",
@@ -517,7 +540,6 @@ export const articles: Article[] = [
     ],
     "readingTime": 7
   },
-
   {
     "title": "夕飯を考えるのがしんどい日の対処法——レシピ検索の前に決める3つのこと",
     "description": "夕飯を考えるのがしんどい日は、レシピを探す前に時間・気力・主食を決めると迷いが減ります。献立決めの負担を軽くする考え方です。",
@@ -593,7 +615,6 @@ export const articles: Article[] = [
     ],
     "readingTime": 7
   },
-
   {
     "title": "鶏ひき肉と豆腐で作れる献立——軽いのに満足できる夕飯の組み立て方",
     "description": "鶏ひき肉と豆腐は、そぼろあん・つくね風・スープ・丼に展開しやすい組み合わせです。軽くても満足できる夕飯にする考え方をまとめます。",
@@ -668,17 +689,6 @@ export const articles: Article[] = [
       "時短"
     ],
     "readingTime": 7
-  },
-
-  {
-    title: '夕飯が思いつかない日は冷蔵庫をどう見る？——食材から候補を3つに絞る手順',
-    description: '夕飯が思いつかない日は、レシピ検索の前に冷蔵庫の食材を役割で分けると決めやすくなります。候補を3つに絞る実用的な手順です。',
-    href: '/blog/dinner-no-idea-fridge/',
-    date: '2026年5月23日',
-    category: '献立',
-    image: '/blog/dinner-no-idea-fridge-thumbnail-1600x900.png',
-    tags: ['夕飯', '冷蔵庫', '献立', '時短'],
-    readingTime: 6,
   },
   {
     title: '冷蔵庫の食材を使う順番——傷みやすさと献立への使いやすさで決める',
@@ -871,16 +881,6 @@ export const articles: Article[] = [
     readingTime: 5,
   },
   {
-    title: '買い物に行けない日の献立——冷蔵庫と常備品だけで夕飯を作る考え方',
-    description: '買い物に行けない日でも、卵・豆腐・缶詰・冷凍野菜・米があれば夕飯は作れます。食材を役割で分けて献立にする方法を解説します。',
-    href: '/blog/no-shopping-dinner/',
-    date: '2026年5月23日',
-    category: '献立',
-    image: '/blog/no-shopping-dinner-thumbnail-1600x900.jpg',
-    tags: ['買い物なし', '献立', '冷蔵庫', '常備品'],
-    readingTime: 5,
-  },
-  {
     title: '余り食材で夕飯を作るコツ——半端な野菜・肉・豆腐を献立に戻す方法',
     description: '半端に残った食材を、主菜・汁物・丼・副菜に振り分けるだけで夕飯は作りやすくなります。食品ロスを減らす献立の考え方です。',
     href: '/blog/leftover-ingredients-dinner/',
@@ -908,16 +908,6 @@ export const articles: Article[] = [
     category: '時短',
     image: '/blog/weeknight-quick-dinner-thumbnail-1600x900.jpg',
     tags: ['平日夜', '時短', 'ホットクック', '献立'],
-    readingTime: 5,
-  },
-  {
-    title: '献立がマンネリ化したときの解決策——食材を変えずに味と形を変える',
-    description: 'いつも同じ献立になるときは、食材ではなく味の軸・調理法・主食との合わせ方を変えると抜け出しやすくなります。',
-    href: '/blog/dinner-rut-solutions/',
-    date: '2026年5月23日',
-    category: '献立',
-    image: '/blog/dinner-rut-solutions-thumbnail-1600x900.jpg',
-    tags: ['マンネリ', '献立', '味変', '食材活用'],
     readingTime: 5,
   },
   {
@@ -1369,5 +1359,6 @@ export const articles: Article[] = [
     image: '/og-ja.png',
     tags: [],
   readingTime: 8,
-  },
+  }
+
 ];
